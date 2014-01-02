@@ -524,21 +524,33 @@ Section 4a Coder
 	}
 .sct4a .logoPS{
 	background:url(../img/logoPsBW.jpg);
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/logoPsBW.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/logoPsBW.jpg', sizingMethod='scale')";
 	}
 .sct4a .logoAI{
 	background:url(../img/logoAiBW.jpg);
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/logoAiBW.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/logoAiBW.jpg', sizingMethod='scale')";
 	}
 .sct4a .logoFL{
 	background:url(../img/logoFlBW.jpg);
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/logoFlBW.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/logoFlBW.jpg', sizingMethod='scale')";
 	}
 .sct4a .logoJQUERY{
 	background:url(../img/logojqeryBW.gif);
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/logojqeryBW.gif', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/logojqeryBW.gif', sizingMethod='scale')";
 	}
 .sct4a .logoHTML{
 	background:url(../img/logohtmlBW.gif);
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/logohtmlBW.gif', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/logohtmlBW.gif', sizingMethod='scale')";
 	}
 .sct4a .logoCSS{
 	background:url(../img/logocssBW.gif);
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/logocssBW.gif', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/logocssBW.gif', sizingMethod='scale')";
 	}
 .sct4a .logoCSS, .sct4a .logoHTML, .sct4a .logoJQUERY, .sct4a .logoFL, .sct4a .logoAI, .sct4a .logoPS{
 	width:80%;
