@@ -3,11 +3,45 @@
 .thumb1{
 	background-image:none;
 	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn1.jpg', sizingMethod='scale');
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn1.jpg', sizingMethod='scale')";
 	}
 .thumb1:hover,
 .thumb1:active {
 	background-image:none;
 	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn1a.jpg', sizingMethod='scale');
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn1a.jpg', sizingMethod='scale')";
+}
+.thumb2{
+	background-image:none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn2.jpg', sizingMethod='scale');
+	}
+.thumb2:hover,
+.thumb2:active {
+	background-image:none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn2a.jpg', sizingMethod='scale');
+}
+.thumb3{
+	background-image:none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn3.gif', sizingMethod='scale');
+	}
+.thumb3:hover,
+.thumb3:active {
+	background-image:none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn3a.gif', sizingMethod='scale');
+}
+.thumb4{
+	background-image:none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn4.jpg', sizingMethod='scale');
+	}
+.thumb4:hover,
+.thumb4:active {
+	background-image:none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn4a.jpg', sizingMethod='scale');
+}
+.thumb5{
+	background-image:none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn5.gif', sizingMethod='scale');
+	}
+.thumb5:hover,
+.thumb5:active {
+	background-image:none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn5a.gif', sizingMethod='scale');
 }
