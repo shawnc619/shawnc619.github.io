@@ -1006,7 +1006,7 @@ Section 7 Contact
 	font-family: 'Open Sans Condensed', sans-serif;
 	background:#eee;
 	text-align:center;
-	padding-top:7px;
+	padding:7px 0 5px;
 	font-size:0.9em;
 	position:absolute;
 	bottom:0;
@@ -1185,7 +1185,7 @@ Section 7 Contact
 /*********Section 2 Quote max-width: 767px*********/
 
 .sct2 .wrap{
-	margin-top:20px;
+	margin-top:0;
 	text-align:center;
 	padding:30px 15px 10px 15px
 	}
@@ -1339,6 +1339,7 @@ Section 7 Contact
 /*******Section 10 Contact max-width: 767px********/	
 	
 .sct10{
+	height:520px;
 	}
 .sct10 .wrap{
 	margin-top:0;
@@ -1371,10 +1372,23 @@ Section 7 Contact
 	margin-top:0
 	}
 .sct10 .wrap .dlResume{
-	margin-top:w0px;
+	margin-top:0px;
 	}
+.footer{
+	text-transform:uppercase;
+	color:#8d8d8d;
+	font-weight:bold;
+	font-family: 'Open Sans Condensed', sans-serif;
+	background:#eee;
+	text-align:center;
+	padding:7px 0 5px;
+	font-size:0.8em;
+	position:absolute;
+	bottom:0;
+	width:100%;
+}	
 	
-	}
+}
 
 @media screen and (max-width: 400px) {
 /*********Section 1 Intro max-width: 400px*********/
