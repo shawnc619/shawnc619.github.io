@@ -45,3 +45,75 @@
 	background-image:none;
 	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn5a.gif', sizingMethod='scale');
 }
+.thumb6{
+	background-image:none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn6.jpg', sizingMethod='scale');
+	}
+.thumb6:hover,
+.thumb6:active {
+	background-image:none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn6a.jpg', sizingMethod='scale');
+}
+.thumb7{
+	background-image:none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn7.jpg', sizingMethod='scale');
+	}
+.thumb7:hover,
+.thumb7:active {
+	background-image:none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn7a.jpg', sizingMethod='scale');
+}
+.thumb8{
+	background-image:none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn8.gif', sizingMethod='scale');
+	}
+.thumb8:hover,
+.thumb8:active {
+	background-image:none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn8a.gif', sizingMethod='scale');
+}
+.thumb9{
+	background-image:none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn9.jpg', sizingMethod='scale');
+	}
+.thumb9:hover,
+.thumb9:active {
+	background-image:none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn9a.jpg', sizingMethod='scale');
+}
+.thumb10{
+	background-image:none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn10.jpg', sizingMethod='scale');
+	}
+.thumb10:hover,
+.thumb10:active {
+	background-image:none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn10a.jpg', sizingMethod='scale');
+}
+.thumb11{
+	background-image:none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn11.jpg', sizingMethod='scale');
+	}
+.thumb11:hover,
+.thumb11:active {
+	background-image:none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn11a.jpg', sizingMethod='scale');
+}
+.thumb12{
+	background-image:none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn12.jpg', sizingMethod='scale');
+	}
+.thumb12:hover,
+.thumb12:active {
+	background-image:none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn12a.jpg', sizingMethod='scale');
+}
+.thumb13{
+	background-image:none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn13.gif', sizingMethod='scale');
+	}
+.thumb13:hover,
+.thumb13:active {
+	background-image:none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn13a.gif', sizingMethod='scale');
+}
