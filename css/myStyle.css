@@ -1351,19 +1351,16 @@ Section 7 Contact
 
 	}	
 .sct10 .myImage{
-	width:15%;
+	width:17%;
 	border:6px solid #CCC;
 	margin:0 auto;
 	
 	}
 .sct10 .wrap .script{
-	font-size:40px;
-	}
-.sct10 .wrap .sanSerif{
-	font-size:54px;
+	font-size:35px;
 	}
 .sct10 .wrap p{
-	font-size:20px;
+	font-size:18px;
 	}
 .contactWrap{
 	font-family: 'Open Sans Condensed', sans-serif;
