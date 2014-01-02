@@ -542,7 +542,7 @@ Section 4a Coder
 	}
 .sct4a .logoCSS, .sct4a .logoHTML, .sct4a .logoJQUERY, .sct4a .logoFL, .sct4a .logoAI, .sct4a .logoPS{
 	width:80%;
-	height:auto;
+	height:auto;margin-left:20px;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
