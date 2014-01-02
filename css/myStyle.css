@@ -1286,6 +1286,9 @@ Section 7 Contact
 	font-weight:300;
 	color:#fff;
 	}
+.sct4a .logoCSS, .sct4a .logoHTML, .sct4a .logoJQUERY, .sct4a .logoFL, .sct4a .logoAI, .sct4a .logoPS{
+	margin-left:0;
+	}	
 .sct4a .logoWrap{
 	margin-bottom:15px
 	}
