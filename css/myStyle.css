@@ -636,7 +636,6 @@ Photo Tile
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/ptn1.jpg', sizingMethod='scale');
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
 	filter: alpha(opacity=1);
 	-moz-opacity:1;
@@ -650,7 +649,6 @@ Photo Tile
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/ptn1a.jpg', sizingMethod='scale');
 }
 .photothumb2{
 	background:url(../img/ptn2.jpg);
@@ -658,7 +656,6 @@ Photo Tile
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn2.jpg', sizingMethod='scale');
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
 	filter: alpha(opacity=1);
 	-moz-opacity:1;
@@ -672,7 +669,6 @@ Photo Tile
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/ptn2a.jpg', sizingMethod='scale');
 }
 .photothumb3{
 	background:url(../img/ptn3.jpg);
@@ -680,7 +676,6 @@ Photo Tile
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/ptn3.jpg', sizingMethod='scale');
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
 	filter: alpha(opacity=1);
 	-moz-opacity:1;
@@ -694,7 +689,6 @@ Photo Tile
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/ptn3a.jpg', sizingMethod='scale');
 }
 .photothumb4{
 	background:url(../img/ptn4.jpg);
@@ -702,7 +696,6 @@ Photo Tile
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/ptn4.jpg', sizingMethod='scale');
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
 	filter: alpha(opacity=1);
 	-moz-opacity:1;
@@ -716,7 +709,6 @@ Photo Tile
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/ptn4a.jpg', sizingMethod='scale');
 }
 .photothumb5{
 	background:url(../img/ptn5.jpg);
@@ -724,7 +716,6 @@ Photo Tile
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/ptn5.jpg', sizingMethod='scale');
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
 	filter: alpha(opacity=1);
 	-moz-opacity:1;
@@ -738,7 +729,6 @@ Photo Tile
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/ptn5a.jpg', sizingMethod='scale');
 }
 .photothumb6{
 	background:url(../img/ptn6.jpg);
@@ -746,7 +736,6 @@ Photo Tile
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/ptn6.jpg', sizingMethod='scale');
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
 	filter: alpha(opacity=1);
 	-moz-opacity:1;
@@ -760,7 +749,6 @@ Photo Tile
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/ptn6a.jpg', sizingMethod='scale');
 }
 .photothumb7{
 	background:url(../img/ptn7.jpg);
@@ -768,7 +756,6 @@ Photo Tile
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/ptn7.jpg', sizingMethod='scale');
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
 	filter: alpha(opacity=1);
 	-moz-opacity:1;
@@ -783,7 +770,6 @@ Photo Tile
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/ptn7a.jpg', sizingMethod='scale');
 }
 .photothumb8{
 	background:url(../img/ptn8.jpg);
@@ -791,7 +777,6 @@ Photo Tile
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/ptn8.jpg', sizingMethod='scale');
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
 	filter: alpha(opacity=1);
 	-moz-opacity:1;
@@ -805,97 +790,9 @@ Photo Tile
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/ptn8a.jpg', sizingMethod='scale');
 }
 
-.photothumb9{
-	background:url(../img/tn9.jpg);
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn9.jpg', sizingMethod='scale');
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
-	filter: alpha(opacity=1);
-	-moz-opacity:1;
-	-khtml-opacity:1;
-	opacity:1;
-	}
-.photothumb9:hover,
-.photothumb9:active {
-	background:url(../img/tn9a.jpg);
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn9a.jpg', sizingMethod='scale');
-}
-.photothumb10{
-	background:url(../img/tn10.jpg);
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn10.jpg', sizingMethod='scale');
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
-	filter: alpha(opacity=1);
-	-moz-opacity:1;
-	-khtml-opacity:1;
-	opacity:1;
-	}
-.photothumb10:hover,
-.photothumb10:active {
-	background:url(../img/tn10a.jpg);
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn10a.jpg', sizingMethod='scale');
-}
-.photothumb11{
-	background:url(../img/tn11.jpg);
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn11.jpg', sizingMethod='scale');
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
-	filter: alpha(opacity=1);
-	-moz-opacity:1;
-	-khtml-opacity:1;
-	opacity:1;
-	}
-.photothumb11:hover,
-.photothumb11:active {
-	background:url(../img/tn11a.jpg);
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn11a.jpg', sizingMethod='scale');
-}
-.photothumb12{
-	background:url(../img/tn12.jpg);
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn12.jpg', sizingMethod='scale');
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
-	filter: alpha(opacity=1);
-	-moz-opacity:1;
-	-khtml-opacity:1;
-	opacity:1;
-	}
-.photothumb12:hover,
-.thumb12:active {
-	background:url(../img/tn12a.jpg);
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn12a.jpg', sizingMethod='scale');
-}
+
 
 
 /***************************************
