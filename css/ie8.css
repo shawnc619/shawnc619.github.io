@@ -231,3 +231,10 @@
 	background-image:none;
 	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/ptn8a.jpg', sizingMethod='scale');
 }
+
+
+
+.sct10 .myImage{
+	background-image:none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/me.jpg', sizingMethod='scale');
+}
