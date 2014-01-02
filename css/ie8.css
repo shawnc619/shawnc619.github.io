@@ -1,0 +1,13 @@
+@charset "UTF-8";
+/* CSS Document */
+.thumb1{
+	background-image:none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn1.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn1.jpg', sizingMethod='scale')";
+	}
+.thumb1:hover,
+.thumb1:active {
+	background-image:none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn1a.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn1a.jpg', sizingMethod='scale')";
+}

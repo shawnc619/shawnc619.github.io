@@ -1,0 +1,1574 @@
+@charset "UTF-8";
+/* CSS Document */
+@import url(http://fonts.googleapis.com/css?family=Neucha);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
+@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,300);
+@import url(http://fonts.googleapis.com/css?family=Leckerli+One);
+@import url(http://fonts.googleapis.com/css?family=News+Cycle:400,700);
+@import url(http://fonts.googleapis.com/css?family=Rancho);
+
+
+/***************************************
+****************************************
+Section 1 Intro 
+****************************************
+***************************************/
+#section-1{
+	background:url(../img/sct1.png) no-repeat 25% -60px #ccc7c9;
+	background-size:cover;
+	}
+.sct1 .wrap{
+	padding:20px 0;
+	text-align:center;
+	line-height:normal;
+	position:absolute;
+	top:55%;
+	left:50%;
+	margin:0 0 0 -50%;
+	
+	}
+
+.sct1 .wrap .script{
+	font-family: 'Leckerli One', cursive; 
+	color:#ffd200;
+	font-size:140px;
+	line-height:0.7;display:inline-block
+	}
+.sct1 .wrap .sanSerif{
+	font-family: 'Open Sans Condensed', sans-serif;
+	color:#fff;
+	font-size:83px;
+	font-weight:300;
+	text-transform:uppercase;
+	}
+.sct1 .wrap p{
+	font-family: 'Yanone Kaffeesatz', sans-serif;	
+	font-size:38px;
+	font-weight:300;
+	color:#333;
+	padding:0;
+	}
+/***************************************
+****************************************
+Section 2 Quote
+****************************************
+***************************************/
+#section-2{
+	background:#ffd200;
+	background-size:cover
+	}
+.sct2 .wrap{
+	margin-top:250px;
+	text-align:center;
+	padding:30px 10px 10px 1px;
+	
+	}
+.sct2 .wrap blockquote:before{
+	font-size:120px;
+	font-weight:700;
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: #fff;
+    content: "\201D";
+    display: block;
+    left:0;
+    position: absolute;
+    top: -30px;
+	}	
+.sct2 .wrap blockquote{
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size:4em;
+	font-weight:300;
+	color:#fff;
+	border-left:none;
+	border-top:4px #fff solid;
+	border-bottom:4px #fff solid;
+	padding:20px 0 20px;
+	position: relative;
+	}
+.sct2 .wrap cite{	
+	font-family: 'Yanone Kaffeesatz', sans-serif;	
+	font-size:30px;
+	font-weight:400;
+	color:#000;
+	border:none;
+	text-transform:uppercase;
+	}
+/***************************************
+****************************************
+Section 3 Designer
+****************************************
+***************************************/
+.sct3{
+	height:690px;
+	background:#f6f6f6;
+	position:relative;
+	}
+.sct3 .wrap{
+	margin-top:220px;
+	text-align:center;
+	}	
+.sct3 .wrap .script{
+	font-family: 'Leckerli One', cursive; 
+	color:#ffd200;
+	font-size:110px;
+	}
+.sct3 .wrap .sanSerif{
+	font-family: 'Open Sans Condensed', sans-serif;
+	color:#5e5e5e;
+	font-size:54px;
+	font-weight:300;
+	text-transform:uppercase;
+	}
+.sct3 .wrap p{
+	font-family: 'Yanone Kaffeesatz', sans-serif;	
+	font-size:24px;
+	font-weight:300;
+	color:#3b3b3b;
+	}
+.pencil{
+	background:url(../img/pencil.gif) 0 60px no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width:50%;
+	height:690px;
+	}
+/***************************************
+****************************************
+Section Work Tiles
+****************************************
+***************************************/
+#workTile{}
+.tb{
+	display:block;
+	-webkit-transition:0.4s ease-in-out;
+	-moz-transition:0.4s ease-in-out;
+	-ms-transition:0.4s ease-in-out;
+	-o-transition:0.4s ease-in-out;
+	transition:0.4s ease-in-out;
+}
+.thumb1{
+	background:url(../img/tn1.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn1.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+	filter: alpha(opacity=1);
+	-moz-opacity:1;
+	-khtml-opacity:1;
+	opacity:1;
+	}
+.thumb1:hover,
+.thumb1:active {
+	background:url(../img/tn1a.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn1a.jpg', sizingMethod='scale');
+}
+.thumb2{
+	background:url(../img/tn2.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn2.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+	filter: alpha(opacity=1);
+	-moz-opacity:1;
+	-khtml-opacity:1;
+	opacity:1;
+	}
+.thumb2:hover,
+.thumb2:active {
+	background:url(../img/tn2a.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn2a.jpg', sizingMethod='scale');
+}
+.thumb3{
+	background:url(../img/tn3.gif);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn3.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+	filter: alpha(opacity=1);
+	-moz-opacity:1;
+	-khtml-opacity:1;
+	opacity:1;
+	}
+.thumb3:hover,
+.thumb3:active {
+	background:url(../img/tn3a.gif);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn3.jpg', sizingMethod='scale');
+}
+.thumb4{
+	background:url(../img/tn4.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn4.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+	filter: alpha(opacity=1);
+	-moz-opacity:1;
+	-khtml-opacity:1;
+	opacity:1;
+	}
+.thumb4:hover,
+.thumb4:active {
+	background:url(../img/tn4a.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn4.jpg', sizingMethod='scale');
+}
+.thumb5{
+	background:url(../img/tn5.gif);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn5.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+	filter: alpha(opacity=1);
+	-moz-opacity:1;
+	-khtml-opacity:1;
+	opacity:1;
+	}
+.thumb5:hover,
+.thumb5:active {
+	background:url(../img/tn5a.gif);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn5.jpg', sizingMethod='scale');
+}
+.thumb6{
+	background:url(../img/tn6.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn6.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+	filter: alpha(opacity=1);
+	-moz-opacity:1;
+	-khtml-opacity:1;
+	opacity:1;
+	}
+.thumb6:hover,
+.thumb6:active {
+	background:url(../img/tn6a.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn6.jpg', sizingMethod='scale');
+}
+.thumb7{
+	background:url(../img/tn7.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn7.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+	filter: alpha(opacity=1);
+	-moz-opacity:1;
+	-khtml-opacity:1;
+	opacity:1;
+
+	}
+.thumb7:hover,
+.thumb7:active {
+	background:url(../img/tn7a.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn7a.jpg', sizingMethod='scale');
+}
+.thumb8{
+	background:url(../img/tn8.gif);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn8.gif', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+	filter: alpha(opacity=1);
+	-moz-opacity:1;
+	-khtml-opacity:1;
+	opacity:1;
+	}
+.thumb8:hover,
+.thumb8:active {
+	background:url(../img/tn8a.gif);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn8a.gif', sizingMethod='scale');
+}
+
+.thumb9{
+	background:url(../img/tn9.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn9.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+	filter: alpha(opacity=1);
+	-moz-opacity:1;
+	-khtml-opacity:1;
+	opacity:1;
+	}
+.thumb9:hover,
+.thumb9:active {
+	background:url(../img/tn9a.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn9a.jpg', sizingMethod='scale');
+}
+.thumb10{
+	background:url(../img/tn10.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn10.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+	filter: alpha(opacity=1);
+	-moz-opacity:1;
+	-khtml-opacity:1;
+	opacity:1;
+	}
+.thumb10:hover,
+.thumb10:active {
+	background:url(../img/tn10a.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn10a.jpg', sizingMethod='scale');
+}
+.thumb11{
+	background:url(../img/tn11.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn11.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+	filter: alpha(opacity=1);
+	-moz-opacity:1;
+	-khtml-opacity:1;
+	opacity:1;
+	}
+.thumb11:hover,
+.thumb11:active {
+	background:url(../img/tn11a.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn11a.jpg', sizingMethod='scale');
+}
+.thumb12{
+	background:url(../img/tn12.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn12.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+	filter: alpha(opacity=1);
+	-moz-opacity:1;
+	-khtml-opacity:1;
+	opacity:1;
+	}
+.thumb12:hover,
+.thumb12:active {
+	background:url(../img/tn12a.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn12a.jpg', sizingMethod='scale');
+}
+.thumb13{
+	background:url(../img/tn13.gif);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn13.gif', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+	filter: alpha(opacity=1);
+	-moz-opacity:1;
+	-khtml-opacity:1;
+	opacity:1;
+	}
+.thumb13:hover,
+.thumb13:active {
+	background:url(../img/tn13a.gif);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn13a.gif', sizingMethod='scale');
+}
+
+
+/***************************************
+****************************************
+Section 4 Quote 2
+****************************************
+***************************************/
+.sct4{
+	height:700px;
+	background:#fff;
+	position:relative;
+	}
+.sct4 .wrap{
+	margin-top:270px;
+	text-align:center;
+	}
+.sct4 .wrap blockquote:before{
+	font-size:120px;
+	font-weight:700;
+	font-family: 'News Cycle', sans-serif;	
+	color: #7A7A7A;
+    content: "\201D";
+    display: block;
+    left:0;
+    position: absolute;
+    top: -50px;
+	}	
+.sct4 .wrap blockquote{
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size:4em;
+	font-weight:300;
+	color:#5e5e5e;
+	border-top:3px solid #ccc;
+	border-bottom:3px solid #ccc;
+	border-left:none;
+	border-right:none;
+	padding:20px 0 20px;
+	position: relative;
+
+	}
+.sct4 .wrap cite{	
+	font-family: 'Yanone Kaffeesatz', sans-serif;	
+	font-size:30px;
+	font-weight:400;
+	color:#2d2d2d;
+	border:none;
+	text-transform:uppercase;
+	}
+/***************************************
+****************************************
+Section 4a Coder
+****************************************
+***************************************/
+#section-4{
+	background:#2b2b2b;
+	background-size:cover
+	}
+.sct4a .wrap{
+	margin-top:200px;
+	text-align:left;
+	padding-left:50px;
+}
+.sct4a .leftWrap{
+	margin-top:140px;
+}
+.sct4a .wrap .script{
+	font-family: 'Leckerli One', cursive; 
+	color:#ffd200;
+	font-size:110px;
+	}
+.sct4a .wrap .sanSerif{
+	font-family: 'Open Sans Condensed', sans-serif;
+	color:#fff;
+	font-size:54px;
+	font-weight:300;
+	text-transform:uppercase;
+	}
+.sct4a .wrap p{
+	font-family: 'Yanone Kaffeesatz', sans-serif;	
+	font-size:24px;
+	font-weight:300;
+	color:#fff;
+	}
+.sct4a .logoWrap{
+	margin-bottom:15px
+	}
+.sct4a .logoPS{
+	background:url(../img/logoPsBW.jpg);
+	}
+.sct4a .logoAI{
+	background:url(../img/logoAiBW.jpg);
+	}
+.sct4a .logoFL{
+	background:url(../img/logoFlBW.jpg);
+	}
+.sct4a .logoJQUERY{
+	background:url(../img/logojqeryBW.gif);
+	}
+.sct4a .logoHTML{
+	background:url(../img/logohtmlBW.gif);
+	}
+.sct4a .logoCSS{
+	background:url(../img/logocssBW.gif);
+	}
+.sct4a .logoCSS, .sct4a .logoHTML, .sct4a .logoJQUERY, .sct4a .logoFL, .sct4a .logoAI, .sct4a .logoPS{
+	width:80%;
+	height:auto;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	border:8px solid #CCC;
+	}
+/***************************************
+****************************************
+Section 5 Photographer
+****************************************
+***************************************/
+.sct5{
+	height:990px;
+	background:url(../img/lense.jpg) no-repeat 50% 0 ;
+	position:relative;
+	}
+.sct5 .wrap{
+	margin-top:150px;
+	text-align:center;
+	}
+.sct5 .wrap .script{
+	font-family: 'Leckerli One', cursive; 
+	color:#ffd200;
+	font-size:110px;
+	}		
+.sct5 .wrap .sanSerif{
+	font-family: 'Open Sans Condensed', sans-serif;
+	color:#000;
+	font-size:60px;
+	font-weight:300;
+	text-transform:uppercase;
+	}
+.sct5 .wrap p{
+	font-family: 'Yanone Kaffeesatz', sans-serif;	
+	font-size:24px;
+	font-weight:300;
+	color:#000;
+	}	
+/***************************************
+****************************************
+Section 6 Photographer
+****************************************
+***************************************/
+.sct6{
+	height:300px;
+	background-color:#ffd200;
+	position:relative;
+	}
+.sct6 .wrap{
+	margin-top:2%;
+	text-align:center;
+	}
+.sct6 .wrap .script{
+	font-family: 'Leckerli One', cursive; 
+	color:#000;
+	font-size:180px;
+
+	}		
+.sct6 .wrap .sanSerif{
+	font-family: 'Open Sans Condensed', sans-serif;
+	color:#fff;
+	font-size:36px;
+	font-weight:300;
+	text-transform:uppercase;
+	}
+.sct6 .wrap p{
+	font-family: 'Yanone Kaffeesatz', sans-serif;	
+	font-size:24px;
+	font-weight:300;
+	color:#3b3b3b;
+	}	
+/***************************************
+****************************************
+Section 6 Photo Exapmples
+****************************************
+***************************************/
+.sct7{
+	height:800px;
+	background:url(../img/sct7.jpg) no-repeat 50% 0;
+	position:relative;
+	}
+.sct8{
+	height:800px;
+	background:url(../img/sct8.jpg) no-repeat 50% 0 fixed;
+	position:relative;
+	}
+.sct9{
+	height:800px;
+	background:url(../img/sct9.jpg) no-repeat 50% 0;
+	position:relative;
+	}	
+
+
+.yellow{
+	color:#ffd200;
+	}	
+.sizeBig{
+	font-size:100px;
+	font-weight:700;
+	font-family: 'News Cycle', sans-serif;	
+	display:inline-block;border:1px red solid;vertical-align:baseline
+	}
+	
+
+/***************************************
+****************************************
+Photo Tile
+****************************************
+***************************************/
+#photoTile{}
+.photothumb1{
+	background:url(../img/ptn1.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/ptn1.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+	filter: alpha(opacity=1);
+	-moz-opacity:1;
+	-khtml-opacity:1;
+	opacity:1;
+	}
+.photothumb1:hover,
+.photothumb1:active {
+	background:url(../img/ptn1a.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/ptn1a.jpg', sizingMethod='scale');
+}
+.photothumb2{
+	background:url(../img/ptn2.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn2.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+	filter: alpha(opacity=1);
+	-moz-opacity:1;
+	-khtml-opacity:1;
+	opacity:1;
+	}
+.photothumb2:hover,
+.photothumb2:active {
+	background:url(../img/ptn2a.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/ptn2a.jpg', sizingMethod='scale');
+}
+.photothumb3{
+	background:url(../img/ptn3.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/ptn3.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+	filter: alpha(opacity=1);
+	-moz-opacity:1;
+	-khtml-opacity:1;
+	opacity:1;
+	}
+.photothumb3:hover,
+.photothumb3:active {
+	background:url(../img/ptn3a.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/ptn3a.jpg', sizingMethod='scale');
+}
+.photothumb4{
+	background:url(../img/ptn4.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/ptn4.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+	filter: alpha(opacity=1);
+	-moz-opacity:1;
+	-khtml-opacity:1;
+	opacity:1;
+	}
+.photothumb4:hover,
+.photothumb4:active {
+	background:url(../img/ptn4a.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/ptn4a.jpg', sizingMethod='scale');
+}
+.photothumb5{
+	background:url(../img/ptn5.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/ptn5.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+	filter: alpha(opacity=1);
+	-moz-opacity:1;
+	-khtml-opacity:1;
+	opacity:1;
+	}
+.photothumb5:hover,
+.photothumb5:active {
+	background:url(../img/ptn5a.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/ptn5a.jpg', sizingMethod='scale');
+}
+.photothumb6{
+	background:url(../img/ptn6.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/ptn6.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+	filter: alpha(opacity=1);
+	-moz-opacity:1;
+	-khtml-opacity:1;
+	opacity:1;
+	}
+.photothumb6:hover,
+.photothumb6:active {
+	background:url(../img/ptn6a.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/ptn6a.jpg', sizingMethod='scale');
+}
+.photothumb7{
+	background:url(../img/ptn7.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/ptn7.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+	filter: alpha(opacity=1);
+	-moz-opacity:1;
+	-khtml-opacity:1;
+	opacity:1;
+
+	}
+.photothumb7:hover,
+.photothumb7:active {
+	background:url(../img/ptn7a.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/ptn7a.jpg', sizingMethod='scale');
+}
+.photothumb8{
+	background:url(../img/ptn8.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/ptn8.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+	filter: alpha(opacity=1);
+	-moz-opacity:1;
+	-khtml-opacity:1;
+	opacity:1;
+	}
+.photothumb8:hover,
+.photothumb8:active {
+	background:url(../img/ptn8a.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/ptn8a.jpg', sizingMethod='scale');
+}
+
+.photothumb9{
+	background:url(../img/tn9.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn9.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+	filter: alpha(opacity=1);
+	-moz-opacity:1;
+	-khtml-opacity:1;
+	opacity:1;
+	}
+.photothumb9:hover,
+.photothumb9:active {
+	background:url(../img/tn9a.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn9a.jpg', sizingMethod='scale');
+}
+.photothumb10{
+	background:url(../img/tn10.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn10.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+	filter: alpha(opacity=1);
+	-moz-opacity:1;
+	-khtml-opacity:1;
+	opacity:1;
+	}
+.photothumb10:hover,
+.photothumb10:active {
+	background:url(../img/tn10a.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn10a.jpg', sizingMethod='scale');
+}
+.photothumb11{
+	background:url(../img/tn11.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn11.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+	filter: alpha(opacity=1);
+	-moz-opacity:1;
+	-khtml-opacity:1;
+	opacity:1;
+	}
+.photothumb11:hover,
+.photothumb11:active {
+	background:url(../img/tn11a.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn11a.jpg', sizingMethod='scale');
+}
+.photothumb12{
+	background:url(../img/tn12.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn12.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+	filter: alpha(opacity=1);
+	-moz-opacity:1;
+	-khtml-opacity:1;
+	opacity:1;
+	}
+.photothumb12:hover,
+.thumb12:active {
+	background:url(../img/tn12a.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn12a.jpg', sizingMethod='scale');
+}
+
+
+/***************************************
+****************************************
+Section 7 Contact
+****************************************
+***************************************/
+.sct10{
+	background:#fff;
+	}
+.sct10 .wrap{
+	margin-top:20px;
+	text-align:center;
+	}
+.sct10 .logoWrap{
+	margin-top:60px;
+	}	
+.sct10 .myImage{
+	width:25%;
+	height:auto;
+	text-align:center;
+	background:url(../img/me.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	border:10px solid #CCC;
+	margin:0 auto;
+	}
+.sct10 .wrap .script{
+	font-family: 'Leckerli One', cursive; 
+	color:#ffd200;
+	font-size:55px;
+	}
+.sct10 .wrap .sanSerif{
+	font-family: 'Open Sans Condensed', sans-serif;
+	color:#5e5e5e;
+	font-size:54px;
+	font-weight:300;
+	text-transform:uppercase;
+	}
+.sct10 .wrap p{
+	font-family: 'Yanone Kaffeesatz', sans-serif;	
+	font-size:26px;
+	font-weight:300;
+	color:#3b3b3b;
+	}
+.contactWrap{
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight:bold;
+	font-size:1.3em;
+	color:#767676;
+	margin-top:70px;
+	line-height:1.2em;
+	}
+.contactWrap a{
+	color:#767676;
+	transition:All 0.4s ease;
+	-webkit-transition:All 0.3s ease;
+	-moz-transition:All 0.3s ease;
+	-o-transition:All 0.3s ease;
+	}
+.contactWrap a:hover{
+	text-decoration:none;
+	color:#0e6ce0;
+	}
+.contactWrap a:active{
+	text-decoration:none;
+	color:#0e6ce0;
+	}
+	
+/************footer***************
+*********************************/
+
+.footer{
+	text-transform:uppercase;
+	color:#8d8d8d;
+	font-weight:bold;
+	font-family: 'Open Sans Condensed', sans-serif;
+	background:#eee;
+	text-align:center;
+	padding-top:7px;
+	font-size:0.9em;
+	position:absolute;
+	bottom:0;
+	width:100%;
+	}	
+
+@media (min-width: 1200px) {}
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+/*********Section 1 Intro max-width: 991px*********/
+
+.sct1 .wrap .script{
+	font-family: 'Leckerli One', cursive; 
+	color:#ffd200;
+	font-size:100px;
+	line-height:0.7;
+	}
+.sct1 .wrap .sanSerif{
+	font-family: 'Open Sans Condensed', sans-serif;
+	color:#fff;
+	font-size:70px;
+	font-weight:300;
+	text-transform:uppercase;
+	}
+.sct1 .wrap p{
+	font-family: 'Yanone Kaffeesatz', sans-serif;	
+	font-size:30px;
+	font-weight:300;
+	color:#333;
+	padding:0;
+	}
+
+/*********Section 3 Designer max-width: 991px*********/
+	
+.sct3{
+	height:720px;
+	background:#f6f6f6;
+	position:relative;
+	}
+.sct3 .wrap{
+	margin-top:220px;
+	text-align:center;
+	}	
+.sct3 .wrap .script{
+	color:#ffd200;
+	font-size:110px;
+	display:block
+	}
+.sct3 .wrap .sanSerif{
+	font-family: 'Open Sans Condensed', sans-serif;
+	color:#5e5e5e;
+	font-size:48px;
+	font-weight:300;
+	text-transform:uppercase;
+	line-height:1;
+	}
+.sct3 .wrap p{
+	font-family: 'Yanone Kaffeesatz', sans-serif;	
+	font-size:20px;
+	font-weight:300;
+	color:#3b3b3b;
+	padding-top:20px
+	}
+.pencil{
+	background:url(../img/pencil.gif) 50% 60px no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width:50%;
+	height:720px;	
+	margin:0 auto;
+	}	
+
+
+/*********Section 4a Coder max-width: 991px*********/
+.sct4a{
+	height:780px;
+	background:#2b2b2b;
+	}
+.sct4a .wrap{
+	margin-top:250px;
+	text-align:left;
+	padding:0 20px;
+}
+.sct4a .leftWrap{
+	margin-top:210px;
+	padding:0 20px;
+}
+
+.sct4a .logoWrap{
+	margin-bottom:15px;
+	}	
+.sct4a .wrap .script{
+	font-family: 'Leckerli One', cursive; 
+	color:#ffd200;
+	font-size:110px;
+	}
+.sct4a .wrap .sanSerif{
+	font-family: 'Open Sans Condensed', sans-serif;
+	color:#fff;
+	font-size:54px;
+	font-weight:300;
+	text-transform:uppercase;
+	}
+.sct4a .wrap p{
+	font-family: 'Yanone Kaffeesatz', sans-serif;	
+	font-size:20px;
+	font-weight:300;
+	color:#fff;
+	}
+
+/*******Section 10 Contact max-width: 991px********/	
+	
+.sct10{
+	}
+.sct10 .wrap{
+	margin-top:20px;
+	padding:0 20px
+	}
+.sct10 .logoWrap{
+	margin-top:100px;
+	}	
+.sct10 .myImage{
+	width:20%;
+	border:8px solid #CCC;
+	margin:0 auto
+	}
+.sct10 .wrap .script{
+	font-size:50px;
+	}
+.sct10 .wrap .sanSerif{
+	font-size:60px;
+	}
+.sct10 .wrap p{
+	font-size:28px;
+	}	
+.col-cm-offset-2{
+    margin-left: 16.666666666666664%;
+	}	
+
+
+}
+
+@media (max-width: 767px) {
+/*********Section 1 Intro max-width: 767px*********/
+#section-1{
+	background: #ccc7c9;
+	}
+.sct1 .wrap{
+	top:15%;
+	left:50%;
+	margin:0 0 0 -50%;
+	}
+.sct1 .wrap .script{
+	color:#ffd200;
+	font-size:85px;
+	line-height:1;
+	}
+.sct1 .wrap .sanSerif{
+	color:#fff;
+	font-size:43px;
+	font-weight:300;
+	}
+.sct1 .wrap p{
+	font-family: 'Yanone Kaffeesatz', sans-serif;	
+	font-size:20px;
+	font-weight:300;
+	color:#333;
+	padding:0;
+	}	
+
+/*********Section 2 Quote max-width: 767px*********/
+
+.sct2 .wrap{
+	margin-top:20px;
+	text-align:center;
+	padding:30px 15px 10px 15px
+	}
+.sct2 .wrap blockquote:before{
+	font-size:120px;
+	font-weight:700;
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: #fff;
+    content: "\201D";
+    display: block;
+    left:0;
+    position: absolute;
+    top: -30px;
+	}	
+.sct2 .wrap blockquote{
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size:3em;
+	font-weight:300;
+	color:#fff;
+	border-left:none;
+	border-top:4px #fff solid;
+	border-bottom:4px #fff solid;
+	padding:20px 0 20px;
+	position: relative;
+	}
+.sct2 .wrap cite{	
+	font-family: 'Yanone Kaffeesatz', sans-serif;	
+	font-size:30px;
+	font-weight:400;
+	color:#000;
+	border:none;
+	text-transform:uppercase;
+	}
+/*********Section 3 Designer max-width: 767px*********/
+	
+.sct3{
+	height:520px;
+	background:#f6f6f6;
+	position:relative;
+	}
+.sct3 .wrap{
+	margin-top:80px;
+	text-align:center;
+	}	
+.sct3 .wrap .script{
+	color:#ffd200;
+	font-size:90px;
+	}
+.sct3 .wrap .sanSerif{
+	font-family: 'Open Sans Condensed', sans-serif;
+	color:#5e5e5e;
+	font-size:30px;
+	font-weight:300;
+	text-transform:uppercase;
+	line-height:1;
+	}
+.sct3 .wrap p{
+	font-family: 'Yanone Kaffeesatz', sans-serif;	
+	font-size:20px;
+	font-weight:300;
+	color:#3b3b3b;
+	padding-top:20px
+	}
+.pencil{
+	display:none;
+	}
+
+
+/*********Section 4a Coder max-width: 767px*********/
+.sct4a{
+	height:780px;
+	position:relative;
+	}
+.sct4a .wrap{
+	margin-top:0;
+	text-align:center;
+	padding:0 20px
+}
+.sct4a .leftWrap{
+	margin-top:0;
+	padding:0 20px;
+}
+.sct4a .wrap .script{
+	font-family: 'Leckerli One', cursive; 
+	color:#ffd200;
+	font-size:95px;
+	}
+.sct4a .wrap .sanSerif{
+	font-family: 'Open Sans Condensed', sans-serif;
+	color:#fff;
+	font-size:34px;
+	font-weight:300;
+	text-transform:uppercase;
+	}
+.sct4a .wrap p{
+	font-family: 'Yanone Kaffeesatz', sans-serif;	
+	font-size:20px;
+	font-weight:300;
+	color:#fff;
+	}
+.sct4a .logoWrap{
+	margin-bottom:15px
+	}
+.sct4a .logoPS{
+	border:5px solid #CCC;
+	}
+.sct4a .logoAI{
+	border:5px solid #CCC;
+	}
+.sct4a .logoFL{
+	border:5px solid #CCC;
+	}
+.sct4a .logoJQUERY{
+	border:5px solid #CCC;
+	}
+.sct4a .logoHTML{
+	border:5px solid #CCC;
+	}
+.sct4a .logoCSS{
+	border:5px solid #CCC;
+	}
+/*******Section Photographer max-width: 767px********/	
+.sct5{
+	height:990px;
+	background:url(../img/lense.jpg) no-repeat 50% 0 ;
+	position:relative;
+	}
+.sct5 .wrap{
+	margin-top:70px;
+	text-align:center;
+	padding:0 20px;
+	}
+.sct5 .wrap .script{
+	font-size:180px;
+	display:block;
+	margin:0;
+	padding:0
+	}		
+.sct5 .wrap .sanSerif{
+	font-size:34px;
+	display:block;
+	margin-top:-40px
+	}
+.sct5 .wrap p{
+	font-family: 'Yanone Kaffeesatz', sans-serif;	
+	font-size:20px;
+	font-weight:300;
+	color:#000;
+	}	
+
+/*******Section 10 Contact max-width: 767px********/	
+	
+.sct10{
+	}
+.sct10 .wrap{
+	margin-top:0;
+	padding:0 20px
+	}
+.sct10 .logoWrap{
+	margin-top:0;
+	padding:20px 0 0 0;
+
+	}	
+.sct10 .myImage{
+	width:30%;
+	border:6px solid #CCC;
+	margin:0 auto
+	}
+.sct10 .wrap .script{
+	font-size:40px;
+	}
+.sct10 .wrap .sanSerif{
+	font-size:54px;
+	}
+.sct10 .wrap p{
+	font-size:20px;
+	}
+.contactWrap{
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight:bold;
+	font-size:1.4em;
+	color:#767676;
+	margin-top:0
+	}
+.sct10 .wrap .dlResume{
+	margin-top:w0px;
+	}
+	
+	}
+
+@media screen and (max-width: 400px) {
+/*********Section 1 Intro max-width: 400px*********/
+#section-1{
+	background: #ccc7c9;
+	}
+.sct1 .wrap{
+	top:0;
+	left:50%;
+	margin:0 0 0 -50%;
+	}
+.sct1 .wrap .script{
+	color:#ffd200;
+	font-size:180px;
+	line-height:1;
+	display:block;
+	}
+.sct1 .wrap .sanSerif{
+	color:#fff;
+	font-size:40px;
+	font-weight:300;
+	}
+.sct1 .wrap p{
+	font-size:26px;
+	}
+
+/*********Section 2 Quote max-width: 400px*********/
+
+.sct2 .wrap{
+	margin-top:0;
+	text-align:center;
+	padding:50px 15px 10px 15px;
+	
+	}
+.sct2 .wrap blockquote{
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size:3.2em;
+	font-weight:300;
+	color:#fff;
+	border-left:none;
+	border-top:4px #fff solid;
+	border-bottom:4px #fff solid;
+	padding:25px 0 25px;
+	position: relative;
+	line-height:1.1
+	}
+/*********Section 3 Designer max-width: 400px*********/
+	
+.sct3{
+	height:580px;
+	background:#f6f6f6;
+	position:relative;
+	}
+.sct3 .wrap{
+	margin-top:20px;
+	text-align:center;
+	}	
+.sct3 .wrap .script{
+	color:#ffd200;
+	font-size:110px;
+	display:block;
+	padding-bottom:20px
+	}
+.sct3 .wrap .sanSerif{
+	font-family: 'Open Sans Condensed', sans-serif;
+	color:#5e5e5e;
+	font-size:38px;
+	font-weight:300;
+	text-transform:uppercase;
+	line-height:1;
+	}
+.sct3 .wrap p{
+	font-family: 'Yanone Kaffeesatz', sans-serif;	
+	font-size:22px;
+	font-weight:300;
+	color:#3b3b3b;
+	padding-top:20px
+	}
+.pencil{
+	display:none;
+	}
+	
+/*********Section 4a Coder max-width: 400px*********/
+.sct4a{
+	}
+.sct4a .wrap{
+	margin-top:0;
+	padding-left:0;
+	text-align:center;
+	padding:0 20px;
+}
+
+.sct4a .wrap .script{
+	font-family: 'Leckerli One', cursive; 
+	color:#ffd200;
+	font-size:100px;
+	display:block;
+	}
+.sct4a .wrap .sanSerif{
+	font-family: 'Open Sans Condensed', sans-serif;
+	color:#fff;
+	font-size:38px;
+	font-weight:300;
+	text-transform:uppercase;
+	}
+.sct4a .wrap p{
+	font-family: 'Yanone Kaffeesatz', sans-serif;	
+	font-size:18px;
+	font-weight:300;
+	color:#fff;
+	}
+.sct4a .logoWrap{
+	margin-bottom:0
+	}
+.sct4a .logoPS{
+	border:5px solid #CCC;
+	}
+.sct4a .logoAI{
+	border:5px solid #CCC;
+	}
+.sct4a .logoFL{
+	border:5px solid #CCC;
+	}
+.sct4a .logoJQUERY{
+	border:5px solid #CCC;
+	}
+.sct4a .logoHTML{
+	border:5px solid #CCC;
+	}
+.sct4a .logoCSS{
+	border:5px solid #CCC;
+	}
+/*******Section Photographer max-width: 400px********/	
+.sct5{
+	background:url(../img/lense.jpg) no-repeat 50% 0 ;
+	}
+.sct5 .wrap{
+	margin-top:0;
+	text-align:center;
+	padding:0 20px;
+	}
+.sct5 .wrap .script{
+	font-size:180px;
+	display:block;
+	margin:0;
+	padding:0
+	}		
+.sct5 .wrap .sanSerif{
+	font-size:32px;
+	display:block;
+	margin-top:-40px
+	}
+.sct5 .wrap p{
+	font-family: 'Yanone Kaffeesatz', sans-serif;	
+	font-size:20px;
+	font-weight:300;
+	color:#000;
+	}	
+/*******Section 10 Contact max-width: 400px********/	
+.sct10{
+	}
+.sct10 .wrap{
+	margin-top:0;
+	padding:0 20px
+	}
+.sct10 .logoWrap{
+	margin-top:0;
+	padding:40px 0 0 0;
+	}	
+.sct10 .myImage{
+	width:35%;
+	margin:0 auto 0;
+	border:5px solid #CCC;
+
+	}
+.sct10 .wrap .script{
+	font-size:38px;
+	}
+
+.sct10 .wrap p{
+	font-size:20px;
+	}	
+.contactWrap{
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight:bold;
+	font-size:1.3em;
+	color:#767676;
+	margin-top:5px
+	}
+.contactWrap div{
+	margin-top:10px
+	}
+.sct10 .wrap .dlResume{
+	margin-top:45px;
+	}	
+}
+
