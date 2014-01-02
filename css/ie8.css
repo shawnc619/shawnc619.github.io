@@ -117,3 +117,42 @@
 	background-image:none;
 	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn13a.gif', sizingMethod='scale');
 }
+
+
+
+
+
+
+
+
+
+.sct4a .logoPS{
+	background:none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/logoPsBW.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/logoPsBW.jpg', sizingMethod='scale')";
+	}
+.sct4a .logoAI{
+	background:none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/logoAiBW.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/logoAiBW.jpg', sizingMethod='scale')";
+	}
+.sct4a .logoFL{
+	background:none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/logoFlBW.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/logoFlBW.jpg', sizingMethod='scale')";
+	}
+.sct4a .logoJQUERY{
+	background:none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/logojqeryBW.gif', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/logojqeryBW.gif', sizingMethod='scale')";
+	}
+.sct4a .logoHTML{
+	background:none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/logohtmlBW.gif', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/logohtmlBW.gif', sizingMethod='scale')";
+	}
+.sct4a .logoCSS{
+	background:none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/logocssBW.gif', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/logocssBW.gif', sizingMethod='scale')";
+	}
