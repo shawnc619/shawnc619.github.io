@@ -1004,12 +1004,12 @@ Section 7 Contact
 	color:#8d8d8d;
 	font-weight:bold;
 	font-family: 'Open Sans Condensed', sans-serif;
-	background:#eee;
+	background:none;
 	text-align:center;
 	padding:7px 0 5px;
 	font-size:0.9em;
 	position:absolute;
-	bottom:0;
+	bottom:0%;
 	width:100%;
 	}	
 
@@ -1351,9 +1351,10 @@ Section 7 Contact
 
 	}	
 .sct10 .myImage{
-	width:30%;
+	width:15%;
 	border:6px solid #CCC;
-	margin:0 auto
+	margin:0 auto;
+	
 	}
 .sct10 .wrap .script{
 	font-size:40px;
@@ -1367,26 +1368,14 @@ Section 7 Contact
 .contactWrap{
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-weight:bold;
-	font-size:1.4em;
+	font-size:1.2em;
 	color:#767676;
 	margin-top:0
 	}
 .sct10 .wrap .dlResume{
 	margin-top:0px;
 	}
-.footer{
-	text-transform:uppercase;
-	color:#8d8d8d;
-	font-weight:bold;
-	font-family: 'Open Sans Condensed', sans-serif;
-	background:#eee;
-	text-align:center;
-	padding:7px 0 5px;
-	font-size:0.8em;
-	position:absolute;
-	bottom:0;
-	width:100%;
-}	
+	
 	
 }
 
