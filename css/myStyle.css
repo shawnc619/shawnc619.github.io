@@ -414,12 +414,12 @@ Section Work Tiles
 
 .viewWork a{
 	font-family: 'Open Sans Condensed', sans-serif;
-	font-size:2em;
+	font-size:1.8em;
 	font-weight:normal;
 	display:block;
 	text-align:center;
 	padding:5px 0;
-	color:#2d2d2d;
+	color:#2b2b2b;
 	background:#ffd200		
 
 	}
