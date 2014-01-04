@@ -231,7 +231,24 @@
 	background-image:none;
 	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/ptn8a.jpg', sizingMethod='scale');
 }
-
+.photothumb9{
+	background-image:none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/ptn9.jpg', sizingMethod='scale');
+	}
+.photothumb9:hover,
+.photothumb9:active {
+	background-image:none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/ptn9a.jpg', sizingMethod='scale');
+}
+.photothumb10{
+	background-image:none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/ptn10.jpg', sizingMethod='scale');
+	}
+.photothumb10:hover,
+.photothumb10:active {
+	background-image:none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/ptn10a.jpg', sizingMethod='scale');
+}
 
 
 .sct10 .myImage{
