@@ -1038,7 +1038,9 @@ Section 7 Contact
 	font-weight:300;
 	color:#fff;
 	}
-
+.sct4a .logoCSS, .sct4a .logoHTML, .sct4a .logoJQUERY, .sct4a .logoFL, .sct4a .logoAI, .sct4a .logoPS{
+	width:80%;
+}
 /*******Section 10 Contact max-width: 991px********/	
 	
 .sct10{
