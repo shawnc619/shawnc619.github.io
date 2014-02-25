@@ -120,6 +120,15 @@
 	background-image:none;
 	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn13a.gif', sizingMethod='scale');
 }
+.thumb14{
+	background-image:none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn14.jpg', sizingMethod='scale');
+	}
+.thumb14:hover,
+.thumb14:active {
+	background-image:none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn14a.jpg', sizingMethod='scale');
+}
 
 
 
