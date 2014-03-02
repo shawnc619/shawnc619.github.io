@@ -430,16 +430,19 @@ Section Work Tiles
 	-o-background-size: cover;
 	background-size: cover;
 }
-
+.viewWork{
+	height:50px		
+}
 .viewWork a{
 	font-family: 'Open Sans Condensed', sans-serif;
-	font-size:1.8em;
-	font-weight:normal;
+	font-size:1.7em;
+	font-weight:bold;
 	display:block;
 	text-align:center;
-	padding:5px 0;
+	padding:15px 0;
 	color:#2b2b2b;
-	background:#ffd200		
+	background:#ffd200;
+	text-transform:uppercase;
 	}
 .viewWork a:hover,.viewWork a:active{
 	text-decoration:none;
