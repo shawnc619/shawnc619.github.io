@@ -430,6 +430,46 @@ Section Work Tiles
 	-o-background-size: cover;
 	background-size: cover;
 }
+.thumb15{
+	background:url(../img/tn15.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+	filter: alpha(opacity=1);
+	-moz-opacity:1;
+	-khtml-opacity:1;
+	opacity:1;
+	}
+.thumb15:hover,
+.thumb15:active {
+	background:url(../img/tn15a.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.thumb16{
+	background:url(../img/tn16.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+	filter: alpha(opacity=1);
+	-moz-opacity:1;
+	-khtml-opacity:1;
+	opacity:1;
+	}
+.thumb16:hover,
+.thumb16:active {
+	background:url(../img/tn16a.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
 .viewWork{
 	height:50px		
 }

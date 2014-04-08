@@ -129,7 +129,24 @@
 	background-image:none;
 	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn14a.jpg', sizingMethod='scale');
 }
-
+.thumb15{
+	background-image:none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn15.jpg', sizingMethod='scale');
+	}
+.thumb15:hover,
+.thumb15:active {
+	background-image:none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn15a.jpg', sizingMethod='scale');
+}
+.thumb16{
+	background-image:none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn16.jpg', sizingMethod='scale');
+	}
+.thumb16:hover,
+.thumb16:active {
+	background-image:none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/tn16a.jpg', sizingMethod='scale');
+}
 
 
 
