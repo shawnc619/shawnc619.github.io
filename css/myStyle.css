@@ -1145,8 +1145,9 @@ Section 7 Contact
 	margin:0 0 0 -50%;
 	}
 .sct1 .wrap .script{
-	font-size:85px;
+	font-size:140px;
 	line-height:1;
+	display: block
 	}
 .sct1 .wrap .sanSerif{
 	font-size:43px;
@@ -1236,7 +1237,7 @@ Section 7 Contact
 	position:relative;
 	}
 .sct4a .wrap{
-	margin-top:0;
+	margin-top:48px;
 	text-align:center;
 	padding:0 20px
 }
@@ -1329,13 +1330,13 @@ Section 7 Contact
 
 	}	
 .sct10 .myImage{
-	width:17%;
+	width:45%;
 	border:6px solid #CCC;
 	margin:0 auto;
 	
 	}
 .sct10 .wrap .script{
-	font-size:35px;
+	font-size:65px;
 	}
 .sct10 .wrap p{
 	font-size:18px;
@@ -1360,7 +1361,6 @@ Section 7 Contact
 	background: #e3e3e3;
 	}
 .sct1 .wrap{
-	top:0;
 	left:50%;
 	margin:0 0 0 -50%;
 	}
@@ -1531,7 +1531,7 @@ Section 7 Contact
 
 	}
 .sct10 .wrap .script{
-	font-size:38px;
+	font-size:px;
 	}
 
 .sct10 .wrap p{
