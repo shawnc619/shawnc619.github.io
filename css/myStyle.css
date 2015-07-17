@@ -74,6 +74,17 @@ Section 2 Quote
     position: absolute;
     top: -30px;
 	}	
+.sct2 .wrap blockquote:after{
+	font-size:120px;
+	font-weight:700;
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: #fff;
+    content: "\201D";
+    display: block;
+    right:0;
+    position: absolute;
+    top: -30px;
+	}	
 .sct2 .wrap blockquote{
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-size:4em;
@@ -1174,6 +1185,17 @@ Section 7 Contact
     content: "\201D";
     display: block;
     left:0;
+    position: absolute;
+    top: -30px;
+	}	
+.sct2 .wrap blockquote:after{
+	font-size:120px;
+	font-weight:700;
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: #fff;
+    content: "\201D";
+    display: block;
+    right:0;
     position: absolute;
     top: -30px;
 	}	
