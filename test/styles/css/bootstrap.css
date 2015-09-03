@@ -6165,6 +6165,8 @@ button.close {
 overflow:auto;
   padding: 0;
   margin:0;
+    margin: 30px 10%;
+
 }
 
 /*Modal Info*/
@@ -6196,7 +6198,7 @@ overflow:auto;
 
 .modal-content {
   position: relative;
-  min-height: 100%;
+  /*min-height: 100%;*/
   height: auto;
   background-color: #fff;
   -webkit-background-clip: padding-box;
