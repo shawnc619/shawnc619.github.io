@@ -60,83 +60,78 @@
     <main class="container">
         <section class="row">
             <div class="col-xs-12 border-btm clearfix">
-                <h1 class="pull-left">My DEFT Ref No </h1>
-                <span class="iconInfo"><a href="#" data-toggle="modal" data-target=".modalInfo"><span class="fa fa-info-circle"></span></a></span>
+                <h1 class="pull-left">My Wallet</h1>
             </div>
             <div class="col-xs-12 border-btm">
                 <a class="clearfix addWrap" data-toggle="modal" data-target=".modalAdd">
-                        <h3 class="blueAdd vcenter">Add DEFT number</h3>
-                        <div class="plus vcenter">+</div>
+                    <h3 class="blueAdd vcenter">Add payment method</h3>
+                    <div class="plus vcenter">+</div>
                 </a>
             </div>
             <div class="col-xs-12">
-                <ul class="list">
-                    <li>
-                        <a class="clearfix info-Wrap" data-toggle="modal" data-target=".modalEdit">
-                            <div class="vcenter info-block">
-                                <h3>My Strata bill</h3>
-                                <p>HS BENTLEIGH</p>
-                                <p><span class="dataLabelStd">DEFT Ref &nbsp;</span> 11122233</p>
-                                <p><span class="dataLabelStd">Start date&nbsp;</span> 07/04/2015</p>
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a class="accordion-toggle"
+                            data-parent="#accordion" data-toggle="collapse" href=
+                            "#collapseOne">Cards</a></h4>
+                        </div>
+                        <div class="panel-collapse collapse in" id="collapseOne">
+                            <div class="panel-body">
+                                <ul class="list">
+                                    <li>
+                                        <a class="clearfix info-Wrap-Wallet walPriPymn" data-toggle="modal" data-target=".modalEdit">
+                                            <div class="cardIcon vcenter"></div>
+                                            <div class="vcenter info-block">
+                                                <h3>**** 4039</h3>
+                                                <p>John Smith</p>
+                                                <p><span class="dataLabelStd">Expiry date &nbsp;</span>07/17</p>
+                                            </div>
+                                            <div class="editSym vcenter">Edit</div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="clearfix info-Wrap-Wallet" data-toggle="modal" data-target=".modalEdit">
+                                            <div class="cardIcon vcenter"></div>
+                                            <div class="vcenter info-block">
+                                                <h3>**** 4039</h3>
+                                                <p>John Smith</p>
+                                                <p><span class="dataLabelStd">Expiry date &nbsp;</span>07/17</p>
+                                            </div>
+                                            <div class="editSym vcenter">Edit</div>
+                                        </a>
+                                    </li>
+                                </ul>    
+
+
+
+
+
+
+
                             </div>
-                            <div class="editSym vcenter">Edit</div>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="clearfix info-Wrap" data-toggle="modal" data-target=".modalEdit">
-                            <div class="vcenter info-block">
-                                <h3>My Water bill</h3>
-                                <p>HS BENTLEIGH - PM RENT Martin place A/C</p>
-                                <p><span class="dataLabelStd">DEFT Ref &nbsp;</span> 11122233</p>
-                                <p><span class="dataLabelStd">Start date&nbsp;</span> 07/04/2015</p>
-                            </div>
-                            <div class="editSym vcenter">Edit</div>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="clearfix info-Wrap" data-toggle="modal" data-target=".modalEdit">
-                            <div class="vcenter info-block">
-                                <h3>Electricity</h3>
-                                <p>HS BENTLEIGH - PM RENT Martin place A/C</p>
-                                <p><span class="dataLabelStd">DEFT Ref &nbsp;</span> 11122233</p>
-                                <p><span class="dataLabelStd">Start date&nbsp;</span> 07/04/2015</p>
-                            </div>
-                            <div class="editSym vcenter">Edit</div>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="clearfix info-Wrap" data-toggle="modal" data-target=".modalEdit">
-                            <div class="vcenter info-block">
-                                <h3>Gas</h3>
-                                <p>HS BENTLEIGH - PM RENT Martin place A/C</p>
-                                <p><span class="dataLabelStd">DEFT Ref &nbsp;</span> 11122233</p>
-                                <p><span class="dataLabelStd">Start date&nbsp;</span> 07/04/2015</p>
-                            </div>
-                            <div class="editSym vcenter">Edit</div>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="clearfix info-Wrap" data-toggle="modal" data-target=".modalEdit">
-                            <div class="vcenter info-block">
-                                <h3>Phone Bill</h3>
-                                <p>HS BENTLEIGH - PM RENT Martin place A/C</p>
-                                <p><span class="dataLabelStd">DEFT Ref &nbsp;</span> 11122233</p>
-                                <p><span class="dataLabelStd">Start date&nbsp;</span> 07/04/2015</p>
-                            </div>
-                            <div class="editSym vcenter">Edit</div>
-                        </a>
-                    </li>
-                </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
+
         </section>
     </main>
     <footer>
+
+
     </footer>
 
 
 
+
+
+
+
+
+
     <!-- Modal -->
-    <div class="modal fade modalAdd" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal fade modalAdd" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header clearfix">
@@ -177,7 +172,7 @@
             </div>
         </div>
     </div>
-    <div class="modal fade modalEdit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal fade modalEdit" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header clearfix">
@@ -209,7 +204,7 @@
             </div>
         </div>
     </div>
-    <div class="modal fade modalDelete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal fade modalDelete" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -226,30 +221,6 @@
             </div>
         </div>
     </div>
-
-    <!-- Info -->
-
-    <div class="modal fade modalInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-info" role="document">
-            <div class="modal-content">
-                <div class="modal-header clearfix">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">X</span></button>
-                </div>
-                <div class="modal-body">
-                    <h1 class="DRNedit_title">DEFT number</h1>
-                    <p class="DRNInfoHelp">DEFT number is issued by your biller to assist you with payment.</p>
-                    
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default btn-block btn-secondary"  data-dismiss="modal">Got it</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->

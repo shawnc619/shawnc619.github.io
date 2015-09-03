@@ -5711,19 +5711,13 @@ button.list-group-item-danger.active:focus {
 .panel {
   margin-bottom: 20px;
   background-color: #fff;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
-          box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+
 }
 .panel-body {
-  padding: 15px;
+  padding: 0;
 }
 .panel-heading {
-  padding: 10px 15px;
   border-bottom: 1px solid transparent;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
 }
 .panel-heading > .dropdown .dropdown-toggle {
   color: inherit;
@@ -5921,11 +5915,11 @@ button.list-group-item-danger.active:focus {
   border: 0;
 }
 .panel-group {
-  margin-bottom: 20px;
+  margin:0;
 }
 .panel-group .panel {
   margin-bottom: 0;
-  border-radius: 4px;
+  border-radius: 0;
 }
 .panel-group .panel + .panel {
   margin-top: 5px;
@@ -5935,7 +5929,6 @@ button.list-group-item-danger.active:focus {
 }
 .panel-group .panel-heading + .panel-collapse > .panel-body,
 .panel-group .panel-heading + .panel-collapse > .list-group {
-  border-top: 1px solid #ddd;
 }
 .panel-group .panel-footer {
   border-top: 0;
@@ -5944,12 +5937,12 @@ button.list-group-item-danger.active:focus {
   border-bottom: 1px solid #ddd;
 }
 .panel-default {
-  border-color: #ddd;
+  border-color: transparent;
 }
 .panel-default > .panel-heading {
-  color: #333;
-  background-color: #f5f5f5;
-  border-color: #ddd;
+  color: #454545;
+  background-color: #F9F9F9;
+  margin:0 -15px;
 }
 .panel-default > .panel-heading + .panel-collapse > .panel-body {
   border-top-color: #ddd;
@@ -7198,7 +7191,7 @@ p {
 .list li {
     border-bottom:1px solid #F3F3F3;
     margin:0 -15px 0 -15px;
-    padding:5px 15px 15px 15px;
+    padding:0 15px;
     -webkit-transition: all .15s ease-in-out;
     -moz-transition: all .15s ease-in-out;
     -ms-transition: all .15s ease-in-out;
@@ -7244,13 +7237,15 @@ p {
   }
 .info-Wrap{
     display:block;
-    height:120px;
+    height:13em;
     color:#454545;
     cursor: pointer;
+    padding:5px 0 15px;
   }
 .info-Wrap:hover{
     color:#454545;
   }
+
 .info-block{
     max-width: 70%;
     float:left;
@@ -7347,6 +7342,33 @@ p.DRNedit_items_last {
 .colorAction{
   background-color: #ffecef;
 }
+
+/*Accordion*/
+.panel-heading .accordion-toggle{
+    display:block;
+    width:100%;
+    height:100%;
+    padding:15px;
+    font-size:1.2em;
+    font-weight:400;
+}
+.panel-heading .accordion-toggle:after {
+    /* symbol for "opening" panels */
+    font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
+    content: "\e114";    
+    float: right;
+    font-size:1.2em;
+    color: #8b8b8b;
+}
+.panel-heading .accordion-toggle:hover, .panel-heading .accordion-toggle:focus {
+    text-decoration: none;
+}
+.panel-heading .accordion-toggle.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\e113";    /* adjust as needed, taken from bootstrap.css */
+}
+
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
 .info-block{
@@ -7373,11 +7395,39 @@ p.DRNedit_items_last {
 
 
 
+/* Wallet */
 
+.info-Wrap-Wallet{
+    display:block;
+    height:12em;
+    color:#454545;
+    cursor: pointer;
+    margin:0 -15px;
+    padding:0 15px;
+    border-left:4px transparent solid;
 
+  }
+ .walPriPymn{
+  border-left:4px #00A1E0 solid;
+ } 
+.info-Wrap-Wallet:hover{
+    color:#454545;
+  }
+.info-Wrap-Wallet h3{
+  font-size:2.5em;
+  font-weight: 100;
+  margin-bottom:3px;
+}
+.cardIcon{
+  background-color: #fdfdfd;
+  border:1px #ebecec solid;
+  border-radius: 2px;
+  width:5em;
+  height:3.5em;
+  float: left;
+  margin: 0 30px 0 10px;
 
-
-
+}
 
 
 
