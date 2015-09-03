@@ -2537,7 +2537,6 @@ output {
   border-radius: 0;
   -webkit-box-shadow: none;
   box-shadow: none;
-
 }
 .form-control:focus {
   border: none;
@@ -2604,11 +2603,6 @@ input[type="search"] {
 .form-group {
   margin-bottom: 15px;
   position: relative;
-  -webkit-transition: all .15s ease-in-out;
-  -moz-transition: all .15s ease-in-out;
-  -ms-transition: all .15s ease-in-out;
-  -o-transition: all .15s ease-in-out;
-  transition: all .15s ease-in-out;
   background-color: #f2f2f2;
 }
 .radio,
