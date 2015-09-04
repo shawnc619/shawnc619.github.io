@@ -1085,7 +1085,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.42857143;
   color: #454545;
-  background-color: #EBECEC;
+  background-color: #dfdfdf;
 }
 input,
 button,
@@ -2533,7 +2533,7 @@ output {
   background-color: transparent;
   background-image: none;
   border: none;
-  border-bottom: 2px transparent solid;
+  border-bottom: 3px transparent solid;
   border-radius: 0;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -2545,7 +2545,7 @@ output {
 }
 .form-control:focus {
   border: none;
-  border-bottom: 2px #33B4E6 solid;
+  border-bottom: 3px #33B4E6 solid;
   outline: 0;
 }
 .form-control::-moz-placeholder {
@@ -2619,8 +2619,8 @@ input[type="search"] {
 .checkbox {
   position: relative;
   display: block;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 0;
+  margin-bottom: 25px;
 }
 .radio label,
 .checkbox label {
@@ -2629,6 +2629,7 @@ input[type="search"] {
   margin-bottom: 0;
   font-weight: normal;
   cursor: pointer;
+  font-size:1.5em;
 }
 .radio input[type="radio"],
 .radio-inline input[type="radio"],
@@ -2986,7 +2987,7 @@ select[multiple].input-lg {
 }
 .btn {
   display: inline-block;
-  padding: 9px 12px;
+  padding: 7px 18px;
   margin-bottom: 0;
   font-size: 1.8em;
   font-weight: 200;
@@ -4323,7 +4324,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   top: auto;
   left: auto;
 }
-@media (min-width: 768px) {
   .nav-tabs.nav-justified > li {
     display: table-cell;
     width: 1%;
@@ -4331,7 +4331,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .nav-tabs.nav-justified > li > a {
     margin-bottom: 0;
   }
-}
+
 .nav-tabs.nav-justified > li > a {
   margin-right: 0;
   border-radius: 4px;
@@ -4341,7 +4341,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-tabs.nav-justified > .active > a:focus {
   border: 1px solid #ddd;
 }
-@media (min-width: 768px) {
   .nav-tabs.nav-justified > li > a {
     border-bottom: 1px solid #ddd;
     border-radius: 4px 4px 0 0;
@@ -4351,12 +4350,21 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .nav-tabs.nav-justified > .active > a:focus {
     border-bottom-color: #fff;
   }
-}
+
 .nav-pills > li {
   float: left;
 }
 .nav-pills > li > a {
-  border-radius: 4px;
+  border-radius: 2px 0 0 2px;
+  font-size:1.4em;
+  font-weight:300;
+  padding:8px;
+  background-color: #eee;
+  color:#9C9C9C;
+}
+.nav-pills > li:last-child > a {
+  padding: 8px;
+  border-radius: 0 2px 2px 0;
 }
 .nav-pills > li + li {
   margin-left: 2px;
@@ -4365,7 +4373,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
   color: #fff;
-  background-color: #337ab7;
+  background-color: #33B4E6;
 }
 .nav-stacked > li {
   float: none;
@@ -4388,7 +4396,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   top: auto;
   left: auto;
 }
-@media (min-width: 768px) {
   .nav-justified > li {
     display: table-cell;
     width: 1%;
@@ -4396,7 +4403,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .nav-justified > li > a {
     margin-bottom: 0;
   }
-}
+
 .nav-tabs-justified {
   border-bottom: 0;
 }
@@ -4409,7 +4416,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-tabs-justified > .active > a:focus {
   border: 1px solid #ddd;
 }
-@media (min-width: 768px) {
   .nav-tabs-justified > li > a {
     border-bottom: 1px solid #ddd;
     border-radius: 4px 4px 0 0;
@@ -4419,7 +4425,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .nav-tabs-justified > .active > a:focus {
     border-bottom-color: #fff;
   }
-}
+
 .tab-content > .tab-pane {
   display: none;
 }
@@ -5925,7 +5931,7 @@ button.list-group-item-danger.active:focus {
   margin-top: 5px;
 }
 .panel-group .panel-heading {
-  border-bottom: 0;
+  border-bottom: 1px #eee solid;
 }
 .panel-group .panel-heading + .panel-collapse > .panel-body,
 .panel-group .panel-heading + .panel-collapse > .list-group {
@@ -6260,14 +6266,40 @@ overflow:auto;
   overflow: scroll;
 }
 @media (min-width: 768px) {
+  /*vertical center*/
+  /*.modal {
+    text-align: center;
+  }
+  .modal:before {
+  display: inline-block;
+  vertical-align: middle;
+  content: " ";
+  height: 100%;
+  }*/
+  /*vertical center*/
+
   .modal-dialog {
+    /*vertical center*/
+    /*display: inline-block;
+    text-align: left;
+    vertical-align: middle;*/
+    /*vertical center*/
     width: 600px;
     margin: 30px auto;
     height:auto;
+    /*margin-top:-5em;*/
+
   }
   .modal-info {
+    /*vertical center*/
+    /*display: inline-block;
+    text-align: left;
+    vertical-align: middle;*/
+    /*vertical center*/
     width: 400px;
     margin: 30px auto;
+    /*margin-top:-5em;*/
+
   }
   
   .modal.fade .modal-dialog {
@@ -7103,7 +7135,7 @@ nav a{
 /*Font-size setting*/
 
 body{
-  font-size:100%;
+  font-size:95%;
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
@@ -7141,34 +7173,34 @@ body{
 
 h1,
 .h1 {
-  font-size: 3em;
-  font-weight: 100;
-  margin-top:15px;
+    font-size: 3em;
+    font-weight: 100;
+    margin-top:15px;
 }
 h2,
 .h2 {
-  font-size: 3em;
+    font-size: 3em;
 }
 h3,
 .h3 {
-  font-size: 2em;
+    font-size: 2em;
 }
 h4,
 .h4 {
-  font-size: 1.8em;
+    font-size: 1.8em;
 }
 h5,
 .h5 {
-  font-size: 1.5em;
+    font-size: 1.5em;
 }
 h6,
 .h6 {
-  font-size: 1.4em;
+    font-size: 1.4em;
 }
 p {
-  font-size: 1.4em;
-  margin:0;
-  padding:0;
+    font-size: 1.4em;
+    margin:0;
+    padding:0;
 }
 
 
@@ -7280,6 +7312,7 @@ p {
 .iconShortcut span.fa-exclamation-circle{
     color:#FF435A;
   }
+
 .iconInfo {
     float: left;
     font-size: 2em;
@@ -7287,8 +7320,10 @@ p {
     margin: 21px 0 0 15px;
   }
 .iconInfo .fa-info-circle{
-  color:#454545;
+    color:#454545;
 }
+
+
 .form-group .returnBiller{
     margin:0;
     padding:0;
@@ -7306,6 +7341,9 @@ p {
     color:#8b8b8b;
     background-color: white;
   }
+.dataLabelMjr{
+    font-weight: 100;
+}
 .dataLabelStd{
     font-weight: 200;
 }
@@ -7340,7 +7378,7 @@ p.DRNedit_items_last {
     font-weight: 200;
 }
 .colorAction{
-  background-color: #ffecef;
+    background-color: #ffecef;
 }
 
 /*Accordion*/
@@ -7357,8 +7395,9 @@ p.DRNedit_items_last {
     font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
     content: "\e114";    
     float: right;
-    font-size:1.2em;
+    font-size:1.1em;
     color: #8b8b8b;
+    line-height: 1;
 }
 .panel-heading .accordion-toggle:hover, .panel-heading .accordion-toggle:focus {
     text-decoration: none;
@@ -7367,6 +7406,7 @@ p.DRNedit_items_last {
     /* symbol for "collapsed" panels */
     content: "\e113";    /* adjust as needed, taken from bootstrap.css */
 }
+
 
 
 /* Small devices (tablets, 768px and up) */
@@ -7407,30 +7447,66 @@ p.DRNedit_items_last {
     border-left:4px transparent solid;
 
   }
- .walPriPymn{
-  border-left:4px #00A1E0 solid;
- } 
+.wallet-primary{
+    border-left:4px #00A1E0 solid;
+ }
+.wallet-alert{
+    border-left:4px #FF435A solid;
+ }  
 .info-Wrap-Wallet:hover{
     color:#454545;
-  }
+}
 .info-Wrap-Wallet h3{
-  font-size:2.5em;
-  font-weight: 100;
-  margin-bottom:3px;
+    font-size:2.5em;
+    font-weight: 100;
+    margin-bottom:3px;
+}
+.info-Wrap-Wallet h4{
+    font-size:1.8em;
+    line-height: 1.4;
+    margin-bottom:3px;
+    font-weight:500;
 }
 .cardIcon{
-  background-color: #fdfdfd;
-  border:1px #ebecec solid;
-  border-radius: 2px;
-  width:5em;
-  height:3.5em;
-  float: left;
-  margin: 0 30px 0 10px;
-
+    background-color: #fdfdfd;
+    border:1px #e2e2e2 solid;
+    border-radius: 2px;
+    width:5em;
+    height:3.5em;
+    float: left;
+    margin: 0 1.5em 0 0;
+    text-align: right;
 }
-
-
-
+.cardIcon .fa-check-circle{
+    display: block;
+    font-size:1.9em;
+    color:#00A1E0;
+    margin-right: -8px;
+    margin-top:-10px;
+}
+.cardIcon .fa-exclamation-circle{
+    display: block;
+    font-size:1.9em;
+    color:#FF435A;
+    margin-right: -8px;
+    margin-top:-10px;
+}
+.borderTop{
+    border: 1px solid #F3F3F3;
+    margin: 2em -15px;
+}
+.availCardType{
+  margin-bottom:8px;
+}
+.availCardType .cardIcon{
+    background-color: #fdfdfd;
+    border:1px #e2e2e2 solid;
+    border-radius: 2px;
+    width:4em;
+    height:2.8em;
+    float: right;
+    margin: 0 0 0 0.6em;
+}
 
 
 
