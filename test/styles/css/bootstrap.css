@@ -1,4 +1,4 @@
-navbar-toggle:hover/*!
+/*!
  * Bootstrap v3.3.5 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
@@ -2989,7 +2989,7 @@ select[multiple].input-lg {
   display: inline-block;
   padding: 7px 18px;
   margin-bottom: 0;
-  font-size: 1.8em;
+  font-size: 1.5em;
   font-weight: 200;
   line-height: 1.42857143;
   text-align: center;
@@ -7234,7 +7234,12 @@ p {
     display:block;
     height:46px;
     cursor:  pointer;
+    margin:0 -15px;
+    padding: 0 15px;
   }
+.addWrap:hover{
+    background-color: #F6FCFF;
+}
 .blueAdd {
     color:#33B4E6;
     font-weight: 200;
@@ -7272,10 +7277,12 @@ p {
     height:13em;
     color:#454545;
     cursor: pointer;
-    padding:5px 0 15px;
+    padding: 5px 15px 15px;
+    margin: 0 -15px;
   }
 .info-Wrap:hover{
     color:#454545;
+    background-color: #F6FCFF;
   }
 
 .info-block{
@@ -7349,13 +7356,13 @@ p {
 }
 .dataTitle{
     margin: 0;
-    font-size:1.5em;
+    font-size:1.2em;
     font-weight:200;
   }
 .dataPrimary{
     margin: 5px 0;
     padding: 0;
-    font-size: 3em;
+    font-size: 2.5em;
     line-height:0.8;
     font-weight: 200;
 }
@@ -7432,9 +7439,6 @@ p.DRNedit_items_last {
   }
 }
 
-
-
-
 /* Wallet */
 
 .info-Wrap-Wallet{
@@ -7455,16 +7459,17 @@ p.DRNedit_items_last {
  }  
 .info-Wrap-Wallet:hover{
     color:#454545;
+    background-color: #F6FCFF;
 }
 .info-Wrap-Wallet h3{
     font-size:2.5em;
     font-weight: 100;
-    margin-bottom:3px;
+    margin:0 0 3px;
 }
 .info-Wrap-Wallet h4{
     font-size:1.8em;
     line-height: 1.4;
-    margin-bottom:3px;
+    margin:0 0 3px;
     font-weight:500;
 }
 .cardIcon{
@@ -7507,8 +7512,27 @@ p.DRNedit_items_last {
     float: right;
     margin: 0 0 0 0.6em;
 }
-
-
+.returnBank{
+    position: relative;
+    top:-10px;
+    padding:0 0 5px 0;
+    font-weight: bold;
+    font-size:1.4em;
+  }
+.dlrelative{
+  position: relative;
+}
+dd.cardIcon{
+    position:absolute;
+    background-color: #fdfdfd;
+    border:1px #e2e2e2 solid;
+    border-radius: 2px;
+    width:3.7em;
+    height:2.5em;
+    margin: 0 1.5em 0 0;
+    top:1.8em;
+    left:10.5em;
+}
 
 
 
