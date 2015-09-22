@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DEFT payment gateway</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+<link href="styles/css/font-awesome.css" rel="stylesheet">
+<link href="styles/css/bootstrap.css" rel="stylesheet">
+<link href="styles/css/awesome-bootstrap-checkbox.css" rel="stylesheet">
+
+
+
+
+
+<!--[if lt IE 9]>
+  <script src="js/html5shiv.js"></script>
+  <script src="js/respond.min.js"></script>
+  <link rel="stylesheet" href="styles/css/ie8.css">
+<![endif]-->
+
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-fixed-top navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle collapsed" data-target="#navbar" data-toggle="collapse" type="button">
+                    <img class="hamburger pull-right" src="styles/images/hamburger.png" width="30px">
+                    <div class="menu">Menu</div>
+                </button> 
+                <a class="navbar-brand" href="index.html#"><img class="logo" src="styles/images/logo.png"></a>
+            </div>
+            <div class="collapse navbar-collapse no-transition" id="navbar">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="index.html#">Home</a>
+                    </li>
+                    <li>
+                        <a href="index.html#about">About</a>
+                    </li>
+                    <li>
+                        <a href="index.html#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+    <div class="container-fluid placeholder"></div>
+    <main class="container">
+        <section class="row">
+            <div class="col-xs-12 border-btm clearfix">
+                <h1 class="pull-left">My Wallet</h1>
+            </div>
+            <div class="col-xs-12 border-btm">
+                <a class="clearfix addWrap" data-toggle="modal" data-target=".modalAdd">
+                    <h3 class="blueAdd vcenter">Add payment method</h3>
+                    <div class="plus vcenter">+</div>
+                </a>
+            </div>
+            <!-- Credit Card List -->
+            <div class="col-xs-12">
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a class="accordion-toggle"
+                            data-parent="#accordion" data-toggle="collapse" href=
+                            "#collapseOne">Cards</a></h4>
+                        </div>
+                        <div class="panel-collapse collapse in" id="collapseOne">
+                            <div class="panel-body"><br>
+                                <div class="form-group">
+                                  <label>Expiry date</label>
+                                  <div class="clearfix">
+                                    <input type="text" class="form-control fc-date" placeholder="mm">
+                                    <div class="dateSlash">&nbsp;&nbsp;/&nbsp;&nbsp;</div>
+                                    <input type="text" class="form-control fc-date" placeholder="yy">
+                                  </div>
+                              </div>
+                              <div class="form-group">
+                                  <label>Nickname</label>
+                                  <input type="text" class="form-control" placeholder="e.g. My Strata(Optional)">
+                                  <a class="iconShortcut" href="#"><span class="fa fa-times-circle"></span></a>
+                                  <p class="descript">This is only to help you make your DRN make sense</p>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            
+
+        </section>
+    </main>
+    <footer>
+
+
+    </footer>
+
+
+
+
+
+
+
+    
+    <!-- Modal Card Edit -->
+
+
+    <div class="modal fade modalCardEdit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog card effect__click" role="document">
+            <div class="card__front">
+                <div class="modal-content">
+                <div class="modal-header clearfix">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">X</span></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>Expiry date</label>
+                        <div class="clearfix">
+                          <input type="text" class="form-control fc-date" placeholder="mm">
+                          <div class="dateSlash">&nbsp;&nbsp;/&nbsp;&nbsp;</div>
+                          <input type="text" class="form-control fc-date" placeholder="yy">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Nickname</label>
+                        <input type="text" class="form-control" placeholder="e.g. My Strata(Optional)">
+                        <a class="iconShortcut" href="#"><span class="fa fa-times-circle"></span></a>
+                        <p class="descript">This is only to help you make your DRN make sense</p>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default btn-flip" data-toggle="modal">Delete</button>
+                </div>
+            </div>
+            </div>
+            <div class="card__back">
+                <div class="modal-content" id="edit-warning">
+                    <div class="modal-header">
+                    </div>
+                    <div class="modal-body">
+                        <h3>Confirm to delete this DRN reference number</h3>
+                        <p>and also some friendly and helpful text here</p><br>
+                        <!-- <div class="alert">
+                            <strong>WARNING</strong> this DEFT number is linked to multiple Direct Debit Payments. Please select an alternate payment method before deleting this card.
+                        </div>
+                        <button type="button" class="btn btn-default btn-block btn-lg btn-secondary" data-toggle="modal" data-target=".modalDelete">Take me to the page to fix this</button> -->
+                        <button type="button" class="btn btn-block btn-lg btn-danger" data-dismiss="modal">Delete</button>
+                        <button type="button" class="btn btn-cancel btn-block btn-lg btn-flip">Cancel</button>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </div>
+
+
+
+
+    
+    <!-- Modal Account Edit -->
+
+
+
+
+
+    <div class="modal fade modalAccountEdit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog card effect__click" role="document">
+            <div class="card__front">
+                <div class="modal-content">
+                    <div class="modal-header clearfix">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">X</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <dl>
+                            <dt class="dataTitle">BSB</dt>
+                            <dd class="dataPrimary">456-389</dd>
+                            <dd class="dataStd">Commenwealth Bank PTY LTD</dd>
+                        </dl>
+                        <div class="form-group">
+                            <label>Account number</label>
+                            <input type="text" class="form-control" placeholder="493850490">
+                        </div>
+                        <div class="form-group">
+                            <label>Account name</label>
+                            <input type="text" class="form-control" placeholder="Jone Smith">
+                        </div>
+                        <div class="checkbox checkbox-info checkbox-circle">
+                            <input id="defaultAccountAccountEdit" class="styled" type="checkbox">
+                            <label for="defaultAccountAccountEdit">Default bank account for payment</label>
+                        </div>
+                        <div class="modal-btnWrap">
+                            <button type="button" class="btn btn-cancel" data-toggle="modal" data-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-dismiss="modal">Update</button>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default btn-flip">Delete</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card__back">
+                <div class="modal-content" id="edit-warning">
+                    <div class="modal-header">
+                    </div>
+                    <div class="modal-body">
+                        <h3>Confirm to delete this DRN reference number</h3>
+                        <p>and also some friendly and helpful text here</p><br>
+                        <!-- <div class="alert">
+                            <strong>WARNING</strong> this DEFT number is linked to multiple Direct Debit Payments. Please select an alternate payment method before deleting this card.
+                        </div>
+                        <button type="button" class="btn btn-default btn-block btn-lg btn-secondary" data-toggle="modal" data-target=".modalDelete">Take me to the page to fix this</button> -->
+                        <button type="button" class="btn btn-block btn-lg btn-danger" data-dismiss="modal">Delete</button>
+                        <button type="button" class="btn btn-cancel btn-block btn-lg btn-flip">Cancel</button>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- Remove account modal -->
+
+    <div class="modal fade modalAccountDelete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                </div>
+                <div class="modal-body">
+                    
+                    <div class="alert">
+                        <strong>WARNING</strong> this DEFT number is linked to multiple Direct Debit Payments. Please select an alternate payment method before deleting this card.
+                    </div>
+                    <button type="button" class="btn btn-default btn-block btn-secondary" data-toggle="modal" data-target=".modalDelete">Take me to the page to fix this</button>
+                    <button type="button" class="btn btn-block btn-danger">Delete</button>
+                    <button type="button" class="btn btn-cancel btn-block" data-toggle="modal" data-target=".modalAccountEdit" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script type="text/javascript" >  
+        (function() {
+          var cards = document.querySelectorAll(".card.effect__click");
+          for ( var i  = 0, len = cards.length; i < len; i++ ) {
+            var card = cards[i];
+            clickListener( card );
+          }
+        
+          function clickListener(card) {
+            $(".btn-flip").click(function() {
+                 var c = card.classList;
+                 c.contains("flipped") === true ? c.remove("flipped") : c.add("flipped");
+            });
+          }
+        })();
+    </script>
+
+</body>
+</html>

@@ -1085,7 +1085,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.42857143;
   color: #454545;
-  background-color: #dfdfdf;
+  background-color: #efefef;
 }
 input,
 button,
@@ -1591,6 +1591,22 @@ pre code {
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    padding-right: 35px;
+    padding-left: 35px;
+  } 
 }
 .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
   float: left;
@@ -2522,11 +2538,42 @@ output {
   line-height: 1.42857143;
   color: #555;
 }
+.form-group {
+  margin-bottom: 15px;
+  position: relative;
+  -webkit-transition: all .15s ease-in-out;
+  -moz-transition: all .15s ease-in-out;
+  -ms-transition: all .15s ease-in-out;
+  -o-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  background-color: #F3F3F3;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  .form-group {
+    margin-bottom: 18px;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .form-group {
+    margin-bottom: 20px;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  .form-group {
+    margin-bottom: 26px;
+  }
+}
 .form-control {
   display: block;
   width: 100%;
-  padding: 0 12px 5px;
-  font-size: 1.8em;
+  padding: 3px 12px 5px;
+  font-size: 2.2em;
   font-weight: 200;
   line-height: 1;
   color: #454545;
@@ -2542,6 +2589,14 @@ output {
   -ms-transition: all .15s ease-in-out;
   -o-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+}
+.fc-date {
+  width:3.5em;
+  float: left;
+}
+.dateSlash{
+  font-size:1.5em;
+  float: left;
 }
 .form-control:focus {
   border: none;
@@ -2561,11 +2616,20 @@ output {
   color: #A3A3A3;
   font-weight: 200;
 }
+@media (min-width: 992px) { 
+  .form-group {
+    width:100%;
+  }
+  .form-control {
+    height:2em;
+    line-height: 1.4;
+  }
+}
 .form-control[disabled],
 .form-control[readonly],
 fieldset[disabled] .form-control {
-  background-color: #eee;
-  opacity: 1;
+  background-color: #f3f3f3;
+  opacity:1;
 }
 .form-control[disabled],
 fieldset[disabled] .form-control {
@@ -2573,6 +2637,12 @@ fieldset[disabled] .form-control {
 }
 textarea.form-control {
   height: auto;
+}
+fieldset[disabled].form-group{
+  opacity: 0.6;
+}
+fieldset[disabled].form-group label{
+  opacity: 0.8;
 }
 input[type="search"] {
   -webkit-appearance: none;
@@ -2605,16 +2675,7 @@ input[type="search"] {
     line-height: 46px;
   }
 }
-.form-group {
-  margin-bottom: 15px;
-  position: relative;
-  -webkit-transition: all .15s ease-in-out;
-  -moz-transition: all .15s ease-in-out;
-  -ms-transition: all .15s ease-in-out;
-  -o-transition: all .15s ease-in-out;
-  transition: all .15s ease-in-out;
-  background-color: #f2f2f2;
-}
+
 .radio,
 .checkbox {
   position: relative;
@@ -3701,9 +3762,10 @@ fieldset[disabled] .btn-link:focus {
 .btn-lg,
 .btn-group-lg > .btn {
   padding: 10px 16px;
-  font-size: 1.6em;
-  line-height: 1.3333333;
-  border-radius: 5px;
+  font-size: 2em;
+  line-height: 1.5;
+  border-radius: 4px;
+  font-weight:100;
 }
 .btn-sm,
 .btn-group-sm > .btn {
@@ -3723,6 +3785,35 @@ fieldset[disabled] .btn-link:focus {
 .btn-block {
   display: block;
   width: 100%;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+.btn-block {
+  margin:20px 0 10px;
+  padding: 15px 0;
+  font-size: 2.5em;
+  }
+  .modal-footer .btn-block, .modal-body .btn-block{
+  padding: 10px 16px;
+  font-size: 2em;
+}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .btn-block {
+    margin: 30px 0 10px;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  .btn-block {
+    margin: 40px 0 10px;
+    padding: 18px 0;
+    font-size: 2.7em;
+  }
 }
 .btn-block + .btn-block {
   margin-top: 0.4em;
@@ -4373,7 +4464,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
   color: #fff;
-  background-color: #33B4E6;
+  background-color: #555555;
 }
 .nav-stacked > li {
   float: none;
@@ -5928,10 +6019,10 @@ button.list-group-item-danger.active:focus {
   border-radius: 0;
 }
 .panel-group .panel + .panel {
-  margin-top: 5px;
+  margin-top: 0;
 }
 .panel-group .panel-heading {
-  border-bottom: 1px #eee solid;
+  border-bottom: 1px #E2E2E2 solid;
 }
 .panel-group .panel-heading + .panel-collapse > .panel-body,
 .panel-group .panel-heading + .panel-collapse > .list-group {
@@ -5946,13 +6037,49 @@ button.list-group-item-danger.active:focus {
   border-color: transparent;
 }
 .panel-default > .panel-heading {
-  color: #454545;
-  background-color: #F9F9F9;
-  margin:0 -15px;
+  color: #fff;
+  background-color: #929292;
+  margin: 0 -15px;
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .panel-default > .panel-heading {
+    margin:0 -25px;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  .panel-default > .panel-heading {
+    margin:0 -35px;
+  }
 }
 .panel-default > .panel-heading + .panel-collapse > .panel-body {
   border-top-color: #ddd;
 }
+.panel-body-padding{
+    padding:20px 0 5px;    
+  }
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  .panel-body-padding{
+    padding:30px 0 10px;    
+  }
+}
+
+@media (min-width: 992px) {
+  .panel-body-padding{
+    padding:35px 0 20px;    
+  }
+}
+@media (min-width: 1200px) {
+  .panel-body-padding{
+    padding:45px 0 20px;    
+  }
+}
+me
 .panel-default > .panel-heading .badge {
   color: #f5f5f5;
   background-color: #333;
@@ -6161,10 +6288,82 @@ button.close {
   position: relative;
   width: 100%;
   height:100%;
-overflow:auto;
   padding: 0;
   margin:0;
 }
+
+/*** Modal card ***/
+
+.card {
+  position: relative;
+  height:100%;
+  background:transparent;
+  -webkit-perspective: 2400px;
+     -moz-perspective: 2400px;
+       -o-perspective: 2400px;
+          perspective: 2400px;  
+}
+
+.card__front,
+.card__back {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card__front,
+.card__back {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.7s;
+          transition: transform 0.7s;
+
+
+}
+.card__front {
+   position: relative;
+}
+.card__back {
+   position: absolute;
+}
+.card__back {
+  
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.card.effect__click.flipped .card__front {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.card.effect__click.flipped .card__back {
+  -webkit-transform: rotateY(0);
+          transform: rotateY(0);
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  .modal-dialog.card {
+    height:auto;
+  }
+  .card__front {
+    margin:10% 0;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  
+}
+
 
 /*Modal Info*/
 .modal.fade .modal-info {
@@ -6197,12 +6396,21 @@ overflow:auto;
   position: relative;
   min-height: 100%;
   height: auto;
-  background-color: #fff;
   -webkit-background-clip: padding-box;
           background-clip: padding-box;
-  border: 1px solid #bbb;
   border-radius: 0;
   outline: 0;
+}
+.modal-content2 {
+    position: relative;
+    min-height: 100%;
+    height: auto;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #bbb;
+    border-radius: 0;
+    outline: 0;
 }
 .modal-backdrop {
   position: fixed;
@@ -6277,6 +6485,10 @@ overflow:auto;
   height: 100%;
   }*/
   /*vertical center*/
+  .modal-content {
+    height: 100%;
+    
+}
 
   .modal-dialog {
     /*vertical center*/
@@ -6322,6 +6534,7 @@ overflow:auto;
   .modal-content {
     min-height: auto;
     height: auto;
+    margin:10% 0;
 
   }
   .modal-sm {
@@ -7131,6 +7344,10 @@ button.xxx{
 }
 nav a{
   font-size:1.8em;
+  font-weight: 100
+}
+nav .active a{
+  font-weight: 400
 }
 /*Font-size setting*/
 
@@ -7175,7 +7392,7 @@ h1,
 .h1 {
     font-size: 3em;
     font-weight: 100;
-    margin-top:15px;
+    margin:15px 0;
 }
 h2,
 .h2 {
@@ -7204,6 +7421,25 @@ p {
 }
 
 
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  h1{
+    margin:20px 0;    
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  h1{
+    margin:30px 0;    
+  }
+}
+
 
 
 
@@ -7230,6 +7466,23 @@ p {
     -o-transition: all .15s ease-in-out;
     transition: all .15s ease-in-out;
   }
+
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .list li {
+    margin:0 -25px 0 -25px;
+    padding:0 25px;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  .list li {
+    margin:0 -35px 0 -35px;
+    padding:0 35px;
+  }
+}
 .addWrap{
     display:block;
     height:46px;
@@ -7237,6 +7490,29 @@ p {
     margin:0 -15px;
     padding: 0 15px;
   }
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .addWrap{
+    height:60px;
+    margin:0 -25px;
+    padding: 0 25px;
+  } 
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  .addWrap{
+    height:60px;
+    margin:0 -35px;
+    padding: 0 35px;
+  }
+}
 .addWrap:hover{
     background-color: #F6FCFF;
 }
@@ -7280,6 +7556,22 @@ p {
     padding: 5px 15px 15px;
     margin: 0 -15px;
   }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .info-Wrap{
+    padding: 5px 25px 15px;
+    margin: 0 -25px;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  .info-Wrap{
+    padding: 5px 35px 15px;
+    margin: 0 -35px;
+  }
+}
 .info-Wrap:hover{
     color:#454545;
     background-color: #F6FCFF;
@@ -7304,8 +7596,8 @@ p {
   }
 .iconShortcut {
     position : absolute;
-    top:19px;
-    right :7px;
+    top:22px;
+    right :8px;
     width:20px;
     font-size:1.7em;
     line-height: 1;
@@ -7319,15 +7611,45 @@ p {
 .iconShortcut span.fa-exclamation-circle{
     color:#FF435A;
   }
+.iconShortcut span.fa-info-circle{
+    color:#454545;
+  }
 
 .iconInfo {
     float: left;
     font-size: 2em;
-    line-height: 1;
-    margin: 21px 0 0 15px;
+    line-height: 3.2;
+    margin: 0 0 0 15px;
   }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .iconInfo {
+    line-height: 3.5;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+   .iconInfo {
+    line-height: 4.3;
+  }
+}
 .iconInfo .fa-info-circle{
     color:#454545;
+}
+/*icomoon icons*/
+
+.ico-user {
+    font-family: "icomoon";
+    content: "\e600";
+    color: #33B4E6;
+    font-size: 2.5em;
+    font-weight: 100;
+    line-height: 1;
+    display: block;
+    float: left;
+    margin: 0px 9px 0 0;
 }
 
 
@@ -7393,9 +7715,30 @@ p.DRNedit_items_last {
     display:block;
     width:100%;
     height:100%;
-    padding:15px;
+    padding:8px 15px;
+    font-weight:100;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  .panel-heading .accordion-toggle{
+    padding:10px 15px;
     font-size:1.2em;
-    font-weight:400;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .panel-heading .accordion-toggle{
+    padding:12px 25px;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+.panel-heading .accordion-toggle{
+    padding:14px 35px;
+  }  
 }
 .panel-heading .accordion-toggle:after {
     /* symbol for "opening" panels */
@@ -7403,8 +7746,8 @@ p.DRNedit_items_last {
     content: "\e114";    
     float: right;
     font-size:1.1em;
-    color: #8b8b8b;
-    line-height: 1;
+    color: #fff;
+    /*line-height: 1;*/
 }
 .panel-heading .accordion-toggle:hover, .panel-heading .accordion-toggle:focus {
     text-decoration: none;
@@ -7414,28 +7757,121 @@ p.DRNedit_items_last {
     content: "\e113";    /* adjust as needed, taken from bootstrap.css */
 }
 
+/*Form select*/
+.formSelect dd, .formSelect dt, .formSelect ul { margin:0px; padding:0px; }
+.formSelect dd { position:relative; }
+.formSelect a, .formSelect a:visited { color:#454545; text-decoration:none; outline:none;}
+.formSelect a:hover { color:#454545;}
+.formSelect dt a:hover { color:#454545;}
+.formSelect dt a {
+  position: relative;
+  display:block;
+  background-color: #f3f3f3;
+  height:53px;
+  padding:15px 12px;
+  font-size:1.8em;
+  font-weight: 400;
+  margin:0 0 20px 0;
+}
+.formSelect dt a:after {
+  font-size: 1.6em;
+  content: "\f0d7";
+  font-family: "FontAwesome";
+  position: absolute;
+  top: 0.3em;
+  right: 0.6em;
+  color: #8b8b8b;
+}
+@media (min-width: 992px) { 
+  .formSelect dt a {
+    height:74px;
+    padding:22px 12px;
+  }
+  .formSelect dt a:after {
+    top: 0.6em;
+    right: 0.5em;
+  }
+}
+.formSelect dt a span {cursor:pointer; display:block; padding:5px;}
+.formSelect dd ul { 
+  background:#fff none repeat scroll 0 0; 
+  border:1px solid #D5D5D5; color:#C5C0B0; 
+  display:none;
+  left:0px; 
+  padding:0 0; 
+  position:relative; 
+  top:-19px; 
+  width:auto; 
+  min-width:170px; 
+  list-style:none;
+}
 
+.formSelect span.value { display:none;}
+.formSelect dd ul li a { 
+  padding:12px; 
+  display:block;
+  font-size: 1.6em;
+}
+.formSelect dd ul li a:hover { background-color:#F6FCFF;}
+
+.formSelect img.flag { border:none; vertical-align:middle; margin-left:10px; }
+
+.formSelect dd ul li a.typeNorm { 
+  padding:12px 5px;
+  margin:0 12px; 
+  border-bottom:1px #CDCDCD solid;
+}
+.formSelect dd ul li:last-child  a.typeNorm{ 
+  border-bottom:none;
+}
+.formSelect[disabled]{
+  opacity: 0.6;
+}
+
+.formSelect[disabled] dt a{
+  cursor: not-allowed;
+  opacity: 0.7
+}
+.greyImage {
+  filter: gray; /* IE6-9 */
+  filter: grayscale(1); /* Firefox 35+ */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+}
+
+.noBkLabel{
+  font-size:1.6em;
+  font-weight:400;
+  padding: 0 0 5px 0;
+  margin:20px 0 0 0 ;
+  position: relative;
+}
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
-.info-block{
-    max-width: none;
-    float:left;
-  }
-  .addWrap{
-    height:60px;
-  }
+  .info-block{
+      max-width: none;
+      float:left;
+    }
+  
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
+  .iconShortcut {
+    top:27px;
+    right :9px;
+  }
+  .noBkLabel{
+    margin:4em 0 0 0  ;
+    position: relative;
+  }
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
-
-.iconShortcut {
-    top:21px;
+  .iconShortcut {
+    top:28px;
+    right :11px;
   }
 }
 
@@ -7447,10 +7883,25 @@ p.DRNedit_items_last {
     color:#454545;
     cursor: pointer;
     margin:0 -15px;
-    padding:0 15px;
+    padding:0 15px 0 11px;
     border-left:4px transparent solid;
-
   }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .info-Wrap-Wallet{
+    margin:0 -25px;
+    padding:0 25px 0 21px;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  .info-Wrap-Wallet{
+    margin:0 -35px;
+    padding:0 35px 0 31px;
+  }
+}
 .wallet-primary{
     border-left:4px #00A1E0 solid;
  }
@@ -7473,28 +7924,32 @@ p.DRNedit_items_last {
     font-weight:500;
 }
 .cardIcon{
+    position: relative;
     background-color: #fdfdfd;
     border:1px #e2e2e2 solid;
     border-radius: 2px;
     width:5em;
-    height:3.5em;
+    height:3em;
     float: left;
     margin: 0 1.5em 0 0;
     text-align: right;
 }
 .cardIcon .fa-check-circle{
+    position:absolute;
     display: block;
     font-size:1.9em;
     color:#00A1E0;
-    margin-right: -8px;
-    margin-top:-10px;
+    top:-10px;
+    right: -8px;
+
 }
 .cardIcon .fa-exclamation-circle{
+    position:absolute;
     display: block;
     font-size:1.9em;
     color:#FF435A;
-    margin-right: -8px;
-    margin-top:-10px;
+    top:-10px;
+    right: -8px;
 }
 .borderTop{
     border: 1px solid #F3F3F3;
@@ -7508,7 +7963,7 @@ p.DRNedit_items_last {
     border:1px #e2e2e2 solid;
     border-radius: 2px;
     width:4em;
-    height:2.8em;
+    height:2.6em;
     float: right;
     margin: 0 0 0 0.6em;
 }
@@ -7527,7 +7982,7 @@ dd.cardIcon{
     background-color: #fdfdfd;
     border:1px #e2e2e2 solid;
     border-radius: 2px;
-    width:3.7em;
+    width:4.1em;
     height:2.5em;
     margin: 0 1.5em 0 0;
     top:1.8em;
@@ -7536,3 +7991,37 @@ dd.cardIcon{
 
 
 
+
+/*Payment*/
+.paymentSurcharge{
+  font-size:1.8em;
+  font-weight:200;
+  border-bottom: 1px solid #CCCCCC;
+  padding:20px 0 10px;
+  margin:0;
+  position: relative;
+}
+.paymentSurcharge div, .paymentTotal div{
+  padding:0;
+}
+.paymentTotal{
+  font-size:4em;
+  padding:5px 0 50px;
+  margin:0;
+  font-weight:100;
+}
+.paymentTotal strong{
+  font-weight:400;
+}
+.paymentSurcharge .iconShortcut {
+  position : absolute;
+  top:0;
+  left :7.4em;
+  width:20px;
+  font-size:1.1em;
+  line-height: 1.4;
+}
+.terms{
+  font-size:1.3em;
+  margin-top: 5px
+}
