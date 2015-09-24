@@ -1085,7 +1085,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.42857143;
   color: #454545;
-  background-color: #B7B7B7;
+  background-color: #D2D2D2;
 }
 input,
 button,
@@ -3785,13 +3785,13 @@ fieldset[disabled] .btn-link:focus {
 .btn-block {
   display: block;
   width: 100%;
-  margin-top: 15px
+  margin-top: 5px
 }
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
 .btn-block {
-  margin:20px 0 10px;
+  margin:10px 0 10px;
   padding: 10px 0;
   font-size: 2.5em;
   }
@@ -3804,7 +3804,7 @@ fieldset[disabled] .btn-link:focus {
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
   .btn-block {
-    margin: 30px 0 10px;
+    margin: 15px 0 10px;
   }
 }
 
@@ -6041,11 +6041,11 @@ button.list-group-item-danger.active:focus {
   background-color: #e6e6e6;
   margin: 0 -15px;
 }
-.panel-default > .PHpayment {
+.panel-default > .inverseStyle {
     background-color: #fff;
     border-top: 1px solid #dfdfdf;
 }
-.panel-default > .PHpaymentLast {
+.panel-default > .inverseStyleLast {
     background-color: #fff;
     border-top: 1px solid #dfdfdf;
 
@@ -6067,24 +6067,17 @@ button.list-group-item-danger.active:focus {
   border-top-color: #ddd;
 }
 .panel-body-padding{
-    padding:20px 0 5px;    
+    padding:10px 0;    
   }
-
-/* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
-  .panel-body-padding{
-    padding:30px 0 10px;    
-  }
-}
 
 @media (min-width: 992px) {
   .panel-body-padding{
-    padding:35px 0 20px;    
+    padding:15px 0;    
   }
 }
 @media (min-width: 1200px) {
   .panel-body-padding{
-    padding:45px 0 20px;    
+    padding:20px 0;    
   }
 }
 me
@@ -7733,7 +7726,7 @@ p.DRNedit_items_last {
     height:100%;
     padding:10px 15px;
     font-weight:200;
-    font-size:1.1em;
+    font-size:1em;
 
 }
 
@@ -7749,6 +7742,8 @@ p.DRNedit_items_last {
 @media (min-width: 992px) { 
   .panel-heading .accordion-toggle{
     padding:12px 25px;
+    font-size:1.1em;
+
   }
 }
 
@@ -7881,7 +7876,6 @@ p.DRNedit_items_last {
     right :9px;
   }
   .noBkLabel{
-    margin:4em 0 0 0  ;
     position: relative;
   }
 }
