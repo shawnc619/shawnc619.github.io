@@ -3379,10 +3379,83 @@ fieldset[disabled] .btn-secondary.active {
   background-color: #454545;
   border-color: none;
 }
-.btn-primary .badge {
+.btn-secondary .badge {
   color: #33B4E6;
   background-color: #fff;
 }
+
+
+/*Button Secondary Inverse*/
+.btn-secondary-inv {
+  color: #454545;
+  background-color: #fff;
+  border-color: #454545;
+}
+.btn-secondary-inv:focus,
+.btn-secondary-inv.focus {
+  color: #454545;
+  background-color: #fff;
+  border-color: #454545;
+}
+.btn-secondary-inv:hover {
+  color: #454545;
+  background-color: #fff;
+  border-color: #454545;
+}
+.btn-secondary-inv:active,
+.btn-secondary-inv.active,
+.open > .dropdown-toggle.btn-secondary-inv {
+  color: #454545;
+  background-color: #f6f6f6;
+  border-color: #454545;
+}
+.btn-secondary-inv:active:hover,
+.btn-secondary-inv.active:hover,
+.open > .dropdown-toggle.btn-secondary-inv:hover,
+.btn-secondary-inv:active:focus,
+.btn-secondary-inv.active:focus,
+.open > .dropdown-toggle.btn-secondary-inv:focus,
+.btn-secondary-inv:active.focus,
+.btn-secondary-inv.active.focus,
+.open > .dropdown-toggle.btn-secondary-inv.focus {
+  color: #454545;
+  background-color: #f6f6f6;
+  border-color: #454545;
+}
+.btn-secondary-inv:active,
+.btn-secondary-inv.active,
+.open > .dropdown-toggle.btn-secondary-inv {
+  background-image: none;
+}
+.btn-secondary-inv.disabled,
+.btn-secondary-inv[disabled],
+fieldset[disabled] .btn-secondary-inv,
+.btn-secondary-inv.disabled:hover,
+.btn-secondary-inv[disabled]:hover,
+fieldset[disabled] .btn-secondary-inv:hover,
+.btn-secondary-inv.disabled:focus,
+.btn-secondary-inv[disabled]:focus,
+fieldset[disabled] .btn-secondary-inv:focus,
+.btn-secondary-inv.disabled.focus,
+.btn-secondary-inv[disabled].focus,
+fieldset[disabled] .btn-secondary-inv.focus,
+.btn-secondary-inv.disabled:active,
+.btn-secondary-inv[disabled]:active,
+fieldset[disabled] .btn-secondary-inv:active,
+.btn-secondary-inv.disabled.active,
+.btn-secondary-inv[disabled].active,
+fieldset[disabled] .btn-secondary-inv.active {
+  background-color: #454545;
+  border-color: none;
+}
+.btn-secondary-inv .badge {
+  color: #33B4E6;
+  background-color: #fff;
+}
+
+
+
+
 
 
 /*Button cancel*/
@@ -6444,7 +6517,14 @@ button.close {
 }
 .modal-body {
   position: relative;
-  padding: 15px;
+  padding: 15px 15px;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  .modal-body {
+    padding: 30px 30px 30px;
+  }
 }
 .modal-section{
   border-bottom: 1px solid #e5e5e5;
@@ -6456,6 +6536,13 @@ button.close {
   margin-top:40px;
   padding: 15px 15px 15px;
   border-top:#ebecec 1px solid;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  .modal-footer {
+    padding: 30px;
+  }
 }
 .modal-footer .btn + .btn {
   margin-bottom: 0;
@@ -8043,7 +8130,6 @@ dd.cardIcon{
 }
 .terms{
   font-size:1.3em;
-  margin-top: 5px
 }
 .resultWrap{
     display:block;
@@ -8066,11 +8152,6 @@ dd.cardIcon{
   .ctaWrap{
     padding:20px 0;
 }
-}
-
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
-  
 }
 .resultWrap .formlabel{
     margin: 0;
@@ -8170,8 +8251,59 @@ dd.cardIcon{
     }
 }
 
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
-  
+
+
+.successWrap{
+  text-align: center;
+}
+.successSC{
+  width: 100%;
+  margin-top: 0 auto;
 }
 
+.successSC .fa-check-circle{
+  display: block;
+  margin: 0 auto 20px;
+  font-size: 13em;
+  color:#6CC263;
+}
+
+.successWrap .receiptNo{
+  font-size:2.4em;
+  font-weight: 100
+}
+.successWrap .receiptNo strong{
+  font-weight: 400
+}
+.successWrap .receiptNo strong a{
+  color:#33B4E6;
+}
+
+.loginPromote{
+  padding:10px 20px 5px;
+}
+.loginPromote h2{
+  font-weight:200;
+  font-size:2.2em;
+  line-height: 1.4;
+  text-align:center;
+}
+
+.mktBanner{
+  width:100%;
+  height:auto;
+  border:1px #454545 solid;
+  margin-top: 15px
+}
+
+
+
+
+
+/*Margin*/
+.mgTop10{
+  margin-top: 15px !important;
+}
+.mgLeft10{
+  margin-left: 10px;
+}
