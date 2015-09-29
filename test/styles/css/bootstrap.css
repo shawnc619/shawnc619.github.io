@@ -7778,7 +7778,7 @@ p {
 
 .ico-user {
     font-family: "icomoon";
-    content: "\e600";
+    content: "\e601";
     color: #33B4E6;
     font-size: 2.5em;
     font-weight: 100;
@@ -7895,230 +7895,6 @@ p.DRNedit_items_last {
 .panel-heading .accordion-toggle.collapsed:after {
     /* symbol for "collapsed" panels */
     content: "\e113";    /* adjust as needed, taken from bootstrap.css */
-}
-
-/*Form select*/
-.formSelect dd, .formSelect dt, .formSelect ul { margin:0px; padding:0px; }
-.formSelect dd { position:relative; }
-.formSelect a, .formSelect a:visited { color:#454545; text-decoration:none; outline:none;}
-.formSelect a:hover { color:#454545;}
-.formSelect dt a:hover { color:#454545;}
-.formSelect dt a {
-  position: relative;
-  display:block;
-  background-color: #f3f3f3;
-  height:53px;
-  font-weight: 400;
-  margin:0 0 20px 0;
-}
-.formSelect dt a:after {
-  font-size: 2.1em;
-  content: "\f0d7";
-  font-family: "FontAwesome";
-  position: absolute;
-  top: 0.7em;
-  right: 0.6em;
-  color: #8b8b8b;
-}
-
-@media (min-width: 992px) { 
-  .formSelect dt a {
-    height:74px;
-  }
-  .formSelect dt a:after {
-    top: 1.2em;
-    right: 0.8em;
-  }
-}
-
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
-  .formSelect dt a:after {
-    top: 1.1em;
-  }
-}
-.formSelect dt a span {cursor:pointer; display:block;}
-.formSelect dd ul { 
-  background:#fff none repeat scroll 0 0; 
-  border:1px solid #D5D5D5; color:#C5C0B0; 
-  display:none;
-  left:0px; 
-  padding:0 0; 
-  position:relative; 
-  top:-19px; 
-  width:auto; 
-  min-width:170px; 
-  list-style:none;
-}
-
-.formSelect span.value { display:none;}
-.formSelect dd ul li a { 
-  display:block;
-}
-.formSelect dd ul li a:hover { background-color:#F6FCFF;}
-
-.formSelect img.flag { border:none; vertical-align:middle; margin-left:10px; }
-
-.formSelect dd ul li a { 
-  border-bottom:1px #CDCDCD solid;
-}
-
-.NormalStyleWrap li a{
-  padding:0 12px; 
-}
-.formSelect dd ul li:last-child  a{ 
-  border-bottom:none;
-}
-.formSelect dt a div.typeNorm { 
-  padding:15px 10px;
-  font-size: 1.8em;
-}
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
-  .formSelect dt a div.typeNorm { 
-    padding: 12px 0;
-  }
-}
-
-.formSelect dd ul li a div.typeNorm{ 
-  padding:12px 5px;
-  font-size: 1.6em;
-}
-.formSelect dd ul li:last-child  a.typeNorm{ 
-  border-bottom:none;
-}
-.formSelect dd ul li:last-child  a.typeNorm{ 
-  border-bottom:none;
-}
-
-.resultNorm{
-  display: block;
-  font-size:1.8em;
-  padding: 15px 10px;
-}
-
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
-  .resultNorm{
-    display: block;
-    font-size:1.8em;
-    padding: 24px 17px;
-  }
-}
-
-.DropDownWrap li a.selctAddWrap{
-  margin:0;
-  border-top:1px #CDCDCD solid;
-  padding: 10px 10px 6px;
-}
-.selectAdd{
-  margin:0;
-}
-dt a dl.selectAdd{
-  display: none;
-}
-dl.selectAdd dt{
-  float:left;
-  font-size: 1.6em;
-  font-weight:200;
-  color: #33B4E6;
-}
-dl.selectAdd dd.plus{
-    margin-top: -7px;
-    font-size:3em;
-}
-.DropDownWrap li a { 
-  margin:0 0; 
-  border-bottom:1px #CDCDCD solid;
-}
-.DropDownWrap li:nth-last-child(2) a {
-  border-bottom:none;
-}
-
-dt .dataSelectWrap{
-  padding: 0 10px;
-  margin:0;
-  height:53px;
-}
-
-
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
-  dt .dataSelectWrap{
-    padding: 8px 10px;
-    margin:0;
-    height:74px;
-  }  
-}
-
-dd .dataSelectWrap{
-  padding: 8px 10px;
-  margin:0;
-  height:90px;
-}
-.dataSelectWrap dt.dataTitle {
-  font-weight: 400;
-  margin:0;
-  font-size: 1.1em;
-}
-.dataSelectWrap dt.dataStd {
-  font-weight: 400;
-  font-size:1.8em;
-  margin:0;
-}
-.dataTitle i{
-  font-style: normal;
-}
-
-dd .dataSelectWrap .edit{
-  color: #8B8B8B;
-  font-size: 1.6em;
-  font-weight: 200;
-  display: block;
-  height: 27px;
-  float: right;
-}
-.dataSelectWrap .edit{
-  display: none
-}
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
-  .DropDownWrap li a.selctAddWrap{
-    padding: 11px 22px 10px;
-  }
-  dd .dataSelectWrap, dt .dataSelectWrap{
-    padding: 13px 17px;
-  }
-  .dataSelectWrap dt.dataTitle {
-  font-weight: 400;
-  margin:0;
-  font-size: 1.2em;
-  }
-  .dataSelectWrap dd.dataStd {
-  font-weight: 400;
-  font-size:1.8em;
-  margin:0;
-  }
-  dl.selectAdd dd.plus{
-    margin-top:-9px;
-    font-size:3em;
-    line-height: 1;
-  }
-}
-
-
-.formSelect[disabled]{
-  opacity: 0.6;
-}
-
-.formSelect[disabled] dt a{
-  cursor: not-allowed;
-  opacity: 0.7
-}
-.greyImage {
-  filter: gray; /* IE6-9 */
-  filter: grayscale(1); /* Firefox 35+ */
-  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
 }
 
 .noBkLabel{
@@ -8576,12 +8352,311 @@ dd.cardIcon{
 }
 
 
+/*Select Dropdown*/
+
+.formSelect dd, .formSelect dt, .formSelect ul { margin:0px; padding:0px; }
+.formSelect dd { position:relative; }
+.formSelect a, .formSelect a:visited { color:#454545; text-decoration:none; outline:none;}
+.formSelect a:hover { color:#454545;}
+.formSelect dt a:hover { color:#454545;}
+.formSelect dt a {
+  position: relative;
+  display:block;
+  background-color: #f3f3f3;
+  height:53px;
+  font-weight: 400;
+  margin:0 0 20px 0;
+}
+.formSelect dt a:after {
+  font-size: 2.1em;
+  content: "\f0d7";
+  font-family: "FontAwesome";
+  position: absolute;
+  top: 0.7em;
+  right: 0.6em;
+  color: #8b8b8b;
+}
+
+@media (min-width: 992px) { 
+  .formSelect dt a {
+    height:74px;
+  }
+  .formSelect dt a:after {
+    top: 1.2em;
+    right: 0.8em;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  .formSelect dt a:after {
+    top: 1.1em;
+  }
+}
+.formSelect dt a span {cursor:pointer; display:block;}
+.formSelect dd ul { 
+  background:#fff none repeat scroll 0 0; 
+  border:1px solid #D5D5D5; color:#C5C0B0; 
+  display:none;
+  left:0px; 
+  padding:0 0; 
+  position:relative; 
+  top:-19px; 
+  width:auto; 
+  min-width:170px; 
+  list-style:none;
+}
+
+.formSelect span.value { display:none;}
+.formSelect dd ul li a { 
+  display:block;
+}
+.formSelect dd ul li a:hover { background-color:#F6FCFF;}
+
+.formSelect img.flag { border:none; vertical-align:middle; margin-left:10px; }
+
+.formSelect dd ul li a { 
+  border-bottom:1px #CDCDCD solid;
+}
+
+.NormalStyleWrap li a{
+  padding:0 12px; 
+}
+.formSelect dd ul li:last-child  a{ 
+  border-bottom:none;
+}
+.formSelect dt a div.typeNorm { 
+  padding:15px 10px;
+  font-size: 1.8em;
+}
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .formSelect dt a div.typeNorm { 
+    padding: 12px 0;
+  }
+}
+
+.formSelect dd ul li a div.typeNorm{ 
+  padding:12px 5px;
+  font-size: 1.6em;
+}
+.formSelect dd ul li:last-child  a.typeNorm{ 
+  border-bottom:none;
+}
+.formSelect dd ul li:last-child  a.typeNorm{ 
+  border-bottom:none;
+}
+
+.resultNorm{
+  display: block;
+  font-size:1.8em;
+  padding: 15px 10px;
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .resultNorm{
+    display: block;
+    font-size:1.8em;
+    padding: 24px 17px;
+  }
+}
+
+.DropDownWrap li a.selctAddWrap{
+  margin:0;
+  border-top:1px #CDCDCD solid;
+  padding: 10px 10px 6px;
+}
+.selectAdd{
+  margin:0;
+}
+dt a dl.selectAdd{
+  display: none;
+}
+dl.selectAdd dt{
+  float:left;
+  font-size: 1.6em;
+  font-weight:200;
+  color: #33B4E6;
+}
+dl.selectAdd dd.plus{
+    margin-top: -7px;
+    font-size:3em;
+}
+.DropDownWrap li a { 
+  margin:0 0; 
+  border-bottom:1px #CDCDCD solid;
+}
+.DropDownWrap li:nth-last-child(2) a {
+  border-bottom:none;
+}
+
+dt .dataSelectWrap{
+  padding: 0 10px;
+  margin:0;
+  height:53px;
+}
+
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  dt .dataSelectWrap{
+    padding: 8px 10px;
+    margin:0;
+    height:74px;
+  }  
+}
+
+dd .dataSelectWrap{
+  padding: 8px 10px;
+  margin:0;
+  height:90px;
+}
+.dataSelectWrap dt.dataTitle {
+  font-weight: 400;
+  margin:0;
+  font-size: 1.1em;
+}
+.dataSelectWrap dt.dataStd {
+  font-weight: 400;
+  font-size:1.8em;
+  margin:0;
+}
+.dataTitle i{
+  font-style: normal;
+}
+
+dd .dataSelectWrap .edit{
+  color: #8B8B8B;
+  font-size: 1.6em;
+  font-weight: 200;
+  display: block;
+  height: 27px;
+  float: right;
+}
+.dataSelectWrap .edit{
+  display: none
+}
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .DropDownWrap li a.selctAddWrap{
+    padding: 11px 22px 10px;
+  }
+  dd .dataSelectWrap, dt .dataSelectWrap{
+    padding: 13px 17px;
+  }
+  .dataSelectWrap dt.dataTitle {
+  font-weight: 400;
+  margin:0;
+  font-size: 1.2em;
+  }
+  .dataSelectWrap dd.dataStd {
+  font-weight: 400;
+  font-size:1.8em;
+  margin:0;
+  }
+  dl.selectAdd dd.plus{
+    margin-top:-9px;
+    font-size:3em;
+    line-height: 1;
+  }
+}
+
+
+.formSelect[disabled]{
+  opacity: 0.6;
+}
+
+.formSelect[disabled] dt a{
+  cursor: not-allowed;
+  opacity: 0.7
+}
+.greyImage {
+  filter: gray; /* IE6-9 */
+  filter: grayscale(1); /* Firefox 35+ */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+}
+
+
+/*Custom Select*/
+.formSelectStyle{
+  width:100%;
+  overflow: hidden;
+  background-color:#f3f3f3;
+  position: relative;
+}
+.numberOfPayment{
+  width:30%;
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+.numberOfPayment{
+  width: 12%;
+}
+}
+
+.formSelectStyle select {
+  background: transparent;
+  width: 100%;
+  padding: 20px 17px;
+  font-size: 1.6em;
+  border: 0;
+  -webkit-appearance: none;
+  -moz-appearance:window
+}
+
+.formSelectStyle:after {
+    font-size: 2.1em;
+    content: "\f0d7";
+    font-family: "FontAwesome";
+    position: absolute;
+    top: .8em;
+    right: 0.6em;
+    color: #8b8b8b;
+}
 
 
 
+/*Date Picker*/
+.datePicker{
+  width: 100%;
+  overflow: hidden;
+  background-color:#f3f3f3;
+  position: relative;
+  margin-bottom:20px;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  .datePicker{
+    width: 100%;
+  }
+}
+.datePicker a {
+  display: block;
+  background: transparent;
+  width: 100%;
+  padding: 20px 17px;
+  font-size: 1.6em;
+  border: 0;
+  color:#454545;
+  -webkit-appearance: none;
+  -moz-appearance:window;
+}
+.datePicker a:hover {
+  text-decoration: none;
+}
 
 
-
+.datePicker:after {
+    font-size: 2.1em;
+    content: "\e600";
+    font-family: "icomoon";
+    position: absolute;
+    top: .8em;
+    right: 0.6em;
+    color: #8b8b8b;
+}
 
 /*Margin*/
 .mgTop10{
