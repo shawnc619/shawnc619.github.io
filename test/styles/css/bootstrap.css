@@ -8381,7 +8381,7 @@ dd.cardIcon{
   position: relative;
   display:block;
   background-color: #EFEFEF;
-  height:53px;
+  height:63px;
   font-weight: 400;
   margin:0 0 20px 0;
 }
@@ -8390,7 +8390,7 @@ dd.cardIcon{
   content: "\f0d7";
   font-family: "FontAwesome";
   position: absolute;
-  top: 0.7em;
+  top: 0.9em;
   right: 0.6em;
   color: #8b8b8b;
 }
@@ -8483,8 +8483,22 @@ dd.cardIcon{
 .DropDownWrap li a.selctAddWrap{
   margin:0;
   border-top:1px #CDCDCD solid;
-  padding: 10px 10px 6px;
+  padding: 14px 10px 10px;
 }
+.DropDownWrap li.header{
+  background:#f4f4f4;
+  color:#454545;
+  padding:8px 10px;
+  font-size:1.5em;
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .DropDownWrap li.header{
+  padding: 13px 17px;
+  }
+}
+
 .selectAdd{
   margin:0;
 }
@@ -8540,13 +8554,59 @@ dd .dataSelectWrap{
   font-size:1.8em;
   margin:0;
 }
-.dataTitle i{
+.dataSelectWrap .cardIcon{
+    position: relative;
+    background-color: #fdfdfd;
+    border: 1px #e2e2e2 solid;
+    border-radius: 2px;
+    width: 3.2em;
+    height: 2em;
+    float: left;
+    margin: 0 0.7em 0 0;
+    text-align: right;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+.dataSelectWrap .cardIcon{
+    width: 5em;
+    height: 3em;
+    margin: 0 1.5em 0 0;
+}
+}
+dt .databank {
+  font-weight: 400;
+  font-size:1.4em;
+  margin:0;
+}
+dd .databank {
+  font-weight: 400;
+  font-size:1.2em;
+  margin:0;
+}
+.databankStd{
+  font-weight: 400;
+  margin:0;
+  font-size: 1.1em;
+  line-height: 1.2;
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  .databank {
+  font-size:1.6em;
+  }
+}
+
+.databank .dataLabelStd{
+font-weight: 100;
+}
+.dataTitle i, .databank i{
   font-style: normal;
 }
 
 dd .dataSelectWrap .edit{
   color: #8B8B8B;
-  font-size: 1.6em;
+  font-size: 1.4em;
   font-weight: 200;
   display: block;
   height: 27px;
@@ -8555,6 +8615,14 @@ dd .dataSelectWrap .edit{
 .dataSelectWrap .edit{
   display: none
 }
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  dd .dataSelectWrap .edit{
+    font-size: 1.6em;
+  }
+}
+
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
   .DropDownWrap li a.selctAddWrap{
@@ -8578,6 +8646,7 @@ dd .dataSelectWrap .edit{
     font-size:3em;
     line-height: 1;
   }
+
 }
 
 
