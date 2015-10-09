@@ -25,13 +25,16 @@
             <div class="collapse navbar-collapse no-transition" id="navbar">
                 <ul class="nav navbar-nav">
                     <li class="active">
-                        <a href="index.html#">Home</a>
+                        <a href="#">My account</a>
                     </li>
                     <li>
-                        <a href="index.html#about">About</a>
+                        <a href="#">Help</a>
                     </li>
                     <li>
-                        <a href="index.html#contact">Contact</a>
+                        <a href="#">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#">Sign out</a>
                     </li>
                 </ul>
             </div>
@@ -49,6 +52,7 @@
 
 
     <div class="container-fluid placeholder"></div>
+    <div class="container-fluid dottedPattern"></div>
     <main class="container">
         <section class="row">
             <div class="col-xs-12 clearfix">
@@ -67,7 +71,7 @@
                               <fieldset class="formSelect">
                                 <dl>
                                 <dt>
-                                    <a href="#"><span class="resultNorm">Select a Biller</span></a>
+                                    <a href="#"><span class="resultNorm">Select a biller</span></a>
                                 </dt>
                                 <dd>
                                     <ul class="selectToggle DropDownWrap">
@@ -483,19 +487,17 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">X</span></button>
                 </div>
                 <div class="modal-body">
-                    <h4 class="modal-title">Add payment method</h4>
 
                     <!-- Tab -->
                     <ul class="nav nav-pills nav-justified" role="tablist">
-                        <li role="presentation" class="active"><a href="#card" aria-controls="Add card" role="tab" data-toggle="tab">Add Card</a></li>
-                        <li role="presentation"><a href="#bankAccount" aria-controls="Add bank account" role="tab" data-toggle="tab">Add Bank Account</a></li>
+                        <li role="presentation" class="active"><a href="#card" aria-controls="Add card" role="tab" data-toggle="tab">Card</a></li>
+                        <li role="presentation"><a href="#bankAccount" aria-controls="Add bank account" role="tab" data-toggle="tab">Bank account</a></li>
                     </ul>
-                    <hr class="borderTop">
+                    <hr class="borderNone">
                     <!-- Tab panel -->
                     <div class="tab-content ">
                         <!-- Add card panel -->
                         <div role="tabpanel" class="tab-pane active" id="card">
-                              <h4 class="modal-title">Fill out card details</h4>
                               <div class="availCardType clearfix">
                                   <div class="cardIcon"><img src="styles/images/cardcardDc.png" alt="Dinners Club" width="100%"></div>
                                   <div class="cardIcon"><img src="styles/images/cardAE.png" alt="American Express" width="100%"></div>
@@ -506,8 +508,8 @@
                               <div class="form-group">
                                   <label>Card number</label>
                                   <input type="tel" name="tel" class="form-control" placeholder="0000 1111 2222 3333">
-                                  <p class="returnBiller">Westpac St Leonards</p>
                               </div>
+                              <p class="returnBiller">Westpac St Leonards</p>
                               <div class="clearfix">
                                   <div class="form-group pull-left" style="width:55%">
                                       <label>Cardholder name</label>
@@ -515,7 +517,7 @@
                                   </div>
                                   <div class="form-group pull-right" style="width:42%">
                                       <label>Expiry date</label>
-                                      <input type="text" class="form-control" placeholder="mm / yy">
+                                      <input type="text" class="form-control" placeholder="mm/yy">
                                   </div>
                               </div>
                               <div class="checkbox checkbox-info checkbox-circle">
@@ -528,7 +530,6 @@
                         </div>
                         <!-- Add bank account panel -->
                         <div role="tabpanel" class="tab-pane" id="bankAccount">
-                            <h4 class="modal-title">Fill out account details</h4>
                               <div class="clearfix">
                                   <div class="form-group pull-left" style="width:42%">
                                       <label>BSB</label>

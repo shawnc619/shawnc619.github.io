@@ -17,21 +17,23 @@
         <div class="container">
             <div class="navbar-header">
                 <button class="navbar-toggle collapsed" data-target="#navbar" data-toggle="collapse" type="button">
-                    <img class="hamburger pull-right" src="styles/images/hamburger.png" width="30px">
-                    <div class="menu">Menu</div>
+                    <img class="hamburger pull-right" src="styles/images/hamburger.png" width="33px">
                 </button> 
                 <a class="navbar-brand" href="index.html#"><img class="logo" src="styles/images/logo.png"></a>
             </div>
             <div class="collapse navbar-collapse no-transition" id="navbar">
                 <ul class="nav navbar-nav">
                     <li class="active">
-                        <a href="index.html#">Home</a>
+                        <a href="#">My account</a>
                     </li>
                     <li>
-                        <a href="index.html#about">About</a>
+                        <a href="#">Help</a>
                     </li>
                     <li>
-                        <a href="index.html#contact">Contact</a>
+                        <a href="#">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#">Sign out</a>
                     </li>
                 </ul>
             </div>
@@ -49,6 +51,7 @@
 
 
     <div class="container-fluid placeholder"></div>
+    <div class="container-fluid dottedPattern"></div>
     <main class="container">
         <section class="row">
             <div class="col-xs-12 border-btm clearfix">
@@ -74,6 +77,9 @@
                                   <input type="text" pattern="[0-9]*" class="form-control" placeholder="0000111122223333">
                                   <a class="iconShortcut" href="#"><span class="fa fa-info-circle"></span></a>
                               </fieldset>
+                              <div class="alert">
+                                  <strong>Error</strong> this DEFT number can't be found etc
+                              </div>
                               <!-- formSelect -->
                               <fieldset class="formSelect">
                                 <dt>
@@ -112,8 +118,8 @@
                                 <fieldset class="form-group">
                                     <label>Card number</label>
                                     <input type="text" pattern="[0-9]*" class="form-control" placeholder="0000 1111 2222 3333">
-                                    <p class="returnBiller">Westpac St Leonards</p>
                                 </fieldset>
+                                <p class="returnBiller">Westpac St Leonards</p>
                                 <fieldset class="form-group">
                                     <label>Cardholder name</label>
                                     <input type="text" class="form-control" placeholder="Jone Smith">
