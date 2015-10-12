@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DEFT payment gateway</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+<link href="styles/css/font-awesome.css" rel="stylesheet">
+<link href="styles/css/icomoon.css" rel="stylesheet">
+<link href="styles/css/bootstrap.css" rel="stylesheet">
+<link href="styles/css/awesome-bootstrap-checkbox.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-fixed-top navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle collapsed" data-target="#navbar" data-toggle="collapse" type="button">
+                    <img class="hamburger pull-right" src="styles/images/hamburger.png" width="33px">
+                </button> 
+                <a class="navbar-brand" href="index.html#"><img class="logo" src="styles/images/logo.png"></a>
+            </div>
+            <div class="collapse navbar-collapse no-transition" id="navbar">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="#">My account</a>
+                    </li>
+                    <li>
+                        <a href="#">Help</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#">Sign out</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+    <div class="container-fluid placeholder"></div>
+    <div class="container-fluid dottedPattern"></div>
+    <main class="container">
+        <section class="row">
+            <div class="col-xs-12 border-btm clearfix">
+                <h1 class="pull-left">Verify your email address</h1>
+                <h1 class="pull-right">2/4</h1>
+            </div>
+            <div class="col-xs-12 clearfix instructionWrap">
+                <h4>A temporary password has been sent to carify your email address, please enter below to continue</h4>
+            </div>
+            <div class="col-xs-12 clearfix registWrap2">
+                <fieldset class="form-group">
+                    <label>Temporary password</label>
+                    <input type="text" class="form-control" placeholder="Enter temporary password here">
+                </fieldset>
+            </div>
+            
+            <!-- CTA -->
+            <div class="col-xs-12 col-sm-8 col-sm-push-4 ctaWrapSingle2">
+                    <div class="hidden-xs col-sm-4">
+                    </div>
+                    <div class="col-xs-12 col-sm-8">
+                        <button type="button" class="btn btn-primary btn-block btn-lg" data-toggle="modal" data-target=".modalSuccess" href="Registration3.html">Continue</button>
+                    </div>
+            </div>
+            <div class="col-xs-12 clearfix instructionWrap border-top">
+                <h5>Haven't received email? Please check your junkmail folder or <a href="#">click here to resend</a></h5>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+
+    </footer>
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+   
+
+
+    <script type="text/javascript">
+  
+
+
+            $('.formSelect').click(function(){
+                $('.selectToggle',this).slideToggle('fast', "swing");
+                return false 
+            });
+                        
+            $(".formSelect dd ul li a").click(function() {
+                var text = $(this).html();
+                $(".formSelect dt a").html(text);
+                $('.selectToggle',this).hide();
+            });
+                        
+            function getSelectedValue(id) {
+                return $("#" + id).find("dt a span.value").html();
+            }
+
+            $(document).bind('click', function(e) {
+                var $clicked = $(e.target);
+                if (! $clicked.parents().hasClass("formSelect"))
+                    $(".formSelect dd ul").hide();
+            });
+
+
+            
+    </script>
+</body>
+</html>

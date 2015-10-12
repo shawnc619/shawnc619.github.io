@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DEFT payment gateway</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+<link href="styles/css/font-awesome.css" rel="stylesheet">
+<link href="styles/css/icomoon.css" rel="stylesheet">
+<link href="styles/css/bootstrap.css" rel="stylesheet">
+<link href="styles/css/awesome-bootstrap-checkbox.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-fixed-top navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle collapsed" data-target="#navbar" data-toggle="collapse" type="button">
+                    <img class="hamburger pull-right" src="styles/images/hamburger.png" width="33px">
+                </button> 
+                <a class="navbar-brand" href="index.html#"><img class="logo" src="styles/images/logo.png"></a>
+            </div>
+            <div class="collapse navbar-collapse no-transition" id="navbar">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="#">My account</a>
+                    </li>
+                    <li>
+                        <a href="#">Help</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#">Sign out</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+    <div class="container-fluid placeholder"></div>
+    <div class="container-fluid dottedPattern"></div>
+    <main class="container">
+        <section class="row">
+            <div class="col-xs-12 border-btm">
+                <h1 class="pull-left">Sign up to make easy payment</h1>
+            </div>
+            <div class="col-xs-12 clearfix registWrap  border-btm">
+                <div class="clearfix">
+                    <fieldset class="form-group pull-left" style="width:48%">
+                        <label>First namae</label>
+                        <input type="text" class="form-control" placeholder="e.g. Jone">
+                    </fieldset>
+                    <fieldset class="form-group pull-right" style="width:49%">
+                        <label>Last name</label>
+                        <input type="text" class="form-control" placeholder="e.g. Smith">
+                    </fieldset>
+                </div>
+                <fieldset class="form-group">
+                    <label>Email address</label>
+                    <input type="text" class="form-control" placeholder="jone.smith@abc.com">
+                </fieldset>
+                <fieldset class="form-group">
+                    <label>Confirm email address</label>
+                    <input type="text" class="form-control" placeholder="jone.smith@abc.com">
+                </fieldset>
+            </div>
+            
+            <!-- CTA -->
+            <div class="col-xs-12 col-sm-8 col-sm-push-4 ctaWrapSingle">
+                    <div class="hidden-xs col-sm-4">
+                    </div>
+                    <div class="col-xs-12 col-sm-8">
+                        <button type="button" class="btn btn-primary btn-block btn-lg" data-toggle="modal" data-target=".modalSuccess">Create account</button>
+                    </div>
+            </div>
+            <!-- terms -->
+            <div class="col-xs-12 clearfix">
+                    <div class="terms text-right">
+                      This payment is bound by the DEFT <a href="#">Terms of Use</a>
+                      <br><br><br>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+
+    </footer>
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+   
+
+
+    <script type="text/javascript">
+  
+
+
+            $('.formSelect').click(function(){
+                $('.selectToggle',this).slideToggle('fast', "swing");
+                return false 
+            });
+                        
+            $(".formSelect dd ul li a").click(function() {
+                var text = $(this).html();
+                $(".formSelect dt a").html(text);
+                $('.selectToggle',this).hide();
+            });
+                        
+            function getSelectedValue(id) {
+                return $("#" + id).find("dt a span.value").html();
+            }
+
+            $(document).bind('click', function(e) {
+                var $clicked = $(e.target);
+                if (! $clicked.parents().hasClass("formSelect"))
+                    $(".formSelect dd ul").hide();
+            });
+
+
+            
+    </script>
+</body>
+</html>
