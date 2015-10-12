@@ -8847,9 +8847,14 @@ dd .dataSelectWrap .edit{
 .formSelectStyle select {
   background: transparent;
   width: 100%;
-  padding: 18px 17px 19px 12px;
+  padding: 20px 17px 20px 12px;
   font-size: 1.4em;
   border: 0;
+  -webkit-transition: all .15s ease-in-out;
+  -moz-transition: all .15s ease-in-out;
+  -ms-transition: all .15s ease-in-out;
+  -o-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
   -webkit-appearance: none;
   -moz-appearance:window
 }
@@ -8866,6 +8871,13 @@ dd .dataSelectWrap .edit{
     color: #8b8b8b;
 }
 
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+.formSelectStyle select {
+  padding: 20px 17px 19px 12px;
+}
+
+}
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
   .formSelectStyle select {
