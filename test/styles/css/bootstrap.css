@@ -3494,23 +3494,24 @@ fieldset[disabled] .btn-secondary-inv.active {
 /*Button cancel*/
 .btn-cancel {
   color: #656565;
-  background-color: #eaeaea;
+  background-color: #DCDCDC;
+  border:1px #CACACA solid;
 }
 .btn-cancel:focus,
 .btn-cancel.focus {
-  color: #949494;
-  background-color: #eaeaea;
+  color: #656565;
+  background-color: #DCDCDC;
   border-color: none;
 }
 .btn-cancel:hover {
-  color: #949494;
+  color: #656565;
   background-color: #D2D2D2;
   border-color: none;
 }
 .btn-cancel:active,
 .btn-cancel.active,
 .open > .dropdown-toggle.btn-cancel {
-  color: #949494;
+  color: #656565;
   background-color: #3C8DF3;
   border-color: none;
 }
@@ -3523,7 +3524,7 @@ fieldset[disabled] .btn-secondary-inv.active {
 .btn-cancel:active.focus,
 .btn-cancel.active.focus,
 .open > .dropdown-toggle.btn-cancel.focus {
-  color: #949494;
+  color: #656565;
   background-color: #D2D2D2;
   border-color: none;
 }
@@ -8552,7 +8553,7 @@ dd.cardIcon{
   position: absolute;
   top: 0.9em;
   right: 0.6em;
-  color: #8b8b8b;
+  color: #4497ff;
 }
 
 @media (min-width: 992px) { 
@@ -8868,7 +8869,7 @@ dd .dataSelectWrap .edit{
     position: absolute;
     top: .8em;
     right: 0.6em;
-    color: #8b8b8b;
+    color: #4497ff;
 }
 
 /* Small devices (tablets, 768px and up) */
@@ -8886,13 +8887,8 @@ dd .dataSelectWrap .edit{
 
   }
   .formSelectStyle:after {
-    font-size: 2.1em;
-    content: "\f0d7";
-    font-family: "FontAwesome";
-    position: absolute;
     top: 1em;
     right: 0.8em;
-    color: #8b8b8b;
 }
 }
 
@@ -9045,7 +9041,9 @@ table.paymentDateInfo tr td:nth-child(2){
         padding:0 0 35px;
     }
 }
-
+.noOfSteps{
+  color:#4497ff;
+}
 .instructionWrap{
   padding-top:10px;
   padding-bottom: 10px;

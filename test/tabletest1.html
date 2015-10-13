@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DEFT payment gateway</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/><link href="styles/css/font-awesome.css" rel="stylesheet">
+
+<link href="styles/css/bootstrap.css" rel="stylesheet">
+
+
+
+<style>
+a{
+	display: block;
+	border:1px red solid;
+	width: 100%
+}
+
+td{
+	width:30%;
+}
+
+</style>
+
+
+</head>
+
+<body>
+
+<a href="#" data-toggle="modal" data-target=".modalInfo">
+<table width="800" border="1">
+	<tr>
+		<td>1</td>
+		<td>JoneSmith JoneSmith JoneSmithJoneSmithJoneSmithJoneSmithJoneSmithJoneSmith JoneSmithJoneSmithJoneSmithJoneSmith JoneSmithJoneSmithJoneSmithv  </td>
+		<td>1</td>
+	</tr>
+</table>
+
+</a>
+
+
+<!-- Info -->
+
+    <div class="modal fade modalInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-info" role="document">
+            <div class="modal-content2">
+                <div class="modal-header clearfix">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">X</span></button>
+                </div>
+                <div class="modal-body clearfix">
+                    <h1 class="DRNedit_title">DEFT number</h1>
+                    <p class="DRNInfoHelp">DEFT number is issued by your biller to assist you with payment.</p>
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-block btn-secondary"  data-dismiss="modal">Got it</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script type="text/javascript">  
+        (function() {
+          
+          var cards = document.querySelectorAll(".card.effect__click");
+          for ( var i  = 0, len = cards.length; i < len; i++ ) {
+            var card = cards[i];
+            clickListener( card );
+          }
+        
+          function clickListener(card) {
+            $(".btn-flip").click(function() {
+                 var c = card.classList;
+                 c.contains("flipped") === true ? c.remove("flipped") : c.add("flipped");
+            });
+          }
+
+           
+
+
+        })();
+
+       
+    </script>
+
+</body>
+</html>
