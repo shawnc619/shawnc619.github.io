@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DEFT payment gateway</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+<link href="styles/css/font-awesome.css" rel="stylesheet">
+<link href="styles/css/bootstrap.css" rel="stylesheet">
+<link href="styles/css/awesome-bootstrap-checkbox.css" rel="stylesheet">
+
+
+
+
+
+<!--[if lt IE 9]>
+  <script src="js/html5shiv.js"></script>
+  <script src="js/respond.min.js"></script>
+  <link rel="stylesheet" href="styles/css/ie8.css">
+<![endif]-->
+
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-fixed-top navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle collapsed" data-target="#navbar" data-toggle="collapse" type="button">
+                    <img class="hamburger pull-right" src="styles/images/hamburger.png" width="30px">
+                </button> 
+                <a class="navbar-brand" href="index.html#"><img class="logo" src="styles/images/logo.png"></a>
+            </div>
+            <div class="collapse navbar-collapse no-transition" id="navbar">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="#">My account</a>
+                    </li>
+                    <li>
+                        <a href="#">Help</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#">Sign out</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+    <div class="container-fluid placeholder"></div>
+    <div class="container-fluid dottedPattern"></div>
+    <main class="container">
+        <section class="row">
+            <div class="col-xs-12 border-btm clearfix">
+                <h1 class="pull-left">My Wallet</h1>
+            </div>
+            <div class="col-xs-12 border-btm">
+                <a class="clearfix addWrap" data-toggle="modal" data-target=".modalAdd">
+                    <h3 class="blueAdd vcenter">Add payment method</h3>
+                    <div class="plus vcenter">+</div>
+                </a>
+            </div>
+            <!-- Credit Card List -->
+            <div class="col-xs-12">
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a class="accordion-toggle"
+                            data-parent="#accordion" data-toggle="collapse" href=
+                            "#collapseOne">Cards</a></h4>
+                        </div>
+                        <div class="panel-collapse collapse in" id="collapseOne">
+                            <div class="panel-body">
+                                <ul class="list">
+                                    <li>
+                                        <a class="clearfix info-Wrap-Wallet2 wallet-primary" data-toggle="modal" data-target=".modalCardEdit">
+                                            <table>
+                                                <tr>
+                                                    <td>
+                                                        <div class="cardIcon">
+                                                            <img src="styles/images/cardAE.png" width="100%">
+                                                            <span class="fa fa-check-circle"></span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="info-block">
+                                                            <h3>**** 4039</h3>
+                                                            <p>John SmithJohn IS very much loved by his colleagues</p>
+                                                            <p>Westpac St Leonards</p>
+                                                            <p><span class="dataLabelStd">Expiry date &nbsp;</span>07/17</p>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="editSym">Edit</div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="clearfix info-Wrap-Wallet2" data-toggle="modal" data-target=".modalCardEdit">
+                                            <table>
+                                                <tr>
+                                                    <td>
+                                                        <div class="cardIcon">
+                                                            <img src="styles/images/cardVisa.png" width="100%">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="info-block">
+                                                            <h3>**** 4039</h3>
+                                                            <p>John Smith</p>
+                                                            <p>Westpac St Leonards</p>
+                                                            <p><span class="dataLabelStd">Expiry date &nbsp;</span>07/17</p>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="editSym">Edit</div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </a>
+                                    </li>
+                                </ul>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <!-- Bank account List -->
+            <div class="col-xs-12">
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a class="accordion-toggle"
+                            data-parent="#accordion" data-toggle="collapse" href=
+                            "#collapsetwo">Bank Accounts</a></h4>
+                        </div>
+                        <div class="panel-collapse collapse in" id="collapsetwo">
+                            <div class="panel-body">
+                                <ul class="list">
+                                    <li>
+                                        <a class="clearfix info-Wrap-Wallet2 wallet-primary" data-toggle="modal" data-target=".modalAccountEdit">
+                                            <table>
+                                                <tr>
+                                                    <td>
+                                                        <div class="cardIcon">
+                                                            <img src="styles/images/bankIcon.png" width="100%">
+                                                            <span class="fa fa-check-circle"></span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="info-block">
+                                                            <h4><span class="dataLabelMjr">BSB</span> 923-100 &nbsp;&nbsp;<br class="visible-xs"><span class="dataLabelMjr">ACC</span> 325867344</h4>
+                                                            <p>John Smith John Smith John Smith John Smith John Smith John Smith John Smith John Smith John Smith John Smith John Smith John Smith John Smith John Smith John Smith John Smith John Smith John Smith John Smith John Smith John Smith John Smith John Smith John Smith John Smith John Smith John Smith John Smith John Smith John Smith John Smith</p>
+                                                            <p>Westpac St Leonards</p>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="editSym">Edit</div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="clearfix info-Wrap-Wallet2" data-toggle="modal" data-target=".modalAccountEdit">
+                                            <table>
+                                                <tr>
+                                                    <td>
+                                                        <div class="cardIcon">
+                                                            <img src="styles/images/bankIcon.png" width="100%">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="info-block">
+                                                            <h4><span class="dataLabelMjr">BSB</span> 923-100 &nbsp;&nbsp;<br class="visible-xs"><span class="dataLabelMjr">ACC</span> 325867344</h4>
+                                                            <p>John Smith</p>
+                                                            <p>Westpac St Leonards</p>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="editSym">Edit</div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="clearfix info-Wrap-Wallet2 walPriPymn" data-toggle="modal" data-target=".modalAccountEdit">
+                                            <table>
+                                                <tr>
+                                                    <td>
+                                                        <div class="cardIcon">
+                                                            <img src="styles/images/bankIcon.png" width="100%">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="info-block">
+                                                            <h4><span class="dataLabelMjr">BSB</span> 923-100 &nbsp;&nbsp;<br class="visible-xs"><span class="dataLabelMjr">ACC</span> 325867344</h4>
+                                                            <p>John Smith</p>
+                                                            <p>Westpac St Leonards</p>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="editSym">Edit</div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </a>
+                                    </li>
+                                </ul>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+
+
+    </footer>
+
+
+
+
+
+
+
+
+
+    <!-- Modal Add-->
+    <div class="modal fade modalAdd" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content2">
+                <div class="modal-header clearfix">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">X</span></button>
+                </div>
+                <div class="modal-body">
+
+                    <!-- Tab -->
+                    <ul class="nav nav-pills nav-justified" role="tablist">
+                        <li role="presentation" class="active"><a href="#card" aria-controls="Add card" role="tab" data-toggle="tab">Card</a></li>
+                        <li role="presentation"><a href="#bankAccount" aria-controls="Add bank account" role="tab" data-toggle="tab">Bank Account</a></li>
+                    </ul>
+                    <hr class="borderNone">
+                    <!-- Tab panel -->
+                    <div class="tab-content ">
+                        <!-- Add card panel -->
+                        <div role="tabpanel" class="tab-pane active" id="card">
+                              <div class="availCardType clearfix">
+                                  <div class="cardIcon"><img src="styles/images/cardDc.png" alt="Dinners Club" width="100%"></div>
+                                  <div class="cardIcon"><img src="styles/images/cardAE.png" alt="American Express" width="100%"></div>
+                                  <div class="cardIcon"><img src="styles/images/cardMa.png" alt="Mastercard" width="100%"></div>
+                                  <div class="cardIcon"><img src="styles/images/cardVisa.png" alt="Visa" width="100%"></div>
+
+                              </div>
+                              <div class="form-group">
+                                  <label>Card number</label>
+                                  <input type="tel" name="tel" class="form-control" placeholder="0000 1111 2222 3333">
+                              </div>
+                                  <p class="returnBiller">Westpac St Leonards</p>
+                              <div class="clearfix">
+                                  <div class="form-group pull-left" style="width:55%">
+                                      <label>Cardholder name</label>
+                                      <input type="text" class="form-control" placeholder="Jone Smith">
+                                  </div>
+                                  <div class="form-group pull-right" style="width:42%">
+                                      <label>Expiry date</label>
+                                      <input type="text" class="form-control" placeholder="mm / yy">
+                                  </div>
+                              </div>
+                              <div class="checkbox checkbox-info checkbox-circle">
+                                  <input id="defaultCard" class="styled" type="checkbox">
+                                  <label for="defaultCard">Default card for payment</label>
+                              </div>
+                              <div class="modal-btnWrap">
+                                  <button type="button" class="btn btn-primary" data-toggle="modal" data-dismiss="modal">Add</button>
+                              </div>
+                        </div>
+                        <!-- Add bank account panel -->
+                        <div role="tabpanel" class="tab-pane" id="bankAccount">
+                              <div class="clearfix">
+                                  <div class="form-group pull-left" style="width:42%">
+                                      <label>BSB</label>
+                                      <input type="text" class="form-control" placeholder="123 - 456">
+                                  </div>
+                                  <div class="form-group pull-right" style="width:55%">
+                                      <label>Account number</label>
+                                      <input type="text" class="form-control" placeholder="123456789">
+                                  </div>
+                              </div>
+                              <p class="returnBank">Westpac St Leonards</p>
+
+                              <div class="form-group">
+                                  <label>Account name</label>
+                                  <input type="tel" name="tel" class="form-control" placeholder="Jone Smith">
+                              </div>
+                              <div class="checkbox checkbox-info checkbox-circle">
+                                  <input id="defaultAccountAdd" class="styled" type="checkbox">
+                                  <label for="defaultAccountAdd">Default bank account for payment</label>
+                              </div>
+                              <div class="modal-btnWrap">
+                                  <button type="button" class="btn btn-primary" data-toggle="modal" data-dismiss="modal">Add</button>
+                              </div>
+                        </div>
+                    </div> 
+
+
+
+                    
+                </div>
+             
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Card Edit -->
+
+
+    <div class="modal fade modalCardEdit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog card effect__click" role="document">
+            <div class="card__front">
+                <div class="modal-content2">
+                <div class="modal-header clearfix">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">X</span></button>
+                </div>
+                <div class="modal-body">
+                    <dl class="dlrelative">
+                        <dt class="dataTitle">Card number</dt>
+                        <dd class="dataPrimary">**** 3850</dd>
+                        <dd class="dataStd">Commenwealth Bank PTY LTD</dd>
+                        <dd class="cardIcon"><img src="styles/images/cardVisa.png" alt="Visa" width="100%"></dd>
+                    </dl>
+                    <dl>
+                        <dt class="dataTitle">Cardholder name</dt>
+                        <dd class="dataPrimary">Jone SmithJone SmithJone SmithJone SmithJone SmithJone SmithJone SmithJone SmithJone SmithJone SmithJone SmithJone SmithJone SmithJone SmithJone SmithJone SmithJone SmithJone SmithJone SmithJone SmithJone SmithJone Smith</dd>
+                    </dl>
+                    <div class="form-group">
+                        <label>Expiry date</label>
+                        <input type="text" class="form-control" placeholder="mm / yy">
+                    </div>
+                    <div class="checkbox checkbox-info checkbox-circle">
+                        <input id="defaultAccountCardEdit" class="styled" type="checkbox">
+                        <label for="defaultAccountCardEdit">Default bank account for payment</label>
+                    </div>
+                    <div class="modal-btnWrap">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-dismiss="modal">Update</button>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default btn-flip" data-toggle="modal">Delete</button>
+                </div>
+            </div>
+            </div>
+            <div class="card__back">
+                <div class="modal-content2" id="edit-warning">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">X</span></button>
+                    </div>
+                    <div class="modal-body clearfix">
+                        <h3>Confirm to delete this DRN reference number</h3>
+                        <p>and also some friendly and helpful text here</p><br>
+                        <div class="alert">
+                            <strong>WARNING</strong> this DEFT number is linked to multiple Direct Debit Payments. Please select an alternate payment method before deleting this card.
+                        </div>
+                        <button type="button" class="btn btn-secondary pull-right" data-toggle="modal" data-target=".modalDelete">Take me to the page to fix this</button>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger pull-right mgLeft10" data-dismiss="modal">Delete</button>
+                        <button type="button" class="btn btn-cancel  btn-flip pull-right">Back</button>
+                    </div>
+                </div>
+            </div>               
+        </div>
+    </div>
+
+
+
+
+    
+    <!-- Modal Account Edit -->
+
+
+
+
+
+    <div class="modal fade modalAccountEdit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog card effect__click" role="document">
+            <div class="card__front">
+                <div class="modal-content2">
+                    <div class="modal-header clearfix">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">X</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <dl>
+                            <dt class="dataTitle">BSB</dt>
+                            <dd class="dataPrimary">456-389</dd>
+                            <dd class="dataStd">Commenwealth Bank PTY LTD</dd>
+                        </dl>
+                        <div class="form-group">
+                            <label>Account number</label>
+                            <input type="text" class="form-control" placeholder="493850490">
+                        </div>
+                        <div class="form-group">
+                            <label>Account name</label>
+                            <input type="text" class="form-control" placeholder="Jone Smith">
+                        </div>
+                        <div class="checkbox checkbox-info checkbox-circle">
+                            <input id="defaultAccountAccountEdit" class="styled" type="checkbox">
+                            <label for="defaultAccountAccountEdit">Default bank account for payment</label>
+                        </div>
+                        <div class="modal-btnWrap">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-dismiss="modal">Update</button>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default btn-flip">Delete</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card__back">
+                <div class="modal-content2" id="edit-warning">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">X</span></button>
+                    </div>
+                    <div class="modal-body clearfix">
+                        <h3>Confirm to delete this DRN reference number</h3>
+                        <p>and also some friendly and helpful text here</p><br>
+                        <div class="alert">
+                            <strong>WARNING</strong> this DEFT number is linked to multiple Direct Debit Payments. Please select an alternate payment method before deleting this card.
+                        </div>
+                        <button type="button" class="btn btn-secondary pull-right" data-toggle="modal" data-target=".modalDelete">Take me to the page to fix this</button>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger pull-right mgLeft10" data-dismiss="modal">Delete</button>
+                        <button type="button" class="btn btn-cancel  btn-flip pull-right">Back</button>
+                    </div>
+                </div>
+            </div>                   
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script type="text/javascript" >  
+        (function() {
+          var cards = document.querySelectorAll(".card.effect__click");
+          for ( var i  = 0, len = cards.length; i < len; i++ ) {
+            var card = cards[i];
+            clickListener( card );
+          }
+        
+          function clickListener(card) {
+            $(".btn-flip").click(function() {
+                 var c = card.classList;
+                 c.contains("flipped") === true ? c.remove("flipped") : c.add("flipped");
+            });
+          }
+        })();
+    </script>
+
+</body>
+</html>

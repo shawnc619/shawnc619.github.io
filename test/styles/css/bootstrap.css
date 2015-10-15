@@ -2704,7 +2704,7 @@ input[type="search"] {
   position: relative;
   display: block;
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 5px;
 }
 .radio label,
 .checkbox label {
@@ -5101,7 +5101,9 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 }
 .navbar-inverse {
   background-color: #000;
+  opacity: 0.9;
 }
+
 .navbar-inverse .navbar-brand {
   color: #9d9d9d;
 }
@@ -5532,26 +5534,43 @@ a.thumbnail.active {
   color: #333;
 }
 .alert {
-    padding: 20px 15px;
+    padding: 20px 12px;
     /* border: 1px solid #FF435A; */
-    font-size: 1.4em;
+    font-size: 1.6em;
     font-weight: 200;
     background-color: #FF435A;
-    margin: -5px 0 20px;
+    margin: -5px 0 15px;
     color: #fff;
 }
-
+.notify {
+    padding: 20px 12px;
+    /* border: 1px solid #FF435A; */
+    font-size: 1.6em;
+    font-weight: 200;
+    background-color: #4497FF;
+    margin: -5px 0 15px;
+    color: #fff;
+}
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
-  .alert {
-    padding: 25px 15px;
-      margin: -10px 0 20px;
+  .alert, .notify {
+    margin: -10px 0 20px;
+  }
+}
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .alert, .notify {
+    padding: 25px 17px;
   }
 }
 
-.alert h4 {
+.alert h4, .notify h4 {
   margin-top: 0;
   color: inherit;
+}
+.alert a, .notify a {
+  color: #fff;
+  text-decoration: underline;
 }
 .alert .alert-link {
   font-weight: bold;
@@ -7817,15 +7836,13 @@ h1,
     margin: 0 -50px;
   }*/
 }
-.info-Wrap:hover{
+.info-Wrap:hover, .info-Wrap2:hover{
     color:#454545;
     background-color: #F6FCFF;
   }
-
 .info-block{
-    max-width: 70%;
-    float:left;
-  }
+  float: left;
+}
 .info-block h3{
     font-size:2.5em;
     font-weight: 100;
@@ -7833,6 +7850,8 @@ h1,
   }
 .info-block p{
     font-weight: 500;
+    line-height: 1.1;
+    padding:2px 0;
   }
 .no-transition {
     -webkit-transition: height 0.01s;
@@ -7904,8 +7923,6 @@ h1,
     float: left;
     margin: 0px 9px 0 0;
 }
-
-
 .returnBiller{
     margin:-20px 0 20px;
     padding:0;
@@ -7923,6 +7940,23 @@ h1,
     color:#8b8b8b;
     background-color: transparent;
   }
+.descript2{
+    margin:0 0 20px;
+    padding:0;
+    padding-top: 6px;
+    font-size:1.4em;
+    line-height: 1.1;
+    color:#8b8b8b;
+    background-color: transparent;
+  }
+ul.pwValidate{
+  margin:0 0 0 0;
+  padding-left:20px;
+  font-size: 0.9em
+}
+ul.pwValidate li{
+  padding:6px 0;
+}
 
 .dataLabelMjr{
     font-weight: 100;
@@ -7939,7 +7973,7 @@ h1,
     margin: 5px 0;
     padding: 0;
     font-size: 2.8em;
-    line-height:0.8;
+    line-height:0.9;
     font-weight: 100;
 }
 .dataStd{
@@ -8032,15 +8066,6 @@ p.DRNedit_items_last {
 }
 
 
-/* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
-  .info-block{
-      max-width: none;
-      float:left;
-    }
-  
-}
-
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
   .iconShortcut {
@@ -8071,12 +8096,45 @@ p.DRNedit_items_last {
     padding:0 15px 0 11px;
     border-left:4px transparent solid;
   }
+.info-Wrap-Wallet2, .info-Wrap2{
+    display:block;
+    color:#454545;
+    cursor: pointer;
+    margin:0 -15px;
+    padding:20px 15px 20px 11px;
+    border-left:4px transparent solid;
+  }
+.info-Wrap2 table{
+  width: 100%;
+}
+.info-Wrap2 table tr td:first-child{
+  width: 85%;
+}
+.info-Wrap2 table tr td:last-child{
+  width: 15%;
+}
 
+.info-Wrap-Wallet2 table{
+  width: 100%;
+}
+.info-Wrap-Wallet2 table tr td:first-child{
+  width: 13%;
+}
+.info-Wrap-Wallet2 table tr td:nth-child(2){
+  width: 72%;
+}
+.info-Wrap-Wallet2 table tr td:last-child{
+  width: 15%;
+}
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
   .info-Wrap-Wallet{
     margin:0 -25px;
-    padding:0 25px 0 21px;
+    padding:25px 25px 25px 21px;
+  }
+  .info-Wrap-Wallet2{
+    margin:0 -25px;
+    padding:25px 25px 25px 21px;
   }
 }
 
@@ -8093,16 +8151,16 @@ p.DRNedit_items_last {
 .wallet-alert{
     border-left:4px #FF435A solid;
  }  
-.info-Wrap-Wallet:hover{
+.info-Wrap-Wallet:hover, .info-Wrap-Wallet2:hover{
     color:#454545;
     background-color: #F6FCFF;
 }
-.info-Wrap-Wallet h3{
+.info-Wrap-Wallet h3, .info-Wrap-Wallet2 h3{
     font-size:2.5em;
     font-weight: 100;
     margin:0 0 3px;
 }
-.info-Wrap-Wallet h4{
+.info-Wrap-Wallet h4, .info-Wrap-Wallet2 h4{
     font-size:1.8em;
     line-height: 1.4;
     margin:0 0 3px;
@@ -8527,6 +8585,31 @@ dd.cardIcon{
 }
 
 
+.navOnTab2 li a{
+  color: #454545;
+  padding:8px 0;
+}
+.navOnTab2 > li:first-child > a{
+  border-right:none;
+}
+.navOnTab2 > li:last-child > a {
+  border-left:1px solid #ccc;
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+  .navOnTab2 li a, .navOnTab2 li:last-child a{
+    padding:12px 0;
+  }
+
+  .navOnTab2 > li:first-child > a{
+    border-radius: 2px 0 0 2px;
+  }
+  .navOnTab2 > li:last-child > a {
+    border-radius: 0 2px 2px 0; 
+  }
+}
+
 /*Select Dropdown*/
 .formSelect{
   position: relative;
@@ -8611,7 +8694,7 @@ dd.cardIcon{
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
   .formSelect dt a div.typeNorm { 
-    padding: 12px 0;
+    padding: 24px 20px;
   }
 }
 
@@ -8969,24 +9052,29 @@ table.paymentDateInfo tr td:nth-child(2){
   table.paymentDateInfo tr td{
     padding-right:25px
   }
-}*/
+}
 .instructionWrapPayment table{
-  font-size: 1.4em
+  font-size: 1.4em;
+  margin-top: 8px;
+  border:1px #C7C7C7 solid;
 }
 .instructionWrapPayment table tr td{
-  padding-right:10px;
+  padding: 15px 10px;
+  border-top:1px #C7C7C7 solid;
+}
+.instructionWrapPayment table tr:nth-child(odd){
+ background-color: #ECECEC;
 }
 .instructionWrapPayment table tr td:first-child{
   width:50%;
+  text-align: right
 }
 .instructionWrapPayment table tr td:nth-child(2){
   font-weight: bold;
 }
 
 @media (min-width: 768px) { 
-  .instructionWrapPayment table{
-  font-size: 1.6em
-}
+
 .instructionWrapPayment table tr td{
   padding-right:25px
 }
@@ -9022,6 +9110,9 @@ table.paymentDateInfo tr td:nth-child(2){
       padding-top:30px;
       padding-bottom:5px;
     }
+    .ctaWrapSingle{
+    padding:20px 0;
+}
     .ctaWrapSingle2{
         padding:0 0 30px;
     }
@@ -9037,6 +9128,9 @@ table.paymentDateInfo tr td:nth-child(2){
       padding-top:35px;
       padding-bottom:5px;
     }
+    .ctaWrapSingle{
+    padding:25px 0;
+}
     .ctaWrapSingle2{
         padding:0 0 35px;
     }
@@ -9060,21 +9154,28 @@ table.paymentDateInfo tr td:nth-child(2){
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
-  .registWrap div.DOB{
-    padding:0 15px 0 0;
+  .registWrap div.paddingRight{
+    padding:0 8px 0 0;
   }
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
-  .registWrap div.DOB{
-    padding:0 20px 0 0;
+  .registWrap div.paddingRight{
+    padding:0 12px 0 0;
   }
 }
 .OtherAddress{
   display: none;
 }
-
+.forgotpw{
+    margin:-20px 0 20px;
+    padding:0;
+    padding-top: 10px;
+    font-weight: 200;
+    font-size:1.6em;
+    background-color: white;
+  }
 
 
 
