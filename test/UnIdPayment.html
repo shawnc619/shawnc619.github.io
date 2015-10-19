@@ -82,16 +82,18 @@
                               </div>
                               <!-- formSelect -->
                               <fieldset class="formSelect">
+                                <dl>
                                 <dt>
                                     <a href="#"><span class="resultNorm">Paying for</span></a>
                                 </dt>
                                 <dd>
                                     <ul class="selectToggle NormalStyleWrap">
-                                        <li><a href="#"><div class="typeNorm">Bond<span class="value">BR</span></div></a></li>
+                                        <li><a href="#"><div class="typeNorm">Bond<span class="value">Bond</span></div></a></li>
                                         <li><a href="#"><div class="typeNorm">Strata<span class="value">Strata</span></div></a></li>
                                         <li><a href="#"><div class="typeNorm">Water<span class="value">Water</span></div></a></li>
                                     </ul>
                                 </dd>
+                              </dl>
                               </fieldset>
                             </div>
                         </div>
@@ -155,11 +157,15 @@
                                       <input type="text" pattern="[0-9]*" class="form-control" placeholder="$000.00">
                                 </fieldset>
                                 <div class="row paymentSurcharge">
-                                      <div class="col-xs-6">
-                                          Surcharge (1.5%)
-                                          <a class="iconShortcut" href="#"><span class="fa fa-info-circle"></span></a>
+                                      <div class="col-xs-8 clearfix">
+                                            <div class="pull-left">Surcharge + flatfee<br class="visible-xs"><span class="surchargefee"> (1.5%)</span></div>
+                                            <span class="iconShortcut1">
+                                                <a href="#" data-toggle="modal" data-target=".modalInfo">
+                                                    <span class="fa fa-info-circle"></span>
+                                                </a>
+                                            </span>
                                       </div>
-                                      <div class="col-xs-6 text-right">$3.50</div>
+                                      <div class="col-xs-4 text-right">$3.50</div>
                                 </div>
                                 <div class="row paymentTotal">
                                       <div class="col-xs-6">Total</div>
@@ -302,12 +308,13 @@
 
             $('.formSelect').click(function(){
                 $('.selectToggle',this).slideToggle('fast', "swing");
-                return false 
+                return false;
             });
                         
-            $(".formSelect dd ul li a").click(function() {
+            $(".formSelect dl dd ul li a").click(function() {
                 var text = $(this).html();
-                $(".formSelect dt a").html(text);
+                $(this).parents('.formSelect').children('dl').children('dt').children('a').html(text).addClass('dataSelectWrap');
+
                 $('.selectToggle',this).hide();
             });
                         
@@ -319,9 +326,21 @@
                 var $clicked = $(e.target);
                 if (! $clicked.parents().hasClass("formSelect"))
                     $(".formSelect dd ul").hide();
+            });  
+            $(".modalAddDRN").click(function(){
+                $(".modalAddDRNModal").modal();
+                return false;
             });
+            $(".modalAddCard").click(function(){
+                $(".modalAddCardModal").modal();
+                return false;
 
+            });
+            $(".modalEditCard").click(function(){
+                $(".modalEditCardModal").modal();
+                return false;
 
+            });
             
     </script>
 </body>

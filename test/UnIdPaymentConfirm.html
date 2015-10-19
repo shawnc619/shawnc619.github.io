@@ -102,11 +102,15 @@
                 </div>
                 <!-- col7 -->
                 <div class="resultCol clearfix">
-                    <div class="col-xs-6 formlabel">
-                      Surcharge (1.5%)
-                      <a class="iconShortcut" href="#"><span class="fa fa-info-circle"></span></a>
+                    <div class="col-xs-8 formlabel clearfix">
+                        <div class="pull-left">Surcharge + flatfee<br class="visible-xs"><span class="surchargefee">(1.5%)</span></div>
+                        <span class="iconShortcut1">
+                            <a href="#" data-toggle="modal" data-target=".modalInfo">
+                                <span class="fa fa-info-circle"></span>
+                            </a>
+                        </span>
                     </div>
-                    <div class="col-xs-6 text-right">$3.50</div>
+                    <div class="col-xs-4 text-right">$20.00</div>
                 </div>
 
             </div>
@@ -119,7 +123,7 @@
             </div>
             <!-- Section 5 -->
             <div class="col-xs-12 emailWrap border-btm">
-                <!-- col6 -->
+                <!-- col8 -->
                 <div class="resultCol clearfix emailReceipt">
                     <div class="col-xs-12">
                         <div class="text-right formlabel">Send email receipt to</div>
@@ -156,25 +160,108 @@
     <div class="modal fade modalSuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content2">
-                <div class="modal-header border-btm">
+                <div class="modal-header">
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">X</span></button>
 
                     <div class="successWrap">
                         <div class="successSC"><span class="fa fa-check-circle"></span></div> 
                         <h2 class="">Payment complete</h2>
                         <div class="receiptNo">
-                            Reciept number <strong><a href="">1234567</a></strong>  
+                            Reciept number <strong>1234567</strong>  
                         </div>
                     </div>
                 </div>
-                <div class="modal-body">
-                     <div class="clearfix">
+                <div class="modal-body paddingbtm0">
+                     <!-- <div class="clearfix">
                         <div class="loginPromote"><h2>It will be a lot easier to pay with wallet, sign up now?</h2></div>
                         <button type="button" class="btn btn-block btn-primary" data-dismiss="modal">Sign up now</button>
+                    </div> -->
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading inverseStyle">
+                                <h4 class="panel-title"><a class="accordion-toggle" data-parent="#accordion" data-toggle="collapse" href="#collapseOne">Payment details</a></h4>
+                            </div>
+                            <div class="panel-collapse collapse in" id="collapseOne">
+                                <div class="panel-body resultWrap clearfix">
+                                    <!-- col1 -->
+                                    <div class="resultCol clearfix">
+                                        <div class="col-xs-6 formlabel">DEFT ref number</div>
+                                        <div class="col-xs-6 text-right">329847223342</div>
+                                        <div class="col-xs-4"></div>
+                                        <div class="col-xs-8 biller">HS BENTLEIGH - PM RENT Martin place A/C</div>
+                                    </div>
+                                    <!-- col2 -->
+                                    <div class="resultCol clearfix sectionEnd">
+                                        <div class="col-xs-7 formlabel">Paying for</div>
+                                        <div class="col-xs-5 text-right">Bond</div>
+                                    </div>
+                                    <!-- col3 -->
+                                    <div class="resultCol clearfix">
+                                        <div class="col-xs-6 formlabel">Card number</div>
+                                        <div class="col-xs-6 text-right clearfix">
+                                          <div class="pull-right">**** 4567</div>
+                                          <div class="cardIcon"><img src="styles/images/cardMa.png" alt="Mastercard" width="100%"></div>
+                                        </div>
+                                    </div>
+                                    <!-- col4 -->
+                                    <div class="resultCol clearfix">
+                                        <div class="col-xs-6 formlabel">Cardholder name </div>
+                                        <div class="col-xs-6 text-right">Jone Smith</div>
+                                    </div>
+                                    <!-- col5-->
+                                    <div class="resultCol clearfix sectionEnd">
+                                        <div class="col-xs-6 formlabel">Expiry date</div>
+                                        <div class="col-xs-6 text-right">17/03</div>
+                                    </div>
+                                    <!-- col6 -->
+                                    <div class="resultCol clearfix">
+                                        <div class="col-xs-6 formlabel">Payment amount</div>
+                                        <div class="col-xs-6 text-right">$430.20</div>
+                                    </div>
+                                    <!-- col7 -->
+                                    <div class="resultCol clearfix sectionEnd">
+                                        <div class="col-xs-8 formlabel clearfix">
+                                            <div class="pull-left">Surcharge + flatfee<br class="visible-xs"><span class="surchargefee">(1.5%)</span></div>
+                                            <span class="iconShortcut1">
+                                                <a href="#" data-toggle="modal" data-target=".modalInfo">
+                                                    <span class="fa fa-info-circle"></span>
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="col-xs-4 text-right">$20.00</div>
+                                    </div>
+                                    <div class="paymentTotal2 resultCol clearfix sectionEnd">
+                                          <div class="col-xs-6">Total</div>
+                                          <div class="col-xs-6 text-right"><strong>$433.70</strong></div>
+                                    </div>
+                                    <!-- col8 -->
+                                    <div class="resultCol clearfix emailReceipt">
+                                        <div class="col-xs-12">
+                                            <div class="text-right formlabel">Email receipt sent to</div>
+                                            <div class="text-right">jone.smith@abc.com</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="modal-footer">
-                    <div class="mktBanner"><img src="" style="width:100%;height:250px;"></div>                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="modal-footer border-top">
+                    <button type="button" class="btn btn-block btn-default" data-dismiss="modal">Return to homepage</button>
                 </div>
              
             </div>
