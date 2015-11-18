@@ -140,7 +140,7 @@
                         </div>
                         <div class="panel-collapse collapse in" id="collapseTwo">
                             <div class="panel-body panel-body-padding">
-                               <div class="iconRow clearfix"><a href="#" data-toggle="modal" data-target=".modalInfo"><span class="fa fa-info-circle" ></span></a></div>
+                               <div class="iconRow clearfix"><a href="#" data-toggle="modal" data-target=".modalInfo"><span class="icon-info-sign-empty"></span></a></div>
  
                                 <!-- formSelect -->
                               <fieldset class="formSelect">
@@ -150,7 +150,7 @@
                                     <a href="#" class="dataSelectWrap clearfix">
                                             <div class="cardIcon vcenter">
                                                 <img src="styles/images/cardAE.png" width="100%">
-                                                <span class="fa fa-check-circle"></span>
+                                                <span class="icon-circle-star"></span>
                                             </div>
                                             <div class="pull-left vcenter">
                                                 <div class="dataStd">**** 4534</div>
@@ -166,7 +166,7 @@
                                             <a href="#" class="dataSelectWrap clearfix">
                                                     <div class="cardIcon vcenter">
                                                         <img src="styles/images/cardAE.png" width="100%">
-                                                        <span class="fa fa-check-circle"></span>
+                                                        <span class="icon-circle-star"></span>
                                                     </div>
                                                     <div class="pull-left vcenter">
                                                         <div class="dataStd">**** 4534</div>
@@ -243,7 +243,7 @@
                         </div>
                         <div class="panel-collapse collapse in" id="collapseThree">
                             <div class="panel-body panel-body-padding">
-                               <div class="iconRow clearfix"><a href="#" data-toggle="modal" data-target=".modalInfo"><span class="fa fa-info-circle" ></span></a></div>
+                               <div class="iconRow clearfix"><a href="#" data-toggle="modal" data-target=".modalInfo"><span class="icon-info-sign-empty" ></span></a></div>
 
 
 
@@ -344,7 +344,6 @@
                               <!-- formSelect -->
                               <fieldset class="formSelectStyle numberOfPayment">
                                 <select>
-                                    <option>1</option>
                                     <option>2</option>
                                     <option>3</option>
                                     <option>4</option>
@@ -383,25 +382,25 @@
                         </div>
                         <div class="panel-collapse collapse in" id="collapseFour">
                             <div class="panel-body panel-body-padding">
-                              <div class="iconRow clearfix"><a href="#" data-toggle="modal" data-target=".modalInfo"><span class="fa fa-info-circle" ></span></a></div>
+                              <div class="iconRow clearfix"><a href="#" data-toggle="modal" data-target=".modalInfo"><span class="icon-info-sign-empty" ></span></a></div>
                                 <fieldset class="form-group">
                                       <label>Payment amount</label>
-                                      <input type="text" pattern="[0-9]*" class="form-control" placeholder="$000.00">
+                                      <input type="text" pattern="[0-9]*" class="form-control" placeholder="$0.00">
                                 </fieldset>
                                 <div class="row paymentSurcharge">
                                       <div class="col-xs-8 clearfix">
-                                            <div class="pull-left">Surcharge + flatfee<br class="visible-xs"><span class="surchargefee"> (1.5%)</span></div>
+                                            <div class="pull-left">Surcharge<span class="surchargefee"> (1.5%)</span></div>
                                             <span class="iconShortcut1">
                                                 <a href="#" data-toggle="modal" data-target=".modalInfo">
-                                                    <span class="fa fa-info-circle"></span>
+                                                    <span class="icon-info-sign-empty"></span>
                                                 </a>
                                             </span>
                                       </div>
-                                      <div class="col-xs-4 text-right">$3.50</div>
+                                      <div class="col-xs-4 text-right">$0.00</div>
                                 </div>
                                 <div class="row paymentTotal">
                                       <div class="col-xs-6">Total</div>
-                                      <div class="col-xs-6 text-right"><strong>$0</strong></div>
+                                      <div class="col-xs-6 text-right"><strong>AUD $0.00</strong></div>
                                 </div>
                             </div>
                         </div>
@@ -420,23 +419,18 @@
                         <input type="email" class="form-control" placeholder="Jone.Smith@abc.com">
                   </div>
               </div>
-              <!-- CTA -->
-              <div class="col-xs-12 col-sm-8 col-sm-push-4 ctaWrap">
-                      <div class="col-sm-4">
-                          
-                      </div>
-                      <div class="col-xs-12 col-sm-8">
-                          <button type="button" class="btn btn-primary btn-block btn-lg" data-toggle="modal" data-target=".modalSuccess">Pay now</button>
-                      </div>
-              </div>
               <!-- terms -->
-              <div class="col-xs-12 clearfix">
-                      <div class="terms text-right">
-                        This payment is bound by the DEFT <a href="#">Terms of Use</a>
-                        <br><br><br>
-                      </div>
-              </div>
+            <div class="col-xs-12 terms clearfix">
+                    <div class="text-right">
+                      This payment is bound by the DEFT <a href="#">Terms of Use</a>
+                </div>
+            </div>
+            <!-- CTA -->
+            <div class="col-xs-12 col-sm-8 col-sm-push-4 ctaWrap mgbtm20">
+                <button type="button" class="btn btn-primary btn-lg pull-right mgLeft10" data-toggle="modal" data-target=".modalSuccess">&nbsp;&nbsp;&nbsp;Next&nbsp;&nbsp;&nbsp;</button>
+                <button type="button" class="btn btn-cancel btn-lg pull-right">Cancel</button>    
 
+            </div>
 
 
 
@@ -460,7 +454,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content2">
                 <div class="modal-header clearfix">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">X</span></button>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="icon-close" aria-hidden="true"></span></button>
                 </div>
                 <div class="modal-body">
                     <h4 class="modal-title">Add DEFT number</h4>
@@ -471,7 +465,6 @@
                     <div class="form-group">
                         <label>Nickname</label>
                         <input type="text" class="form-control" placeholder="e.g. My Strata(Optional)">
-                        <a class="iconShortcut" href="#"><span class="fa fa-times-circle"></span></a>
                     </div>
 
                     <div class="modal-btnWrap">
@@ -488,7 +481,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content2">
                 <div class="modal-header clearfix">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">X</span></button>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="icon-close"></span></button>
                 </div>
                 <div class="modal-body">
 
@@ -574,7 +567,7 @@
             <div class="card__front">
                 <div class="modal-content2">
                 <div class="modal-header clearfix">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">X</span></button>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="icon-close"></span></button>
                 </div>
                 <div class="modal-body">
                     <dl class="dlrelative">
@@ -608,7 +601,7 @@
             <div class="card__back">
                 <div class="modal-content2" id="edit-warning">
                     <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">X</span></button>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="icon-close"></span></button>
                     </div>
                     <div class="modal-body clearfix">
                         <h3>Confirm to delete this DRN reference number</h3>
@@ -635,7 +628,7 @@
         <div class="modal-info" role="document">
             <div class="modal-content2">
                 <div class="modal-header clearfix">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">X</span></button>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="icon-close"></span></button>
                 </div>
                 <div class="modal-body clearfix">
                     <h1 class="DRNedit_title">DEFT number</h1>

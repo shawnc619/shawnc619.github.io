@@ -4,9 +4,10 @@
 <title>DEFT payment gateway</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/><link href="styles/css/font-awesome.css" rel="stylesheet">
 
+<link href="styles/css/font-awesome.css" rel="stylesheet">
+<link href="styles/css/icomoon.css" rel="stylesheet">
 <link href="styles/css/bootstrap.css" rel="stylesheet">
-
-
+<link href="styles/css/awesome-bootstrap-checkbox.css" rel="stylesheet">
 
 
 
@@ -68,8 +69,16 @@
 -->            </div>
             <div class="col-xs-12 border-btm">
                 <a class="clearfix addWrap" data-toggle="modal" data-target=".modalAdd">
-                        <h3 class="blueAdd vcenter">Add biller</h3>
-                        <div class="plus vcenter">+</div>
+                    <table>
+                        <tr>
+                            <td>
+                                <h3 class="blueAdd">Add biller</h3>
+                            </td>
+                            <td>
+                                <div class="plus">+</div>
+                            </td>
+                        </tr>
+                    </table>
                 </a>
             </div>
             <div class="col-xs-12">
@@ -183,7 +192,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content2">
                 <div class="modal-header clearfix">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">X</span></button>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="icon-close"></span></button>
                 </div>
                 <div class="modal-body">
                     <h4 class="modal-title">Add DEFT number</h4>
@@ -195,13 +204,13 @@
                     <div class="form-group">
                         <label>Nickname</label>
                         <input type="text" class="form-control" placeholder="e.g. My Strata(Optional)">
-                        <a class="iconShortcut" href="#"><span class="fa fa-times-circle"></span></a>
+                        <a class="iconShortcut" href="#"><span class="icon-close-sign"></span></a>
                     </div>
                     <p class="descript">This is only to help you make your DRN make sense</p>
                     <div class="form-group colorAction">
                         <label>Nickname</label>
                         <input type="text" class="form-control" placeholder="e.g. My Strata(Optional)">
-                        <span class="iconShortcut"><span class="fa fa-exclamation-circle"></span></span>
+                        <span class="iconShortcut"><span class="icon-alert-sign"></span></span>
                     </div>
                     <div class="alert">
                         <strong>Error</strong> this DEFT number can't be found etc
@@ -209,7 +218,7 @@
                     <div class="form-group">
                         <label>Nickname</label>
                         <input type="text" class="form-control" placeholder="e.g. My Strata(Optional)">
-                        <span class="iconShortcut"><span class="fa fa-check-circle"></span></span>
+                        <span class="iconShortcut"><span class="icon-tick-sign"></span></span>
                     </div>
                     <div class="modal-btnWrap">
                         <button type="button" class="btn btn-primary " data-toggle="modal" data-dismiss="modal">Add</button>
@@ -227,7 +236,7 @@
             <div class="card__front">
                 <div class="modal-content2">
                 <div class="modal-header clearfix">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">X</span></button>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="icon-close" aria-hidden="true"></span></button>
                 </div>                
                 <div class="modal-body">
                     <dl>
@@ -255,7 +264,7 @@
             <div class="card__back">
                 <div class="modal-content2" id="edit-warning">
                     <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">X</span></button>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="icon-close" aria-hidden="true"></span></button>
                     </div>
                     <div class="modal-body clearfix">
                         <h3>Confirm to delete this DRN reference number</h3>

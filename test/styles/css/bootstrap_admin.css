@@ -4563,8 +4563,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     border-bottom-color: #fff;
   }
 .nav-pills{
-  border: 1px #555 solid;
-  border-radius: 4px;
+  border: 1px #ccc solid;
+  border-radius: 3px;
 }
 .nav-pills > li {
   float: left;
@@ -4575,9 +4575,19 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   font-weight:300;
   padding:8px;
   background-color: #fff;
-  color:#555;
+  color:#9C9C9C;
 }
 
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  .nav-pills > li > a {
+    font-size:1.6em;
+    font-weight:300;
+    padding:8px;
+    background-color: #fff;
+    color:#9C9C9C;
+  }
+}
 
 
 .nav-pills > li:first-child > a {
@@ -6627,13 +6637,13 @@ button.close {
 }
 .modal-header {
   min-height: 16.42857143px;
-  padding: 15px 15px 0;
+  padding: 15px;
 }
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 992px) { 
   .modal-header {
-    padding: 25px 25px 0;
+    padding: 25px;
   }
 }
 
@@ -8220,7 +8230,7 @@ p.DRNedit_items_last {
     right: -8px;
 }
 .borderTop{
-    border: 1px solid #F3F3F3;
+    border: 1px solid #D2D2D2;
     margin: 2em 0;
 }
 .borderNone{
@@ -8284,7 +8294,7 @@ dd.cardIcon{
 .paymentSurcharge{
   font-size:1.8em;
   font-weight:200;
-  padding:20px 0 6px;
+  padding:20px 0 10px;
   margin:0;
   position: relative;
 }
@@ -8292,8 +8302,8 @@ dd.cardIcon{
   padding:0;
 }
 .paymentTotal{
-  font-size:2.3rem;
-  padding:6px 0 50px;
+  font-size:3em;
+  padding:5px 0 50px;
   margin:0;
   font-weight:100;
   border-top: 1px solid #555;
@@ -8304,12 +8314,9 @@ dd.cardIcon{
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
-  .paymentSurcharge{
-    padding:20px 0 10px;
-  }
   .paymentTotal{
-    font-size:2.6rem;
-    padding:10px 0 50px;
+    font-size:4em;
+    padding:5px 0 50px;
     margin:0;
     font-weight:100;
     border-top: 1px solid #555;
@@ -8645,22 +8652,23 @@ span.surchargefee{
   padding:8px 0;
 }
 .navOnTab > li:first-child > a{
-    border-right:1px solid #555;
+    border-right:1px solid #ccc;
   }
   .navOnTab > li:last-child > a {
-    border-left:1px solid #555;
+    border-left:1px solid #ccc;
   }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
 
   .navOnTab li a, .navOnTab li:last-child a{
+    padding:12px 0;
   }
 
   .navOnTab > li:first-child > a{
-    border-radius: 4px 0 0 4px;
+    border-radius: 3px 0 0 3px;
   }
   .navOnTab > li:last-child > a {
-    border-radius: 0 4px 4px 0; 
+    border-radius: 0 3px 3px 0; 
   }
 }
 
@@ -8986,7 +8994,7 @@ dd .dataSelectWrap .edit{
   filter: gray; /* IE6-9 */
   filter: grayscale(1); /* Firefox 35+ */
   -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
-  opacity: 0.4;
+  opacity: 0.6;
 }
 
 
@@ -9094,7 +9102,7 @@ dd .dataSelectWrap .edit{
     position: absolute;
     top: .8em;
     right: 0.6em;
-    color: #357EF4;
+    color: #8b8b8b;
 }
 .returnData{
     margin:-20px 0 20px 0;
@@ -9288,40 +9296,40 @@ table.paymentDateInfo tr td{
   }
 
 
-/*Terms modal*/
-.termsModal p{
-  font-size: 1.2rem;
-  margin-bottom: 24px
-}
-.termsModal ol{
-  padding:0 0 0 30px;
-}
-.termsModal li{
-  font-size: 1.2rem;
-  margin:12px 0
-}
 
 
-/*Print receipt*/
-@media print {
-   .container{
-    display: none;
-   }
-   .placeholder{
-    display: none;
-   }
-   .printHide{
-    display: none;
-   }
-   .panel-heading .accordion-toggle:after{
-    display: none;
-   }
-   .modal{
-    width:100%;
-    margin-left:2cm;
-   }
 
+
+
+
+
+
+
+/*Admin portal styles*/
+
+.admin_transWrap div.col-xs-6, .admin_transWrap div.col-xs-12{
+  font-size:1.6rem;
+  padding:0 0 15px;
 }
+.admin_transWrap h2{
+  color:#357EF4;
+  font-size:1.5em;
+}
+
+.paymentTotal_admin div{
+  padding:0;
+}
+.paymentTotal_admin{
+  font-size:2.8em;
+  padding:5px 0 50px;
+  margin:0;
+  font-weight:100;
+  border-top: 1px solid #555;
+}
+.paymentTotal_admin strong{
+  font-weight:400;
+}
+
 
 
 

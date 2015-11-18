@@ -16,27 +16,10 @@
 <nav class="navbar navbar-fixed-top navbar-inverse">
         <div class="container">
             <div class="navbar-header">
-                <button class="navbar-toggle collapsed" data-target="#navbar" data-toggle="collapse" type="button">
-                    <img class="hamburger pull-right" src="styles/images/hamburger.png" width="30px">
-                </button> 
+                
                 <a class="navbar-brand" href="index.html#"><img class="logo" src="styles/images/logo.png" ></a>
             </div>
-            <div class="collapse navbar-collapse no-transition" id="navbar">
-                <ul class="nav navbar-nav">
-                    <li class="active">
-                        <a href="#">My account</a>
-                    </li>
-                    <li>
-                        <a href="#">Help</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                    <li>
-                        <a href="#">Sign out</a>
-                    </li>
-                </ul>
-            </div>
+           
 
         </div>
     </nav>
@@ -60,91 +43,160 @@
             <!-- section 1 -->
             <div class="col-xs-12 resultWrap border-btm clearfix">
                 <!-- col1 -->
-                <div class="resultCol clearfix">
-                    <div class="col-xs-6 formlabel">DEFT ref number</div>
-                    <div class="col-xs-6 text-right">329847223342</div>
-                    <div class="col-xs-4"></div>
-                    <div class="col-xs-8 biller">HS BENTLEIGH - PM RENT Martin place A/C</div>
-                </div>
-                <!-- col2 -->
-                <div class="resultCol clearfix">
-                    <div class="col-xs-7 formlabel">Paying for</div>
-                    <div class="col-xs-5 text-right">Bond</div>
-                </div>
+                <table class="resultCol">
+                    <tr>
+                        <td width="70%">
+                            <div class="formlabel">DEFT reference number</div>
+                        </td>
+                        <td width="30%">
+                            <div class="text-right">329847223342</div>
+                        </td>
+                    </tr>
+                </table>
+                <table class="resultCol">
+                    <tr>
+                        <td width="40">
+                        </td>
+                        <td width="60%">
+                            <div class="biller">HS BENTLEIGH - PM RENT Martin place A/C</div>
+                        </td>
+                    </tr>
+                </table>
             </div>
             <!-- Section 2 -->
             <div class="col-xs-12 resultWrap border-btm clearfix">
                 <!-- col3 -->
-                <div class="resultCol clearfix">
-                    <div class="col-xs-6 formlabel">Card number</div>
-                    <div class="col-xs-6 text-right clearfix">
-                      <div class="pull-right">**** 4567</div>
-                      <div class="cardIcon"><img src="styles/images/cardMa.png" alt="Mastercard" width="100%"></div>
-                    </div>
-                </div>
+                <table class="resultCol">
+                    <tr>
+                        <td width="50%">
+                            <div class="formlabel">Card number</div>
+                        </td>
+                        <td width="50%">
+                            <div class="text-right clearfix">
+                              <div class="pull-right">**** 4567</div>
+                              <div class="cardIcon"><img src="styles/images/cardMa.png" alt="Mastercard" width="100%"></div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
                 <!-- col4 -->
-                <div class="resultCol clearfix">
-                    <div class="col-xs-6 formlabel">Cardholder name </div>
-                    <div class="col-xs-6 text-right">Jone Smith</div>
-                </div>
+                <table class="resultCol">
+                    <tr>
+                        <td width="50%">
+                            <div class="formlabel">Cardholder name</div>
+                        </td>
+                        <td width="50%">
+                            <div class="text-right">John Smith</div>
+                        </td>
+                    </tr>
+                </table>
                 <!-- col5-->
-                <div class="resultCol clearfix">
-                    <div class="col-xs-6 formlabel">Expiry date</div>
-                    <div class="col-xs-6 text-right">17/03</div>
-                </div>
+                <table class="resultCol">
+                    <tr>
+                        <td width="50%">
+                            <div class="formlabel">Expiry date</div>
+                        </td>
+                        <td width="50%">
+                            <div class="text-right">11/17</div>
+                        </td>
+                    </tr>
+                </table>
             </div>
             <!-- Section 3 -->
             <div class="col-xs-12 resultWrap border-btm clearfix">
                 <!-- col6 -->
-                <div class="resultCol clearfix">
-                    <div class="col-xs-6 formlabel">Payment amount</div>
-                    <div class="col-xs-6 text-right">$430.20</div>
-                </div>
+                <table class="resultCol">
+                    <tr>
+                        <td width="50%">
+                            <div class="formlabel">Payment amount</div>
+                        </td>
+                        <td width="50%">
+                            <div class="text-right">$430.20</div>
+                        </td>
+                    </tr>
+                </table>
+                <table class="resultCol">
+                    <tr>
+                        <td width="50%">
+                            <div class="formlabel pull-left">Surcharge (1.5%)</div>
+                            <span class="iconShortcut1">
+                                <a href="#" data-toggle="modal" data-target=".modalInfo">
+                                    <span class="icon-info-sign-empty"></span>
+                                </a>
+                            </span>
+                        </td>
+                        <td width="50%">
+                            <div class="text-right">$1.50</div>
+                        </td>
+                    </tr>
+                </table>
                 <!-- col7 -->
-                <div class="resultCol clearfix">
-                    <div class="col-xs-8 formlabel clearfix">
-                        <div class="pull-left">Surcharge + flatfee<br class="visible-xs"><span class="surchargefee">(1.5%)</span></div>
-                        <span class="iconShortcut1">
-                            <a href="#" data-toggle="modal" data-target=".modalInfo">
-                                <span class="fa fa-info-circle"></span>
-                            </a>
-                        </span>
-                    </div>
-                    <div class="col-xs-4 text-right">$20.00</div>
-                </div>
-
-            </div>
-            <!-- Section 4 -->
-            <div class="col-xs-12 resultWrap border-btm clearfix">
-                <div class="paymentTotal1">
-                      <div class="col-xs-6">Total</div>
-                      <div class="col-xs-6 text-right"><strong>$433.70</strong></div>
-                </div>
+                
+                <table class="paymentTotal1">
+                    <tr>
+                        <td width="50%">
+                            <div>Total</div>
+                        </td>
+                        <td width="50%">
+                            <div class="text-right"><strong>$433.70</strong></div>
+                        </td>
+                    </tr>
+                </table>
             </div>
             <!-- Section 5 -->
-            <div class="col-xs-12 emailWrap border-btm">
+            <div class="col-xs-12 emailWrap">
                 <!-- col8 -->
                 <div class="resultCol clearfix emailReceipt">
                     <div class="col-xs-12">
                         <div class="text-right formlabel">Send email receipt to</div>
-                        <div class="text-right">jone.smith@abc.com</div>
+                        <div class="text-right">john.smith@gmail.com</div>
                     </div>
                 </div>
             </div>
+ 
+            <!-- Payment info -->
+            <div class="col-xs-12 border-btm">
+                <div class="panel-group" id="accordion3">
+                    <div class="panel panel-default">
+                        <div class="panel-heading inverseStyleLast">
+                            <h4 class="panel-title"><a class="accordion-toggle collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapsefour">Q. When will my payment be received?</a></h4>
+                        </div>
+                        <div class="panel-collapse collapse" id="collapsefour">
+                            <div class="panel-body panel-body-padding">
+                                <p>
+                                    Payments made prior to the business day cut-off time will generally be received by your biller the next business day. <br><br>Any payments made after this time will generally be received within two business days. Business days are Monday to Friday, excluding national public holidays.
+                                </p><br>
+                                <p><strong>Business day cut off times:</strong></p>
+                                <table class="paymentDateInfo">
+                                    <!-- <tr>
+                                        <td>Direct debit payments</td>
+                                        <td>5.00pm (Sydney time)</td>
+                                    </tr> -->
+                                    <tr>
+                                        <td>American Express and Diners Club</td>
+                                        <td>7.00pm (Sydney time)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>MasterCard and Visa</td>
+                                        <td>9.30pm (Sydney time)</td>
+                                    </tr>
+                                </table> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+            
+
+
             <!-- CTA -->
-            <div class="col-xs-12 col-sm-8 col-sm-push-4 ctaWrap">
-                    <div class="col-xs-4">
-                        <button type="button" class="btn btn-primary-inv btn-block btn-lg">Edit</button>
-                    </div>
-                    <div class="col-xs-8">
-                        <button type="button" class="btn btn-primary btn-block btn-lg" data-toggle="modal" data-target=".modalSuccess">Pay now</button>
-                    </div>
-            </div>
-            <!-- terms -->
-            <div class="col-xs-12 clearfix">
-                    <div class="terms text-right">
-                      This payment is bound by the DEFT <a href="#">Terms of Use</a>
-                      <br><br><br>
+            <div class="col-xs-12 ctaWrap">
+                <div class="clearfix">
+                    <button type="button" class="btn btn-primary btn-lg pull-right mgLeft10" data-toggle="modal" data-target=".modalSuccess">&nbsp;&nbsp;&nbsp;Pay now&nbsp;&nbsp;&nbsp;</button>
+                    <button type="button" class="btn btn-primary-inv  btn-lg pull-right" data-toggle="modal" data-target=".modalError">Edit</button> 
+                </div> 
+                <p class="descript3 mgTop10 text-right">Once submitted, this payment can not be changed or cancelled</p>
             </div>
 
 
@@ -156,117 +208,12 @@
 
 
 
-    <!-- Modal Success-->
-    <div class="modal fade modalSuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content2">
-                <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">X</span></button>
-
-                    <div class="successWrap">
-                        <div class="successSC"><span class="fa fa-check-circle"></span></div> 
-                        <h2 class="">Payment complete</h2>
-                        <div class="receiptNo">
-                            Reciept number <strong>1234567</strong>  
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-body paddingbtm0">
-                     <!-- <div class="clearfix">
-                        <div class="loginPromote"><h2>It will be a lot easier to pay with wallet, sign up now?</h2></div>
-                        <button type="button" class="btn btn-block btn-primary" data-dismiss="modal">Sign up now</button>
-                    </div> -->
-                    <div class="panel-group" id="accordion">
-                        <div class="panel panel-default">
-                            <div class="panel-heading inverseStyle">
-                                <h4 class="panel-title"><a class="accordion-toggle" data-parent="#accordion" data-toggle="collapse" href="#collapseOne">Payment details</a></h4>
-                            </div>
-                            <div class="panel-collapse collapse in" id="collapseOne">
-                                <div class="panel-body resultWrap clearfix">
-                                    <!-- col1 -->
-                                    <div class="resultCol clearfix">
-                                        <div class="col-xs-6 formlabel">DEFT ref number</div>
-                                        <div class="col-xs-6 text-right">329847223342</div>
-                                        <div class="col-xs-4"></div>
-                                        <div class="col-xs-8 biller">HS BENTLEIGH - PM RENT Martin place A/C</div>
-                                    </div>
-                                    <!-- col2 -->
-                                    <div class="resultCol clearfix sectionEnd">
-                                        <div class="col-xs-7 formlabel">Paying for</div>
-                                        <div class="col-xs-5 text-right">Bond</div>
-                                    </div>
-                                    <!-- col3 -->
-                                    <div class="resultCol clearfix">
-                                        <div class="col-xs-6 formlabel">Card number</div>
-                                        <div class="col-xs-6 text-right clearfix">
-                                          <div class="pull-right">**** 4567</div>
-                                          <div class="cardIcon"><img src="styles/images/cardMa.png" alt="Mastercard" width="100%"></div>
-                                        </div>
-                                    </div>
-                                    <!-- col4 -->
-                                    <div class="resultCol clearfix">
-                                        <div class="col-xs-6 formlabel">Cardholder name </div>
-                                        <div class="col-xs-6 text-right">Jone Smith</div>
-                                    </div>
-                                    <!-- col5-->
-                                    <div class="resultCol clearfix sectionEnd">
-                                        <div class="col-xs-6 formlabel">Expiry date</div>
-                                        <div class="col-xs-6 text-right">17/03</div>
-                                    </div>
-                                    <!-- col6 -->
-                                    <div class="resultCol clearfix">
-                                        <div class="col-xs-6 formlabel">Payment amount</div>
-                                        <div class="col-xs-6 text-right">$430.20</div>
-                                    </div>
-                                    <!-- col7 -->
-                                    <div class="resultCol clearfix sectionEnd">
-                                        <div class="col-xs-8 formlabel clearfix">
-                                            <div class="pull-left">Surcharge + flatfee<br class="visible-xs"><span class="surchargefee">(1.5%)</span></div>
-                                            <span class="iconShortcut1">
-                                                <a href="#" data-toggle="modal" data-target=".modalInfo">
-                                                    <span class="fa fa-info-circle"></span>
-                                                </a>
-                                            </span>
-                                        </div>
-                                        <div class="col-xs-4 text-right">$20.00</div>
-                                    </div>
-                                    <div class="paymentTotal2 resultCol clearfix sectionEnd">
-                                          <div class="col-xs-6">Total</div>
-                                          <div class="col-xs-6 text-right"><strong>$433.70</strong></div>
-                                    </div>
-                                    <!-- col8 -->
-                                    <div class="resultCol clearfix emailReceipt">
-                                        <div class="col-xs-12">
-                                            <div class="text-right formlabel">Email receipt sent to</div>
-                                            <div class="text-right">jone.smith@abc.com</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-                <div class="modal-footer border-top">
-                    <button type="button" class="btn btn-block btn-default" data-dismiss="modal">Return to homepage</button>
-                </div>
-             
-            </div>
-        </div>
-    </div>
 
 
 
@@ -284,6 +231,227 @@
 
     </footer>
 
+
+
+
+    <!-- Modal Success-->
+    <div class="modal fade modalSuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content2">
+                <div class="modal-header">
+                    <button type="button" class="close printHide" data-dismiss="modal" aria-label="Close"><span class="icon-close" aria-hidden="true"></span></button>
+
+                    <div class="paymentStatusWrap">
+                        <div class="paymentStatusSC"><span class="icon-tick-sign"></span></div> 
+                        <h2 class="">Payment complete</h2>
+                        <div class="receiptNo">Reciept number <strong>1234567</strong></div>
+                        <div class="receiptDate mgTop5">14/10/2015 10:05:29 (Sydney time)</div>
+                    </div>
+                </div>
+                <div class="modal-body paddingbtm0 clearfix">
+                     <!-- <div class="clearfix">
+                        <div class="loginPromote"><h2>It will be a lot easier to pay with wallet, sign up now?</h2></div>
+                        <button type="button" class="btn btn-block btn-primary" data-dismiss="modal">Sign up now</button>
+                    </div> -->
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading inverseStyle">
+                                <h4 class="panel-title"><a class="accordion-toggle" data-parent="#accordion" data-toggle="collapse" href="#collapseOne">Payment details</a></h4>
+                            </div>
+                            <div class="panel-collapse collapse in" id="collapseOne">
+                                <div class="panel-body receiptWrap clearfix border-btm">
+                                    <!-- col1 -->
+                                    <table class="resultCol">
+                                        <tr>
+                                            <td width="70%">
+                                                <div class="formlabel">DEFT reference number</div>
+                                            </td>
+                                            <td width="30%">
+                                                <div class="text-right">329847223342</div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table class="resultCol">
+                                        <tr>
+                                            <td width="40">
+                                            </td>
+                                            <td width="60%">
+                                                <div class="biller">HS BENTLEIGH - PM RENT Martin place A/C</div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <!-- Section 2 -->
+                                <!-- col3 -->
+                                <div class="panel-body receiptWrap border-btm clearfix">
+                                    <table class="resultCol">
+                                        <tr>
+                                            <td width="50%">
+                                                <div class="formlabel">Card number</div>
+                                            </td>
+                                            <td width="50%">
+                                                <div class="text-right clearfix">
+                                                  <div class="pull-right">**** 4567</div>
+                                                  <div class="cardIcon"><img src="styles/images/cardMa.png" alt="Mastercard" width="100%"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- col4 -->
+                                    <table class="resultCol">
+                                        <tr>
+                                            <td width="50%">
+                                                <div class="formlabel">Cardholder name</div>
+                                            </td>
+                                            <td width="50%">
+                                                <div class="text-right">John Smith</div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- col5-->
+                                    <table class="resultCol">
+                                        <tr>
+                                            <td width="50%">
+                                                <div class="formlabel">Expiry date</div>
+                                            </td>
+                                            <td width="50%">
+                                                <div class="text-right">11/17</div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <!-- Section 3 -->
+                                <div class="receiptWrap border-btm clearfix">
+                                    <!-- col6 -->
+                                    <table class="resultCol">
+                                        <tr>
+                                            <td width="50%">
+                                                <div class="formlabel">Payment amount</div>
+                                            </td>
+                                            <td width="50%">
+                                                <div class="text-right">$430.20</div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table class="resultCol">
+                                        <tr>
+                                            <td width="50%">
+                                                <div class="formlabel">Surcharge (1.5%)</div>
+                                            </td>
+                                            <td width="50%">
+                                                <div class="text-right">$1.50</div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- col7 -->
+                                    
+                                    <table class="paymentTotal1">
+                                        <tr>
+                                            <td width="50%">
+                                                <div>Total</div>
+                                            </td>
+                                            <td width="50%">
+                                                <div class="text-right"><strong>$433.70</strong></div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <!-- Section 5 -->
+                                <div class="receiptWrap border-btm clearfix printHide">
+                                    <!-- col8 -->
+                                    <div class="resultCol clearfix emailReceipt">
+                                        <div class="text-right formlabel">Email receipt sent to</div>
+                                        <div class="text-right">john.smith@gmail.com</div>
+                                    </div>
+                                </div>
+                                <div class="receiptWrap printHide">
+                                    <!-- col8 -->
+                                    <div class="resultCol clearfix emailReceipt">
+                                        <button type="button" class="btn btn-primary-inv pull-right">Print</button>    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-group" id="accordion4">
+                        <div class="panel panel-default">
+                            <div class="panel-heading inverseStyleLast">
+                                <h4 class="panel-title"><a class="accordion-toggle collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapsefive">Q. When will my payment be received?</a></h4>
+                            </div>
+                            <div class="panel-collapse collapse" id="collapsefive">
+                                <div class="panel-body panel-body-padding">
+                                    <p>
+                                        Payments made prior to the business day cut-off time will generally be received by your biller the next business day. <br><br>Any payments made after this time will generally be received within two business days. Business days are Monday to Friday, excluding national public holidays.
+                                    </p><br>
+                                    <p><strong>Business day cut off times:</strong></p>
+                                    <table class="paymentDateInfo">
+                                        <!-- <tr>
+                                            <td>Direct debit payments</td>
+                                            <td>5.00pm (Sydney time)</td>
+                                        </tr> -->
+                                        <tr>
+                                            <td>American Express and Diners Club</td>
+                                            <td>7.00pm (Sydney time)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>MasterCard and Visa</td>
+                                            <td>9.30pm (Sydney time)</td>
+                                        </tr>
+                                    </table> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer border-top">
+                    <div class="ctaWrap mgbtm20 printHide">
+                        <button type="button" class="btn btn-primary pull-right mgLeft10" data-dismiss="modal" aria-label="Close">Make another payment</button>
+                        <button type="button" class="btn btn-default pull-right" data-dismiss="modal" aria-label="Close">Home</button>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal Success-->
+
+
+
+    <!-- Modal Error-->
+    <div class="modal fade modalError" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content2">
+                <div class="modal-header border-btm">
+                    <button type="button" class="close printHide" data-dismiss="modal" aria-label="Close"><span class="icon-close" aria-hidden="true"></span></button>
+
+                    <div class="paymentStatusWrap">
+                        <div class="paymentStatusSC"><span class="icon-alert-sign"></span></div> 
+                        <h2 class="">Session timed out</h2>
+                        <div class="receiptNo">Reference number <strong>1234567</strong></div>
+                        <div class="receiptDate mgTop5">14/10/2015 10:05:29 (Sydney time)</div><br><br>
+                    </div>
+                </div>
+                <div class="modal-body clearfix">
+                    <div class="clearfix">
+                        <div class="paymentStatusDesWrap">
+                            <h3><strong>Sorry, something went wrong when we trie to process your payment.</strong></h3><br>
+                            <p>
+                                Please note your reference number and contact us to check the status of your payment. <br><br>
+                                1800 572 162 (Overseas +61 2 8245 4177) <a href="#">help@deft.com.au</a><br><br>
+                                Our hours are Monday to Friday, 8.30am – 5.00pm (Sydney time) 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer border-top printHide">
+                    <div class="ctaWrap mgbtm20">
+                        <button type="button" class="btn btn-primary pull-right mgLeft10" data-dismiss="modal" aria-label="Close">Home</button>
+                        <button type="button" class="btn btn-primary-inv pull-right" data-dismiss="modal" aria-label="Close">Print</button>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal Error-->
 
 
 
