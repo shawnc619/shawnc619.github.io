@@ -6457,6 +6457,9 @@ button.close {
 .modal-open {
   overflow: hidden;
 }
+.modal-open[style] {
+padding-right: 0px !important;
+}
 .modal {
   position: fixed;
   top: 0;
@@ -6580,7 +6583,7 @@ button.close {
 .modal-info {
   position: relative; 
   padding: 0;
-  margin: 30px 10%;
+  margin: 20% 10%;
 }
 
 .modal-info .modal-content {
@@ -6622,22 +6625,12 @@ button.close {
   opacity: 0;
 }
 .modal-backdrop.in {
-  filter: alpha(opacity=50);
-  opacity: .4;
+  filter: alpha(opacity=70);
+  opacity: .7;
 }
 .modal-header {
   min-height: 16.42857143px;
-  padding: 15px 15px 0;
-}
-
-/* Small devices (tablets, 768px and up) */
-@media (min-width: 992px) { 
-  .modal-header {
-    padding: 25px 25px 0;
-  }
-}
-
-.modal-header .close {
+  padding: 14px 15px 7px;
 }
 .modal-title {
   margin: 0 0 15px 0;
@@ -6645,20 +6638,17 @@ button.close {
 }
 .modal-body {
   position: relative;
-  padding: 15px;
+  padding: 7px 15px;
 }
 
-/* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
-  .modal-body {
-    padding: 15px;
-  }
-}
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
+  .modal-header {
+    padding: 24px 25px 12px;
+  }
   .modal-body {
-    padding: 25px;
+    padding: 12px 25px;
   }
 }
 
@@ -6669,13 +6659,13 @@ button.close {
   text-align: right;
 }
 .modal-footer {
-  padding: 15px;
+  padding: 7px 15px 14px;
 }
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 992px) { 
   .modal-footer {
-    padding: 15px 25px 30px;
+    padding: 12px 25px 24px;
   }
 }
 .modal-footer .btn + .btn {
@@ -6709,7 +6699,7 @@ button.close {
   }
   .modal-info {
     width: 400px;
-    margin: 30px auto;
+    margin: 20% auto;
   }
   .modal.fade .modal-dialog {
     -webkit-transition: -webkit-transform .1s ease-out;
@@ -9318,11 +9308,29 @@ table.paymentDateInfo tr td{
    }
    .modal{
     width:100%;
-    margin-left:2cm;
+    height:27.9cm;
+    padding:0;
+    margin:0;
+   }
+   .modal-dialog{
+    width:100%;
+    height:27.9cm;
+    padding:0;
+    margin:0;
    }
 
 }
 
+/*Spinner*/
+.onLoadSpinner{
+  font-size: 6rem;
+  margin: -3rem 0 0 -3rem;
+  color: #FFFFFF;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  z-index: 2000;
+}
 
 
 /*Margin*/
