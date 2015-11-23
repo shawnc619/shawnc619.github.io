@@ -6463,7 +6463,7 @@ button.close {
 .modal-open {
   overflow:auto;
 }
-
+}
 
 .modal-open[style] {
 padding-right: 0px !important;
