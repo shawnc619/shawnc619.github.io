@@ -367,7 +367,7 @@
                                 <div class="receiptWrap printHide">
                                     <!-- col8 -->
                                     <div class="resultCol clearfix emailReceipt">
-                                        <button type="button" class="btn btn-primary-inv pull-right">Print</button>    
+                                        <button type="button" class="btn btn-primary-inv pull-right lnkPrint" >Print</button>    
                                     </div>
                                 </div>
                             </div>
@@ -511,7 +511,12 @@
                     $(".formSelect dd ul").hide();
             });
 
-
+$( document ).ready(function() {
+    $('.lnkPrint').click(function()
+     {
+         window.print();
+     });
+});
             
     </script>
 </body>
