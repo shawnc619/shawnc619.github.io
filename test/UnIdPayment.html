@@ -69,12 +69,12 @@
                         </div>
                         <div class="panel-collapse collapse in" id="collapseOne">
                             <div class="panel-body panel-body-padding">
-                                <div class="iconRow clearfix"><a href="#" data-toggle="modal" data-target=".modalInfo"><span class="icon-info-sign-empty"></span></a></div>
+                                <div class="iconRow clearfix"><a href="#" data-toggle="modal" data-target=".modalInfo1"><span class="icon-info-sign-empty"></span></a></div>
                                 <fieldset class="form-group">
                                   <label>DEFT reference number</label>
                                   <input type="text" pattern="[0-9]*" class="form-control" placeholder="e.g. 1234567890">
                                 </fieldset>
-                                <p class="descript">DEFT reference number varies from 3 - 20 digits</p>
+                                <p class="descript">DEFT reference number varies up to 20 digits</p>
 
                                 <!-- <div class="notify">
                                   This biller does not accept credit card, please <a href="#">click here to login</a> to pay with bank account etc
@@ -105,7 +105,7 @@
             <div class="col-xs-12">
                 <div class="panel-group" id="accordion2">
                     <div class="panel panel-default">
-                        <div class="panel-heading inverseStyle">
+                        <div class="panel-heading inverseStyle disabled">
                             <h4 class="panel-title"><a class="accordion-toggle" data-parent="#accordion" data-toggle="collapse" href="#collapseTwo">2. Enter card details</a></h4>
                         </div>
                         <div class="panel-collapse collapse in" id="collapseTwo">
@@ -125,7 +125,7 @@
                                     <input type="text" class="form-control" placeholder="John Smith">
                                 </fieldset>
                                 <div class="clearfix">
-                                    <div class="iconRow clearfix"><a href="#" data-toggle="modal" data-target=".modalInfo"><span class="icon-info-sign-empty"></span></a></div>
+                                    <div class="iconRow clearfix"><a href="#" data-toggle="modal" data-target=".modalInfo2"><span class="icon-info-sign-empty"></span></a></div>
                                     <fieldset class="form-group pull-left" style="width:48%">
                                         <label>Expiry date</label>
                                         <input type="text" class="form-control" pattern="[0-9]*" placeholder="mm/yy">
@@ -159,7 +159,7 @@
                                       <div class="col-xs-8 clearfix">
                                             <div class="pull-left">Surcharge (1.5%)</div>
                                             <span class="iconShortcut1">
-                                                <a href="#" data-toggle="modal" data-target=".modalInfo">
+                                                <a href="#" data-toggle="modal" data-target=".modalInfo3">
                                                     <span class="icon-info-sign-empty"></span>
                                                 </a>
                                             </span>
@@ -213,6 +213,61 @@
 
 
 
+
+
+<!-- Tooltip DRN -->
+<div class="modal fade modalInfo1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-info" role="document">
+        <div class="modal-content2">
+            <div class="modal-header clearfix">
+                <h3>DEFT reference number</h3>
+            </div>
+            <div class="modal-body clearfix">
+                <p>This is a number containing up to 20 digits provided to you by your biller. You can usually find it on the invoice, card or letter from your biller.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary pull-right"  data-dismiss="modal">Got it</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Tooltip Security code -->
+<div class="modal fade modalInfo2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-info" role="document">
+        <div class="modal-content2">
+            <div class="modal-header clearfix">
+                <h3>Security code</h3>
+            </div>
+            <div class="modal-body clearfix">
+                <p>This is a number printed on your card. For Visa, MasterCard and Diners cards, it is the 3 digit number printed on the back of the card. For American Express cards, it is the 4 digit number printed in small type on the front of your card.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary pull-right"  data-dismiss="modal">Got it</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Tooltip Security code -->
+<div class="modal fade modalInfo3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-info" role="document">
+        <div class="modal-content2">
+            <div class="modal-header clearfix">
+                <h3>Surcharge</h3>
+            </div>
+            <div class="modal-body clearfix">
+                <p>This is a DEFT fee which is a percentage of the transaction amount, charged on card payments.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary pull-right"  data-dismiss="modal">Got it</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- modal T&C -->
 <div class="modal fade TnCmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content2">
@@ -350,21 +405,6 @@
                     <p><strong>AEDT</strong> means Australian Eastern Daylight Time.</p>
                     <p><strong>Business Day</strong> means a day that banks are open for business in Sydney, New South Wales, Australia.</p>
                     <p><strong>DEFT</strong> means DEFT Payment Systems &#xAE;.</p>
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
                 </div>
              
             </div>
@@ -398,7 +438,18 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
    
+<style>
+body.modal-open-noscroll
+    {
+        padding-right: 0!important;
+        overflow: hidden;
+    }
+    .modal-open-noscroll .navbar-fixed-top, .modal-open .navbar-fixed-bottom
+    {
+          padding-right: 0!important;
+    }
 
+</style>
 
     <script type="text/javascript">
   
@@ -439,6 +490,24 @@
                 return false;
 
             });
+
+
+
+
+            $(document).ready(function () {
+    $('.modal').on('show.bs.modal', function () {
+        if ($(document).height() > $(window).height()) {
+            // no-scroll
+            $('body').addClass("modal-open-noscroll");
+        }
+        else {
+            $('body').removeClass("modal-open-noscroll");
+        }
+    })
+    $('.modal').on('hide.bs.modal', function () {
+        $('body').removeClass("modal-open-noscroll");
+    })
+})
             
     </script>
 </body>
