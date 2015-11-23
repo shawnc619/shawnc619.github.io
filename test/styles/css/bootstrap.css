@@ -6457,10 +6457,7 @@ button.close {
 .modal-open {
   overflow: hidden;
 }
-.modal-open .navbar-fixed-top,
-.modal-open .navbar-fixed-bottom {
-padding-right: 17px;
-}
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
 /*.modal-open {
