@@ -6454,9 +6454,17 @@ button.close {
   background: transparent;
   border: 0;
 }
-/*.modal-open {
+.modal-open {
   overflow: hidden;
-}*/
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+.modal-open {
+  overflow:auto;
+}
+
+
 .modal-open[style] {
 padding-right: 0px !important;
 }
