@@ -6457,7 +6457,10 @@ button.close {
 .modal-open {
   overflow: hidden;
 }
-
+.modal-open .navbar-fixed-top,
+.modal-open .navbar-fixed-bottom {
+padding-right: 17px;
+}
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
 /*.modal-open {
@@ -6465,8 +6468,9 @@ button.close {
 }*/
 }
 
-.modal-open[style] {
-padding-right: 0px !important;
+.modal-open[style="padding-right: 17px;"] .navbar-fixed-top,
+.modal-open[style="padding-right: 17px;"] .navbar-fixed-bottom {
+padding-right: 17px;
 }
 .modal {
   position: fixed;
