@@ -65,18 +65,18 @@
                 <div class="panel-group" id="accordion">
                     <div class="panel panel-default">
                         <div class="panel-heading inverseStyle">
-                            <h4 class="panel-title"><a class="accordion-toggle" data-parent="#accordion" data-toggle="collapse" href="#collapseOne">1. Enter DEFT reference number</a></h4>
+                            <h4 class="panel-title"><a class="accordion-toggle" tabindex="-1" data-parent="#accordion" data-toggle="collapse" href="#collapseOne">1. Enter DEFT reference number</a></h4>
                         </div>
                         <div class="panel-collapse collapse in" id="collapseOne">
                             <div class="panel-body panel-body-padding">
-                                <div class="iconRow clearfix"><a href="#" data-toggle="modal" data-target=".modalInfo1"><span class="icon-info-sign-empty"></span></a></div>
+                                <div class="iconRow clearfix"><a href="#" tabindex="-1" data-toggle="modal" data-target=".modalInfo1"><span class="icon-info-sign-empty"></span></a></div>
                                 <fieldset class="form-group">
-                                  <label>DEFT reference number</label>
-                                  <input type="text" pattern="[0-9]*" class="form-control" placeholder="e.g. 1234567890">
+                                  <label for="DRN">DEFT reference number</label>
+                                  <input id="DRN" type="text" pattern="[0-9]*" class="form-control" placeholder="e.g. 1234567890">
                                 </fieldset>
                                 <p class="descript">DEFT reference number varies up to 20 digits</p>
 
-                                <!-- <div class="notify">
+                                <!-- <div class="alert">
                                   This biller does not accept credit card, please <a href="#">click here to login</a> to pay with bank account etc
                                 </div> -->
                                 <!-- formSelect -->
@@ -106,7 +106,7 @@
                 <div class="panel-group" id="accordion2">
                     <div class="panel panel-default">
                         <div class="panel-heading inverseStyle disabled">
-                            <h4 class="panel-title"><a class="accordion-toggle" data-parent="#accordion" data-toggle="collapse" href="#collapseTwo">2. Enter card details</a></h4>
+                            <h4 class="panel-title"><a class="accordion-toggle" tabindex="-1" data-parent="#accordion" data-toggle="collapse" href="#collapseTwo">2. Enter card details</a></h4>
                         </div>
                         <div class="panel-collapse collapse in" id="collapseTwo">
                             <div class="panel-body panel-body-padding">
@@ -117,23 +117,23 @@
                                     <div class="cardIcon greyImage"><img src="styles/images/cardVisa.png" alt="Visa" width="100%"></div>
                                 </div>
                                 <fieldset class="form-group">
-                                    <label>Card number</label>
-                                    <input type="text" pattern="[0-9]*" class="form-control" placeholder="e.g. 0000 0000 0000 0000">
+                                    <label for="card">Card number</label>
+                                    <input id="card" type="text" pattern="[0-9]*" class="form-control" placeholder="e.g. 0000 0000 0000 0000">
                                 </fieldset>
                                 <fieldset class="form-group">
-                                    <label>Cardholder name</label>
-                                    <input type="text" class="form-control" placeholder="John Smith">
+                                    <label for="cardHolder">Cardholder name</label>
+                                    <input id="cardHolder" type="text" class="form-control" placeholder="John Smith">
                                 </fieldset>
                                 <div class="clearfix">
-                                    <div class="iconRow clearfix"><a href="#" data-toggle="modal" data-target=".modalInfo2"><span class="icon-info-sign-empty"></span></a></div>
+                                    <div class="iconRow clearfix"><a href="#" tabindex="-1" data-toggle="modal" data-target=".modalInfo2"><span class="icon-info-sign-empty"></span></a></div>
                                     <fieldset class="form-group pull-left" style="width:48%">
-                                        <label>Expiry date</label>
-                                        <input type="text" class="form-control" pattern="[0-9]*" placeholder="mm/yy">
+                                        <label for="expiry">Expiry date</label>
+                                        <input id="expiry" type="text" class="form-control" pattern="[0-9]*" placeholder="mm/yy">
                                     </fieldset>
 
                                     <fieldset class="form-group pull-right" style="width:49%">
-                                        <label>Security code</label>
-                                        <input type="text" class="form-control" placeholder="e.g. 123" pattern="[0-9]*">
+                                        <label for="securityCode">Security code</label>
+                                        <input id="securityCode" type="text" class="form-control" placeholder="e.g. 123" pattern="[0-9]*">
                                     </fieldset>
                                 </div>   
                             </div>
@@ -147,19 +147,19 @@
                 <div class="panel-group" id="accordion3">
                     <div class="panel panel-default">
                         <div class="panel-heading inverseStyleLast">
-                            <h4 class="panel-title"><a class="accordion-toggle" data-parent="#accordion" data-toggle="collapse" href="#collapseThree">3. Enter payment amount</a></h4>
+                            <h4 class="panel-title"><a class="accordion-toggle" tabindex="-1" data-parent="#accordion" data-toggle="collapse" href="#collapseThree">3. Enter payment amount</a></h4>
                         </div>
                         <div class="panel-collapse collapse in" id="collapseThree">
                             <div class="panel-body panel-body-padding">
                                 <fieldset class="form-group">
-                                      <label>Payment amount</label>
-                                      <input type="text" pattern="[0-9]*" class="form-control" placeholder="$0.00">
+                                      <label for="paymentAmount">Payment amount</label>
+                                      <input id="paymentAmount" type="text" pattern="[0-9]*" class="form-control" placeholder="$0.00">
                                 </fieldset>
                                 <div class="row paymentSurcharge">
                                       <div class="col-xs-8 clearfix">
                                             <div class="pull-left">Surcharge (1.5%)</div>
                                             <span class="iconShortcut1">
-                                                <a href="#" data-toggle="modal" data-target=".modalInfo3">
+                                                <a href="#" tabindex="-1" data-toggle="modal" data-target=".modalInfo3">
                                                     <span class="icon-info-sign-empty"></span>
                                                 </a>
                                             </span>
@@ -183,8 +183,8 @@
                   Send an email receipt
                 </div>
                 <div class="form-group">
-                      <label>Email address</label>
-                      <input type="email" class="form-control" placeholder="john.smith@gmail.com">
+                      <label for="email">Email address</label>
+                      <input id="email" type="email" class="form-control" placeholder="john.smith@gmail.com">
                 </div>
             </div> 
            <!-- terms -->
@@ -221,8 +221,9 @@
         <div class="modal-content2">
             <div class="modal-header clearfix">
                 <h3>DEFT reference number</h3>
+                
             </div>
-            <div class="modal-body clearfix">
+            <div class="modal-body border-top clearfix">
                 <p>This is a number containing up to 20 digits provided to you by your biller. You can usually find it on the invoice, card or letter from your biller.</p>
             </div>
             <div class="modal-footer">
@@ -239,7 +240,7 @@
             <div class="modal-header clearfix">
                 <h3>Security code</h3>
             </div>
-            <div class="modal-body clearfix">
+            <div class="modal-body border-top clearfix">
                 <p>This is a number printed on your card. For Visa, MasterCard and Diners cards, it is the 3 digit number printed on the back of the card. For American Express cards, it is the 4 digit number printed in small type on the front of your card.</p>
             </div>
             <div class="modal-footer">
@@ -249,14 +250,14 @@
     </div>
 </div>
 
-<!-- Tooltip Security code -->
+<!-- Tooltip Surcharge -->
 <div class="modal fade modalInfo3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-info" role="document">
         <div class="modal-content2">
             <div class="modal-header clearfix">
                 <h3>Surcharge</h3>
             </div>
-            <div class="modal-body clearfix">
+            <div class="modal-body border-top clearfix">
                 <p>This is a DEFT fee which is a percentage of the transaction amount, charged on card payments.</p>
             </div>
             <div class="modal-footer">
@@ -272,10 +273,11 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content2">
                 <div class="modal-header clearfix">
+                    <h4 class="modal-title pull-left">DEFT Payment Systems Terms of Use</h4>
+
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="icon-close" aria-hidden="true"></span></button>
                 </div>
-                <div class="modal-body termsModal">
-                    <h4 class="modal-title">DEFT Payment Systems Terms of Use</h4>
+                <div class="modal-body border-top termsModal">
                 <p>
                     DEFT Payment Systems (which comprises the <a href="http://www.deft.com.au">www.deft.com.au</a> website, the DEFT mobile website and DEFT phone payment option) is operated by Macquarie Bank Limited ABN 46 008 583 542, Macquarie Relationship Banking Division ("Macquarie", “we” or “us”).
                 </p>

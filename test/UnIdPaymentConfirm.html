@@ -45,23 +45,25 @@
                 <!-- col1 -->
                 <table class="resultCol">
                     <tr>
-                        <td width="70%">
-                            <div class="formlabel">DEFT reference number</div>
+                        <td width="30" valign="top">
+                             <div class="formlabel">Biller name</div>
                         </td>
-                        <td width="30%">
-                            <div class="text-right">329847223342</div>
+                        <td width="70%">
+                            <div class="text-right">HS BENTLEIGH - PM RENT Martin place A/C</div>
                         </td>
                     </tr>
                 </table>
                 <table class="resultCol">
                     <tr>
-                        <td width="40">
+                        <td width="70%">
+                            <div class="formlabel">DEFT reference number</div>
                         </td>
-                        <td width="60%">
-                            <div class="biller">HS BENTLEIGH - PM RENT Martin place A/C</div>
+                        <td width="30%" valign="top">
+                            <div class="text-right">329847223342</div>
                         </td>
                     </tr>
                 </table>
+                
             </div>
             <!-- Section 2 -->
             <div class="col-xs-12 resultWrap border-btm clearfix">
@@ -120,7 +122,7 @@
                         <td width="50%">
                             <div class="formlabel pull-left">Surcharge (1.5%)</div>
                             <span class="iconShortcut1">
-                                <a href="#" data-toggle="modal" data-target=".modalInfo">
+                                <a href="#" data-toggle="modal" data-target=".modalInfo3">
                                     <span class="icon-info-sign-empty"></span>
                                 </a>
                             </span>
@@ -263,23 +265,25 @@
                                     <!-- col1 -->
                                     <table class="resultCol">
                                         <tr>
-                                            <td width="70%">
-                                                <div class="formlabel">DEFT reference number</div>
+                                            <td width="30" valign="top">
+                                                 <div class="formlabel">Biller name</div>
                                             </td>
-                                            <td width="30%">
-                                                <div class="text-right">329847223342</div>
+                                            <td width="70%">
+                                                <div class="text-right">HS BENTLEIGH - PM RENT Martin place A/C</div>
                                             </td>
                                         </tr>
                                     </table>
                                     <table class="resultCol">
                                         <tr>
-                                            <td width="40">
+                                            <td width="70%">
+                                                <div class="formlabel">DEFT reference number</div>
                                             </td>
-                                            <td width="60%">
-                                                <div class="biller">HS BENTLEIGH - PM RENT Martin place A/C</div>
+                                            <td width="30%">
+                                                <div class="text-right" valign="top">329847223342</div>
                                             </td>
                                         </tr>
                                     </table>
+                                    
                                 </div>
                                 <!-- Section 2 -->
                                 <!-- col3 -->
@@ -416,8 +420,8 @@
 
 
 
-    <!-- Modal Error-->
-    <div class="modal fade modalError" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <!-- Modal Timeout-->
+    <div class="modal fade modaltimeout" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content2">
                 <div class="modal-header border-btm">
@@ -433,7 +437,7 @@
                 <div class="modal-body clearfix">
                     <div class="clearfix">
                         <div class="paymentStatusDesWrap">
-                            <h3><strong>Sorry, something went wrong when we trie to process your payment.</strong></h3><br>
+                            <h3><strong>Sorry, something went wrong when we tried to process your payment.</strong></h3><br>
                             <p>
                                 Please note your reference number and contact us to check the status of your payment. <br><br>
                                 1800 572 162 (Overseas +61 2 8245 4177) <a href="#">help@deft.com.au</a><br><br>
@@ -451,12 +455,50 @@
             </div>
         </div>
     </div>
+    <!-- End Modal timeout-->
+
+    <!-- Modal Error-->
+    <div class="modal fade modalError" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content2">
+                <div class="modal-header">
+                    <button type="button" class="close printHide" data-dismiss="modal" aria-label="Close"><span class="icon-close" aria-hidden="true"></span></button>
+
+                    <div class="paymentStatusWrap">
+                        <div class="paymentStatusSC"><span class="icon-alert-sign"></span></div> 
+                        <h2 class="">Something went wrong</h2>
+                        <div class="paymentStatusDesWrap">
+                            <h3>Your payment was not submitted, <strong>please try again</strong></h3><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer border-top printHide">
+                    <div class="ctaWrap mgbtm20">
+                        <button type="button" class="btn btn-primary pull-right mgLeft10" data-dismiss="modal" aria-label="Close">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- End Modal Error-->
 
 
-
-
-
+<!-- Tooltip Surcharge -->
+<div class="modal fade modalInfo3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-info" role="document">
+        <div class="modal-content2">
+            <div class="modal-header clearfix">
+                <h3>Surcharge</h3>
+            </div>
+            <div class="modal-body clearfix">
+                <p>This is a DEFT fee which is a percentage of the transaction amount, charged on card payments.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary pull-right"  data-dismiss="modal">Got it</button>
+            </div>
+        </div>
+    </div>
+</div>
 
     
 
