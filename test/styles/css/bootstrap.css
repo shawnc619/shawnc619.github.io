@@ -6403,7 +6403,7 @@ button.close {
   padding-right: 17px;
 }
 .modal-open[style="padding-right: 17px;"]{
-  background-position: calc(50% - 17px) 0;
+  background-position: calc(50% - 10px) 0;
 }
 .modal {
   position: fixed;
@@ -9539,7 +9539,7 @@ table.paymentDateInfo tr td:nth-child(2){
 
 
 /*Print receipt*/
-@media print {
+/*@media print {
    .container{
     display: none;
    }
@@ -9565,7 +9565,7 @@ table.paymentDateInfo tr td:nth-child(2){
     margin:0;
    }
 
-}
+}*/
 
 /*Spinner*/
 .onLoadSpinner {
