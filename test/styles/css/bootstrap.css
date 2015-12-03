@@ -9542,28 +9542,30 @@ table.paymentDateInfo tr td:nth-child(2){
 /*Print receipt*/
 @media print {
 
-   .placeholder{
+  .placeholder{
     display: none;
-   }
-   .printHide{
+  }
+  .printHide{
     visibility:hidden;
    }
-   .panel-heading .accordion-toggle:after{
-    display: none;
+  .panel-heading .accordion-toggle:after{
+    visibility:hidden;
    }
-   .modal{
+  .modal{
     display: block;
     width:100%;
     height:27.9cm;
     padding:0;
     margin:0;
+    border:1px red solid;
    }
-   .modal-dialog{
+  .modal-dialog{
     display: block;
     width:100%;
     height:27.9cm;
     padding:0;
     margin:0;
+    border:1px red solid;
    }
 
 }
