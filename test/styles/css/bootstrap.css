@@ -9546,7 +9546,7 @@ table.paymentDateInfo tr td:nth-child(2){
     display: none;
    }
    .printHide{
-    display: none;
+    visibility:hidden;
    }
    .panel-heading .accordion-toggle:after{
     display: none;
