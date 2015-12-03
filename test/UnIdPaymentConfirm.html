@@ -227,11 +227,22 @@
 
 
         </section>
+        <section class="row">
+            <footer class="container">
+                <div class="col-xs-12 col-sm-8">
+                    <ul>
+                        <li><a href="#">Privacy policy</a> &nbsp;|</li>
+                        <li><a href="#">Terms of use</a> &nbsp;|</li>
+                        <li><a href="#">Important information</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <p class="copyRightMGL">&copy; Macquarie Group Limited</p>
+                </div>
+            </footer>
+        </section>
     </main>
-    <footer>
 
-
-    </footer>
 
 
 
@@ -407,8 +418,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer border-top">
-                    <div class="ctaWrap mgbtm20 printHide">
+                <div class="modal-footer border-top-panel">
+                    <div class="printHide">
                         <button type="button" class="btn btn-primary pull-right mgLeft10" data-dismiss="modal" aria-label="Close">Make another payment</button>
                         <button type="button" class="btn btn-default pull-right" data-dismiss="modal" aria-label="Close">Home</button>    
                     </div>
@@ -439,18 +450,18 @@
                         <div class="paymentStatusDesWrap">
                             <h3><strong>Sorry, something went wrong when we tried to process your payment.</strong></h3><br>
                             <p>
-                                Please note your reference number and contact us to check the status of your payment. <br><br>
-                                1800 572 162 (Overseas +61 2 8245 4177) <a href="#">help@deft.com.au</a><br><br>
+                                Please note your reference number and contact us to check the status of your payment.
+                            </p><br>
+                            <p>
+                                1800 572 162 (Overseas +61 2 8245 4177) <a mailto="help@deft.com.au">help@deft.com.au</a><br>
                                 Our hours are Monday to Friday, 8.30am – 5.00pm (Sydney time) 
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="modal-footer border-top printHide">
-                    <div class="ctaWrap mgbtm20">
                         <button type="button" class="btn btn-primary pull-right mgLeft10" data-dismiss="modal" aria-label="Close">Home</button>
                         <button type="button" class="btn btn-primary-inv pull-right" data-dismiss="modal" aria-label="Close">Print</button>    
-                    </div>
                 </div>
             </div>
         </div>
@@ -473,9 +484,7 @@
                     </div>
                 </div>
                 <div class="modal-footer border-top printHide">
-                    <div class="ctaWrap mgbtm20">
-                        <button type="button" class="btn btn-primary pull-right mgLeft10" data-dismiss="modal" aria-label="Close">OK</button>
-                    </div>
+                    <button type="button" class="btn btn-primary pull-right" data-dismiss="modal" aria-label="Close">OK</button>
                 </div>
             </div>
         </div>
@@ -490,7 +499,7 @@
             <div class="modal-header clearfix">
                 <h3>Surcharge</h3>
             </div>
-            <div class="modal-body clearfix">
+            <div class="modal-body border-top clearfix">
                 <p>This is a DEFT fee which is a percentage of the transaction amount, charged on card payments.</p>
             </div>
             <div class="modal-footer">
@@ -529,7 +538,20 @@
 
 
     <script type="text/javascript">
-  
+            $(window).scroll(function() {
+            if ($(this).scrollTop() > 1){  
+                $('nav').addClass("sticky");
+                $('.placeholder').addClass("sticky");
+                $('.dottedPattern').addClass("sticky");
+                $('main').addClass("sticky");
+              }
+              else{
+                $('nav').removeClass("sticky");
+                $('.placeholder').removeClass("sticky");
+                $('.dottedPattern').removeClass("sticky");
+                $('main').removeClass("sticky");
+              }
+            });
 
 
             $('.formSelect').click(function(){
