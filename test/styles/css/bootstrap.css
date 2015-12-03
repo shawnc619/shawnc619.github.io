@@ -9541,9 +9541,7 @@ table.paymentDateInfo tr td:nth-child(2){
 
 /*Print receipt*/
 @media print {
-   .container{
-    display: none;
-   }
+
    .placeholder{
     display: none;
    }
