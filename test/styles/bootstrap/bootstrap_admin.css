@@ -6632,8 +6632,8 @@ button.close {
   opacity: 0;
 }
 .modal-backdrop.in {
-  filter: alpha(opacity=50);
-  opacity: .4;
+  filter: alpha(opacity=70);
+  opacity: .7;
 }
 .modal-header {
   min-height: 16.42857143px;
@@ -9330,6 +9330,17 @@ table.paymentDateInfo tr td{
   font-weight:400;
 }
 
+
+/*Spinner*/
+.onLoadSpinner {
+    font-size: 6rem;
+    margin: -3rem 0 0 -3rem;
+    color: #FFFFFF;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    z-index: 2000;
+}
 
 
 
