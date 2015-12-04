@@ -8784,7 +8784,7 @@ span.surchargefee{
 }
 .iconRow a{
   display: block;
-  font-size: 2em;
+  font-size: 2.3rem;
   color:#454545;
   line-height: 1;
   float: right;
@@ -8805,7 +8805,7 @@ span.surchargefee{
   .iconRow a{
   position: absolute;
   display: block;
-  font-size: 2em;
+  font-size: 2.3rem;
   color:#454545;
   line-height: 1;
   float: none;
