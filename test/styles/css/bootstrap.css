@@ -1317,7 +1317,7 @@ mark,
 }
 .text-muted {
   color: #777;
-  opacity: 0.7;
+  opacity: 0.6;
 }
 .text-primary {
   color: #357EF4;
@@ -4764,7 +4764,6 @@ margin-right: -15px;
 }
 .navbar-fixed-top,
 .navbar-fixed-bottom {
-  position: fixed;
   right: 0;
   left: 0;
   z-index: 1030;
@@ -4772,6 +4771,7 @@ margin-right: -15px;
 @media (min-width: 768px) {
   .navbar-fixed-top,
   .navbar-fixed-bottom {
+    position: fixed;
     border-radius: 0;
   }
 }
@@ -7502,19 +7502,24 @@ button.close {
 
 
 
-/* Custom Styles */
-
+/*Browser fix*/
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
-    -webkit-appearance: none;
     -moz-appearance: none;
+    -webkit-appearance: none;  /*chrome input number arrow*/
     appearance: none;
     margin: 0; 
 }
 
+.someinput::-ms-clear {
+    display: none;  /*IE input cross button*/
+}
+
+/* Custom Styles */
+
 .placeholder{
   background-color: #000;
-  padding:28px 15px;
+  padding:0 15px;
   border-bottom: 5px solid #4497FF;
   transition: all 0.4s ease;
   width: 100%;
@@ -8689,7 +8694,7 @@ span.surchargefee{
 }
 .paymentStatusSC{
   width: 100%;
-  margin-top: 0 auto;
+  margin: 0 auto;
 }
 
 .paymentStatusSC .icon-tick-sign{
@@ -8705,11 +8710,35 @@ span.surchargefee{
   font-size: 6em;
   color:#FF3A65;
 }
-
+.paymentStatusInline {
+  margin: 0 auto;
+}
+.paymentStatusInline .icon-alert-sign{
+  display: block;
+  margin: 0px 10px 0px 0;
+  font-size: 3em;
+  color:#FF3A65;
+}
+.paymentStatusInline h3{
+  margin: 4px 0 0;
+}
+.paymentStatusWrap h4{
+  font-size: 1.6rem;
+  margin:8px 0 0;
+}
 @media (min-width: 768px) { 
   .paymentStatusSC .icon-tick-sign, .paymentStatusSC .icon-alert-sign{
     font-size: 6.6em;
   } 
+  .paymentStatusInline .icon-alert-sign{
+    display: block;
+    margin: 7px 15px 0px 0;
+    font-size:3.5em;
+    color:#FF3A65;
+  }
+  .paymentStatusInline h3{
+    margin: 12px 0 0;
+  }
 }
 .paymentStatusWrap h2{
   font-size:2.4rem;
@@ -9191,11 +9220,15 @@ dd .dataSelectWrap .edit{
   cursor: not-allowed;
   opacity: 0.7
 }
-.greyImage {
-  filter: gray; /* IE6-9 */
-  filter: grayscale(1); /* Firefox 35+ */
-  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
-  opacity: 0.4;
+/*! Gray v1.4.5 (https://github.com/karlhorky/gray) | MIT */
+.grayscale {
+  /* Firefox 10-34 */
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='saturate' values='0'/></filter></svg>#grayscale");
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  filter: gray;
+  opacity: 0.3;
+  border:1px #777 solid!important;
 }
 
 
