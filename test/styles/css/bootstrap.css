@@ -6399,13 +6399,7 @@ button.close {
 }*/
 }
 
-.modal-open[style="padding-right: 17px;"] .navbar-fixed-top,
-.modal-open[style="padding-right: 17px;"] .navbar-fixed-bottom {
-  padding-right: 17px;
-}
-.modal-open[style="padding-right: 17px;"]{
-  background-position: calc(50% - 10px) 0;
-}
+
 .modal {
   position: fixed;
   top: 0;
@@ -6529,7 +6523,7 @@ button.close {
 .modal-info {
   position: relative; 
   padding: 0;
-  margin: 20% 10%;
+  margin: 10% 10%;
 }
 
 .modal-info .modal-content2 {
@@ -6688,7 +6682,7 @@ button.close {
   }
   .modal-info {
     width: 480px;
-    margin: 15% auto;
+    margin: 7% auto;
   }
   .modal.fade .modal-dialog {
     -webkit-transition: -webkit-transform .1s ease-out;
@@ -7503,6 +7497,22 @@ button.close {
 
 
 /*Browser fix*/
+.modal-open[style="padding-right: 17px;"] .navbar-fixed-top,
+.modal-open[style="padding-right: 17px;"] .navbar-fixed-bottom {
+  padding-right: 17px;
+}
+.modal-open[style="padding-right: 17px;"]{
+  background-position: calc(50% - 10px) 0;
+}
+
+.modal-open[style="padding-right: 15px;"] .navbar-fixed-top,
+.modal-open[style="padding-right: 15px;"] .navbar-fixed-bottom {
+  padding-right: 15px;
+}
+.modal-open[style="padding-right: 15px;"]{
+  background-position: calc(50% - 9px) 0;
+}
+
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
     -moz-appearance: none;
@@ -8179,7 +8189,7 @@ p.DRNedit_items_last {
     height:100%;
     padding:10px 15px;
     font-weight:200;
-    font-size:0.9em;
+    font-size:1.5rem;
 
 }
 
@@ -8188,7 +8198,7 @@ p.DRNedit_items_last {
 @media (min-width: 768px) { 
   .panel-heading .accordion-toggle{
     padding:12px 15px;
-    font-size:1em;
+    font-size:1.8rem;
 
   }
 }
@@ -8692,6 +8702,9 @@ span.surchargefee{
 .paymentStatusWrap{
   text-align: center;
 }
+.paymentStatusWrapLeft{
+  text-align: left;
+}
 .paymentStatusSC{
   width: 100%;
   margin: 0 auto;
@@ -8722,7 +8735,7 @@ span.surchargefee{
 .paymentStatusInline h3{
   margin: 4px 0 0;
 }
-.paymentStatusWrap h4{
+.paymentStatusWrap h4, .paymentStatusWrapLeft h4{
   font-size: 1.6rem;
   margin:8px 0 0;
 }
@@ -8740,38 +8753,41 @@ span.surchargefee{
     margin: 12px 0 0;
   }
 }
-.paymentStatusWrap h2{
+.paymentStatusWrap h2, .paymentStatusWrapLeft h2{
   font-size:2.4rem;
   margin: 8px 0;
 }
-.paymentStatusWrap .receiptNo{
+.paymentStatusWrap .receiptNo, .paymentStatusWrapLeft .receiptNo{
   font-size:1.8em;
   font-weight: 200
 }
-.paymentStatusWrap .receiptDate{
+.paymentStatusWrap .receiptDate, .paymentStatusWrapLeft .receiptDate{
   font-size:1.4em;
   font-weight: 200
 }
 
 @media (min-width: 768px) { 
-  .paymentStatusWrap h2{
+  .paymentStatusWrap h2, .paymentStatusWrapLeft h2{
     font-size:3rem;
     margin: 12px 0;
 
   }
-  .paymentStatusWrap .receiptNo{
+  .paymentStatusWrap .receiptNo, .paymentStatusWrapLeft .receiptNo{
+    font-size:2em;
+    font-weight: 200
+  }{
     font-size:2em;
     font-weight: 200
   }
-  .paymentStatusWrap .receiptDate{
+  .paymentStatusWrap .receiptDate, .paymentStatusWrapLeft .receiptDate{
     font-size:1.6em;
     font-weight: 200
   }
 }
-.paymentStatusWrap .receiptNo strong{
+.paymentStatusWrap .receiptNo strong, .paymentStatusWrapLeft .receiptNo strong {
   font-weight: 400
 }
-.paymentStatusWrap .receiptNo strong a{
+.paymentStatusWrap .receiptNo strong a, .paymentStatusWrapLeft .receiptNo strong a{
   color:#357EF4;
 }
 .paymentStatusDesWrap{
@@ -8784,6 +8800,9 @@ span.surchargefee{
 
 .paymentStatusDesWrap p{
   font-size: 1.4rem
+}
+.modal-body h4{
+  margin-top: 0
 }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
