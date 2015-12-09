@@ -6526,9 +6526,7 @@ button.close {
   margin: 10% 10%;
 }
 
-.modal-info .modal-content2 {
-  border-radius: 4px
-}
+
 
 .modal-content {
   position: relative;
@@ -6546,6 +6544,14 @@ button.close {
     background-color: #fff;
     border-radius: 0;
     outline: 0;
+}
+.modal-info {
+  border-radius: 4px;
+  position: relative;
+  height: auto;
+  background-color: #fff;
+  outline: 0;
+  margin: 10% 10%
 }
 
 /* Small devices (tablets, 768px and up) */
@@ -7525,6 +7531,13 @@ input[type=number]::-webkit-outer-spin-button {
     display: none;  /*IE input cross button*/
 }
 
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+    background-color: transparent; /*Chrome auto complete color*/
+    background-image: none;
+
+}
+
+
 /* Custom Styles */
 
 .placeholder{
@@ -8465,7 +8478,7 @@ dd.cardIcon{
 .paymentSurcharge{
   font-size:1.8em;
   font-weight:200;
-  padding:20px 0 6px;
+  padding:0 0 6px;
   margin:0;
   position: relative;
 }
@@ -8811,7 +8824,7 @@ span.surchargefee{
   }  
   .paymentStatusDesWrap p{
   font-size: 1.6rem
-} 
+  } 
 }
 
 .loginPromote{
@@ -8853,7 +8866,7 @@ span.surchargefee{
     position: relative;
     height:1px;
     margin-top:20px;
-  margin-bottom:10px;
+    margin-bottom:10px;
 
   }
   .iconRow a{
@@ -8865,7 +8878,7 @@ span.surchargefee{
   float: none;
   top:-15px;
   right:0;
-}
+  }
 }
 
 
