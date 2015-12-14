@@ -2567,7 +2567,7 @@ output {
   -o-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
   background-color: #f6f6f6;
-  border:1px solid #e1e1e1;
+  border:1px solid #ececec;
 }
 .modal .form-group:last-child {
   margin-bottom: 0;
@@ -6210,7 +6210,7 @@ button.list-group-item-danger.active:focus {
 
 @media (min-width: 992px) {
   .panel-body-padding{
-    padding:15px 0;    
+    padding:5px 0;    
   }
 }
 /*@media (min-width: 1200px) {
@@ -7290,6 +7290,11 @@ button.close {
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
+  .affix-top {
+    position: fixed;
+    top:75px;
+    width:220px;
+  }
   .affix {
     position: fixed;
     top:60px;
@@ -7304,6 +7309,11 @@ button.close {
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
+  .affix-top {
+    position: static;
+    top:70px;
+    width:293px;
+  }
   .affix {
     position: fixed;
     top:70px;
@@ -8226,13 +8236,13 @@ p.DRNedit_items_last {
 }
 
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
+/*@media (min-width: 992px) { 
   .panel-heading .accordion-toggle{
     padding:23px 20px;
     font-size:1.1em;
 
   }
-}
+}*/
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
@@ -9801,7 +9811,7 @@ section.rhWidget{
 }
 .rhWidget h2{
   font-weight: 100;
-  font-size:2.2rem;
+  font-size:2rem;
   padding:5px 0;
 }
 .rhWidget ul{
@@ -9833,7 +9843,11 @@ section.rhWidget{
   font-weight: 200
 }
 .rhWidget a.contact i{
-  font-size:2.6rem;
+  font-size:2.7rem;
+  padding:0 0 0;
+}
+.rhWidget a.contact i.icon-envelope-full{
+  font-size:2.3rem;
   padding:0 0 0;
 }
 .rhWidget a.contact span{
@@ -9842,7 +9856,7 @@ section.rhWidget{
 
 .rhWidget a.contact i.icon-arrow-right{
   font-size:1.8rem;
-  padding:5px 5px 0;
+  padding:5px 0 0;
 }
 .rhWidget.payNow{
   background-color: #357EF4;
@@ -9864,7 +9878,7 @@ section.rhWidget{
   } 
 
   .rhWidget h2{
-    font-size:2.6rem;
+    font-size:2.4rem;
   }
   .rhWidget ul{
     padding: 10px 15px;
@@ -9886,7 +9900,7 @@ section.rhWidget{
     margin-bottom:20px;
   }  
   .rhWidget a.contact span{
-    padding:8px 0 0 0;
+    padding:7px 0 0 0;
 }
 
 .rhWidget a.contact i.icon-arrow-right{
@@ -9897,16 +9911,20 @@ section.rhWidget{
     font-size:4rem;
     padding:0px 5px 0;
   }
-  .rhWidget ul li{
-    padding:10px 0;
+  .rhWidget a.contact i.icon-envelope-full{
+    font-size:3.5rem;
+    padding:3px 5px 0;
   }
-  .rhWidget ul li a{
-    font-size: 1.7rem;
+  .rhWidget ul li{
+    padding:7px 0;
   }
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
+  section.rhWidget{
+    width:80%;
+  }
   .rhWidget a.contact span{
     padding:9px 0 0 0;
     font-size: 2rem
