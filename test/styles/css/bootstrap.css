@@ -1093,7 +1093,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.42857143;
   color: #454545;
-  background-color: #f6f6f6;
+  background-color: #e8e8e8;
 }
 input,
 button,
@@ -1575,7 +1575,7 @@ pre code {
     width: 750px;
   }
 }
-/*
+
 @media (min-width: 992px) {
   .container {
     width: 970px;
@@ -1586,7 +1586,7 @@ pre code {
   .container {
     width: 1170px;
   }
-}*/
+}
 .container-fluid {
   padding-right: 15px;
   padding-left: 15px;
@@ -1607,9 +1607,10 @@ pre code {
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
   .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
-    padding-right: 25px;
-    padding-left: 25px;
+    padding-right: 15px;
+    padding-left: 15px;
   }
+
 }
 
 /* Large devices (large desktops, 1200px and up) */
@@ -3400,7 +3401,7 @@ fieldset[disabled] .btn-primary-inv.active {
 .btn-secondary.active.focus,
 .open > .dropdown-toggle.btn-secondary.focus {
   color: #fff;
-  background-color: #286CD9;
+  background-color: #3a3a3a;
   border-color: none;
 }
 .btn-secondary:active,
@@ -6190,7 +6191,7 @@ button.list-group-item-danger.active:focus {
 @media (min-width: 992px) { 
   
   .panel-default > .panel-heading {
-    margin:0 -25px;
+    margin:0 -15px;
   }
 }
 
@@ -7285,8 +7286,47 @@ button.close {
 .hidden {
   display: none !important;
 }
-.affix {
-  position: fixed;
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  .affix {
+    position: fixed;
+    top:60px;
+    width:220px;
+  }
+  .affix-bottom {
+    position: absolute;
+    top:60px;
+    width:220px;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .affix {
+    position: fixed;
+    top:70px;
+    width:293px;
+  }
+  .affix-bottom {
+    position: absolute;
+    top:60px;
+    width:293px;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  .affix {
+    position: fixed;
+    top:70px;
+    width:360px;
+  }
+  .affix-bottom {
+    position: absolute;
+    width:360px;
+  }
 }
 @-ms-viewport {
   width: device-width;
@@ -7548,53 +7588,20 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   width: 100%;
   z-index:-3;
 }
-.dottedPattern{
-  background: url('../images/dotBk.png') repeat;
-  padding:5px;
-  transition: all 0.4s ease;
-  width: 100%;
-  z-index:-4;
 
-}
-
-/*.sticky.placeholder{
-  position: fixed;
-  top:0;
-  background-color: #000;
-  padding:50px 15px;
-  border-bottom: 5px solid #4497FF;
-}
-.sticky.dottedPattern{
-  background: url('../images/dotBk.png') repeat;
-  padding:5px;
-  position: fixed;
-  top:30px;
-}*/
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
-  .placeholder{
-    padding:120px 15px 60px;
+  .pageHeading{
+    padding-top:60px;
   }
-/*  .sticky.placeholder{
-    position: fixed;
-    top:0;
-    padding:40px 15px 60px;
-  }*/
-  .dottedPattern{
-    background: url('../images/dotBk.png') repeat;
-    padding:50px;
+  .pageHeading .col-xs-12{
+    padding-right:0;
+    padding-left:0;
   }
-/*  .sticky.dottedPattern{
-    background: url('../images/dotBk.png') repeat;
-    position: fixed;
-    top:90px;
-    padding:50px;
-
-}*/
 }
 
-main.container{
+main.container section{
   background-color: white;
   margin-bottom: 25px
 }
@@ -7610,7 +7617,7 @@ main.container{
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
   .logo{
-    width:140px;
+    width:165px;
   }
   .sticky .logo{
     width:120px;
@@ -7619,7 +7626,7 @@ main.container{
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
     .logo{
-    width:140px;
+    width:165px;
   }
 }
 
@@ -7751,12 +7758,13 @@ nav .active a{
 
 body{
   font-size:95%;
+  background: #e8e8e8 url('../images/bakgroundImagemd.png') no-repeat center 50px fixed;
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
   body{
     font-size:90%;
-    background: #f6f6f6 url('../images/bakgroundImagemd.png') no-repeat center 0 fixed;
+    background: #e8e8e8 url('../images/bakgroundImagemd.png') no-repeat center 0 fixed;
   }
   nav a{
   font-size:2.3em;
@@ -7765,30 +7773,29 @@ body{
   font-size:2em;
   }
   
-  main.container{
+  main.container section{
     -webkit-box-shadow: 0px 1px 1px 1px rgba(140,140,140,0.6);
   -moz-box-shadow: 0px 1px 1px 1px rgba(140,140,140,0.6);
   box-shadow: 0px 1px 1px 1px rgba(140,140,140,0.6);
-    margin-top:-215px;
   }
-/*  main.container.sticky{
-    margin-top:40px;
-  }*/
+
 
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
-    body{
+  body{
     font-size:100%;
     background: #f6f6f6 url('../images/bakgroundImagelg.png') no-repeat center 0 fixed;
   }
   nav a{
-  font-size:2.2em;
-}
-
-    .hamburger{
+    font-size:2.2em;
+  }
+  .hamburger{
     padding:6px 0 0 6px;
+  }
+  main.container section{
+    margin-right:-5px;
   }
 }
 
@@ -7837,14 +7844,16 @@ p {
 @media (min-width: 768px) { 
 h1,
 .h1 {
-    font-size: 3.4em;
+    font-size: 3.2em;
+    margin:20px 0 15px;    
+
 }
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
   h1{
-    margin:20px 0;    
+    margin:30px 0 20px;    
   }
 }
 
@@ -8200,7 +8209,7 @@ p.DRNedit_items_last {
     display:block;
     width:100%;
     height:100%;
-    padding:10px 15px;
+    padding:15px 15px;
     font-weight:200;
     font-size:1.5rem;
 
@@ -8210,7 +8219,7 @@ p.DRNedit_items_last {
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
   .panel-heading .accordion-toggle{
-    padding:12px 15px;
+    padding:18px 15px;
     font-size:1.8rem;
 
   }
@@ -8219,7 +8228,7 @@ p.DRNedit_items_last {
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
   .panel-heading .accordion-toggle{
-    padding:12px 25px;
+    padding:23px 20px;
     font-size:1.1em;
 
   }
@@ -8543,8 +8552,8 @@ span.surchargefee{
   }
   .terms{
   font-size:1.5em;
-  padding-top:15px;
-  padding-bottom:10px;
+  padding-top:5px;
+  padding-bottom:5px;
   }
 }
 
@@ -9706,21 +9715,27 @@ table.paymentDateInfo tr td:nth-child(2){
 
 
 /*Footer*/
-footer.container{
-  padding:15px 0;
-  border-top:1px solid #e1e1e1;
+footer.container-fluid{
+  border-top:1px solid #D2D2D2;
+  background: #F3F3F3;
+  padding-right:0;
+  padding-left:0;
 }
-footer ul{
+footer .container{
+  padding:15px 0;
+
+}
+footer .container ul{
   padding:0;
   margin:0 -5px;
   list-style: none;
   font-size:1.2rem;
 }
-footer ul li{
+footer .container ul li{
   float:left;
   padding-right:8px;
 }
-footer p{
+footer .container p{
   margin:0 -5px;
   list-style: none;
   font-size:1.2rem;
@@ -9729,13 +9744,13 @@ footer p{
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
-  footer.container{
-    padding:15px;
+  footer .container{
+    padding:15px 0;
   }
-  footer ul{
+  footer .container ul{
     margin:0 -15px;
   }
-  footer p{
+  footer .container p{
     margin:0 -15px;
     text-align: right
   }
@@ -9743,23 +9758,169 @@ footer p{
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
-  footer.container{
-    padding:15px 25px;
+  footer .container{
+    padding:15px 0;
   }
-  footer ul{
-    margin:0 -25px;
-  }
-  footer p{
-    margin:0 -25px;
-  }
+
 }
 
 /*recapture*/
 @media screen and (max-height: 575px){
 .g-recaptcha {transform:scale(0.96);-webkit-transform:scale(0.96);transform-origin:0 0;-webkit-transform-origin:0 0;}
-  
 }
 
+aside{
+  display: none;
+}
+aside.col-sm-4{
+  margin: 0 -15px;
+  -webkit-transition: all .2s ease-in-out;
+   -o-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out;
+
+}
+
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  aside{
+  display: block;
+}
+  aside.col-sm-4{
+    margin: 0;
+  }
+
+}
+
+/*Right hand side widget*/
+section.rhWidget{
+  width:100%;
+  background: white; 
+  margin-bottom:12px;
+}
+.rhWidget h2{
+  font-weight: 100;
+  font-size:2.2rem;
+  padding:5px 0;
+}
+.rhWidget ul{
+  padding: 5px 15px;
+  margin: 0 -15px;
+  list-style: none;
+}
+
+.rhWidget ul li{
+  padding:7px 0;
+}
+
+.rhWidget ul li a{
+  font-size: 1.5rem;
+  color:#454545;
+}
+.rhWidget ul.viewAll{
+  padding: 5px 15px;
+}
+.rhWidget ul.viewAll a{
+  color:#357EF4;
+}
+.rhWidget a.contact{
+  display: block;
+  width: 100%;
+  padding:18px 0;
+  font-size:1.8rem;
+  color:#454545;
+  font-weight: 200
+}
+.rhWidget a.contact i{
+  font-size:2.6rem;
+  padding:0 0 0;
+}
+.rhWidget a.contact span{
+  padding:0 0 0 0;
+}
+
+.rhWidget a.contact i.icon-arrow-right{
+  font-size:1.8rem;
+  padding:5px 5px 0;
+}
+.rhWidget.payNow{
+  background-color: #357EF4;
+}
+.rhWidget.payNow i{
+  color:#fff;
+}
+.rhWidget.payNow a.contact{
+  font-weight: 100;
+  color:#fff;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  section.rhWidget{
+    -webkit-box-shadow: 0px 1px 1px 1px rgba(140,140,140,0.6);
+    -moz-box-shadow: 0px 1px 1px 1px rgba(140,140,140,0.6);
+    box-shadow: 0px 1px 1px 1px rgba(140,140,140,0.6); 
+  } 
+
+  .rhWidget h2{
+    font-size:2.6rem;
+  }
+  .rhWidget ul{
+    padding: 10px 15px;
+    margin: 0 -15px;
+    list-style: none;
+  }
+
+  .rhWidget ul li{
+    padding:7px 0;
+  }
+  .rhWidget ul li a{
+    font-size: 1.5rem;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  section.rhWidget{
+    margin-bottom:20px;
+  }  
+  .rhWidget a.contact span{
+    padding:8px 0 0 0;
+}
+
+.rhWidget a.contact i.icon-arrow-right{
+  font-size:1.8rem;
+  padding:13px 5px 0;
+}
+  .rhWidget a.contact i{
+    font-size:4rem;
+    padding:0px 5px 0;
+  }
+  .rhWidget ul li{
+    padding:10px 0;
+  }
+  .rhWidget ul li a{
+    font-size: 1.7rem;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  .rhWidget a.contact span{
+    padding:9px 0 0 0;
+    font-size: 2rem
+  }
+
+  .rhWidget a.contact i.icon-arrow-right{
+    font-size:2.2rem;
+    padding:13px 5px 0;
+  }
+  .rhWidget a.contact i{
+    font-size:4.5rem;
+    padding:0px 5px 0;
+  }
+}
 
 
 /*Margin*/

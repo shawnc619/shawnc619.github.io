@@ -14,205 +14,216 @@
 
 
 <nav class="navbar navbar-fixed-top navbar-inverse">
-        <div class="container">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="index.html#"><img class="logo" src="styles/images/logo.png"></a>
-            </div>
-            <div class="collapse navbar-collapse no-transition" id="navbar">
-                <!-- <ul class="nav navbar-nav">
-                    <li class="active">
-                        <a href="#">My account</a>
-                    </li>
-                    <li>
-                        <a href="#">Help</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                    <li>
-                        <a href="#">Sign out</a>
-                    </li>
-                </ul> -->
-            </div>
-
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html#"><img class="logo" src="styles/images/logo.png"></a>
         </div>
-    </nav>
-    <div class="container-fluid placeholder"></div>
-    <div class="container-fluid dottedPattern"></div>
+    </div>
+</nav>
+<div class="container pageHeading">
+    <div class="row">
+        <div class="col-xs-12 clearfix">
+            <h1>Make a payment</h1>
+        </div>
+    </div>
+</div>
 
 
 
-
-
-    <main class="container">
-        <section class="row">
-            <div class="col-xs-12 clearfix">
-                <h1 class="pull-left">Make a payment</h1>
-            </div>
-            <!-- <div class="col-xs-12">
-                <a class="clearfix addWrap" data-toggle="modal" data-target=".modalAdd">
-                    <div class="ico-user vcenter">&#xe601;</div>
-                    <h3 class="blueAdd vcenter">Login/Sign up</h3>
-                </a>
-            </div> -->
-            <!-- Step 1 -->
-            <div class="col-xs-12">
-                <div class="panel-group" id="accordion">
-                    <div class="panel panel-default">
-                        <div class="panel-heading inverseStyle">
-                            <h4 class="panel-title"><a class="accordion-toggle" tabindex="-1" data-parent="#accordion" data-toggle="collapse" href="#collapseOne">1. Enter DEFT reference number</a></h4>
-                        </div>
-                        <div class="panel-collapse collapse in" id="collapseOne">
-                            <div class="panel-body panel-body-padding">
-                                <div class="iconRow clearfix"><a href="#" tabindex="-1" data-toggle="modal" data-target=".modalInfo1"><span class="icon-info-sign-empty"></span></a></div>
-                                <fieldset class="form-group">
-                                  <label for="DRN">DEFT reference number</label>
-                                  <input id="DRN" type="tel" pattern="[0-9]*" class="form-control" placeholder="e.g. 1234567890">
-                                </fieldset>
-                                <!-- <p class="descript">DEFT reference number varies up to 20 digits</p> -->
-
-                                <div class="alert">
-                                  This biller does not accept credit card, please <a href="#">click here to login</a> to pay with bank account etc
-                                </div>
-                                <!-- formSelect -->
-                                <!-- <fieldset class="formSelect">
-                                <dl>
-                                <dt>
-                                    <a href="#"><span class="resultNorm">Paying for</span></a>
-                                </dt>
-                                <dd>
-                                    <ul class="selectToggle NormalStyleWrap">
-                                        <li><a href="#"><div class="typeNorm">Bond<span class="value">Bond</span></div></a></li>
-                                        <li><a href="#"><div class="typeNorm">Strata<span class="value">Strata</span></div></a></li>
-                                        <li><a href="#"><div class="typeNorm">Water<span class="value">Water</span></div></a></li>
-                                    </ul>
-                                </dd>
-                                </dl>
-                                </fieldset> -->
+<div class="container">
+    <div class="row">
+        <main class="container col-sm-8">
+            <section class="row">
+                <!-- Step 1 -->
+                <div class="col-xs-12">
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading inverseStyle">
+                                <h4 class="panel-title"><a class="accordion-toggle" tabindex="-1" data-parent="#accordion" data-toggle="collapse" href="#collapseOne">1. Enter DEFT reference number</a></h4>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-
-            <!-- Step 2 -->
-            <div class="col-xs-12">
-                <div class="panel-group" id="accordion2">
-                    <div class="panel panel-default">
-                        <div class="panel-heading inverseStyle disabled">
-                            <h4 class="panel-title"><a class="accordion-toggle" tabindex="-1" data-parent="#accordion" data-toggle="collapse" href="#collapseTwo">2. Enter card details</a></h4>
-                        </div>
-                        <div class="panel-collapse collapse in" id="collapseTwo">
-                            <div class="panel-body panel-body-padding">
-                                <div class="availCardType clearfix">
-                                    <div class="cardIcon"><img src="styles/images/cardDc.png" alt="Dinners Club" width="100%"></div>
-                                    <div class="cardIcon grayscale"><img src="styles/images/cardAE.png" alt="American Express" width="100%"></div>
-                                    <div class="cardIcon grayscale"><img src="styles/images/cardMa.png" alt="Mastercard" width="100%"></div>
-                                    <div class="cardIcon grayscale"><img src="styles/images/cardVisa.png" alt="Visa" width="100%"></div>
-                                </div>
-                                <fieldset class="form-group">
-                                    <label for="card">Card number</label>
-                                    <input id="card" type="tel" pattern="[0-9]*" class="form-control" placeholder="e.g. 0000 0000 0000 0000">
-                                </fieldset>
-                                <fieldset class="form-group">
-                                    <label for="cardHolder">Cardholder name</label>
-                                    <input id="cardHolder" type="text" class="form-control" placeholder="John Smith">
-                                </fieldset>
-                                <div class="clearfix">
-                                    <div class="iconRow clearfix"><a href="#" tabindex="-1" data-toggle="modal" data-target=".modalInfo2"><span class="icon-info-sign-empty"></span></a></div>
-                                    <fieldset class="form-group pull-left" style="width:48%">
-                                        <label for="expiry">Expiry date</label>
-                                        <input id="expiry" type="tel" class="form-control" pattern="[0-9]*" placeholder="mm/yy">
+                            <div class="panel-collapse collapse in" id="collapseOne">
+                                <div class="panel-body panel-body-padding">
+                                    <div class="iconRow clearfix"><a href="#" tabindex="-1" data-toggle="modal" data-target=".modalInfo1"><span class="icon-info-sign-empty"></span></a></div>
+                                    <fieldset class="form-group">
+                                      <label for="DRN">DEFT reference number</label>
+                                      <input id="DRN" type="tel" pattern="[0-9]*" class="form-control" placeholder="e.g. 1234567890">
                                     </fieldset>
+                                    <!-- <p class="descript">DEFT reference number varies up to 20 digits</p> -->
 
-                                    <fieldset class="form-group pull-right" style="width:49%">
-                                        <label for="securityCode">Security code</label>
-                                        <input id="securityCode" type="tel" class="form-control" placeholder="e.g. 123" pattern="[0-9]*">
+                                    <div class="alert">
+                                      This biller does not accept credit card, please <a href="#">click here to login</a> to pay with bank account etc
+                                    </div>
+                                    <!-- formSelect -->
+                                    <!-- <fieldset class="formSelect">
+                                    <dl>
+                                    <dt>
+                                        <a href="#"><span class="resultNorm">Paying for</span></a>
+                                    </dt>
+                                    <dd>
+                                        <ul class="selectToggle NormalStyleWrap">
+                                            <li><a href="#"><div class="typeNorm">Bond<span class="value">Bond</span></div></a></li>
+                                            <li><a href="#"><div class="typeNorm">Strata<span class="value">Strata</span></div></a></li>
+                                            <li><a href="#"><div class="typeNorm">Water<span class="value">Water</span></div></a></li>
+                                        </ul>
+                                    </dd>
+                                    </dl>
+                                    </fieldset> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <!-- Step 2 -->
+                <div class="col-xs-12">
+                    <div class="panel-group" id="accordion2">
+                        <div class="panel panel-default">
+                            <div class="panel-heading inverseStyle disabled">
+                                <h4 class="panel-title"><a class="accordion-toggle" tabindex="-1" data-parent="#accordion" data-toggle="collapse" href="#collapseTwo">2. Enter card details</a></h4>
+                            </div>
+                            <div class="panel-collapse collapse in" id="collapseTwo">
+                                <div class="panel-body panel-body-padding">
+                                    <div class="availCardType clearfix">
+                                        <div class="cardIcon"><img src="styles/images/cardDc.png" alt="Dinners Club" width="100%"></div>
+                                        <div class="cardIcon grayscale"><img src="styles/images/cardAE.png" alt="American Express" width="100%"></div>
+                                        <div class="cardIcon grayscale"><img src="styles/images/cardMa.png" alt="Mastercard" width="100%"></div>
+                                        <div class="cardIcon grayscale"><img src="styles/images/cardVisa.png" alt="Visa" width="100%"></div>
+                                    </div>
+                                    <fieldset class="form-group">
+                                        <label for="card">Card number</label>
+                                        <input id="card" type="tel" pattern="[0-9]*" class="form-control" placeholder="e.g. 0000 0000 0000 0000">
                                     </fieldset>
-                                </div>   
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                                    <fieldset class="form-group">
+                                        <label for="cardHolder">Cardholder name</label>
+                                        <input id="cardHolder" type="text" class="form-control" placeholder="John Smith">
+                                    </fieldset>
+                                    <div class="clearfix">
+                                        <div class="iconRow clearfix"><a href="#" tabindex="-1" data-toggle="modal" data-target=".modalInfo2"><span class="icon-info-sign-empty"></span></a></div>
+                                        <fieldset class="form-group pull-left" style="width:48%">
+                                            <label for="expiry">Expiry date</label>
+                                            <input id="expiry" type="tel" class="form-control" pattern="[0-9]*" placeholder="mm/yy">
+                                        </fieldset>
 
-            <!-- Step 3 -->
-            <div class="col-xs-12">
-                <div class="panel-group" id="accordion3">
-                    <div class="panel panel-default">
-                        <div class="panel-heading inverseStyleLast">
-                            <h4 class="panel-title"><a class="accordion-toggle" tabindex="-1" data-parent="#accordion" data-toggle="collapse" href="#collapseThree">3. Enter payment amount</a></h4>
-                        </div>
-                        <div class="panel-collapse collapse in" id="collapseThree">
-                            <div class="panel-body panel-body-padding">
-                                <fieldset class="form-group">
-                                      <label for="paymentAmount">Payment amount</label>
-                                      <input id="paymentAmount" type="number" class="form-control" placeholder="$0.00">
-                                </fieldset>
-                                <div class="row paymentSurcharge">
-                                      <div class="col-xs-8 clearfix">
-                                            <div class="pull-left">Surcharge (1.5%)</div>
-                                            <span class="iconShortcut1">
-                                                <a href="#" tabindex="-1" data-toggle="modal" data-target=".modalInfo3">
-                                                    <span class="icon-info-sign-empty"></span>
-                                                </a>
-                                            </span>
-                                      </div>
-                                      <div class="col-xs-4 text-right">$0.00</div>
-                                </div>
-                                <div class="row paymentTotal">
-                                      <div class="col-xs-6">Total amount</div>
-                                      <div class="col-xs-6 text-right"><strong>A$0.00</strong></div>
+                                        <fieldset class="form-group pull-right" style="width:49%">
+                                            <label for="securityCode">Security code</label>
+                                            <input id="securityCode" type="tel" class="form-control" placeholder="e.g. 123" pattern="[0-9]*">
+                                        </fieldset>
+                                    </div>   
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-              </div>
+
+                <!-- Step 3 -->
+                <div class="col-xs-12">
+                    <div class="panel-group" id="accordion3">
+                        <div class="panel panel-default">
+                            <div class="panel-heading inverseStyleLast">
+                                <h4 class="panel-title"><a class="accordion-toggle" tabindex="-1" data-parent="#accordion" data-toggle="collapse" href="#collapseThree">3. Enter payment amount</a></h4>
+                            </div>
+                            <div class="panel-collapse collapse in" id="collapseThree">
+                                <div class="panel-body panel-body-padding">
+                                    <fieldset class="form-group">
+                                          <label for="paymentAmount">Payment amount</label>
+                                          <input id="paymentAmount" type="number" class="form-control" placeholder="$0.00">
+                                    </fieldset>
+                                    <div class="row paymentSurcharge">
+                                          <div class="col-xs-8 clearfix">
+                                                <div class="pull-left">Surcharge (1.5%)</div>
+                                                <span class="iconShortcut1">
+                                                    <a href="#" tabindex="-1" data-toggle="modal" data-target=".modalInfo3">
+                                                        <span class="icon-info-sign-empty"></span>
+                                                    </a>
+                                                </span>
+                                          </div>
+                                          <div class="col-xs-4 text-right">$0.00</div>
+                                    </div>
+                                    <div class="row paymentTotal">
+                                          <div class="col-xs-6">Total amount</div>
+                                          <div class="col-xs-6 text-right"><strong>A$0.00</strong></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
 
 
-              <!-- Step 4 -->
-            <div class="col-xs-12 border-top">
-                <div class="noBkLabel">
-                  Send an email receipt
+                  <!-- Step 4 -->
+                <div class="col-xs-12 border-top">
+                    <div class="noBkLabel">
+                      Send an email receipt
+                    </div>
+                    <div class="form-group">
+                          <label for="email">Email address</label>
+                          <input id="email" type="email" class="form-control" placeholder="john.smith@gmail.com">
+                    </div>
+                </div> 
+               <!-- terms -->
+                <div class="col-xs-12 terms clearfix">
+                        <div class="text-right">
+                          <a href="#" data-toggle="modal" data-target=".TnCmodal">This payment is bound by the DEFT Terms of Use</a>
+                    </div>
                 </div>
-                <div class="form-group">
-                      <label for="email">Email address</label>
-                      <input id="email" type="email" class="form-control" placeholder="john.smith@gmail.com">
+                <!-- CTA -->
+                <div class="col-xs-12 col-sm-8 col-sm-push-4 ctaWrap mgbtm20">
+                    <button type="button" class="btn btn-primary btn-lg pull-right mgLeft10" data-toggle="modal" data-target=".modalSuccess">&nbsp;&nbsp;&nbsp;Next&nbsp;&nbsp;&nbsp;</button>
+                    <button type="button" class="btn btn-cancel btn-lg pull-right">Cancel</button>    
                 </div>
-            </div> 
-           <!-- terms -->
-            <div class="col-xs-12 terms clearfix">
-                    <div class="text-right">
-                      <a href="#" data-toggle="modal" data-target=".TnCmodal">This payment is bound by the DEFT Terms of Use</a>
-                </div>
-            </div>
-            <!-- CTA -->
-            <div class="col-xs-12 col-sm-8 col-sm-push-4 ctaWrap mgbtm20">
-                <button type="button" class="btn btn-primary btn-lg pull-right mgLeft10" data-toggle="modal" data-target=".modalSuccess">&nbsp;&nbsp;&nbsp;Next&nbsp;&nbsp;&nbsp;</button>
-                <button type="button" class="btn btn-cancel btn-lg pull-right">Cancel</button>    
-            </div>
-        </section>
-        <section class="row">
-            <footer class="container">
-                <div class="col-xs-12 col-sm-8">
-                    <ul>
-                        <li><a href="#">Privacy policy</a> &nbsp;|</li>
-                        <li><a href="#">Terms of use</a> &nbsp;|</li>
-                        <li><a href="#">Important information</a></li>
+            </section>
+        </main>
+        <aside class="col-sm-4">
+            <div id="MyAffix">
+                <section class="col-xs-12 rhWidget payNow">
+                    <a class="contact clearfix">
+                        <i class="fa icon-exchange-rates pull-left"></i>
+                        <span class="pull-left">Make a payment</span>
+                        <i class="fa icon-arrow-right pull-right"></i> 
+                    </a>
+                </section>
+                <section class="col-xs-12 rhWidget">
+                    <h2>FAQ</h2>
+                    <ul class="border-top">
+                        <li><a href="#">Q1. Most relevent question</a></li>
+                        <li><a href="#">Q2. Second most relevent question</a></li>
+                        <li><a href="#">Q3. Third most relevent question</a></li>
                     </ul>
-                </div>
-                <div class="col-xs-12 col-sm-4">
-                    <p class="copyRightMGL">&copy; Macquarie Group Limited</p>
-                </div>
-            </footer>
-        </section>
-    </main>
+                    <ul class="viewAll border-top">
+                        <li><a>View all FAQ</a></li>
+
+                    </ul>
+                </section>
+                <section class="col-xs-12 rhWidget">
+                    <a class="contact clearfix">
+                        <i class="fa icon-envelope-full pull-left"></i>
+                        <span class="pull-left">Contact us</span>
+                        <i class="fa icon-arrow-right pull-right"></i> 
+
+                    </a>
+                </section>
+            </div>
+        </aside>
+
+    </div>
+</div>
 
 
-
-
+<footer class="container-fluid">
+    <div class="container">
+        <div class="col-xs-12 col-sm-8">
+            <ul>
+                <li><a href="#">Privacy policy</a> &nbsp;|</li>
+                <li><a href="#">Terms of use</a> &nbsp;|</li>
+                <li><a href="#">Important information</a></li>
+            </ul>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+            <p class="copyRightMGL">&copy; Macquarie Group Limited</p>
+        </div>
+    </div>
+</footer>
 
 
 <!-- Tooltip DRN -->
@@ -267,9 +278,6 @@
     </div>
 </div>
 
-
-
-
 <!-- modal T&C -->
 <div class="modal fade TnCmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
@@ -309,17 +317,14 @@
                         <li>if a direct debit is dishonoured, the transaction will be reversed and a charge for the cost of the dishonoured direct debit may be applied against your account by your financial institution. Your Biller may also be charged a dishonour fee by Macquarie for reversing the transaction. It is at your Biller's discretion whether this dishonour fee is charged to you. To the extent permitted by law, Macquarie is not responsible for any fees charged to you by your financial institution or other third parties as a result of payments failing or dishonouring.</li>
                         <li><span style="font-weight: bold;">it is your responsibility to check payments have been successfully debited from your bank account or credit card.</span> Macquarie will not actively notify you if your payment is unsuccessful.</li>
                     </ol>
-                <h5>
-   2.  Representations</h5>
-                <p>
-                    By using DEFT you acknowledge that you:</p>
+                <h5>2.  Representations</h5>
+                <p>By using DEFT you acknowledge that you:</p>
                 <ol>
                     <li>have read and understood the DDSA and the Terms of Use and that you are contractually bound by the DDSA (if applicable);</li>
                     <li>understand the fees and charges that may apply to using DEFT; and</li>
                     <li>have entered into the DDSA contract with Macquarie (if applicable) of your own free will and have in no way been required to enter into this contract by any landlord, real estate agent or any other person with whom you may be contractually bound, either under a residential tenancy lease or any other contract.</li>
                 </ol>
-                <h5>
-   3.  Refund Policy</h5>
+                <h5>3.  Refund Policy</h5>
                 <ol>
                     <li><span style="font-weight: bold;">Transaction Amount</span><br />DEFT acts as a transactional aggregator and sits between the Payer (you) and the Biller (the organisation to whom you are making the payment and being the client of Macquarie). <span style="font-weight: bold;">Macquarie does not have authority to reverse or refund authorised transactions. You must contact your Biller directly for a refund or reversal.</span> Your Biller has absolute authority to refund your transaction. Your Biller is the organisation who has issued you with your DEFT Reference Number.</li>
                     <li><span style="font-weight: bold;">Transaction Fees and Surcharges</span><br />Transaction fees and surcharges that are charged to your credit card or bank account for facilitating a DEFT transaction are non-refundable as this is a cost incurred by Macquarie for processing the transaction. Transaction fees and surcharges are collected through DEFT. The Biller to whom you are making your payment has elected to pass these fees and surcharges on to you.<br />Where you believe any transaction fee or surcharge has been charged in error you should request a refund by either:
@@ -331,15 +336,13 @@
                     </li>
                     <li><span style="font-weight: bold;">Dishonour Fees</span><br />Dishonour fees may be charged by your financial institution in the event Macquarie is unable to debit your nominated account for your payment. As an example, you may have had insufficient funds in your account to process your DEFT transaction. Your Biller may be charged a dishonour fee by Macquarie for the reversal and dishonour of the transaction from your Biller's account. In the event of such dishonour fees being charged by either your financial institution or your Biller, Macquarie is not in a position to refund these fees. <span style="font-weight: bold;">You should contact your financial institution or your Biller if you feel any dishonour fee has been incorrectly or unfairly processed.</span></li>
                 </ol>
-                <h5>
-   4.  Deleting or Changing Your Payment and Account Details</h5>
+                <h5>4.  Deleting or Changing Your Payment and Account Details</h5>
                 <ol>
                     <li>To delete or to change your payment, log on to the DEFT Payment Systems website and follow the links to "Manage Payments", or send Macquarie a signed DEFT Payment Systems amendment form.</li>
                     <li>To change your account details, log on to the DEFT Payment Systems website and follow the links to "Account Details",or send Macquarie a signed DEFT Payment Systems amendment form.</li>
                     <li>Payments due today can not be deleted or changed, only future dated payments can be changed or deleted. <span style="font-weight: bold;">Please note that cancelling payments is your responsibility and not that of your Biller.</span> For example, if you vacate your rental property and no longer require future payments, failure to cancel may result in ongoing payments, fees and charges.</li>
                 </ol>
-                <h5>
-   5.  Timing of Payments</h5>
+                <h5>5.  Timing of Payments</h5>
                 <ol>
                     <li>Payments made from your bank account:
                         <ol>
@@ -350,8 +353,7 @@
                     <li>Funds can take up to two (2) Business Days to clear from the time the payment request is received by your financial institution. It is your responsibility to ensure you have sufficient clear funds in your bank account.</li>
                     <li>For credit card payments, the Business Day cut-off times are 9.30pm AEDT for MasterCard and Visa, and 7.00pm AEDT for American Express and Diners Club. Payments will generally be received by your biller within two business days.</li>
                 </ol>
-                <h5>
-   6.  General Disclaimers</h5>
+                <h5>6.  General Disclaimers</h5>
                 <ol>
                     <li>All information contained on DEFT Payment Systems is given in good faith and has been obtained from sources believed to be accurate. However, Macquarie has not verified the information, which may not be complete or accurate for your purposes. Macquarie makes no representation or warranty of any kind as to the completeness or accuracy of the information on DEFT Payment Systems. It is general information only and should not be considered as a comprehensive statement on any matter, nor relied upon as such. Please contact your Biller if you require specific information about your payment.</li>
                     <li>Subject to any provisions in the Competition and Consumer Act 2010 (Cth), or any other relevant law, Macquarie does not guarantee the security of DEFT Payment Systems, give any warranty of reliability or accuracy nor accepts any responsibility arising in any other way including by reason of negligence for, errors in, or omissions from, the information on DEFT Payment Systems and, to the extent permitted by law, does not accept any liability for any loss or damage as a result of any person relying on any information on DEFT Payment Systems or being unable to access DEFT Payment Systems.</li>
@@ -372,14 +374,12 @@
                     <li>You acknowledge that Macquarie is entitled to assume that any access to DEFT Payment Systems using your user name and password (or PSC) is made by you regardless of the true identity of the person accessing DEFT Payment Systems.</li>
                     <li>To the extent permitted by law, Macquarie is not liable to indemnify or otherwise compensate you for any loss or damage you may incur for any payment as a result of your failure to keep your password or PSC private and confidential.</li>
                 </ol>
-                <h5>
-   8.  Copyright and Trademarks</h5>
+                <h5>8.  Copyright and Trademarks</h5>
                 <ol>
                     <li>The Macquarie Group including Macquarie is either the owner or licensed user of the copyright in the material on DEFT Payment Systems. You may not reproduce, adapt, upload, link, frame, broadcast, distribute or in any way transmit the material on DEFT Payment Systems without the written consent of the Macquarie Group, other than to the extent necessary to view the material or as permitted by law.</li>
                     <li>The Macquarie name and all its associated trademarks (including, without limitation, the Holey Dollar device mark and DEFT Payment Systems logo) are trademarks of the Macquarie Group.</li>
                 </ol>
-                <h5>
-   9.  Dispute Resolution</h5>
+                <h5>9.  Dispute Resolution</h5>
                 <ol>
                     <li>To dispute any transaction processed on your behalf, contact Macquarie on the details noted in clause 3 or contact your financial institution.</li>
                     <li>In the event that any payment dispute remains unresolved, you may contact your financial institution and lodge the relevant customer claim form. Your financial institution may investigate whether or not the payment in dispute was authorised by you. Accordingly, you hereby authorise Macquarie to provide your financial institution with any information it may require to determine your claim.</li>
@@ -387,25 +387,20 @@
                     <li>If the disputed payment occurred outside 12 months from the date of your claim, upon request from your financial institution, Macquarie will endeavour to provide your financial institution with the relevant information it requests within 30 days.</li>
                     <li>If Macquarie or your financial institution does not rectify a problem notified by you under this clause, you may take the matter to the Financial Ombudsman Service (‘FOS’). FOS offers an independent and free resolution process of disputes between consumers and financial service providers. However, FOS has certain terms of reference that must be satisfied in order for it to investigate your problem.<br />To contact FOS, write to: Financial Ombudsman Service, GPO Box 3, Melbourne VIC 3001 or call 1300 780 808.</li>
                 </ol>
-                <h5>
-   10. Linking to Website</h5>
+                <h5>10. Linking to Website</h5>
                     <p>Please contact Macquarie if you would like to place a link to any part of the Macquarie website.</p>
-                <h5>
-   11. Privacy Statement</h5>
+                <h5>11. Privacy Statement</h5>
                 <ol>
                     <li>We may collect, hold, use and disclose personal information to process this application, deliver the Services, assist your Biller with payment enquiries, deal with complaints and otherwise handle your personal information in accordance with our Privacy Policy (available at www.deft.com.au or upon request). We may also collect personal information from your Biller, public sources, information brokers and through monitoring and recording interactions with you (e.g. phone, email and online). Some of the information we collect is required by various laws, including the Anti-Money Laundering and Counter-Terrorism Financing Act.</li>
                     <li>We may exchange your personal information with your Biller, your authorised representatives, our related companies and our service providers (described further in our Privacy Policy). The third parties with whom we exchange information may be located outside Australia (including The Philippines and the countries specified in our Privacy Policy).</li>
                     <li>You acknowledge that we need to collect, verify and handle personal information about you to enable us to deliver the Services and without that information we may not be able to effect payments under this agreement. We may also use your personal information to contact you by any means to offer you products or services that may be of interest to you, unless you change your marketing preferences by telephoning us on 1800 806 310 or visiting <a href="http://www.macquarie.com.au/optout-bfs" target="_blank">www.macquarie.com.au/optout-bfs</a>.</li>
                     <li>You agree to the handling of your personal information in accordance with the Privacy Policy. Our Privacy Policy contains further details about our handling of personal information, complaints, website privacy and information regarding your rights to request access to or correct information we hold.</li>
                 </ol>
-                <h5>
-   12. Fraud</h5>
+                <h5>12. Fraud</h5>
                     <p>Macquarie is committed to providing the highest quality of financial services within a trusted environment. Please read the <a href="http://www.macquarie.com.au/mgl/au/sitewide/security" target="_blank">Security &amp; Fraud Statement</a> for more information (available under 'Important Information' at www.macquarie.com.au).</p>
-                <h5>
-   13. Severability</h5>
+                <h5>13. Severability</h5>
                     <p>If any provision of the DDSA or the Terms of Use is unenforceable, illegal or void, then it is severed and all other provisions remain in force.</p>
-                <h5>
-   14. Definitions</h5>
+                <h5>14. Definitions</h5>
                     <p><strong>AEDT</strong> means Australian Eastern Daylight Time.</p>
                     <p><strong>Business Day</strong> means a day that banks are open for business in Sydney, New South Wales, Australia.</p>
                     <p><strong>DEFT</strong> means DEFT Payment Systems &#xAE;.</p>
@@ -413,7 +408,7 @@
              
             </div>
         </div>
-    </div>
+</div>
 
 
     
@@ -445,8 +440,15 @@
 
 
     <script type="text/javascript">
+            $( document ).ready(function() {
+                $('#MyAffix').affix('checkPosition');
+            });
+            $('#MyAffix').affix({
+                  offset: {top:77, bottom: 60}
+                })
+
             $(window).scroll(function() {
-            if ($(this).scrollTop() > 1){  
+            if ($(this).scrollTop() > 50){  
                 $('nav').addClass("sticky");
                 $('.placeholder').addClass("sticky");
                 $('.dottedPattern').addClass("sticky");
