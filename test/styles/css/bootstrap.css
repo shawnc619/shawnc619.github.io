@@ -4474,7 +4474,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   position: relative;
   display: block;
   padding: 15px 15px;
-
 }
 .nav > li:last-child > a {
   position: relative;
@@ -4495,6 +4494,61 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   cursor: not-allowed;
   background-color: transparent;
 }
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  .nav.subNav > li > a {
+    position: relative;
+    display: block;
+    padding: 0 3px 10px;
+    margin:0 8px;
+  }
+  .nav.subNav > li:first-child > a {
+    position: relative;
+    display: block;
+    border:none;
+    margin:0 8px 0 0;
+  }
+  .nav.subNav > li > a i {
+    font-size: 2.2rem;
+    display: block;
+    float: left;
+    margin:-1px 7px 0 0;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .nav.subNav > li > a {
+    padding: 4px 3px 12px;
+    margin:0 12px;
+    font-size:1.6rem;
+  }
+  .nav.subNav > li:first-child > a {
+    margin:0 14px 0 0;
+  }
+  .nav.subNav > li > a i {
+    font-size: 2.6rem;
+    margin:-2px 14px 0 0;
+  }
+}
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  .nav.subNav > li > a {
+    padding: 10px 3px 16px;
+    margin:0 22px;
+    font-size:1.8rem;
+  }
+  .nav.subNav > li:first-child > a {
+    margin:0 22px 0 0;
+  }
+  .nav.subNav > li > a i {
+    font-size: 3.2rem;
+    margin:-8px 12px 0 0;
+  }
+}
+
 .nav .open > a,
 .nav .open > a:hover,
 .nav .open > a:focus {
@@ -4681,11 +4735,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   position: relative;
   min-height: 25px;
   margin-bottom: 0;
-  border: 1px solid transparent;
 }
 @media (min-width: 768px) {
   .navbar {
-    border-radius: 4px;
+    border-radius: 0px;
   }
 }
 @media (min-width: 768px) {
@@ -4694,8 +4747,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-collapse {
-  padding-right: 15px;
-  padding-left: 15px;
   overflow-x: visible;
   -webkit-overflow-scrolling: touch;
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
@@ -4796,7 +4847,7 @@ margin-right: -15px;
 .navbar-toggle {
   position: relative;
   float: right;
-  padding: 11px 0;
+  padding: 13px 0 0;
   margin-top: 0px;
   margin-right: 15px;
   margin-bottom: 0px;
@@ -5047,7 +5098,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: #ccc;
 }
 .navbar-inverse {
-  background-color: #000;
+  background-color: #060606;
   opacity: 0.9;
 }
 
@@ -5074,7 +5125,9 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
   color: #fff;
-  background-color: #000;
+}
+.navbar-inverse .navbar-nav.subNav > .active > a {
+    border-bottom:3px #4497FF solid;
 }
 .navbar-inverse .navbar-nav > .disabled > a,
 .navbar-inverse .navbar-nav > .disabled > a:hover,
@@ -6727,7 +6780,7 @@ button.close {
 }
 @media (min-width: 992px) {
   .modal-dialog {
-    width: 668px;
+    width: 732px;
     margin: 30px auto;
     height:auto;
   }
@@ -6735,6 +6788,7 @@ button.close {
     width: 900px;
   }
 }
+
 .tooltip {
   position: absolute;
   z-index: 1070;
@@ -7291,8 +7345,8 @@ button.close {
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
   .affix-top {
-    position: fixed;
-    top:75px;
+    position: static;
+    top:60px;
     width:220px;
   }
   .affix {
@@ -7311,12 +7365,11 @@ button.close {
 @media (min-width: 992px) { 
   .affix-top {
     position: static;
-    top:70px;
     width:293px;
   }
   .affix {
     position: fixed;
-    top:70px;
+    top:65px;
     width:293px;
   }
   .affix-bottom {
@@ -7328,9 +7381,14 @@ button.close {
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
+  .affix-top {
+    position: static;
+    top:80px;
+    width:360px;
+  }
   .affix {
     position: fixed;
-    top:70px;
+    top:80px;
     width:360px;
   }
   .affix-bottom {
@@ -7338,6 +7396,23 @@ button.close {
     width:360px;
   }
 }
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+  .affix-top {
+    position: fixed;
+    top:120px;
+    width:220px;
+  }
+}
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape) {
+  .affix-top {
+    position: fixed;
+    top:120px;
+    width:220px;
+  }
+}
+
+
+
 @-ms-viewport {
   width: device-width;
 }
@@ -7602,9 +7677,9 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
-  .pageHeading{
+  /*.pageHeading{
     padding-top:60px;
-  }
+  }*/
   .pageHeading .col-xs-12{
     padding-right:0;
     padding-left:0;
@@ -7617,35 +7692,30 @@ main.container section{
 }
 
 .logo{
-  padding-top:8px;
+  padding:4px 0 0;
   width:120px;
-  transition: all 0.4s ease;
 }
-.sticky .logo{
-  width:80px;
-}
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
   .logo{
-    width:165px;
-  }
-  .sticky .logo{
     width:120px;
   }
 }
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
     .logo{
-    width:165px;
+    width:145px;
   }
 }
 
-/*AnimatedNav*/
 .navbar-inverse {
-    background-color: #000;
+    background-color: #060606;
     opacity: 0.9;
 }
-
+#subNav{
+  background: #171717;
+}
 
 .navbar-brand {
   float: left;
@@ -7671,25 +7741,23 @@ main.container section{
 
 
 .navbar-nav {
-  margin: 0 -15px;
-    transition: all 0.1s ease;
-
+  padding:6px 0 10px;
+  background: #323232
 }
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
   .navbar-nav {
-    margin: 0px -15px 0;
+    background: transparent;
 
   }
 
 }
 
 .navbar-nav > li > a {
-  padding-top: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   line-height: 20px;
-  transition: all 0.4s ease;
-
 }
 
 @media (max-width: 767px) {
@@ -7718,38 +7786,55 @@ main.container section{
 @media (min-width: 768px) {
   .navbar-nav {
     float: right;
+    padding-right:2px;
+    padding-top:15px;
+  }
+  .navbar-nav.subNav {
+    float: right;
+    padding-right:2px;
+    padding-top:12px;
+    padding-bottom:0;
   }
   .navbar-nav > li {
     float: left;
   }
   .navbar-nav > li > a {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 0;
+    padding-bottom:0;
   }
-  .sticky .navbar-nav > li > a {
-    padding-top: 12px;
-    padding-bottom: 12px;
+  .navbar-nav > li:first-child > a {
+    border-right:1px white solid;
   }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .navbar-nav {
+    padding-right:5px;
+    padding-top:16px;
+
+  }
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  .navbar-nav {
+    padding-right:5px;
+    padding-top:18px;
+
+  }
+
 }
 
 
 
 
-
-.hamburger{
-}
 .icon-menu-mobile{
-  margin-top:5px;
-  font-size:2.8rem;
+  font-size:2.5rem;
   color: #fff
 }
-.hamburger{
-}
-.sticky.icon-menu-mobile{
-  margin-top:1px;
-  font-size:1.8rem;
-  color: #fff
-}
+
 
 .menu{
   float:right;
@@ -7758,11 +7843,14 @@ main.container section{
   font-weight: 100;
 }
 nav a{
-  font-size:1.8em;
+  font-size:1.8rem;
   font-weight: 100
 }
+.subNav li a{
+  font-size:1.8rem;
+}
 nav .active a{
-  font-weight: 400
+  font-weight: 100
 }
 /*Font-size setting*/
 
@@ -7777,16 +7865,16 @@ body{
     background: #e8e8e8 url('../images/bakgroundImagemd.png') no-repeat center 0 fixed;
   }
   nav a{
-  font-size:2.3em;
-}
- nav.sticky a{
-  font-size:2em;
+    font-size:1.6rem;
+  }
+  .subNav li a{
+    font-size:1.5rem;
   }
   
   main.container section{
     -webkit-box-shadow: 0px 1px 1px 1px rgba(140,140,140,0.6);
-  -moz-box-shadow: 0px 1px 1px 1px rgba(140,140,140,0.6);
-  box-shadow: 0px 1px 1px 1px rgba(140,140,140,0.6);
+    -moz-box-shadow: 0px 1px 1px 1px rgba(140,140,140,0.6);
+    box-shadow: 0px 1px 1px 1px rgba(140,140,140,0.6);
   }
 
 
@@ -7799,11 +7887,9 @@ body{
     background: #f6f6f6 url('../images/bakgroundImagelg.png') no-repeat center 0 fixed;
   }
   nav a{
-    font-size:2.2em;
+    font-size:1.6rem;
   }
-  .hamburger{
-    padding:6px 0 0 6px;
-  }
+
   main.container section{
     margin-right:-5px;
   }
@@ -7811,10 +7897,9 @@ body{
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
- 
-/*   body{
+  body{
     font-size:110%;
-}*/
+  }
 }
 
 h1,
@@ -7854,7 +7939,7 @@ p {
 @media (min-width: 768px) { 
 h1,
 .h1 {
-    font-size: 3.2em;
+    font-size: 3.4rem;
     margin:20px 0 15px;    
 
 }
@@ -9618,14 +9703,14 @@ table.paymentDateInfo tr td:nth-child(2){
 
 /*Terms modal*/
 .termsModal p{
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin-bottom: 24px
 }
 .termsModal ol{
   padding:0 0 0 30px;
 }
 .termsModal li{
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin:12px 0
 }
 
@@ -9726,8 +9811,9 @@ table.paymentDateInfo tr td:nth-child(2){
 
 /*Footer*/
 footer.container-fluid{
-  border-top:1px solid #D2D2D2;
-  background: #F3F3F3;
+  /*border-top:1px solid #D2D2D2;*/
+  background: rgba(255, 255, 255, 0.4);
+  
   padding-right:0;
   padding-left:0;
 }
@@ -9739,7 +9825,7 @@ footer .container ul{
   padding:0;
   margin:0 -5px;
   list-style: none;
-  font-size:1.2rem;
+  font-size:1.4rem;
 }
 footer .container ul li{
   float:left;
@@ -9748,7 +9834,7 @@ footer .container ul li{
 footer .container p{
   margin:0 -5px;
   list-style: none;
-  font-size:1.2rem;
+  font-size:1.4rem;
   text-align: left
 }
 
@@ -9761,7 +9847,7 @@ footer .container p{
     margin:0 -15px;
   }
   footer .container p{
-    margin:0 -15px;
+    margin:0 0px;
     text-align: right
   }
 }
@@ -9848,7 +9934,7 @@ section.rhWidget{
 }
 .rhWidget a.contact i.icon-envelope-full{
   font-size:2.3rem;
-  padding:0 0 0;
+  padding:0 0 2px;
 }
 .rhWidget a.contact span{
   padding:0 0 0 0;
@@ -9857,11 +9943,15 @@ section.rhWidget{
 .rhWidget a.contact i.icon-arrow-right{
   font-size:1.8rem;
   padding:5px 0 0;
+  color:#8B8B8B;
 }
 .rhWidget.payNow{
   background-color: #357EF4;
 }
 .rhWidget.payNow i{
+  color:#fff;
+}
+.rhWidget.payNow a.contact i.icon-arrow-right{
   color:#fff;
 }
 .rhWidget.payNow a.contact{
@@ -9901,19 +9991,19 @@ section.rhWidget{
   }  
   .rhWidget a.contact span{
     padding:7px 0 0 0;
-}
+  }
 
-.rhWidget a.contact i.icon-arrow-right{
-  font-size:1.8rem;
-  padding:13px 5px 0;
-}
+  .rhWidget a.contact i.icon-arrow-right{
+    font-size:1.8rem;
+    padding:13px 5px 0;
+  }
   .rhWidget a.contact i{
     font-size:4rem;
     padding:0px 5px 0;
   }
   .rhWidget a.contact i.icon-envelope-full{
     font-size:3.5rem;
-    padding:3px 5px 0;
+    padding:3px 5px 2px;
   }
   .rhWidget ul li{
     padding:7px 0;
@@ -9923,7 +10013,7 @@ section.rhWidget{
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
   section.rhWidget{
-    width:80%;
+    width:100%;
   }
   .rhWidget a.contact span{
     padding:9px 0 0 0;
@@ -9937,6 +10027,10 @@ section.rhWidget{
   .rhWidget a.contact i{
     font-size:4.5rem;
     padding:0px 5px 0;
+  }
+  .rhWidget a.contact i.icon-envelope-full{
+    font-size:3.5rem;
+    padding:3px 5px 7px;
   }
 }
 

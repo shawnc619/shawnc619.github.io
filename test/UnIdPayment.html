@@ -13,13 +13,55 @@
 <body>
 
 
-<nav class="navbar navbar-fixed-top navbar-inverse">
+<nav class="navbar navbar-inverse">
     <div class="container">
         <div class="navbar-header">
+            <button class="navbar-toggle collapsed" data-target="#navbar" data-toggle="collapse" type="button">
+                <i class="icon-menu-mobile"></i>
+            </button> 
             <a class="navbar-brand" href="index.html#"><img class="logo" src="styles/images/logo.png"></a>
+        </div>
+        <div class="collapse navbar-collapse no-transition" id="navbar">
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a href="#">My account</a>
+                </li>
+                <li>
+                    <a href="#">Sign out</a>
+                </li>
+            </ul>
         </div>
     </div>
 </nav>
+<div class="subNavreplace"></div>
+<nav id="subNav" class="navbar navbar-inverse hidden-xs ">
+    <div class="container">
+        <div class="navbar-header">
+            <ul class="nav navbar-nav subNav">
+                <li>
+                    <a href="#"><i class="icon-bar-graph"></i>Dashboard</a>
+                </li>
+                <li class="active">
+                    <a href="#"><i class="icon-exchange-rates"></i>Make a payment</a>
+                </li>
+                <li>
+                    <a href="#"><i class="icon-note-pad"></i>My DEFT reference number</a>
+                </li>
+                <li>
+                    <a href="#"><i class="icon-wallet-account"></i>My wallet</a>
+                </li>
+                <li>
+                    <a href="#"><i class="icon-bar-graph"></i>My agreements</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+
+
 <div class="container pageHeading">
     <div class="row">
         <div class="col-xs-12 clearfix">
@@ -444,21 +486,17 @@
                 $('#MyAffix').affix('checkPosition');
             });
             $('#MyAffix').affix({
-                  offset: {top:77, bottom: 60}
-                })
+              offset: {top:40, bottom: 60}
+            })
 
             $(window).scroll(function() {
-            if ($(this).scrollTop() > 50){  
-                $('nav').addClass("sticky");
-                $('.placeholder').addClass("sticky");
-                $('.dottedPattern').addClass("sticky");
-                $('main').addClass("sticky");
+            if ($(this).scrollTop() > 40){  
+                $('#subNav').addClass("navbar-fixed-top");
+                $('.subNavreplace').addClass(".replace");
               }
               else{
-                $('nav').removeClass("sticky");
-                $('.placeholder').removeClass("sticky");
-                $('.dottedPattern').removeClass("sticky");
-                $('main').removeClass("sticky");
+                $('#subNav').removeClass("navbar-fixed-top");
+                $('.subNavreplace').removeClass(".replace");
               }
             });
 
