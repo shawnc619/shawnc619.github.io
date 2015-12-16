@@ -7341,7 +7341,6 @@ button.close {
   display: none !important;
 }
 
-
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
   .affix-top {
@@ -7358,6 +7357,9 @@ button.close {
     position: absolute;
     top:60px;
     width:220px;
+  }
+  .subNavreplace.replace{
+    height: 45px
   }
 }
 
@@ -7377,6 +7379,9 @@ button.close {
     top:60px;
     width:293px;
   }
+  .subNavreplace.replace{
+    height: 51px
+  }
 }
 
 /* Large devices (large desktops, 1200px and up) */
@@ -7394,6 +7399,9 @@ button.close {
   .affix-bottom {
     position: absolute;
     width:360px;
+  }
+  .subNavreplace.replace{
+    height: 61px
   }
 }
 @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
@@ -9718,21 +9726,18 @@ table.paymentDateInfo tr td:nth-child(2){
 /*Print receipt*/
 @media print {
 
-  .placeholder{
-    display: none;
-  }
   .printHide{
-    visibility:hidden;
+    display: none
    }
   .panel-heading .accordion-toggle:after{
-    visibility:hidden;
+    display: none
    }
   .modal{
     display: block;
     position: absolute;
     top:0;
     width:100%;
-    height:27.9cm;
+    height:24cm;
     padding:0;
     margin:0;
    }
@@ -9741,7 +9746,7 @@ table.paymentDateInfo tr td:nth-child(2){
     position: absolute;
     top:0;
     width:100%;
-    height:27.9cm;
+    height:24cm;
     padding:0;
     margin:0;
    }
