@@ -4494,7 +4494,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   cursor: not-allowed;
   background-color: transparent;
 }
-
+.nav > li > a i {
+    font-size: 1.8rem;
+    display: block;
+    float: left;
+    margin: 1px 8px 0 0;
+  }
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
@@ -4544,8 +4549,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     margin:0 22px 0 0;
   }
   .nav.subNav > li > a i {
-    font-size: 3.2rem;
-    margin:-8px 12px 0 0;
+    font-size: 3rem;
+    margin:-6px 12px 0 0;
   }
 }
 
@@ -4747,10 +4752,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-collapse {
-  overflow-x: visible;
-  -webkit-overflow-scrolling: touch;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
-          box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
+  border-top: 1px #292929 solid;
 }
 .navbar-collapse.in {
   overflow-y: auto;
@@ -5098,10 +5100,19 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: #ccc;
 }
 .navbar-inverse {
-  background-color: #060606;
-  opacity: 0.9;
+  background-color: #080808;
+  opacity: 0.8;
 }
 
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  .navbar-inverse {
+    opacity: 0.9;
+  }
+}
+
+
+}
 .navbar-inverse .navbar-brand {
   color: #9d9d9d;
 }
@@ -5126,8 +5137,17 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 .navbar-inverse .navbar-nav > .active > a:focus {
   color: #fff;
 }
+
+.navbar-inverse .navbar-nav.subNav > li > a {
+  transition: 0.3s ease;
+  border-bottom:3px transparent solid;
+
+}
+.navbar-inverse .navbar-nav.subNav > li > a:hover {
+    border-bottom:3px #357EF4 solid;
+}
 .navbar-inverse .navbar-nav.subNav > .active > a {
-    border-bottom:3px #4497FF solid;
+    border-bottom:3px #357EF4 solid;
 }
 .navbar-inverse .navbar-nav > .disabled > a,
 .navbar-inverse .navbar-nav > .disabled > a:hover,
@@ -5143,10 +5163,6 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 }
 .navbar-inverse .navbar-toggle .icon-bar {
   background-color: #fff;
-}
-.navbar-inverse .navbar-collapse,
-.navbar-inverse .navbar-form {
-  border-color: #101010;
 }
 .navbar-inverse .navbar-nav > .open > a,
 .navbar-inverse .navbar-nav > .open > a:hover,
@@ -7660,8 +7676,10 @@ input[type=number]::-webkit-outer-spin-button {
     margin: 0; 
 }
 
-.someinput::-ms-clear {
+input[type=text]::-ms-clear {
     display: none;  /*IE input cross button*/
+    width : 0;
+    height: 0;
 }
 
 input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
@@ -7676,15 +7694,25 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 .placeholder{
   background-color: #000;
   padding:0 15px;
-  border-bottom: 5px solid #4497FF;
-  transition: all 0.4s ease;
+  border-bottom: 3px solid #4497FF;
   width: 100%;
   z-index:-3;
 }
-
+.dottedPattern{
+  background: url('../images/dotBk.png') repeat;
+  padding:5px;
+  width: 100%;
+  z-index:-4;
+}
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
+  .placeholder{
+    display: none
+  }
+  .dottedPattern{
+    display: none
+  }
   /*.pageHeading{
     padding-top:60px;
   }*/
@@ -7716,13 +7744,8 @@ main.container section{
     width:145px;
   }
 }
-
-.navbar-inverse {
-    background-color: #060606;
-    opacity: 0.9;
-}
 #subNav{
-  background: #171717;
+  background: #1b1b1b;
 }
 
 .navbar-brand {
@@ -7750,7 +7773,6 @@ main.container section{
 
 .navbar-nav {
   padding:6px 0 10px;
-  background: #323232
 }
 
 /* Small devices (tablets, 768px and up) */
@@ -7767,7 +7789,11 @@ main.container section{
   padding-bottom: 10px;
   line-height: 20px;
 }
-
+.navbar-nav > li> a.myAccount {
+    border-top:1px #292929 solid;
+    padding-top:20px;
+    margin-top:15px;
+  }
 @media (max-width: 767px) {
   .navbar-nav .open .dropdown-menu {
     position: static;
@@ -7791,6 +7817,7 @@ main.container section{
     background-image: none;
   }
 }
+
 @media (min-width: 768px) {
   .navbar-nav {
     float: right;
@@ -7800,7 +7827,7 @@ main.container section{
   .navbar-nav.subNav {
     float: right;
     padding-right:2px;
-    padding-top:12px;
+    padding-top:8px;
     padding-bottom:0;
   }
   .navbar-nav > li {
@@ -7810,8 +7837,11 @@ main.container section{
     padding-top: 0;
     padding-bottom:0;
   }
-  .navbar-nav > li:first-child > a {
+  .navbar-nav > li> a.myAccount {
     border-right:1px white solid;
+    border-top:none;
+    padding-top:0;
+    margin-top:0;
   }
 }
 
@@ -7820,9 +7850,7 @@ main.container section{
   .navbar-nav {
     padding-right:5px;
     padding-top:16px;
-
   }
-
 }
 
 /* Large devices (large desktops, 1200px and up) */
@@ -7830,20 +7858,13 @@ main.container section{
   .navbar-nav {
     padding-right:5px;
     padding-top:18px;
-
   }
-
 }
-
-
-
 
 .icon-menu-mobile{
-  font-size:2.5rem;
+  font-size:2.3rem;
   color: #fff
 }
-
-
 .menu{
   float:right;
   color:white;
@@ -7851,7 +7872,7 @@ main.container section{
   font-weight: 100;
 }
 nav a{
-  font-size:1.8rem;
+  font-size:1.6rem;
   font-weight: 100
 }
 .subNav li a{
@@ -7864,13 +7885,13 @@ nav .active a{
 
 body{
   font-size:95%;
-  background: #e8e8e8 url('../images/bakgroundImagemd.png') no-repeat center 50px fixed;
+  background: #e8e8e8 url('../images/bakgroundImagesm.png') no-repeat center 0 fixed;
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
   body{
     font-size:90%;
-    background: #e8e8e8 url('../images/bakgroundImagemd.png') no-repeat center 0 fixed;
+    background: #e8e8e8 url('../images/bakgroundImagemd.png') no-repeat center 40px fixed;
   }
   nav a{
     font-size:1.6rem;
@@ -9818,7 +9839,6 @@ table.paymentDateInfo tr td:nth-child(2){
 footer.container-fluid{
   /*border-top:1px solid #D2D2D2;*/
   background: rgba(255, 255, 255, 0.4);
-  
   padding-right:0;
   padding-left:0;
 }
@@ -9860,11 +9880,16 @@ footer .container p{
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
   footer .container{
-    padding:15px 0;
+    padding:20px 0;
   }
-
 }
 
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  footer .container{
+    padding:25px 0;
+  }
+}
 /*recapture*/
 @media screen and (max-height: 575px){
 .g-recaptcha {transform:scale(0.96);-webkit-transform:scale(0.96);transform-origin:0 0;-webkit-transform-origin:0 0;}
