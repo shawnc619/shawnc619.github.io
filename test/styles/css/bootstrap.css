@@ -7676,7 +7676,7 @@ input[type=number]::-webkit-outer-spin-button {
     margin: 0; 
 }
 
-input[type=text]::-ms-clear {
+input::-ms-clear {
     display: none;  /*IE input cross button*/
     width : 0;
     height: 0;
