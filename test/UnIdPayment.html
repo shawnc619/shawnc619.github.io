@@ -7,6 +7,7 @@
 <link href="styles/css/bootstrap.css" rel="stylesheet">
 <link href="styles/css/awesome-bootstrap-checkbox.css" rel="stylesheet">
 <link href="styles/css/icomoon.css" rel="stylesheet">
+<link href="styles/css/hover.css" rel="stylesheet">
 
 </head>
 
@@ -23,16 +24,35 @@
         </div>
         <div class="collapse navbar-collapse no-transition" id="navbar">
             <ul class="nav navbar-nav">
+                <li class="visible-xs">
+                    <a href="#" class=""><i class="icon-bar-graph"></i>Dashboard</a>
+                </li>
+                <li class="visible-xs">
+                    <a href="#"><i class="icon-exchange-rates"></i>Make a payment</a>
+                </li>
+                <li class="visible-xs">
+                    <a href="#"><i class="icon-note-pad"></i>My DEFT reference number</a>
+                </li>
+                <li class="visible-xs">
+                    <a href="#"><i class="icon-wallet-account"></i>My wallet</a>
+                </li>
+                <li class="visible-xs">
+                    <a href="#"><i class="icon-bar-graph"></i>My agreements</a>
+                </li>
                 <li class="active">
-                    <a href="#">My account</a>
+                    <a class="myAccount" href="#"><i class="icon-user"></i>My account</a>
                 </li>
                 <li>
-                    <a href="#">Sign out</a>
+                    <a href="#"><i class="fa fa-sign-out"></i>Log out</a>
                 </li>
+                
             </ul>
         </div>
     </div>
 </nav>
+<div class="container-fluid placeholder printHide"></div>
+<div class="container-fluid dottedPattern printHide"></div>
+
 <div class="subNavreplace"></div>
 <nav id="subNav" class="navbar navbar-inverse hidden-xs ">
     <div class="container">
@@ -85,7 +105,7 @@
                             </div>
                             <div class="panel-collapse collapse in" id="collapseOne">
                                 <div class="panel-body panel-body-padding">
-                                    <div class="iconRow clearfix"><a href="#" tabindex="-1" data-toggle="modal" data-target=".modalInfo1"><span class="icon-info-sign-empty"></span></a></div>
+                                    <div class="iconRow clearfix"><a href="#" tabindex="-1" data-toggle="modal" data-target=".modalInfo1"><span class="icon-info-sign-empty hvr-bob"></span></a></div>
                                     <fieldset class="form-group">
                                       <label for="DRN">DEFT reference number</label>
                                       <input id="DRN" type="tel" pattern="[0-9]*" class="form-control" placeholder="e.g. 1234567890">
@@ -141,7 +161,7 @@
                                         <input id="cardHolder" type="text" class="form-control" placeholder="John Smith">
                                     </fieldset>
                                     <div class="clearfix">
-                                        <div class="iconRow clearfix"><a href="#" tabindex="-1" data-toggle="modal" data-target=".modalInfo2"><span class="icon-info-sign-empty"></span></a></div>
+                                        <div class="iconRow clearfix"><a href="#" tabindex="-1" data-toggle="modal" data-target=".modalInfo2"><span class="icon-info-sign-empty hvr-bob"></span></a></div>
                                         <fieldset class="form-group pull-left" style="width:48%">
                                             <label for="expiry">Expiry date</label>
                                             <input id="expiry" type="tel" class="form-control" pattern="[0-9]*" placeholder="mm/yy">
@@ -176,7 +196,7 @@
                                                 <div class="pull-left">Surcharge (1.5%)</div>
                                                 <span class="iconShortcut1">
                                                     <a href="#" tabindex="-1" data-toggle="modal" data-target=".modalInfo3">
-                                                        <span class="icon-info-sign-empty"></span>
+                                                        <span class="icon-info-sign-empty hvr-bob"></span>
                                                     </a>
                                                 </span>
                                           </div>
@@ -211,14 +231,14 @@
                 </div>
                 <!-- CTA -->
                 <div class="col-xs-12 col-sm-8 col-sm-push-4 ctaWrap mgbtm20">
-                    <button type="button" class="btn btn-primary btn-lg pull-right mgLeft10" data-toggle="modal" data-target=".modalSuccess">&nbsp;&nbsp;&nbsp;Next&nbsp;&nbsp;&nbsp;</button>
-                    <button type="button" class="btn btn-cancel btn-lg pull-right">Cancel</button>    
+                    <button type="button" class="btn btn-primary btn-lg pull-right mgLeft10 hvr-pop" data-toggle="modal" data-target=".modalSuccess">&nbsp;&nbsp;&nbsp;Next&nbsp;&nbsp;&nbsp;</button>
+                    <button type="button" class="btn btn-cancel btn-lg pull-right hvr-pop">Cancel</button>    
                 </div>
             </section>
         </main>
         <aside class="col-sm-4">
             <div id="MyAffix">
-                <section class="col-xs-12 rhWidget payNow">
+                <section class="col-xs-12 rhWidget payNow hvr-shadow-radial">
                     <a class="contact clearfix">
                         <i class="fa icon-exchange-rates pull-left"></i>
                         <span class="pull-left">Make a payment</span>
@@ -237,7 +257,7 @@
 
                     </ul>
                 </section>
-                <section class="col-xs-12 rhWidget">
+                <section class="col-xs-12 rhWidget hvr-shadow-radial">
                     <a class="contact clearfix">
                         <i class="fa icon-envelope-full pull-left"></i>
                         <span class="pull-left">Contact us</span>
@@ -486,17 +506,17 @@
                 $('#MyAffix').affix('checkPosition');
             });
             $('#MyAffix').affix({
-              offset: {top:40, bottom: 60}
+              offset: {top:110, bottom: 60}
             })
 
             $(window).scroll(function() {
-            if ($(this).scrollTop() > 40){  
+            if ($(this).scrollTop() > 50){  
                 $('#subNav').addClass("navbar-fixed-top");
-                $('.subNavreplace').addClass(".replace");
+                $('.subNavreplace').addClass("replace");
               }
               else{
                 $('#subNav').removeClass("navbar-fixed-top");
-                $('.subNavreplace').removeClass(".replace");
+                $('.subNavreplace').removeClass("replace");
               }
             });
 
