@@ -4507,13 +4507,13 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     position: relative;
     display: block;
     padding: 0 3px 10px;
-    margin:0 8px;
+    margin:0 5px;
   }
   .nav.subNav > li:first-child > a {
     position: relative;
     display: block;
     border:none;
-    margin:0 8px 0 0;
+    margin:0 7px 0 0;
   }
   .nav.subNav > li > a i {
     font-size: 2.2rem;
@@ -7897,7 +7897,7 @@ body{
     font-size:1.6rem;
   }
   .subNav li a{
-    font-size:1.5rem;
+    font-size:1.4rem;
   }
   
   main.container section{
@@ -9809,6 +9809,8 @@ table.paymentDateInfo tr td:nth-child(2){
    }
   .modal-dialog{
     display: block;
+    position: absolute;
+    top:0;
     width:100%;
     height:24cm;
     padding:0;
