@@ -9808,6 +9808,10 @@ table.paymentDateInfo tr td:nth-child(2){
     padding:0;
     margin:0;
    }
+   .modal-open .modal {
+      overflow-x: hidden;
+      overflow-y: hidden;
+    }
   .modal-dialog{
     display: block;
     position: absolute;
