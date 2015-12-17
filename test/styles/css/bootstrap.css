@@ -8547,13 +8547,13 @@ p.DRNedit_items_last {
   background-size: cover;
 }
 .cardIcon .master{
-  background: url('../images/cardMA.png');
+  background: url('../images/cardMa.png');
   width: 100%;
   height: 100%;
   background-size: cover;
 }
 .cardIcon.grayscale .master{
-  background: url('../images/cardMA_gray.png');
+  background: url('../images/cardMa_gray.png');
   width: 100%;
   height: 100%;
   background-size: cover;
