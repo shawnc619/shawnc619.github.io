@@ -9801,7 +9801,8 @@ table.paymentDateInfo tr td:nth-child(2){
    }
   .modal{
     display: block;
-
+    position: absolute;
+    top:0;
     width:100%;
     height:24cm;
     padding:0;
