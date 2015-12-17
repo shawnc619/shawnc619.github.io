@@ -8181,7 +8181,9 @@ h1,
 .icon-info-sign-empty{
     color:#676767;
   }
-
+#navbar .icon-info-sign-empty{
+    color:#fff;
+  }
 .iconInfo {
     float: left;
     font-size: 2em;
