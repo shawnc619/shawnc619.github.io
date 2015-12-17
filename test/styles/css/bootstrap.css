@@ -9999,7 +9999,7 @@ section.rhWidget{
   display: block;
   width: 100%;
   padding:18px 0;
-  font-size:1.8rem;
+  font-size:1.7rem;
   color:#454545;
   font-weight: 200
 }
@@ -10012,7 +10012,7 @@ section.rhWidget{
   padding:0 0 2px;
 }
 .rhWidget a.contact span{
-  padding:0 0 0 0;
+  padding:1px 0 0 0;
 }
 
 .rhWidget a.contact i.icon-arrow-right{
