@@ -4,247 +4,217 @@
 <title>DEFT payment gateway</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
 <link href="styles/css/font-awesome.css" rel="stylesheet">
-<link href="styles/css/icomoon.css" rel="stylesheet">
 <link href="styles/css/bootstrap.css" rel="stylesheet">
 <link href="styles/css/awesome-bootstrap-checkbox.css" rel="stylesheet">
+<link href="styles/css/icomoon.css" rel="stylesheet">
+<link href="styles/css/materialize.css" rel="stylesheet">
 
 </head>
 
 <body>
 
 
-<nav class="navbar navbar-fixed-top navbar-inverse">
-        <div class="container">
-            <div class="navbar-header">
-                
-                <a class="navbar-brand" href="index.html#"><img class="logo" src="styles/images/logo.png" ></a>
-            </div>
-           
-
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html#"><img class="logo" src="styles/images/logo.png"></a>
         </div>
-    </nav>
+    </div>
+</nav>
+<div class="container-fluid placeholder printHide"></div>
+<div class="container-fluid dottedPattern printHide"></div>
+
+
+<div class="container pageHeading">
+    <div class="row">
+        <div class="col-sm-push-1 col-md-push-2 col-sm-10 col-md-8 clearfix">
+            <h1>Review details</h1>
+        </div>
+    </div>
+</div>
 
 
 
-
-
-
-
-
-
-
-    <div class="container-fluid placeholder printHide"></div>
-    <div class="container-fluid dottedPattern printHide"></div>
-    <main class="container printHide">
-        <section class="row">
-            <div class="col-xs-12 clearfix border-btm">
-                <h1 class="pull-left">Review details</h1>
-            </div>
-            <!-- section 1 -->
-            <div class="col-xs-12 resultWrap border-btm clearfix">
-                <!-- col1 -->
-                <table class="resultCol">
-                    <tr>
-                        <td width="30" valign="top">
-                             <div class="formlabel">Biller name</div>
-                        </td>
-                        <td width="70%">
-                            <div class="text-right">HS BENTLEIGH - PM RENT Martin place A/C</div>
-                        </td>
-                    </tr>
-                </table>
-                <table class="resultCol">
-                    <tr>
-                        <td width="70%">
-                            <div class="formlabel">DEFT reference number</div>
-                        </td>
-                        <td width="30%" valign="top">
-                            <div class="text-right">329847223342</div>
-                        </td>
-                    </tr>
-                </table>
-                
-            </div>
-            <!-- Section 2 -->
-            <div class="col-xs-12 resultWrap border-btm clearfix">
-                <!-- col3 -->
-                <table class="resultCol">
-                    <tr>
-                        <td width="50%">
-                            <div class="formlabel">Card number</div>
-                        </td>
-                        <td width="50%">
-                            <div class="text-right clearfix">
-                              <div class="pull-right">**** 4567</div>
-                              <div class="cardIcon"><img src="styles/images/cardMa.png" alt="Mastercard" width="100%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-                <!-- col4 -->
-                <table class="resultCol">
-                    <tr>
-                        <td width="50%">
-                            <div class="formlabel">Cardholder name</div>
-                        </td>
-                        <td width="50%">
-                            <div class="text-right">John Smith</div>
-                        </td>
-                    </tr>
-                </table>
-                <!-- col5-->
-                <table class="resultCol">
-                    <tr>
-                        <td width="50%">
-                            <div class="formlabel">Expiry date</div>
-                        </td>
-                        <td width="50%">
-                            <div class="text-right">11/17</div>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <!-- Section 3 -->
-            <div class="col-xs-12 resultWrap border-btm clearfix">
-                <!-- col6 -->
-                <table class="resultCol">
-                    <tr>
-                        <td width="50%">
-                            <div class="formlabel">Payment amount</div>
-                        </td>
-                        <td width="50%">
-                            <div class="text-right">$430.20</div>
-                        </td>
-                    </tr>
-                </table>
-                <table class="resultCol">
-                    <tr>
-                        <td width="50%">
-                            <div class="formlabel pull-left">Surcharge (1.5%)</div>
-                            <span class="iconShortcut1">
-                                <a href="#" data-toggle="modal" data-target=".modalInfo3">
-                                    <span class="icon-info-sign-empty"></span>
-                                </a>
-                            </span>
-                        </td>
-                        <td width="50%">
-                            <div class="text-right">$1.50</div>
-                        </td>
-                    </tr>
-                </table>
-                <!-- col7 -->
-                
-                <table class="paymentTotal1">
-                    <tr>
-                        <td width="50%">
-                            <div>Total</div>
-                        </td>
-                        <td width="50%">
-                            <div class="text-right"><strong>$433.70</strong></div>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <!-- Section 5 -->
-            <div class="col-xs-12 emailWrap">
-                <!-- col8 -->
-                <div class="resultCol clearfix emailReceipt">
-                    <div class="col-xs-12">
-                        <div class="text-right formlabel">Send email receipt to</div>
-                        <div class="text-right">john.smith@gmail.com</div>
-                    </div>
+<div class="container">
+    <div class="row">
+        <main class="container col-sm-push-1 col-md-push-2 col-sm-10 col-md-8 printHide">
+            <section class="row">
+                <!-- section 1 -->
+                <div class="col-xs-12 resultWrap border-btm clearfix">
+                    <!-- col1 -->
+                    <table class="resultCol">
+                        <tr>
+                            <td width="30" valign="top">
+                                 <div class="formlabel">Biller name</div>
+                            </td>
+                            <td width="70%">
+                                <div class="text-right">HS BENTLEIGH - PM RENT Martin place A/C</div>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="resultCol">
+                        <tr>
+                            <td width="70%">
+                                <div class="formlabel">DEFT reference number</div>
+                            </td>
+                            <td width="30%" valign="top">
+                                <div class="text-right">329847223342</div>
+                            </td>
+                        </tr>
+                    </table>
+                    
                 </div>
-            </div>
- 
-            <!-- Payment info -->
-            <div class="col-xs-12 border-btm">
-                <div class="panel-group" id="accordion3">
-                    <div class="panel panel-default">
-                        <div class="panel-heading inverseStyleLast">
-                            <h4 class="panel-title"><a class="accordion-toggle collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapsefour">Q. When will my payment be received?</a></h4>
-                        </div>
-                        <div class="panel-collapse collapse" id="collapsefour">
-                            <div class="panel-body panel-body-padding">
-                                <p>
-                                    Payments made prior to the business day cut-off time will generally be received by your biller the next business day. <br><br>Any payments made after this time will generally be received within two business days. Business days are Monday to Friday, excluding national public holidays.
-                                </p><br>
-                                <p><strong>Business day cut off times:</strong></p>
-                                <table class="paymentDateInfo">
-                                    <!-- <tr>
-                                        <td>Direct debit payments</td>
-                                        <td>5.00pm (Sydney time)</td>
-                                    </tr> -->
-                                    <tr>
-                                        <td>American Express and Diners Club</td>
-                                        <td>7.00pm (Sydney time)</td>
-                                    </tr>
-                                    <tr>
-                                        <td>MasterCard and Visa</td>
-                                        <td>9.30pm (Sydney time)</td>
-                                    </tr>
-                                </table> 
-                            </div>
+                <!-- Section 2 -->
+                <div class="col-xs-12 resultWrap border-btm clearfix">
+                    <!-- col3 -->
+                    <table class="resultCol">
+                        <tr>
+                            <td width="50%">
+                                <div class="formlabel">Card number</div>
+                            </td>
+                            <td width="50%">
+                                <div class="text-right clearfix">
+                                  <div class="pull-right">**** 4567</div>
+                                  <div class="cardIcon"><img src="styles/images/cardMa.png" alt="Mastercard" width="100%"></div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <!-- col4 -->
+                    <table class="resultCol">
+                        <tr>
+                            <td width="50%">
+                                <div class="formlabel">Cardholder name</div>
+                            </td>
+                            <td width="50%">
+                                <div class="text-right">John Smith</div>
+                            </td>
+                        </tr>
+                    </table>
+                    <!-- col5-->
+                    <table class="resultCol">
+                        <tr>
+                            <td width="50%">
+                                <div class="formlabel">Expiry date</div>
+                            </td>
+                            <td width="50%">
+                                <div class="text-right">11/17</div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- Section 3 -->
+                <div class="col-xs-12 resultWrap border-btm clearfix">
+                    <!-- col6 -->
+                    <table class="resultCol">
+                        <tr>
+                            <td width="50%">
+                                <div class="formlabel">Payment amount</div>
+                            </td>
+                            <td width="50%">
+                                <div class="text-right">$430.20</div>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="resultCol">
+                        <tr>
+                            <td width="50%">
+                                <div class="formlabel pull-left">Surcharge (1.5%)</div>
+                                <span class="iconShortcut1">
+                                    <a href="#" data-toggle="modal" data-target=".modalInfo3">
+                                        <span class="icon-info-sign-empty"></span>
+                                    </a>
+                                </span>
+                            </td>
+                            <td width="50%">
+                                <div class="text-right">$1.50</div>
+                            </td>
+                        </tr>
+                    </table>
+                    <!-- col7 -->
+                    
+                    <table class="paymentTotal1">
+                        <tr>
+                            <td width="50%">
+                                <div>Total</div>
+                            </td>
+                            <td width="50%">
+                                <div class="text-right"><strong>$433.70</strong></div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- Section 5 -->
+                <div class="col-xs-12 emailWrap">
+                    <!-- col8 -->
+                    <div class="resultCol clearfix emailReceipt">
+                        <div class="col-xs-12">
+                            <div class="text-right formlabel">Send email receipt to</div>
+                            <div class="text-right">john.smith@gmail.com</div>
                         </div>
                     </div>
                 </div>
-              </div>
-
-            
-
-
-            <!-- CTA -->
-            <div class="col-xs-12 ctaWrap">
-                <div class="clearfix">
-                    <button type="button" class="btn btn-primary btn-lg pull-right mgLeft10" data-toggle="modal" data-target=".modalSuccess">&nbsp;&nbsp;&nbsp;Pay now&nbsp;&nbsp;&nbsp;</button>
-                    <button type="button" class="btn btn-primary-inv  btn-lg pull-right" data-toggle="modal" data-target=".modalError">Edit</button> 
-                </div> 
-                <p class="descript3 mgTop10 text-right">Once submitted, this payment can not be changed or cancelled</p>
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        </section>
-        <section class="row">
-            <footer class="container">
-                <div class="col-xs-12 col-sm-8">
-                    <ul>
-                        <li><a href="#">Privacy policy</a> &nbsp;|</li>
-                        <li><a href="#">Terms of use</a> &nbsp;|</li>
-                        <li><a href="#">Important information</a></li>
-                    </ul>
+     
+                <!-- Payment info -->
+                <div class="col-xs-12 border-btm">
+                    <div class="panel-group" id="accordion3">
+                        <div class="panel panel-default">
+                            <div class="panel-heading inverseStyleLast">
+                                <h4 class="panel-title"><a class="accordion-toggle collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapsefour">Q. When will my payment be received?</a></h4>
+                            </div>
+                            <div class="panel-collapse collapse" id="collapsefour">
+                                <div class="panel-body panel-body-padding">
+                                    <p>
+                                        Payments made prior to the business day cut-off time will generally be received by your biller the next business day. <br><br>Any payments made after this time will generally be received within two business days. Business days are Monday to Friday, excluding national public holidays.
+                                    </p><br>
+                                    <p><strong>Business day cut off times:</strong></p>
+                                    <table class="paymentDateInfo">
+                                        <!-- <tr>
+                                            <td>Direct debit payments</td>
+                                            <td>5.00pm (Sydney time)</td>
+                                        </tr> -->
+                                        <tr>
+                                            <td>American Express and Diners Club</td>
+                                            <td>7.00pm (Sydney time)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>MasterCard and Visa</td>
+                                            <td>9.30pm (Sydney time)</td>
+                                        </tr>
+                                    </table> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-xs-12 col-sm-4">
-                    <p class="copyRightMGL">&copy; Macquarie Group Limited</p>
+                <!-- CTA -->
+                <div class="col-xs-12 ctaWrap">
+                    <div class="clearfix">
+                        <button type="button" class="btn btn-primary btn-lg pull-right mgLeft10 waves-effect waves-light" data-toggle="modal" data-target=".modalSuccess">&nbsp;&nbsp;&nbsp;Pay now&nbsp;&nbsp;&nbsp;</button>
+                        <button type="button" class="btn btn-primary-inv  btn-lg pull-right waves-effect waves-blue" data-toggle="modal" data-target=".modalError">Edit</button> 
+                    </div> 
+                    <p class="descript3 mgTop10 text-right">Once submitted, this payment can not be changed or cancelled</p>
                 </div>
-            </footer>
-        </section>
-    </main>
+            </section>
+        </main>
+        
+    </div>
+</div>
+    
 
 
-
+<footer class="container-fluid">
+        <div class="col-xs-12 col-sm-8">
+            <ul>
+                <li><a href="#">Privacy policy</a> &nbsp;|</li>
+                <li><a href="#">Terms of use</a> &nbsp;|</li>
+                <li><a href="#">Important information</a></li>
+            </ul>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+            <p class="copyRightMGL">&copy; Macquarie Group Limited</p>
+        </div>
+</footer>
 
 
     <!-- Modal Success-->
@@ -382,7 +352,7 @@
                                 <div class="receiptWrap printHide">
                                     <!-- col8 -->
                                     <div class="resultCol clearfix emailReceipt">
-                                        <button type="button" class="btn btn-primary-inv pull-right lnkPrint" >Print</button>    
+                                        <button type="button" class="btn btn-primary-inv pull-right lnkPrint waves-effect waves-blue">Print</button>    
                                     </div>
                                 </div>
                             </div>
@@ -420,8 +390,8 @@
                 </div>
                 <div class="modal-footer border-top-panel">
                     <div class="printHide">
-                        <button type="button" class="btn btn-primary pull-right mgLeft10" data-dismiss="modal" aria-label="Close">Make another payment</button>
-                        <button type="button" class="btn btn-default pull-right" data-dismiss="modal" aria-label="Close">Home</button>    
+                        <button type="button" class="btn btn-primary pull-right mgLeft10 waves-effect waves-light" data-dismiss="modal" aria-label="Close">Make another payment</button>
+                        <button type="button" class="btn btn-default pull-right waves-effect waves-dark" data-dismiss="modal" aria-label="Close">Home</button>    
                     </div>
                 </div>
             </div>
@@ -458,8 +428,8 @@
                     </p>
                 </div>
                 <div class="modal-footer printHide">
-                        <button type="button" class="btn btn-primary pull-right mgLeft10" data-dismiss="modal" aria-label="Close">Home</button>
-                        <button type="button" class="btn btn-primary-inv pull-right" data-dismiss="modal" aria-label="Close">Print</button>    
+                        <button type="button" class="btn btn-primary pull-right mgLeft10 waves-effect waves-light" data-dismiss="modal" aria-label="Close">Home</button>
+                        <button type="button" class="btn btn-primary-inv pull-right waves-effect" data-dismiss="modal" aria-label="Close">Print</button>    
                 </div>
             </div>
         </div>
@@ -482,7 +452,7 @@
                     <p>Your payment was not submitted, <strong>please try again</strong></p>
                 </div>
                 <div class="modal-footer  printHide">
-                    <button type="button" class="btn btn-primary pull-right" data-dismiss="modal" aria-label="Close">OK</button>
+                    <button type="button" class="btn btn-primary pull-right waves-effect waves-light" data-dismiss="modal" aria-label="Close">OK</button>
                 </div>
             </div>
         </div>
@@ -501,7 +471,7 @@
                 <p>This is a DEFT fee which is a percentage of the transaction amount, charged on card payments.</p>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary pull-right"  data-dismiss="modal">Got it</button>
+                <button type="button" class="btn btn-secondary pull-right waves-effect waves-light"  data-dismiss="modal">Got it</button>
             </div>
         </div>
     </div>
@@ -532,22 +502,26 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
-   
+    <script src="js/materialize.min.js"></script>
 
 
     <script type="text/javascript">
+            
+            $( document ).ready(function() {
+                $('#MyAffix').affix('checkPosition');
+            });
+            $('#MyAffix').affix({
+              offset: {top:110, bottom: 60}
+            })
+
             $(window).scroll(function() {
-            if ($(this).scrollTop() > 1){  
-                $('nav').addClass("sticky");
-                $('.placeholder').addClass("sticky");
-                $('.dottedPattern').addClass("sticky");
-                $('main').addClass("sticky");
+            if ($(this).scrollTop() > 50){  
+                $('#subNav').addClass("navbar-fixed-top");
+                $('.subNavreplace').addClass("replace");
               }
               else{
-                $('nav').removeClass("sticky");
-                $('.placeholder').removeClass("sticky");
-                $('.dottedPattern').removeClass("sticky");
-                $('main').removeClass("sticky");
+                $('#subNav').removeClass("navbar-fixed-top");
+                $('.subNavreplace').removeClass("replace");
               }
             });
 
