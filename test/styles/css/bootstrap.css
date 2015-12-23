@@ -6681,6 +6681,7 @@ button.close {
 }
 .modal-header h3{
   margin:0;
+  line-height: 1.2
 }
 .modal-title {
   margin: 0;
