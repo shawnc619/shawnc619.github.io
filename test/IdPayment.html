@@ -114,20 +114,36 @@
                                             <ul class="selectToggle DropDownWrap">
                                                 <li>
                                                     <a href="#" class="dataSelectWrap clearfix">
-                                                        <dl class="vcenter pull-left">
-                                                            <dt class="dataTitle">HS BENTLEIGH - PM RENT Martin place A/C</dt>
-                                                            <dd class="dataStd">987654321</dd>
-                                                        </dl>
-                                                        <div class="edit vcenter modalEditDRN">Edit</div>
+                                                        <table>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="info-block">
+                                                                        <dt class="dataTitle">HS BENTLEIGH - PM RENT Martin place A/C</dt>
+                                                                        <dd class="dataStd">987654321</dd>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="edit modalEditDRN">Edit</div>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a href="#" class="dataSelectWrap clearfix">
-                                                        <dl class="vcenter pull-left">
-                                                            <dt class="dataTitle">HS BENTLEIGH - PM RENT Martin place A/C</dt>
-                                                            <dd class="dataStd">123456789</dd>
-                                                        </dl>
-                                                        <div class="edit vcenter modalEditDRN">Edit</div>
+                                                        <table>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="info-block">
+                                                                        <dt class="dataTitle">HS BENTLEIGH - PM RENT Martin place A/C</dt>
+                                                                        <dd class="dataStd">987654321</dd>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="edit modalEditDRN">Edit</div>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
                                                     </a>
                                                 </li>
                                                 <!-- <li>
@@ -314,7 +330,7 @@
                                     <dt>
                                         <a href="#" class="dataSelectWrap clearfix">
                                                 <div class="cardIcon vcenter">
-                                                    <img src="styles/images/cardAE.png" width="100%">
+                                                    <img class="visa" src="styles/images/cardEmpty.png" alt="Visa" width="100%">
                                                     <span class="icon-circle-star"></span>
                                                 </div>
                                                 <div class="pull-left vcenter">
@@ -330,7 +346,7 @@
                                             <li>
                                                 <a href="#" class="dataSelectWrap clearfix">
                                                         <div class="cardIcon vcenter">
-                                                            <img src="styles/images/cardAE.png" width="100%">
+                                                            <img class="AE" src="styles/images/cardEmpty.png" alt="Visa" width="100%">
                                                             <span class="icon-circle-star"></span>
                                                         </div>
                                                         <div class="pull-left vcenter">
@@ -343,7 +359,7 @@
                                             <li>
                                                 <a href="#" class="dataSelectWrap clearfix">
                                                         <div class="cardIcon vcenter">
-                                                            <img src="styles/images/cardVisa.png" width="100%">
+                                                            <img class="visa" src="styles/images/cardEmpty.png" alt="Visa" width="100%">
                                                         </div>
                                                         <div class="pull-left vcenter">
                                                             <div class="dataStd">**** 0211</div>
@@ -355,7 +371,7 @@
                                             <li>
                                                 <a href="#" class="dataSelectWrap clearfix">
                                                         <div class="cardIcon vcenter">
-                                                            <img src="styles/images/cardcardDC.png" width="100%">
+                                                            <img class="DC" src="styles/images/cardEmpty.png" alt="Visa" width="100%">
                                                         </div>
                                                         <div class="pull-left vcenter">
                                                             <div class="dataStd">**** 3928</div>
@@ -368,7 +384,7 @@
                                             <li>
                                                 <a href="#" class="dataSelectWrap clearfix">
                                                     <div class="cardIcon vcenter">
-                                                        <img src="styles/images/bankIcon.png" width="100%">
+                                                            <img class="bankAccount" src="styles/images/cardEmpty.png" alt="Visa" width="100%">
                                                     </div>
                                                     <div class="pull-left vcenter">
                                                         <div class="databank"><i class="dataLabelStd">BSB</i> 923-100 <i class="dataLabelStd">ACC</i> 325867344</div>
@@ -378,14 +394,14 @@
                                                     <div class="edit vcenter modalEditCard">Edit</div>
                                                 </a>
                                             </li>
-                                           <li>
+                                           <!-- <li>
                                                 <a href="#" class="selctAddWrap clearfix modalAddCard">
                                                     <dl class="selectAdd">
                                                         <dt>Add payment method</dt>
                                                         <dd class="plus">+</dd>
                                                     </dl>
                                                 </a>
-                                            </li>
+                                            </li> -->
                                         </ul>
                                     </dd>
                                   </dl>
@@ -650,7 +666,7 @@
                     </div>
                 </div>
                 <div class="modal-footer border-top">
-                    <button type="button" class="btn btn-default btn-flip waves-effect waves-dark">Delete</button>
+                    <button type="button" class="btn btn-cancel btn-flip waves-effect waves-dark">Delete</button>
                 </div>
                 </div>
             </div>
@@ -710,7 +726,7 @@
                 </div>
 
                 <div class="modal-footer border-top">
-                    <button type="button" class="btn btn-default btn-flip waves-effect waves-dark" data-toggle="modal">Delete</button>
+                    <button type="button" class="btn btn-cancel btn-flip waves-effect waves-dark" data-toggle="modal">Delete</button>
                 </div>
             </div>
             </div>
@@ -739,28 +755,10 @@
 
 
 
-<!-- Tooltip DRN -->
-<div class="modal fade modalInfo1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-info" role="document">
-        <div class="modal-content2">
-            <div class="modal-header clearfix">
-                <h3>DEFT reference number</h3>
-                
-            </div>
-            <div class="modal-body border-top clearfix">
-                <p>This is a number containing up to 20 digits provided to you by your biller. You can usually find it on the invoice, card or letter from your biller.</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary pull-right waves-effect waves-light"  data-dismiss="modal">Got it</button>
-            </div>
-        </div>
-    </div>
-</div>
-
 <!-- Tooltip Security code -->
 <div class="modal fade modalInfo2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-info" role="document">
-        <div class="modal-content2">
+    <div class="modal-dialog" role="document">
+        <div class="modal-info">
             <div class="modal-header clearfix">
                 <h3>Security code</h3>
             </div>
@@ -776,8 +774,8 @@
 
 <!-- Tooltip Surcharge -->
 <div class="modal fade modalInfo3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-info" role="document">
-        <div class="modal-content2">
+    <div class="modal-dialog" role="document">
+        <div class="modal-info">
             <div class="modal-header clearfix">
                 <h3>Surcharge</h3>
             </div>

@@ -2620,7 +2620,7 @@ output {
 .form-control {
   display: block;
   width: 100%;
-  padding: 2px 40px 4px 12px;
+  padding: 2px 20% 4px 12px;
   font-size: 2em;
   font-weight: 200;
   line-height: 1.2;
@@ -6619,11 +6619,6 @@ button.close {
           transform: translate(0, 0);
 }
 
-.modal-info {
-  position: relative; 
-  padding: 0;
-  margin: 10% 10%;
-}
 
 
 
@@ -6681,7 +6676,8 @@ button.close {
 }
 .modal-header h3{
   margin:0;
-  line-height: 1.2
+  line-height: 1.2;
+  font-size:1.8rem;
 }
 .modal-title {
   margin: 0;
@@ -7914,7 +7910,7 @@ main.container section{
   float:right;
   color:white;
   font-size:2em;
-  font-weight: 100;
+  font-weight: 200;
 }
 nav a{
   font-size:1.6rem;
@@ -7978,8 +7974,8 @@ body{
 
 h1,
 .h1 {
-    font-size: 2rem;
-    font-weight:200;
+    font-size: 2.2rem;
+    font-weight:300;
     margin:15px 0;
 }
 h2,
@@ -7988,11 +7984,11 @@ h2,
 }
 h3,
 .h3 {
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 h4,
 .h4 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
 h5,
 .h5 {
@@ -8015,7 +8011,7 @@ p {
   .h1 {
     font-size: 2.8rem;
     margin:20px 0 15px;    
-    font-weight: 100;
+    font-weight: 200;
   }
 }
 
@@ -8157,9 +8153,9 @@ p {
   float: left;
 }
 .info-block h3{
-  font-size:2.2em;
-  font-weight: 100;
-  margin:0 0 6px;
+  font-size:2.2rem;
+  font-weight: 200;
+  margin:0 0 4px;
 }
 .info-block p{
   font-weight: 500;
@@ -8246,7 +8242,6 @@ p {
     content: "\e601";
     color: #357EF4;
     font-size: 2.5em;
-    font-weight: 100;
     line-height: 1;
     display: block;
     float: left;
@@ -8316,7 +8311,7 @@ p {
 
 
 .dataLabelMjr{
-    font-weight: 100;
+    font-weight: 200;
 }
 .dataLabelStd{
     font-weight: 200;
@@ -8331,7 +8326,7 @@ p {
     padding: 0;
     font-size: 3rem;
     line-height:0.9;
-    font-weight: 100;
+    font-weight: 200;
 }
 .dataStd{
     margin: 0;
@@ -8526,7 +8521,7 @@ p.DRNedit_items_last {
 }
 .info-Wrap-Wallet h3, .info-Wrap-Wallet2 h3{
     font-size:2.2em;
-    font-weight: 100;
+    font-weight: 200;
     margin:0 0 3px;
 }
 .info-Wrap-Wallet h4, .info-Wrap-Wallet2 h4{
@@ -8611,7 +8606,12 @@ p.DRNedit_items_last {
   background-size: cover;
 }
 
-
+.cardIcon .bankAccount{
+  background: url('../images/bankIcon.png');
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
 
 .cardIcon .icon-circle-star{
     position:absolute;
@@ -8723,7 +8723,7 @@ dd.cardIcon{
   font-size:2.3rem;
   padding:6px 0 50px;
   margin:0;
-  font-weight:100;
+  font-weight: 200;
   border-top: 1px solid #555;
 }
 .paymentTotal strong{
@@ -8739,7 +8739,7 @@ dd.cardIcon{
     font-size:2.6rem;
     padding:10px 0 50px;
     margin:0;
-    font-weight:100;
+    font-weight:200;
     border-top: 1px solid #555;
   }
   .paymentTotal strong{
@@ -9352,7 +9352,10 @@ dt .dataSelectWrap{
   height:53px;
 }
 
-
+.dataSelectWrap table{
+  width: 100%;
+  height: 100%;
+}
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
   dt .dataSelectWrap{
@@ -9385,7 +9388,6 @@ dd .dataSelectWrap{
     width: 3.2em;
     height: 2em;
     float: left;
-    margin: 0 0.7em 0 0;
     text-align: right;
 }
 
@@ -9421,7 +9423,7 @@ dd .databank {
 }
 
 .databank .dataLabelStd{
-font-weight: 100;
+font-weight: 200;
 }
 .dataTitle i, .databank i{
   font-style: normal;
@@ -9551,8 +9553,8 @@ dd .dataSelectWrap .edit{
 .idPaymentAdd{
   display: block;
   text-align: right;
-  font-size: 1.4rem;
-  padding-bottom: 5px
+  font-size: 1.5rem;
+  padding-bottom: 15px
 }
 .idPaymentAddInfo {
     display: block;
@@ -9569,7 +9571,7 @@ dd .dataSelectWrap .edit{
 @media (min-width: 768px) { 
   .idPaymentAdd{
     font-size: 1.6rem;
-    padding-bottom: 12px;
+    padding-bottom: 14px;
     line-height:1.1;
   }
 }
@@ -10004,7 +10006,7 @@ section.rhWidget{
   margin-bottom:12px;
 }
 .rhWidget h2{
-  font-weight: 100;
+  font-weight: 200;
   font-size:2rem;
   padding:5px 0;
 }
