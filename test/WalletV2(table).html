@@ -17,12 +17,12 @@
 <nav class="navbar navbar-inverse">
     <div class="container-fluid">
         <div class="navbar-header">
-            <button class="navbar-toggle collapsed" data-target="#navbar" data-toggle="collapse" type="button">
-                <i class="icon-menu-mobile"></i>
+            <button class="navbar-toggle collapsed c-hamburger c-hamburger--htx visible-xs" data-target="#navbar" data-toggle="collapse" type="button">
+                <span>toggle menu</span>
             </button> 
             <a class="navbar-brand" href="index.html#"><img class="logo" src="styles/images/logo.png"></a>
         </div>
-        <div class="collapse navbar-collapse no-transition" id="navbar">
+        <div class="collapse navbar-collapse" id="navbar"> <!-- no-transition -->
             <ul class="nav navbar-nav">
                 <li class="visible-xs">
                     <a href="#" class=""><i class="icon-bar-graph"></i>Dashboard</a>
@@ -600,5 +600,27 @@
         })();
     </script>
 
+    
+<script>
+  (function() {
+
+    "use strict";
+
+    var toggles = document.querySelectorAll(".c-hamburger");
+
+    for (var i = toggles.length - 1; i >= 0; i--) {
+      var toggle = toggles[i];
+      toggleHandler(toggle);
+    };
+
+    function toggleHandler(toggle) {
+      toggle.addEventListener( "click", function(e) {
+        e.preventDefault();
+        (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
+      });
+    }
+
+  })();
+</script>
 </body>
 </html>
