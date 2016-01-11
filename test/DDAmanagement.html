@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DEFT payment gateway</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <link href="styles/css/font-awesome.css" rel="stylesheet">
+    <link href="styles/css/bootstrap.css" rel="stylesheet">
+    <link href="styles/css/awesome-bootstrap-checkbox.css" rel="stylesheet">
+    <link href="styles/css/icomoon.css" rel="stylesheet">
+    <link href="styles/css/materialize.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button class="navbar-toggle collapsed c-hamburger c-hamburger--htx visible-xs" data-target="#navbar" data-toggle="collapse" type="button">
+                <span>toggle menu</span>
+            </button> 
+            <a class="navbar-brand" href="index.html#"><img class="logo" src="styles/images/logo.png"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar"> <!-- no-transition -->
+            <ul class="nav navbar-nav">
+                <li class="visible-xs">
+                    <a href="#" class=""><i class="icon-bar-graph"></i>Dashboard</a>
+                </li>
+                <li class="visible-xs">
+                    <a href="#"><i class="icon-exchange-rates"></i>Make a payment</a>
+                </li>
+                <li class="visible-xs">
+                    <a href="#"><i class="icon-note-pad"></i>My DEFT reference number</a>
+                </li>
+                <li class="visible-xs">
+                    <a href="#"><i class="icon-wallet-account"></i>My wallet</a>
+                </li>
+                <li class="visible-xs">
+                    <a href="#"><i class="icon-bar-graph"></i>My agreements</a>
+                </li>
+                <li>
+                    <a class="faq" href="#"><i class="icon-info-sign-empty"></i>FAQ</a>
+                </li>
+                <li class="active">
+                    <a class="myAccount" href="#"><i class="icon-user"></i>My account</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-sign-out"></i>Log out</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container-fluid placeholder printHide"></div>
+<div class="container-fluid dottedPattern printHide"></div>
+
+<div class="subNavreplace"></div>
+<nav id="subNav" class="navbar navbar-inverse hidden-xs ">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <ul class="nav navbar-nav subNav">
+                <li>
+                    <a href="#"><i class="icon-bar-graph"></i>Dashboard</a>
+                </li>
+                <li>
+                    <a href="#"><i class="icon-exchange-rates"></i>Make a payment</a>
+                </li>
+                <li>
+                    <a href="#"><i class="icon-note-pad"></i>My DEFT reference number</a>
+                </li>
+                <li>
+                    <a href="#"><i class="icon-wallet-account"></i>My wallet</a>
+                </li>
+                <li class="active">
+                    <a href="#"><i class="icon-bar-graph"></i>My agreements</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container pageHeading">
+    <div class="row">
+        <div class="col-xs-12 clearfix">
+            <h1>My agreements</h1>
+        </div>
+    </div>
+</div>
+
+        
+<div class="container">
+    <div class="row">
+        <main class="container col-sm-8">
+            <section class="row">
+
+                <!-- Credit Card List -->
+                <div class="col-xs-12">
+                    <div class="panel-body">
+                        <ul class="list">
+                            <li>
+                                <a class="clearfix info-Wrap2" data-toggle="modal" data-target=".modalCardEdit">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <div class="info-block">
+                                                    <h3>Strata bill</h3>
+                                                    <p>HS Bentleigh - PM rent Martin place A/C</p>
+                                                    <p><span class="dataLabelStd">DEFT reference number  &nbsp;</span>400421</p>
+                                                    <p><span class="dataLabelStd">Total amount  &nbsp;</span>$A1421.50</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="editSym">Edit</div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="clearfix info-Wrap2" data-toggle="modal" data-target=".modalCardEdit">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <div class="info-block">
+                                                    <h3>Strata bill</h3>
+                                                    <p>HS Bentleigh - PM rent Martin place A/C</p>
+                                                    <p><span class="dataLabelStd">DEFT reference number  &nbsp;</span>400421</p>
+                                                    <p><span class="dataLabelStd">Total amount  &nbsp;</span>$A -</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="editSym">Edit</div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </a>
+                            </li>
+                        </ul>    
+                    </div>
+                </div>
+                
+
+                <!-- Bank account List -->
+                <div class="col-xs-12">
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title"><a class="accordion-toggle"
+                                data-parent="#accordion" data-toggle="collapse" href=
+                                "#collapsetwo">Past agreements</a></h4>
+                            </div>
+                            <div class="panel-collapse collapse in" id="collapsetwo">
+                                <div class="panel-body">
+                                    <ul class="list">
+                                        <li>
+                                            <a class="clearfix info-Wrap2" data-toggle="modal" data-target=".modalCardEdit">
+                                                <table>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="info-block">
+                                                                <h3>Strata bill</h3>
+                                                                <p>HS Bentleigh - PM rent Martin place A/C</p>
+                                                                <p><span class="dataLabelStd">DEFT reference number  &nbsp;</span>400421</p>
+                                                                <p><span class="dataLabelStd">Total amount  &nbsp;</span>$A -</p>
+                                                                <span class="tag">Declined</span>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="editSym">View</div>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="clearfix info-Wrap2" data-toggle="modal" data-target=".modalCardEdit">
+                                                <table>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="info-block">
+                                                                <h3>Strata bill</h3>
+                                                                <p>HS Bentleigh - PM rent Martin place A/C</p>
+                                                                <p><span class="dataLabelStd">DEFT reference number  &nbsp;</span>400421</p>
+                                                                <p><span class="dataLabelStd">Total amount  &nbsp;</span>$A -</p>
+                                                                <span class="tag">Cancelled</span>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="editSym">View</div>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="clearfix info-Wrap2" data-toggle="modal" data-target=".modalCardEdit">
+                                                <table>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="info-block">
+                                                                <h3>Strata bill</h3>
+                                                                <p>HS Bentleigh - PM rent Martin place A/C</p>
+                                                                <p><span class="dataLabelStd">DEFT reference number  &nbsp;</span>400421</p>
+                                                                <p><span class="dataLabelStd">Total amount  &nbsp;</span>$A -</p>
+                                                                <span class="tag tGreen">Completed</span>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="editSym">View</div>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </a>
+                                        </li>
+                                    </ul>    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>    
+        </main>
+        <aside class="col-sm-4">
+            <div id="MyAffix">
+                <section class="col-xs-12 rhWidget payNow waves-effect waves-light">
+                    <a class="contact clearfix">
+                        <i class="fa icon-exchange-rates pull-left"></i>
+                        <span class="pull-left">Make a payment</span>
+                        <i class="fa icon-arrow-right pull-right"></i> 
+                    </a>
+                </section>
+                <section class="col-xs-12 rhWidget">
+                    <h2>FAQ</h2>
+                    <ul class="border-top">
+                        <li><a href="#">Q1. Most relevent question</a></li>
+                        <li><a href="#">Q2. Second most relevent question</a></li>
+                        <li><a href="#">Q3. Third most relevent question</a></li>
+                    </ul>
+                    <ul class="viewAll border-top">
+                        <li><a>View all FAQ</a></li>
+
+                    </ul>
+                </section>
+                <section class="col-xs-12 rhWidget waves-effect waves-dark">
+                    <a class="contact clearfix">
+                        <i class="fa icon-envelope-full pull-left"></i>
+                        <span class="pull-left">Contact us</span>
+                        <i class="fa icon-arrow-right pull-right"></i> 
+
+                    </a>
+                </section>
+            </div>
+        </aside>
+
+    </div>
+</div>
+
+
+<footer class="container-fluid">
+    <div class="col-xs-12 col-sm-8">
+        <ul>
+            <li><a href="#">Privacy policy</a> &nbsp;|</li>
+            <li><a href="#">Terms of use</a> &nbsp;|</li>
+            <li><a href="#">Important information</a></li>
+        </ul>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+        <p class="copyRightMGL">&copy; Macquarie Group Limited</p>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+        
+
+
+
+    
+
+
+
+
+
+
+
+
+    
+
+    <!-- Modal Card Edit -->
+
+
+    <div class="modal fade modalCardEdit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog card effect__click" role="document">
+            <div class="card__front">
+                <div class="modal-content2">
+                <div class="modal-header clearfix">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="icon-close" aria-hidden="true"></span></button>                
+                </div>
+                <div class="modal-body">
+                    <h3>Change payment method</h3>
+                    <fieldset class="formSelect">
+                        <dl>
+                            <dt>
+                                <a href="#" class="dataSelectWrap clearfix">
+                                    <div class="cardIcon vcenter">
+                                        <img class="visa" src="styles/images/cardEmpty.png" alt="Visa" width="100%">
+                                        <span class="icon-circle-star"></span>
+                                    </div>
+                                    <div class="pull-left vcenter">
+                                        <div class="dataStd">**** 4534</div>
+                                        <div class="dataTitle"><i class="dataLabelStd">Expiry date:</i> 07/19</div>
+                                    </div>
+                                    <div class="edit vcenter modalEditCard">Edit</div>
+                                </a>
+                            </dt>
+                            <dd>
+                                <ul class="selectToggle DropDownWrap">
+                                    <li class="header">Cards</li>
+                                    <li>
+                                        <a href="#" class="dataSelectWrap clearfix">
+                                                <div class="cardIcon vcenter">
+                                                    <img class="AE" src="styles/images/cardEmpty.png" alt="Visa" width="100%">
+                                                    <span class="icon-circle-star"></span>
+                                                </div>
+                                                <div class="pull-left vcenter">
+                                                    <div class="dataStd">**** 4534</div>
+                                                    <div class="dataTitle"><i class="dataLabelStd">Expiry date:</i> 07/19</div>
+                                                </div>
+                                                <div class="edit vcenter modalEditCard">Edit</div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dataSelectWrap clearfix">
+                                                <div class="cardIcon vcenter">
+                                                    <img class="visa" src="styles/images/cardEmpty.png" alt="Visa" width="100%">
+                                                </div>
+                                                <div class="pull-left vcenter">
+                                                    <div class="dataStd">**** 0211</div>
+                                                    <div class="dataTitle"><i class="dataLabelStd">Expiry date:</i> 11/17</div>
+                                                </div>
+                                                <div class="edit vcenter modalEditCard">Edit</div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dataSelectWrap clearfix">
+                                                <div class="cardIcon vcenter">
+                                                    <img class="DC" src="styles/images/cardEmpty.png" alt="Visa" width="100%">
+                                                </div>
+                                                <div class="pull-left vcenter">
+                                                    <div class="dataStd">**** 3928</div>
+                                                    <div class="dataTitle"><i class="dataLabelStd">Expiry date:</i> 11/17</div>
+                                                </div>
+                                                <div class="edit vcenter modalEditCard">Edit</div>
+                                        </a>
+                                    </li>
+                                    <li class="header">Bank Accounts</li>
+                                    <li>
+                                        <a href="#" class="dataSelectWrap clearfix">
+                                            <div class="cardIcon vcenter">
+                                                    <img class="bankAccount" src="styles/images/cardEmpty.png" alt="Visa" width="100%">
+                                            </div>
+                                            <div class="pull-left vcenter">
+                                                <div class="databank"><i class="dataLabelStd">BSB</i> 923-100 <i class="dataLabelStd">ACC</i> 325867344</div>
+                                                <div class="databankStd">John Smith</div>
+                                                <div class="databankStd">Westpac St Leonards</div>
+                                            </div>
+                                            <div class="edit vcenter modalEditCard">Edit</div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </fieldset>
+                    <div class="form-group">
+                        <label for="expriyDate">Expiry date</label>
+                        <input id="expriyDate" type="text" class="form-control" placeholder="mm/yy">
+                    </div>
+                    <p class="descript">This will also be changed in <a href="#">DRN management</a></p>
+                    
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading inverseStyle">
+                                <h4 class="panel-title"><a class="accordion-toggle" data-parent="#accordion" data-toggle="collapse" href="#collapseOne">Payment details</a></h4>
+                            </div>
+                            <div class="panel-collapse collapse in" id="collapseOne">
+                                <div class="panel-body receiptWrap clearfix border-btm">
+                                    <!-- col1 -->
+                                    <table class="resultCol">
+                                        <tr>
+                                            <td width="30" valign="top">
+                                                 <div class="formlabel">Biller</div>
+                                            </td>
+                                            <td width="70%">
+                                                <div class="text-right">HS BENTLEIGH - PM RENT Martin place A/C</div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table class="resultCol">
+                                        <tr>
+                                            <td width="70%">
+                                                <div class="formlabel">DEFT reference number</div>
+                                            </td>
+                                            <td width="30%">
+                                                <div class="text-right" valign="top">329847223342</div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    
+                                </div>
+                                <!-- Section 2 -->
+                                <!-- col3 -->
+                                <div class="panel-body receiptWrap border-btm clearfix">
+                                    <table class="resultCol">
+                                        <tr>
+                                            <td width="50%">
+                                                <div class="formlabel">Card number</div>
+                                            </td>
+                                            <td width="50%">
+                                                <div class="text-right clearfix">
+                                                  <div class="pull-right">**** 4567</div>
+                                                  <div class="cardIcon"><img class="master" src="styles/images/cardEmpty.png" alt="Mastercard" width="100%"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- col4 -->
+                                    <table class="resultCol">
+                                        <tr>
+                                            <td width="50%">
+                                                <div class="formlabel">Cardholder name</div>
+                                            </td>
+                                            <td width="50%">
+                                                <div class="text-right">John Smith</div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- col5-->
+                                    <table class="resultCol">
+                                        <tr>
+                                            <td width="50%">
+                                                <div class="formlabel">Expiry date</div>
+                                            </td>
+                                            <td width="50%">
+                                                <div class="text-right">11/17</div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <!-- Section 3 -->
+                                <div class="receiptWrap border-btm clearfix">
+                                    <!-- col6 -->
+                                    <table class="resultCol">
+                                        <tr>
+                                            <td width="50%">
+                                                <div class="formlabel">Payment amount</div>
+                                            </td>
+                                            <td width="50%">
+                                                <div class="text-right">$430.20</div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table class="resultCol">
+                                        <tr>
+                                            <td width="50%">
+                                                <div class="formlabel">Surcharge (1.5%)</div>
+                                            </td>
+                                            <td width="50%">
+                                                <div class="text-right">$1.50</div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- col7 -->
+                                    
+                                    <table class="paymentTotal1">
+                                        <tr>
+                                            <td width="50%">
+                                                <div>Total</div>
+                                            </td>
+                                            <td width="50%">
+                                                <div class="text-right"><strong>$433.70</strong></div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <!-- Section 5 -->
+                                <div class="receiptWrap border-btm clearfix printHide">
+                                    <!-- col8 -->
+                                    <div class="resultCol clearfix emailReceipt">
+                                        <div class="text-right formlabel">Email receipt sent to</div>
+                                        <div class="text-right">john.smith@gmail.com</div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="printHide clearfix mgTop20">
+                        <button type="button" class="btn btn-primary pull-right mgLeft10 waves-effect waves-light">Update</button>
+                    </div>
+                </div>
+
+                <div class="modal-footer border-top">
+                    <button type="button" class="btn btn-cancel btn-flip waves-light" data-toggle="modal">Delete</button>
+                </div>
+            </div>
+            </div>
+            <div class="card__back">
+                <div class="modal-content2" id="edit-warning">
+                    <div class="modal-header">
+                        <h3>Confirm to delete this DRN reference number</h3>
+                    </div>
+                    <div class="modal-body clearfix">
+                        <p class="para">and also some friendly and helpful text here</p><br>
+                        <div class="alert">
+                            <strong>WARNING</strong> this DEFT number is linked to multiple Direct Debit Payments. Please select an alternate payment method before deleting this card.
+                        </div>
+                        <button type="button" class="btn btn-secondary pull-right waves-effect waves-light" data-toggle="modal" data-target=".modalDelete">Take me to the page to fix this</button>
+                    </div>
+                    <div class="modal-footer border-top">
+                        <button type="button" class="btn btn-danger pull-right mgLeft10 waves-effect waves-light" data-dismiss="modal">Delete</button>
+                        <button type="button" class="btn btn-cancel  btn-flip pull-right waves-effect waves-light">Back</button>
+                    </div>
+                </div>
+            </div>               
+        </div>
+    </div>
+
+
+
+
+    
+    <!-- Modal Account Edit -->
+
+
+
+
+
+    <div class="modal fade modalAccountEdit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog card effect__click" role="document">
+            <div class="card__front">
+                <div class="modal-content2">
+                    <div class="modal-header clearfix">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="icon-close" aria-hidden="true"></span></button>                
+                    </div>
+                    <div class="modal-body">
+                        <dl>
+                            <dt class="dataTitle">BSB</dt>
+                            <dd class="dataPrimary">456-389</dd>
+                            <dd class="dataStd">Commenwealth Bank PTY LTD</dd>
+                        </dl>
+                        <div class="form-group">
+                            <label>Account number</label>
+                            <input type="text" class="form-control" placeholder="493850490">
+                        </div>
+                        <div class="form-group">
+                            <label>Account name</label>
+                            <input type="text" class="form-control" placeholder="Jone Smith">
+                        </div>
+                        <div class="checkbox default checkbox-info checkbox-circle mgN18">
+                            <input id="defaultAccountAccountEdit" class="styled" type="checkbox">
+                            <label for="defaultAccountAccountEdit">Default bank account for payment</label>
+                        </div>
+                        <div class="modal-btnWrap">
+                            <button type="button" class="btn btn-primary waves-effect waves-light" data-toggle="modal" data-dismiss="modal">Update</button>
+                        </div>
+                    </div>
+                    <div class="modal-footer border-top">
+                        <button type="button" class="btn btn-cancel btn-flip waves-effect waves-light">Delete</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card__back">
+                <div class="modal-content2" id="edit-warning">
+                    <div class="modal-header">
+                        <h3>Confirm to delete this DRN reference number</h3>
+                    </div>
+                    <div class="modal-body clearfix">
+                        <p class="para">and also some friendly and helpful text here</p><br>
+                        <div class="alert">
+                            <strong>WARNING</strong> this DEFT number is linked to multiple Direct Debit Payments. Please select an alternate payment method before deleting this card.
+                        </div>
+                        <button type="button" class="btn btn-secondary pull-right waves-effect waves-light" data-toggle="modal" data-target=".modalDelete">Take me to the page to fix this</button>
+                    </div>
+                    <div class="modal-footer border-top">
+                        <button type="button" class="btn btn-danger pull-right mgLeft10 waves-effect waves-light" data-dismiss="modal">Delete</button>
+                        <button type="button" class="btn btn-cancel  btn-flip pull-right waves-effect waves-light">Back</button>
+                    </div>
+                </div>
+            </div>                   
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script type="text/javascript">
+        //Start side bar affix
+        $( document ).ready(function() {
+            $('#MyAffix').affix('checkPosition');
+        });
+
+        $('#MyAffix').affix({
+          offset: {top:110, bottom: 60}
+        })
+
+        $(window).scroll(function() {
+        if ($(this).scrollTop() > 50){  
+            $('#subNav').addClass("navbar-fixed-top");
+            $('.subNavreplace').addClass("replace");
+          }
+          else{
+            $('#subNav').removeClass("navbar-fixed-top");
+            $('.subNavreplace').removeClass("replace");
+          }
+        }); 
+        //End side bar affix
+
+        //Start card flip
+        (function() {
+          var cards = document.querySelectorAll(".card.effect__click");
+          for ( var i  = 0, len = cards.length; i < len; i++ ) {
+            var card = cards[i];
+            clickListener( card );
+          }
+        
+          function clickListener(card) {
+            $(".btn-flip").click(function() {
+                 var c = card.classList;
+                 c.contains("flipped") === true ? c.remove("flipped") : c.add("flipped");
+            });
+          }
+        })();
+        //End card flip
+
+        //Start Form select function
+        $('.formSelect').click(function(){
+            $('.selectToggle',this).slideToggle('fast', "swing");
+            return false;
+        });
+                    
+        $(".formSelect dl dd ul li a").click(function() {
+            var text = $(this).html();
+            $(this).parents('.formSelect').children('dl').children('dt').children('a').html(text).addClass('dataSelectWrap');
+
+            $('.selectToggle',this).hide();
+        });
+                    
+        function getSelectedValue(id) {
+            return $("#" + id).find("dt a span.value").html();
+        }
+
+        $(document).bind('click', function(e) {
+            var $clicked = $(e.target);
+            if (! $clicked.parents().hasClass("formSelect"))
+                $(".formSelect dd ul").hide();
+        }); 
+        //End Form select function
+
+    </script>
+
+<!-- Hamburger menu animation -->
+<script>
+  (function() {
+
+    "use strict";
+
+    var toggles = document.querySelectorAll(".c-hamburger");
+
+    for (var i = toggles.length - 1; i >= 0; i--) {
+      var toggle = toggles[i];
+      toggleHandler(toggle);
+    };
+
+    function toggleHandler(toggle) {
+      toggle.addEventListener( "click", function(e) {
+        e.preventDefault();
+        (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
+      });
+    }
+
+  })();
+</script>
+</body>
+</html>
