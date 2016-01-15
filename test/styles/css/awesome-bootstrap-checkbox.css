@@ -144,6 +144,6 @@ input[type="radio"].styled:checked + label:after {
 }
 @media (min-width: 992px) { 
   .checkbox.default label::after {
-    margin-top: 4px;
+    margin-top: 2px;
   }
 }

@@ -12,8 +12,7 @@
 </head>
 
 <body>
-
-<section class="wrapPush">
+<section class="wrapPush">    
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -21,10 +20,10 @@
             </div>
         </div>
     </nav>
-    <div class="container-fluid placeholder printHide"></div>
-    <div class="container-fluid dottedPattern printHide"></div>
-
-
+ 
+    <div class="container-fluid placeholder"></div>
+    <div class="container-fluid dottedPattern"></div>
+ 
     <div class="container pageHeading">
         <div class="row">
             <div class="col-sm-push-2 col-md-push-3 col-sm-8 col-md-6 clearfix">
@@ -33,27 +32,25 @@
         </div>
     </div>
 
-
-
-    <div class="container wrapPush">
+    <div class="container">
         <div class="row">
-            <main class="container col-sm-push-2 col-md-push-3 col-sm-8 col-md-6 printHide">
+            <main class="container col-sm-push-2 col-md-push-3 col-sm-8 col-md-6">
                 <section class="row">
-                    <div class="col-xs-12 border-btm intructWrap">
-                        <p>A temporary password has been sent to your email address, please enter below to continue.</p>
-                    </div>
                     <div class="col-xs-12 clearfix registWrap">
-                        <fieldset class="form-group">
+                        <p class="alert">We are sorry, this account has been locked. <a href="#">Click here</a> to reset your password or call Client Service Team on <a href="tel:1800572162">1800 572 162</a> for assisstance.</p>
+                        <fieldset class="form-group colorAction">
                             <label for="email">Email address</label>
                             <input id="email" type="text" id="username" name="username" class="form-control" placeholder="john.smith@example.com">
                         </fieldset>
-                        <fieldset class="form-group">
+                        <fieldset class="form-group colorAction">
                             <label for="password">Password</label>
                             <input id="password" type="text" id="password" name="password" class="form-control" placeholder="Enter your password">
                         </fieldset>
                         <p class="forgotpw"><a href="#">Forgotten your login details?</a></p>
-                        <button type="button" class="btn pull-right btn-primary btn-lg waves-effect waves-light">Log in to continue</button>
-                        
+                        <button type="button" class="btn pull-right btn-primary btn-lg" data-toggle="modal" data-target=".modalSuccess">Log in</button>
+                    </div>
+                    <div class="col-xs-12 clearfix">
+                        <p class="createAccount"><a href="#">Don’t have an account yet? Register here</a></p>
                     </div>
                     <div class="col-xs-12 border-top intructWrap">
                         <p>
@@ -65,9 +62,7 @@
             </main>
         </div>
     </div>
-</section>   
-
-
+</section>        
 <footer class="container-fluid">
         <div class="col-xs-12 col-sm-8">
             <ul>
@@ -80,34 +75,6 @@
             <p class="copyRightMGL">&copy; Macquarie Group Limited</p>
         </div>
 </footer>
-
-
- 
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

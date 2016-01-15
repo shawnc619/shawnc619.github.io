@@ -12,8 +12,7 @@
 </head>
 
 <body>
-
-<section class="wrapPush">
+<section class="wrapPush">    
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -21,10 +20,10 @@
             </div>
         </div>
     </nav>
-    <div class="container-fluid placeholder printHide"></div>
-    <div class="container-fluid dottedPattern printHide"></div>
-
-
+ 
+    <div class="container-fluid placeholder"></div>
+    <div class="container-fluid dottedPattern"></div>
+ 
     <div class="container pageHeading">
         <div class="row">
             <div class="col-sm-push-2 col-md-push-3 col-sm-8 col-md-6 clearfix">
@@ -33,27 +32,19 @@
         </div>
     </div>
 
-
-
-    <div class="container wrapPush">
+    <div class="container">
         <div class="row">
-            <main class="container col-sm-push-2 col-md-push-3 col-sm-8 col-md-6 printHide">
+            <main class="container col-sm-push-2 col-md-push-3 col-sm-8 col-md-6">
                 <section class="row">
-                    <div class="col-xs-12 border-btm intructWrap">
-                        <p>A temporary password has been sent to your email address, please enter below to continue.</p>
-                    </div>
                     <div class="col-xs-12 clearfix registWrap">
                         <fieldset class="form-group">
                             <label for="email">Email address</label>
                             <input id="email" type="text" id="username" name="username" class="form-control" placeholder="john.smith@example.com">
                         </fieldset>
-                        <fieldset class="form-group">
-                            <label for="password">Password</label>
-                            <input id="password" type="text" id="password" name="password" class="form-control" placeholder="Enter your password">
-                        </fieldset>
-                        <p class="forgotpw"><a href="#">Forgotten your login details?</a></p>
-                        <button type="button" class="btn pull-right btn-primary btn-lg waves-effect waves-light">Log in to continue</button>
-                        
+                        <button type="button" class="btn pull-right btn-primary btn-lg waves-effect waves-light" data-toggle="modal" data-target=".newDEFT">Log in</button>
+                    </div>
+                    <div class="col-xs-12 clearfix">
+                        <p class="createAccount"><a href="#">Don’t have an account yet? Register here</a></p>
                     </div>
                     <div class="col-xs-12 border-top intructWrap">
                         <p>
@@ -65,9 +56,7 @@
             </main>
         </div>
     </div>
-</section>   
-
-
+</section>        
 <footer class="container-fluid">
         <div class="col-xs-12 col-sm-8">
             <ul>
@@ -82,30 +71,23 @@
 </footer>
 
 
- 
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!-- Tooltip Welcome to New DEFT -->
+<div class="modal fade newDEFT" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-info">
+            <div class="modal-header clearfix">
+                <h3>Welcome to NEW DEFT</h3>
+                
+            </div>
+            <div class="modal-body border-top clearfix">
+                <p>We have upgraded. In order for us to migrate your account smoothly, we have sent you a temporary password to you email address, please use the password to log in for the first time.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary pull-right waves-effect waves-light"  data-dismiss="modal">OK</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 
@@ -116,56 +98,5 @@
     <script src="js/ie10-viewport-bug-workaround.js"></script>
     <script src="js/materialize.min.js"></script>
 
-
-    <script type="text/javascript">
-            
-            $( document ).ready(function() {
-                $('#MyAffix').affix('checkPosition');
-            });
-            $('#MyAffix').affix({
-              offset: {top:110, bottom: 60}
-            })
-
-            $(window).scroll(function() {
-            if ($(this).scrollTop() > 50){  
-                $('#subNav').addClass("navbar-fixed-top");
-                $('.subNavreplace').addClass("replace");
-              }
-              else{
-                $('#subNav').removeClass("navbar-fixed-top");
-                $('.subNavreplace').removeClass("replace");
-              }
-            });
-
-
-            $('.formSelect').click(function(){
-                $('.selectToggle',this).slideToggle('fast', "swing");
-                return false 
-            });
-                        
-            $(".formSelect dd ul li a").click(function() {
-                var text = $(this).html();
-                $(".formSelect dt a").html(text);
-                $('.selectToggle',this).hide();
-            });
-                        
-            function getSelectedValue(id) {
-                return $("#" + id).find("dt a span.value").html();
-            }
-
-            $(document).bind('click', function(e) {
-                var $clicked = $(e.target);
-                if (! $clicked.parents().hasClass("formSelect"))
-                    $(".formSelect dd ul").hide();
-            });
-
-$( document ).ready(function() {
-    $('.lnkPrint').click(function()
-     {
-         window.print();
-     });
-});
-            
-    </script>
 </body>
 </html>

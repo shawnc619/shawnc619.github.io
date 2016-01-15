@@ -37,10 +37,24 @@
             <main class="container col-sm-8">
                 <section class="row">
                     <div class="col-xs-12 border-btm intructWrap">
-                        <p>Please fill the below details to help us make your account more secure and so that we can show you relevant offers if you agree to that.</p>
+                        <p>Just one last step to help us make your account more secure.</p>
                     </div>
                     <div class="col-xs-12 clearfix registWrap border-btm">
-                        <h3>Residential address</h3>
+                        <div class="form2Col clearfix">
+                            <fieldset class="form-group pull-left" style="width:49%">
+                                <label for="firstName">First name</label>
+                                <input id="firstName" type="text" class="form-control" placeholder="e.g. John">
+                            </fieldset>
+                            <fieldset class="form-group pull-right" style="width:49%">
+                                <label for="lastName">Last name</label>
+                                <input id="lastName" type="tel" class="form-control" placeholder="e.g. Smith">
+                            </fieldset>
+                        </div>
+                        <fieldset class="form-group">
+                            <label for="email">Email address</label>
+                            <input id="email" type="text" id="username" name="username" class="form-control" placeholder="john.smith@example.com">
+                        </fieldset>
+                        <p class="descript">You can choose to register another email address.</p>
                         <!-- formSelect -->
                         <fieldset class="formSelectStyle country">
                             <select>
@@ -48,6 +62,23 @@
                                 <option>New Zealand</option>
                             </select>
                         </fieldset>
+                        <div id="mobile">
+                            <fieldset class="form-group">
+                                <label for="mobile1">Mobile number</label>
+                                <input id="mobile1" type="text" class="form-control" placeholder="+61">
+                            </fieldset>
+                            <p class="descript"><a href="#" id="mobileHide">I don't have a mobile phone</a></p>
+                        </div>
+                        <div id="landline">
+                            <fieldset class="form-group">
+                                <label for="landlinePhone">Phone number</label>
+                                <input id="landlinePhone" type="text" class="form-control" placeholder="Please enter your phone number">
+                            </fieldset>
+                            <p class="descript"><a href="#" id="mobileShow">I have a mobile phone</a></p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 clearfix registWrap border-btm">
+                        <h3>Residential address</h3>
                         <fieldset class="form-group">
                             <label for="street">Street</label>
                             <input id="street" type="text" class="form-control" placeholder="e.g. 55 George Street">
@@ -120,6 +151,10 @@
                             <input id="optinMarketing" type="checkbox">
                             <label for="optinMarketing">I am interested in offers and promotions</a></label>
                         </div>
+                        <div class="checkbox checkbox-primary checkbox-circle mgbtm20">
+                                <input id="TCPrivacyStatementAgreement" type="checkbox">
+                                <label for="TCPrivacyStatementAgreement">I acknowledge that I have read and accept the <a href="#">DEFT Terms & Conditions</a>, and understand that my details will be handled in accordance with the terms of the <a href="#">Privacy Statement</a>.</label>
+                            </div>
                     </div>
                     <!-- CTA -->
                     <div class="col-xs-12 col-sm-8 col-sm-push-4 ctaWrap">
@@ -290,7 +325,17 @@
                 var $clicked = $(e.target);
                 if (! $clicked.parents().hasClass("formSelect"))
                     $(".formSelect dd ul").hide();
-            });  
+            });
+            $("#mobileHide").click(function(){
+                $("#mobile").hide();
+                $("#landline").show();
+                return false;
+            });
+            $("#mobileShow").click(function(){
+                $("#landline").hide();
+                $("#mobile").show();
+                return false;
+            }); 
             $("#suggestShow").click(function(){
                 $("#nonAuto").hide();
                 $("#autoSuggest").show();
