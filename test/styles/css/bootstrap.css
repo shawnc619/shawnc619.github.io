@@ -8840,7 +8840,7 @@ dd.cardIcon{
   }
   .paymentTotal{
     font-size:2.6rem;
-    padding:15px 0 50px;
+    padding:15px 0 30px;
     margin:10px 0 0 0;
     font-weight:300;
     border-top: 1px solid #555;
@@ -8919,6 +8919,7 @@ span.surchargefee{
     padding:20px 25px 20px;
   }
   .modalSectopnWrap{
+    margin:0 -25px;
     padding:20px 25px 20px;
 
 }
@@ -9275,15 +9276,14 @@ span.surchargefee{
     padding:0;
   }
 .navOnTab li a{
-  color: #454545;
-  padding:8px 0;
-}
-.navOnTab > li:first-child > a{
+    color: #454545;
+    padding:8px 0;
     border-right:1px solid #555;
-  }
-  .navOnTab > li:last-child > a {
-    border-left:1px solid #555;
-  }
+}
+
+.navOnTab > li:last-child > a {
+    border-right:none;
+}
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
 
@@ -9407,7 +9407,7 @@ span.surchargefee{
   border-bottom:none;
 }
 .formSelect dt a div.typeNorm { 
-  padding:20px 7px;
+  padding:20px 0;
   font-size: 1.8em;
 }
 /* Medium devices (desktops, 992px and up) */
@@ -9418,7 +9418,7 @@ span.surchargefee{
 }
 
 .formSelect dd ul li a div.typeNorm{ 
-  padding:12px 5px;
+  padding:12px 0;
   font-size: 1.6em;
 }
 .formSelect dd ul li:last-child  a.typeNorm{ 
@@ -9431,7 +9431,7 @@ span.surchargefee{
 .resultNorm{
   display: block;
   font-size:1.6rem;
-  padding: 20px 17px 0;
+  padding: 20px 10px 0;
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -9439,13 +9439,12 @@ span.surchargefee{
   .resultNorm{
     display: block;
     font-size:1.6em;
-    padding: 24px 17px;
+    padding: 24px 10px;
   }
 }
 
 .DropDownWrap li a.selctAddWrap{
   margin:0;
-  border-top:1px #e1e1e1 solid;
   padding: 14px 10px 10px;
 }
 .DropDownWrap li.header{
