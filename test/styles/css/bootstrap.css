@@ -8247,7 +8247,6 @@ p {
 }
 .info-Wrap:hover, .info-Wrap2:hover{
     color:#454545;
-    background-color: #F6FCFF;
   }
 .info-block{
   float: left;
@@ -8623,7 +8622,6 @@ p.DRNedit_items_last {
  }  
 .info-Wrap-Wallet:hover, .info-Wrap-Wallet2:hover{
     color:#454545;
-    background-color: #F6FCFF;
 }
 .info-Wrap-Wallet h3, .info-Wrap-Wallet2 h3{
     font-size:2.2em;
@@ -8722,7 +8720,7 @@ p.DRNedit_items_last {
 .cardIcon .icon-circle-star{
     position:absolute;
     display: block;
-    font-size:1.9em;
+    font-size:1.9rem;
     color:#357EF4;
     top:-10px;
     right: -8px;
@@ -8731,7 +8729,7 @@ p.DRNedit_items_last {
 .cardIcon .icon-alert-sign{
     position:absolute;
     display: block;
-    font-size:1.9em;
+    font-size:1.9rem;
     color:#FF3A65;
     top:-10px;
     right: -8px;
@@ -8905,6 +8903,11 @@ span.surchargefee{
 .receiptWrap.first{
     padding:0 15px 20px;
 }
+.modalSectopnWrap{
+    display:block;
+    margin:0 -15px;
+    padding:20px 15px 20px;
+}
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
   .resultWrap{
@@ -8915,6 +8918,10 @@ span.surchargefee{
     margin:0 -25px;
     padding:20px 25px 20px;
   }
+  .modalSectopnWrap{
+    padding:20px 25px 20px;
+
+}
   .receiptWrap.first{
       padding:0px 25px 20px;
   }
@@ -9337,7 +9344,7 @@ span.surchargefee{
   border: 1px solid #e1e1e1;
 }
 .formSelect dt a:after {
-  font-size: 2.1em;
+  font-size: 2.1rem;
   content: "\f0d7";
   font-family: "FontAwesome";
   position: absolute;
@@ -9423,7 +9430,7 @@ span.surchargefee{
 
 .resultNorm{
   display: block;
-  font-size:1.6em;
+  font-size:1.6rem;
   padding: 20px 17px 0;
 }
 
@@ -9516,8 +9523,8 @@ dd .dataSelectWrap{
     background-color: #fdfdfd;
     border: 1px #ccc solid;
     border-radius: 2px;
-    width: 3.2em;
-    height: 2em;
+    width: 3.2rem;
+    height: 2rem;
     float: left;
     text-align: right;
 }
@@ -9525,31 +9532,31 @@ dd .dataSelectWrap{
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
 .dataSelectWrap .cardIcon{
-    width: 5em;
-    height: 3em;
-    margin: 0 1.5em 0 0;
+    width: 5rem;
+    height: 3rem;
+    margin: 0 1.5rem 0 0;
 }
 }
 dt .databank {
   font-weight: 400;
-  font-size:1.4em;
+  font-size:1.4rem;
   margin:0;
 }
 dd .databank {
   font-weight: 400;
-  font-size:1.2em;
+  font-size:1.2rem;
   margin:0;
 }
 .databankStd{
   font-weight: 400;
   margin:0;
-  font-size: 1.1em;
+  font-size: 1.1rem;
   line-height: 1.2;
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
   .databank {
-  font-size:1.6em;
+  font-size:1.6rem;
   }
 }
 
@@ -10779,7 +10786,7 @@ textarea.form-control:focus{
   }
 }
 .tranSearchWrap{
-  background-color: #D8D8D8;
+  background-color: #DEDEDE;
   padding-top:5px;
   padding-bottom:5px;
   position: relative;
