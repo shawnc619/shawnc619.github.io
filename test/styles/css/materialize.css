@@ -637,7 +637,7 @@ button.btn-floating {
   margin-top: -10px;
   margin-left: -10px;
   opacity: 0;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(80, 80, 80, 0.1);
   transition: all 0.7s ease-out;
   transition-property: opacity, -webkit-transform;
   transition-property: transform, opacity;
@@ -651,7 +651,7 @@ button.btn-floating {
   background-color: rgba(255, 255, 255, 0.45);
 }
 .waves-effect.waves-dark .waves-ripple {
-  background-color: #454545;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 .waves-effect.waves-blue .waves-ripple {
   background-color: rgba(53, 126, 244, 0.71);
