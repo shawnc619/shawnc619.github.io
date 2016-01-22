@@ -10516,7 +10516,7 @@ textarea.form-control:focus{
   display: inline-block;
   margin-top: 8px;
   margin-bottom: 8px;
-  margin-right: 4px;
+  margin-right: 6px;
   font-weight: 300;
   line-height: 1.2
 }
@@ -10525,7 +10525,9 @@ textarea.form-control:focus{
   color:#8b8b8b;
 }
 .sTag.nonSelect{
-  opacity: 0.5
+  opacity: 0.5;
+  color:#8b8b8b !important;
+  border-color:#8b8b8b !important;
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
