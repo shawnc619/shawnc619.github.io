@@ -4,6 +4,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -6728,6 +6729,7 @@ button.close {
           background-clip: padding-box;*/
   border-radius: 0;
   outline: 0;
+  -webkit-transform: translate3d(0,0,0); /*fix chrome retina display rendering issue*/
 }
 .modal-content2 {
     position: relative;
@@ -6736,6 +6738,7 @@ button.close {
     background-color: #fff;
     border-radius: 0;
     outline: 0;
+    -webkit-transform: translate3d(0,0,0);/*fix chrome retina display rendering issue*/
 }
 .modal-info {
   border-radius: 4px;
@@ -6743,7 +6746,7 @@ button.close {
   height: auto;
   background-color: #fff;
   outline: 0;
-  margin: 10% 10%
+  margin: 10% 10%;-webkit-transform: translate3d(0,0,0);/*fix chrome retina display rendering issue*/
 }
 
 /* Small devices (tablets, 768px and up) */
@@ -6878,6 +6881,7 @@ button.close {
     width: 608px;
     margin: 30px auto;
     height:auto;
+
   }
   .modal-info {
     width: 480px;
@@ -10855,6 +10859,9 @@ textarea.form-control:focus{
   color:#454545;
   text-decoration: none;
 }
+.dMinfo p{
+  font-size:1.4rem;
+}
 .dMinfo p:first-child{
   color:#8B8B8B;
 }
@@ -10864,6 +10871,9 @@ textarea.form-control:focus{
   .dMinfo{
     margin-right:-5px;
   }
+  .dMinfo p{
+  font-size:1.6rem;
+}
 }
 
 .scheduleTable p{
@@ -10874,6 +10884,167 @@ textarea.form-control:focus{
     width:3.8em;
     height:2.2em;
     margin-right: 6px;
+}
+
+
+/*Notifications*/
+.notiWrap{
+    margin-top: 8px;
+    margin-bottom:15px;
+}
+
+.panel-heading.notification .accordion-toggle {
+    display: block;
+    width: 100px;
+    padding: 2px 8px;
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin: -9px auto 0;
+    background: #8B8B8B;
+    border-radius: 4px;
+    color:#fff;
+    border:1px transparent solid;
+}
+.panel-heading.notification .accordion-toggle.new {
+    width: 110px;
+    background: #FF3A65;
+    color:#fff;
+}
+.panel-default > .inverseStyle.notification {
+    background-color: transparent;
+    border-top: 1px solid #A3A3A3;
+}
+.notiWrap .panel {
+  background-color: transparent;
+}
+.notiWrap .panel-body {
+}
+.panel-heading.notification .accordion-toggle:after{
+    font-size: 0.9rem;
+    color: #fff;
+    line-height: 1.8;
+}
+.panel-heading.notification .accordion-toggle.new:after{
+    font-size: 0.9rem;
+    color: #fff;
+    line-height: 1.8;
+}
+.notiList{
+    padding:0;
+    margin:0;
+    list-style: none
+}
+.modal-body .notiList{
+    margin:0 -15px;
+}
+.rhWidget ul.notiList{
+    margin:0 -15px;
+    padding:0 15px;
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .modal-body .notiList{
+      margin:0 -25px;
+  }
+}
+
+.notiList li{
+    margin:0;
+    border-bottom: 1px #a3a3a3 solid;
+    font-size:1.3rem;
+}
+.modal-body .notiList li{
+    border-bottom: 1px #e1e1e1 solid;
+}
+.rhWidget ul.notiList li{
+    border-bottom: 1px #e1e1e1 solid;
+    margin:0 -15px;
+    padding:0 15px;
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  .modal-body .notiList li:last-child{
+      border-bottom: none;
+  }
+  .rhWidget .notiList li:last-child{
+      border-bottom: none;
+  }
+}
+
+.notiList li:first-child{
+    border-top: none;
+}
+.notiNewdot{
+    display: none
+}
+.new .notiNewdot{
+    border-radius:50px;
+    background-color: #FF3A65;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    float:left;
+}
+.notiMesg{
+    width:70%;
+    float:left;
+    margin-left:10px;
+}
+.notiList li a{
+    color:#454545;
+    display: block;
+    padding:15px 15px;
+}
+
+.rhWidget .notiList li a{
+    color:#454545;
+    display: block;
+    padding:15px 0;
+    font-size:1.2rem;
+}
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .notiList li a{
+    padding:25px 25px;
+  }
+}
+
+.notiList li a:hover{
+    color:#454545;
+    text-decoration: none;
+}
+.notiList li.allNotification a{
+    color:#FF3A65;
+    font-size:1.5rem;
+}
+.notiList li.new a{
+    font-weight: bold;
+}
+.notiList p{
+  font-size:1.5rem;
+}
+.rhWidget .notiList p{
+  font-size:1.4rem;
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  .notiList p{
+    font-size:1.8rem;
+  }
+}
+.notiNumber{
+  display: block;
+  float: right;
+  background-color: #FF3A65;
+  color:#fff;
+  padding:2px 10px;
+  border-radius: 12px;
+  font-size:1.6rem;
+  margin-top: 4px;
+}
+.rhWidget ul.viewAll.noti a{
+  color:#FF3A65;
 }
 
 /*Margin*/

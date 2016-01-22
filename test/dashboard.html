@@ -85,6 +85,74 @@
             </div>
         </div>
     </div>
+    <div class="notiWrap visible-xs">
+        <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+                <div class="panel-heading inverseStyle notification">
+                    <h4 class="panel-title">
+                        <a class="accordion-toggle new" data-parent="#accordion" data-toggle="collapse" href="#collapse1">3 Notifications</a>
+                    </h4>
+                </div>
+                <div class="panel-collapse collapse" id="collapse1">
+                    <div class="panel-body">
+                        <ul class="notiList">
+                            <li class="new">
+                                <a>
+                                    <table width="100%" border="0">
+                                        <tr>
+                                            <td width="25px"><span class="notiNewdot"></span></td>
+                                            <td>
+                                                <p>Direct Debit Agreement from HJ Hooker</p>
+                                                03/11/2015 2:59 PM
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <table width="100%" border="0">
+                                        <tr>
+                                            <td width="25px"><span class="notiNewdot"></span></td>
+                                            <td>
+                                                <p>Direct Debit Agreement from HJ Hooker</p>
+                                                03/11/2015 2:59 PM
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <table width="100%" border="0">
+                                        <tr>
+                                            <td width="25px"><span class="notiNewdot">></span></td>
+                                            <td>
+                                                <p>Direct Debit Agreement from HJ Hooker</p>
+                                                03/11/2015 2:59 PM
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </a>
+                            </li>
+                            <li class="allNotification">
+                                <a href="#" data-target=".ModalNotification" data-toggle="modal">
+                                    <table width="100%" border="0">
+                                        <tr>
+                                            <td>
+                                                Show all notifications
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="container DBmargin">
         <div class="row">
             <main class="container col-sm-8">
@@ -446,13 +514,14 @@
                     </div>
                 </section> 
                 <div class="tab-content">
-                        <div role="tabpanel" class="row dMinfo tab-pane active pastPayment">
-                            <p class="pull-left">Showing 30 0f 1702</p>
-                            <p class="pull-right"><a href="#" data-toggle="modal" data-target=".exportHistory">Export history</a></p>
-                        </div>
-                        <div role="tabpanel" class="tab-pane schedulePayment">
-                        </div>
+                    <div role="tabpanel" class="row dMinfo tab-pane active pastPayment">
+                        <p class="pull-left">Showing 30 0f 1702</p>
+                        <p class="pull-right"><a href="#" data-toggle="modal" data-target=".exportHistory">Export history</a></p>
                     </div>
+                    <div role="tabpanel" class="tab-pane schedulePayment">
+                    </div>
+                </div>
+                <br><br><br><br>
             </main>
             <aside class="col-sm-4">
                 <div id="MyAffix">
@@ -462,6 +531,53 @@
                             <span class="pull-left">Make a payment</span>
                             <i class="fa icon-arrow-right pull-right"></i> 
                         </a>
+                    </section>
+                    <section class="col-xs-12 rhWidget">
+                        <h2>Notifications <span class="notiNumber">3</span></h2>
+                        <ul class="notiList border-top">
+                            <li class="new">
+                                <a href="#">
+                                    <table width="100%" border="0">
+                                        <tr>
+                                            <td width="30px"><span class="notiNewdot"></span></td>
+                                            <td>
+                                                <p>Direct Debit Agreement from HJ Hooker</p>
+                                                03/11/2015 2:59 PM
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <table width="100%" border="0">
+                                        <tr>
+                                            <td width="30px"><span class="notiNewdot"></span></td>
+                                            <td>
+                                                <p>Direct Debit Agreement from HJ Hooker</p>
+                                                03/11/2015 2:59 PM
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <table width="100%" border="0">
+                                        <tr>
+                                            <td width="30px"><span class="notiNewdot">></span></td>
+                                            <td>
+                                                <p>Direct Debit Agreement from HJ Hooker</p>
+                                                03/11/2015 2:59 PM
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="viewAll border-top noti">
+                            <li><a data-target=".ModalNotification" data-toggle="modal">View all notifications</a></li>
+                        </ul>
                     </section>
                     <section class="col-xs-12 rhWidget">
                         <h2>FAQ</h2>
@@ -967,6 +1083,14 @@
                                             <div class="edit vcenter modalEditCard">Edit</div>
                                         </a>
                                     </li>
+                                    <li>
+                                        <a href="#" class="selctAddWrap clearfix modalAddDRN">
+                                            <dl class="selectAdd">
+                                                <dt>Add payment method</dt>
+                                                <dd class="plus">+</dd>
+                                            </dl>
+                                        </a>
+                                    </li>
                                 </ul>
                             </dd>
                         </dl>
@@ -1190,7 +1314,7 @@
                                         <li>
                                             <a href="#" class="selctAddWrap clearfix modalAddDRN">
                                                 <dl class="selectAdd">
-                                                    <dt>Add Biller</dt>
+                                                    <dt>Add DEFT reference number</dt>
                                                     <dd class="plus">+</dd>
                                                 </dl>
                                             </a>
@@ -1282,6 +1406,14 @@
                                                     <div class="databankStd">Westpac St Leonards</div>
                                                 </div>
                                                 <div class="edit vcenter modalEditCard">Edit</div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="selctAddWrap clearfix modalAddDRN">
+                                                <dl class="selectAdd">
+                                                    <dt>Add payment methods</dt>
+                                                    <dd class="plus">+</dd>
+                                                </dl>
                                             </a>
                                         </li>
                                     </ul>
@@ -1427,7 +1559,83 @@
 </div>
 <!-- End Modal schedule edit -->
 
+<!-- Modal DDA Edit -->
+<div class="modal fade ModalNotification" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog card effect__click" role="document">
+        <div class="card__front">
+            <div class="modal-content2">
+                <div class="modal-header clearfix">
+                    <h3 class="pull-left">Notifications</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="icon-close" aria-hidden="true"></span></button>                
+                </div>
+                <div class="modal-body border-top">
+                    <ul class="notiList">
+                        <li class="new">
+                            <a href="#">
+                                <table width="100%" border="0">
+                                    <tr>
+                                        <td width="30px"><span class="notiNewdot"></span></td>
+                                        <td>
+                                            <p>Direct Debit Agreement from HJ Hooker</p>
+                                            03/11/2015 2:59 PM
+                                        </td>
+                                    </tr>
+                                </table>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <table width="100%" border="0">
+                                    <tr>
+                                        <td width="30px"><span class="notiNewdot"></span></td>
+                                        <td>
+                                            <p>Direct Debit Agreement from HJ Hooker</p>
+                                            03/11/2015 2:59 PM
+                                        </td>
+                                    </tr>
+                                </table>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <table width="100%" border="0">
+                                    <tr>
+                                        <td width="30px"><span class="notiNewdot">></span></td>
+                                        <td>
+                                            <p>Direct Debit Agreement from HJ Hooker</p>
+                                            03/11/2015 2:59 PM
+                                        </td>
+                                    </tr>
+                                </table>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="card__back">
+            <div class="modal-content2" id="edit-warning">
+                <div class="modal-header">
+                    <h3>Confirm to delete this DRN reference number</h3>
+                </div>
+                <div class="modal-body clearfix">
+                    <p class="para">and also some friendly and helpful text here</p><br>
+                    <div class="alert">
+                        <strong>WARNING</strong> this DEFT number is linked to multiple Direct Debit Payments. Please select an alternate payment method before deleting this card.
+                    </div>
+                    <button type="button" class="btn btn-secondary pull-right waves-effect waves-light">Take me to the page to fix this</button>
+                </div>
+                <div class="modal-footer border-top">
+                    <button type="button" class="btn btn-danger pull-right mgLeft10 waves-effect waves-light" data-dismiss="modal">Delete</button>
+                    <button type="button" class="btn btn-cancel  btn-flip pull-right waves-effect waves-light">Back</button>
+                </div>
+            </div>
 
+
+        </div>               
+    </div>
+</div>
+<!-- End Modal DDA Edit -->
 
 
 
