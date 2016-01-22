@@ -7911,8 +7911,8 @@ main.container section{
 }
 
 .navbar-nav > li > a {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 14px;
+  padding-bottom: 14px;
   line-height: 20px;
 }
 .navbar-nav > li> a.myAccount {
@@ -10088,9 +10088,9 @@ body {
 .wrapPush{
   min-height: 100%;
   height: auto;
-  margin-bottom: -85px;
+  margin-bottom: -100px;
   /* Pad bottom by footer height */
-  padding-bottom:85px;
+  padding-bottom:100px;
 }
 footer.container-fluid{
   /*border-top:1px solid #D2D2D2;*/
@@ -10098,7 +10098,7 @@ footer.container-fluid{
   padding:15px;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 85px;
+  height: 100px;
 
 }
 footer.container-fluid ul{
@@ -10108,7 +10108,8 @@ footer.container-fluid ul{
 }
 footer.container-fluid ul li{
   float:left;
-  padding-right:8px;
+  padding:0 8px 5px 0;
+
 }
 footer.container-fluid p{
   list-style: none;
