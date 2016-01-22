@@ -10203,6 +10203,8 @@ section.rhWidget{
 }
 .rhWidget ul.viewAll a{
   color:#357EF4;
+  display: block;
+  width: 100%;
 }
 .rhWidget a.contact{
   display: block;
@@ -10893,16 +10895,16 @@ textarea.form-control:focus{
 /*Notifications*/
 .notiWrap{
     margin-top: 15px;
-    margin-bottom:20px;
+    margin-bottom:15px;
 }
 
 .panel-heading.notification .accordion-toggle {
     display: block;
     width: 100px;
-    padding: 2px 8px;
+    padding: 4px 8px;
     font-weight: 300;
     font-size: 1.2rem;
-    margin: -9px auto 0;
+    margin: -12px auto 0;
     background: #8B8B8B;
     border-radius: 4px;
     color:#fff;
