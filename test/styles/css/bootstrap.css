@@ -4721,6 +4721,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     width: 80%;
     margin: 0 auto;
   }
+  .nav-pills.nav-stacked.filter{
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
@@ -10445,6 +10449,12 @@ section.rhWidget{
 .form3Col{
   margin-bottom: 25px;
 }
+.modalDOB .form3Col{
+  margin-bottom: 0;
+}
+.modalDOB .formSelectStyle{
+  margin-bottom: 0;
+}
 .form3Col .form-group {
   margin-bottom: 0; 
 }
@@ -10517,7 +10527,7 @@ textarea.form-control:focus{
   text-align: center;
   display: inline-block;
   margin-top: 8px;
-  margin-bottom: 8px;
+  margin-bottom: 5px;
   margin-right: 6px;
   font-weight: 300;
   line-height: 1.2
@@ -10865,11 +10875,14 @@ textarea.form-control:focus{
   text-decoration: none;
 }
 .dMinfo p{
-  font-size:1.4rem;
+  font-size:1.6rem;
+  font-weight: 300;
+  margin-top: 7px;
 }
 .dMinfo p:first-child{
-  color:#8B8B8B;
+  color:#454545;
 }
+
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
@@ -10877,8 +10890,8 @@ textarea.form-control:focus{
     margin-right:-5px;
   }
   .dMinfo p{
-  font-size:1.6rem;
-}
+    font-size:1.8rem;
+  }
 }
 
 .scheduleTable p{
@@ -11052,6 +11065,40 @@ textarea.form-control:focus{
 .rhWidget ul.viewAll.noti a{
   color:#FF3A65;
 }
+.lastTimeLogin{
+  margin:30px -15px 0;
+  padding:20px 0; 
+  border-top:1px solid #d2d2d2;
+}
+.lastTimeLoginDesktop{
+  font-size:1.3rem;
+  margin: 0 -15px;
+  font-weight: 300;
+  color:#555;
+  margin-bottom: 40px
+}
+.deleteAccount{
+  color:#FF3A65;
+  font-weight: 300;
+  font-size:1.8rem;
+}
+
+.info-block.accountSetting h3{
+  font-size: 1.8rem
+}
+
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .info-block.accountSetting h3{
+    font-size: 2rem
+  }
+}
+.accountSetting h3 i.fa-check{
+  color:#357EF4;
+  padding-right:5px;
+}
+
 
 /*Margin*/
 .mgTop0{
@@ -11069,8 +11116,14 @@ textarea.form-control:focus{
 .mgLeft10{
   margin-left: 10px!important;
 }
+.mgbtm10{
+  margin-bottom: 10px !important;
+}
 .mgbtm20{
   margin-bottom: 20px !important;
+}
+.mgbtm0{
+  margin-bottom: 0 !important;
 }
 .mgN18{
   margin-top: -18px !important;
