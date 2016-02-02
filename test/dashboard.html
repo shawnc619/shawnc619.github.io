@@ -12,7 +12,7 @@
 
 <body>
 
-<section class="wrapPush">
+<section class="wrapPush printHide">
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -196,7 +196,7 @@
                                             17/04/2015
                                         </li>
                                         <!-- new transaction -->
-                                        <li class="row-hidden">
+                                        <li>
                                             <a class="clearfix info-Wrap2 toggleDropdown">
                                                 <table>
                                                     <tr>
@@ -521,7 +521,7 @@
                     <div role="tabpanel" class="tab-pane schedulePayment">
                     </div>
                 </div>
-                <br><br><br>
+                <br>
             </main>
             <aside class="col-sm-4">
                 <div id="MyAffix">
@@ -591,7 +591,7 @@
 
                         </ul>
                     </section>
-                    <section class="col-xs-12 rhWidget waves-effect waves-dark">
+                    <section class="col-xs-12 rhWidget waves-effect waves-light">
                         <a class="contact clearfix">
                             <i class="fa icon-envelope-full pull-left"></i>
                             <span class="pull-left">Contact us</span>
@@ -610,15 +610,15 @@
     </div>
 
 </section>
-<div class="container">
+<div class="container printHide">
     <div class="row lastTimeLogin visible-xs">
         <div class="col-xs-12 clearfix">
             <p>Your last login:<br>
-11:24am, 03/09/2015 Sydney, Australia</p>
+            11:24am, 03/09/2015 Sydney, Australia</p>
         </div>
     </div>
 </div>
-<footer class="container-fluid">
+<footer class="container-fluid printHide">
     <div class="col-xs-12 col-sm-8">
         <ul>
             <li><a href="#">Privacy policy</a> &nbsp;|</li>
@@ -707,7 +707,7 @@
         <div class="card__front">
             <div class="modal-content2">
                 <div class="modal-header clearfix">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="icon-close" aria-hidden="true"></span></button>                
+                    <button type="button" class="close printHide" data-dismiss="modal" aria-label="Close"><span class="icon-close" aria-hidden="true"></span></button>                
                 </div>
                 <div class="modal-body">
                     <!-- Status -->
@@ -912,9 +912,9 @@
                         </table> 
                     </div>
                     <!-- CTA -->
-                    <div class="receiptWrap clearfix">
-                        <button type="button" class="btn btn-primary pull-right mgLeft10 btn-flip">Email receipt</button>
-                        <button type="button" class="btn btn-primary-inv pull-right mgLeft10 lnkPrint" data-dismiss="modal">Print</button>
+                    <div class="receiptWrap clearfix printHide">
+                        <button type="button" class="btn btn-primary pull-right mgLeft10 btn-flip waves-effect waves-light">Email receipt</button>
+                        <button type="button" class="btn btn-primary-inv pull-right mgLeft10 lnkPrint waves-effect waves-light" data-dismiss="modal">Print</button>
                     </div>
                 </div>
             </div>    
@@ -932,8 +932,8 @@
                         </fieldset>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary pull-right mgLeft10 sendemail" data-dismiss="modal" aria-label="Close">Send</button>
-                <button type="button" class="btn btn-cancel pull-right btn-flip">Cancel</button>
+                    <button type="button" class="btn btn-primary pull-right mgLeft10 sendemail  waves-effect waves-light" data-dismiss="modal" aria-label="Close">Send</button>
+                <button type="button" class="btn btn-cancel pull-right btn-flip waves-effect ">Cancel</button>
                 </div>
             </div>
         </div>               
@@ -948,20 +948,18 @@
             <div class="modal-info">
                 <div class="modal-header">
                     <div class="paymentStatusWrap">
-                        <div class="paymentStatusInline clearfix">
-                            <table>
-                                <tr>
-                                    <td><span class="icon-tick-sign pull-left"></span></td>
-                                    <td><h3 class="pull-left text-left">Your receipt has been emailed</h3></td>
-                                </tr>
-                            </table>
+                        <div class="paymentStatusWrap">
+                            <div class="paymentStatusInline clearfix">
+                                <table width="100%">
+                                    <tr>
+                                        <td><span class="icon-tick-sign pull-left"></span></td>
+                                        <td><h4 class="pull-left text-left">Your receipt has been emailed.</h4></td>
+                                        <td><h3 class="pull-left text-left"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="icon-close"></span></button></h3></td>
+                                    </tr>
+                                </table><br>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="modal-body border-top">
-                </div>
-                <div class="modal-footer  printHide">
-                    <button type="button" class="btn btn-primary pull-right waves-effect waves-light" data-dismiss="modal" aria-label="Close">OK</button>
                 </div>
             </div>
         </div>
@@ -1030,10 +1028,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="modal-body border-top">
-                </div>
-                <div class="modal-footer  printHide">
-                    <button type="button" class="btn btn-danger pull-right waves-effect waves-light mgLeft10" data-dismiss="modal" aria-label="Close">Delete</button>
+                <div class="modal-footer  border-top">
+                    <button type="button" class="btn btn-danger pull-right waves-effect waves-light mgLeft10 cancelSchedule" data-dismiss="modal" aria-label="Close">Delete</button>
                     <button type="button" class="btn btn-cancel pull-right waves-effect waves-light" data-dismiss="modal" aria-label="Close">Cancel</button>
                 </div>
             </div>
@@ -1107,10 +1103,10 @@
                             </dd>
                         </dl>
                     </fieldset>
-                    <div class="form-group">
+                    <fieldset class="form-group">
                         <label for="nickName">Nickname</label>
                         <input id="nickName" type="text" class="form-control" placeholder="LJ Hooker" value="LJ Hooker Rent">
-                    </div>
+                    </fieldset>
                     <p class="descript">This will also be changed in <a href="#">DRN management</a></p>
                     <!-- Section 1 -->
                     <div class="panel-body receiptWrap clearfix border-top border-btm">
@@ -1223,7 +1219,7 @@
                     </div>
                                 
                     <div class="printHide clearfix mgTop20">
-                        <button type="button" class="btn btn-primary pull-right mgLeft10" data-dismiss="modal">Update</button>
+                        <button type="button" class="btn btn-primary pull-right mgLeft10 waves-effect waves-light" data-dismiss="modal">Update</button>
                     </div>
                 </div>
 
@@ -1235,17 +1231,16 @@
         <div class="card__back">
             <div class="modal-content2" id="edit-warning">
                 <div class="modal-header">
-                    <h3>Confirm to delete this DRN reference number</h3>
+                    <h3>Confirm to cancel agreement</h3>
                 </div>
                 <div class="modal-body clearfix">
-                    <p class="para">and also some friendly and helpful text here</p><br>
-                    <div class="alert">
-                        <strong>WARNING</strong> this DEFT number is linked to multiple Direct Debit Payments. Please select an alternate payment method before deleting this card.
+                    <div class="alert mgTop0">
+                        <strong>WARNING</strong> warning messages here warning messages here warning messages here
                     </div>
-                    <button type="button" class="btn btn-secondary pull-right waves-effect waves-light">Take me to the page to fix this</button>
+                    
                 </div>
                 <div class="modal-footer border-top">
-                    <button type="button" class="btn btn-danger pull-right mgLeft10 waves-effect waves-light" data-dismiss="modal">Delete</button>
+                    <button type="button" class="btn btn-danger pull-right mgLeft10 waves-effect waves-light DDAcancelled" data-dismiss="modal">Cancel agreemnt</button>
                     <button type="button" class="btn btn-cancel  btn-flip pull-right waves-effect waves-light">Back</button>
                 </div>
             </div>
@@ -1448,98 +1443,82 @@
                         <div class="tab-content">
                             <!-- Pay later -->
                             <div role="tabpanel" class="tab-pane fade" id="payLater">
-                                  <br><br>
-                                  <div class="noBkLabelStyle2">
-                                    Select payment date
-                                  </div>
-                                  <!-- formSelect -->
-                                  <fieldset class="datePicker">
-                                    <a href="#">Date Picker</a>
-                                  </fieldset>
+                                <br><br>
+                                <div class="noBkLabelStyle2">
+                                  Select payment date
+                                </div>
+                                <!-- formSelect -->
+                                <fieldset class="datePicker">
+                                  <a href="#">Date Picker</a>
+                                </fieldset>
                             </div>
                             <!-- Scehdule -->
                             <div role="tabpanel" class="tab-pane fade active in" id="schedule">
                                 <br><br>
-                                  <!-- Payment Frequency -->
-                                  <!-- formSelect -->
-                                  <fieldset class="formSelect">
+                                <!-- Payment Frequency -->
+                                <!-- formSelect -->
+                                <fieldset class="formSelect">
+                                  <dl>
+                                      <dt>
+                                          <a href="#"><span class="resultNorm">How often</span></a>
+                                      </dt>
+                                      <dd>
+                                          <ul class="selectToggle NormalStyleWrap">
+                                              <li><a href="#"><div class="typeNorm">Weekly<span class="value">Weekly</span></div></a></li>
+                                              <li><a href="#"><div class="typeNorm">Fortnightly<span class="value">Fortnightly</span></div></a></li>
+                                              <li><a href="#"><div class="typeNorm">Monthly<span class="value">Monthly</span></div></a></li>
+                                              <li><a href="#"><div class="typeNorm">Quaterly<span class="value">Monthly</span></div></a></li>
+                                          </ul>
+                                      </dd>
+                                    </dl>
+                                </fieldset>
+                                <!-- Payment start date -->
+                                <div class="noBkLabelStyle2">
+                                  Select start date
+                                </div>
+                                <!-- formSelect -->
+                                <fieldset class="datePicker">
+                                  <a href="#">Date Picker</a>
+                                </fieldset>
+
+
+
+                                <!-- Payment schedule -->
+                                <!-- formSelect -->
+                                <fieldset class="formSelect">
                                     <dl>
                                         <dt>
-                                            <a href="#"><span class="resultNorm">How often</span></a>
+                                          <a href="#"><span class="resultNorm">Payment Schedule</span></a>
                                         </dt>
                                         <dd>
-                                            <ul class="selectToggle NormalStyleWrap">
-                                                <li><a href="#"><div class="typeNorm">Weekly<span class="value">Weekly</span></div></a></li>
-                                                <li><a href="#"><div class="typeNorm">Fortnightly<span class="value">Fortnightly</span></div></a></li>
-                                                <li><a href="#"><div class="typeNorm">Monthly<span class="value">Monthly</span></div></a></li>
-                                                <li><a href="#"><div class="typeNorm">Quaterly<span class="value">Monthly</span></div></a></li>
-                                            </ul>
+                                          <ul class="selectToggle NormalStyleWrap">
+                                              <li><a href="#"><div class="typeNorm">No end date<span class="value">No end date</span></div></a></li>
+                                              <li><a href="#"><div class="typeNorm">End on a specific date<span class="value">End on a specific date</span></div></a></li>
+                                              <li><a href="#"><div class="typeNorm">Exact number of payments<span class="value">Exact number</span></div></a></li>
+                                          </ul>
                                         </dd>
-                                      </dl>
-                                  </fieldset>
-                                  <!-- Payment start date -->
-                                  <div class="noBkLabelStyle2">
-                                    Select start date
-                                  </div>
-                                  <!-- formSelect -->
-                                  <fieldset class="datePicker">
-                                    <a href="#">Date Picker</a>
-                                  </fieldset>
-
-
-
-                                  <!-- Payment schedule -->
-                                  <!-- formSelect -->
-                                  <fieldset class="formSelect">
-                                    <dl>
-                                    <dt>
-                                        <a href="#"><span class="resultNorm">Payment Schedule</span></a>
-                                    </dt>
-                                    <dd>
-                                        <ul class="selectToggle NormalStyleWrap">
-                                            <li><a href="#"><div class="typeNorm">No end date<span class="value">No end date</span></div></a></li>
-                                            <li><a href="#"><div class="typeNorm">End on a specific date<span class="value">End on a specific date</span></div></a></li>
-                                            <li><a href="#"><div class="typeNorm">Exact number of payments<span class="value">Exact number</span></div></a></li>
-                                        </ul>
-                                    </dd>
-                                  </dl>
-                                  </fieldset>
+                                    </dl>
+                                </fieldset>
 
 
 
 
 
-                                  <!-- Payment End date -->
-                                  <div class="noBkLabelStyle2">
-                                    Select end date
-                                  </div>
-                                  <!-- formSelect -->
-                                  <fieldset class="datePicker">
-                                    <a href="#">Date Picker</a>
-                                  </fieldset>
-                                  <p class="returnData">Total 46 payments</p>
+                                <!-- Payment End date -->
+                                <div class="noBkLabelStyle2">
+                                  Select end date
+                                </div>
+                                <!-- formSelect -->
+                                <fieldset class="datePicker">
+                                  <a href="#">Date Picker</a>
+                                </fieldset>
+                                <p class="returnData">Total 46 payments</p>
 
-                                  <!-- Exact number of payments -->
-                                  <div class="noBkLabelStyle2">
-                                    Select number of payments
-                                  </div>                              
-                                  <!-- formSelect -->
-                                  <fieldset class="formSelectStyle numberOfPayment">
-                                    <select>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                        <option>6</option>
-                                        <option>7</option>
-                                        <option>8</option>
-                                        <option>9</option>
-                                        <option>10</option>
-                                        <option>11</option>
-                                        <option>12</option>
-                                    </select>
-                                  </fieldset>
-                                  <p class="returnData">Payment occurs weekly on a Monday, last payment at 11/10/2016</p>
+                                <fieldset class="form-group">
+                                    <label for="payment">Number of payments</label>
+                                    <input id="payment" type="text" class="form-control" placeholder="(0 - 100)">
+                              </fieldset>
+                                <p class="returnData">Payment occurs weekly on a Monday, last payment at 11/10/2016</p>
                             </div>
                         </div>
                     </div>
@@ -1562,7 +1541,7 @@
                     </div>
                 </div>
                 <div class="modal-footer border-top">
-                    <button type="button" class="btn btn-primary pull-right mgLeft10" data-dismiss="modal">Update</button>
+                    <button type="button" class="btn btn-primary pull-right mgLeft10 waves-effect waves-light UpdateSchedule" data-dismiss="modal">Update</button>
                 </div>
             </div>
         </div>
@@ -1573,8 +1552,7 @@
 
 <!-- Modal DDA Edit -->
 <div class="modal fade ModalNotification" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog card effect__click" role="document">
-        <div class="card__front">
+    <div class="modal-dialog" role="document">
             <div class="modal-content2">
                 <div class="modal-header clearfix">
                     <h3 class="pull-left">Notifications</h3>
@@ -1624,30 +1602,107 @@
                     </ul>
                 </div>
             </div>
-        </div>
-        <div class="card__back">
-            <div class="modal-content2" id="edit-warning">
-                <div class="modal-header">
-                    <h3>Confirm to delete this DRN reference number</h3>
-                </div>
-                <div class="modal-body clearfix">
-                    <p class="para">and also some friendly and helpful text here</p><br>
-                    <div class="alert">
-                        <strong>WARNING</strong> this DEFT number is linked to multiple Direct Debit Payments. Please select an alternate payment method before deleting this card.
-                    </div>
-                    <button type="button" class="btn btn-secondary pull-right waves-effect waves-light">Take me to the page to fix this</button>
-                </div>
-                <div class="modal-footer border-top">
-                    <button type="button" class="btn btn-danger pull-right mgLeft10 waves-effect waves-light" data-dismiss="modal">Delete</button>
-                    <button type="button" class="btn btn-cancel  btn-flip pull-right waves-effect waves-light">Back</button>
-                </div>
-            </div>
-
-
-        </div>               
     </div>
 </div>
 <!-- End Modal DDA Edit -->
+
+<!--Start DDA update -->
+    <div class="modal fade confirmDDAupdate" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-info">
+                <div class="modal-header">
+                    <div class="paymentStatusWrap">
+                        <div class="paymentStatusWrap">
+                            <div class="paymentStatusInline clearfix">
+                                <table width="100%">
+                                    <tr>
+                                        <td><span class="icon-tick-sign pull-left"></span></td>
+                                        <td><h4 class="pull-left text-left">This agreement has been updated.</h4></td>
+                                        <td><h3 class="pull-left text-left"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="icon-close"></span></button></h3></td>
+                                    </tr>
+                                </table><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <!-- End DDA update -->
+
+    <!--Start Confirm removed -->
+    <div class="modal fade cancelDDA" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-info">
+                <div class="modal-header">
+                    <div class="paymentStatusWrap">
+                        <div class="paymentStatusWrap">
+                            <div class="paymentStatusInline clearfix">
+                                <table width="100%">
+                                    <tr>
+                                        <td><span class="icon-tick-sign pull-left"></span></td>
+                                        <td><h4 class="pull-left text-left">This agreement has been cancelled</h4></td>
+                                        <td><h3 class="pull-left text-left"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="icon-close"></span></button></h3></td>
+                                    </tr>
+                                </table><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <!-- End Confirm removed -->
+
+
+<!--Start Schedule update -->
+    <div class="modal fade confirmScheduleupdate" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-info">
+                <div class="modal-header">
+                    <div class="paymentStatusWrap">
+                        <div class="paymentStatusWrap">
+                            <div class="paymentStatusInline clearfix">
+                                <table width="100%">
+                                    <tr>
+                                        <td><span class="icon-tick-sign pull-left"></span></td>
+                                        <td><h4 class="pull-left text-left">This scheduled payment has been updated.</h4></td>
+                                        <td><h3 class="pull-left text-left"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="icon-close"></span></button></h3></td>
+                                    </tr>
+                                </table><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <!-- End Schedule update -->
+
+    <!--Start Confirm schedule removed -->
+    <div class="modal fade cancelScheduleConfirm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-info">
+                <div class="modal-header">
+                    <div class="paymentStatusWrap">
+                        <div class="paymentStatusWrap">
+                            <div class="paymentStatusInline clearfix">
+                                <table width="100%">
+                                    <tr>
+                                        <td><span class="icon-tick-sign pull-left"></span></td>
+                                        <td><h4 class="pull-left text-left">This scheduled payment has been cancelled</h4></td>
+                                        <td><h3 class="pull-left text-left"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="icon-close"></span></button></h3></td>
+                                    </tr>
+                                </table><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <!-- End Confirm schedule removed -->
+
 
 
 
@@ -1658,152 +1713,7 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
     <script src="js/materialize.min.js"></script>
-    <script type="text/javascript">
-        //Start Hamburger menu animation
-        (function() {
-            "use strict";
-            var toggles = document.querySelectorAll(".c-hamburger");
+    <script src="js/custom.js"></script>
 
-            for (var i = toggles.length - 1; i >= 0; i--) {
-              var toggle = toggles[i];
-              toggleHandler(toggle);
-            };
-            function toggleHandler(toggle) {
-              toggle.addEventListener( "click", function(e) {
-                e.preventDefault();
-                (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
-              });
-            }
-        })();
-        //End Hamburger menu animation
-        
-        //Start side bar affix
-        $( document ).ready(function() {
-            $('#MyAffix').affix('checkPosition');
-        });
-
-        $('#MyAffix').affix({
-          offset: {top:110, bottom: 60}
-        })
-
-        $(window).scroll(function() {
-        if ($(this).scrollTop() > 50){  
-            $('#subNav').addClass("navbar-fixed-top");
-            $('.subNavreplace').addClass("replace");
-          }
-          else{
-            $('#subNav').removeClass("navbar-fixed-top");
-            $('.subNavreplace').removeClass("replace");
-          }
-        }); 
-        //End side bar affix
-
-        //Start card flip
-        (function() {
-          var cards = document.querySelectorAll(".card.effect__click");
-          for ( var i  = 0, len = cards.length; i < len; i++ ) {
-            var card = cards[i];
-            clickListener( card );
-          }
-          function clickListener(card) {
-            $(".btn-flip").click(function() {
-                 var c = card.classList;
-                 c.contains("flipped") === true ? c.remove("flipped") : c.add("flipped");
-                 return true;
-            });
-          }
-        })();
-        //End card flip
-
-        //Start Form select function
-        $('.formSelect').click(function(){
-            $('.selectToggle',this).slideToggle('fast', "swing");
-            return false;
-        });
-                    
-        $(".formSelect dl dd ul li a").click(function() {
-            var text = $(this).html();
-            $(this).parents('.formSelect').children('dl').children('dt').children('a').html(text).addClass('dataSelectWrap');
-
-            $('.selectToggle',this).hide();
-        });
-                    
-        function getSelectedValue(id) {
-            return $("#" + id).find("dt a span.value").html();
-        }
-
-        $(document).bind('click', function(e) {
-            var $clicked = $(e.target);
-            if (! $clicked.parents().hasClass("formSelect"))
-                $(".formSelect dd ul").hide();
-        }); 
-        //End Form select function
-
-        //Start call modal
-        $(".modalEditCard").click(function(){
-            $('.modalDDAeditModal').modal('hide');
-            setTimeout(function() {
-                $(".modalEditCardModal").modal();
-            }, 600);
-        });
-        $(".modalUpdate").click(function(){
-            $('.modalEditCardModal').modal('hide');
-            setTimeout(function() {
-                $(".modalDDAeditModal").modal();
-            }, 600);
-        });
-        $(".modalDDAView").click(function(){
-            $('.modalDDAViewModal').modal();
-        });
-
-        //End call modal
-
-        //Start print
-        $( document ).ready(function() {
-            $('.lnkPrint').click(function()
-             {
-                 window.print();
-             });
-        });
-        //End print
-
-        //Start row show
-        setTimeout(function() {
-            $(".row-hidden").addClass("in");
-        }, 600);
-        //End row show
-
-        //Start dropDown show
-        $(".toggleDropdown").click(function(){
-            $(this).siblings('.dropdownDiv').slideToggle(100);
-        });
-        //End dropDown show
-        //Start search filter hide
-        $(".search").focus(function (){
-            $('.searchFilter').hide();
-            $(this).addClass("fullWidth");
-        }).blur(function () {
-            $('.search').removeClass("fullWidth");
-            setTimeout(function() {
-                $('.searchFilter').show();
-            }, 300);
-
-        });
-        //End search filter hide
-        //Start tag select
-        $("a.sTag").click(function(){
-            $(this).toggleClass('nonSelect');
-        });
-        //End tag select
-        //Start call modal
-        $(".sendemail").click(function(){
-            $('.modalpayHistoryModal').modal('hide');
-            setTimeout(function() {
-                $(".modalreceiptEmailed").modal();
-            }, 350);
-        });
-
-        //End call modal
-    </script>
 </body>
 </html>

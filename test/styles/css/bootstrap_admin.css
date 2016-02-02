@@ -9332,16 +9332,38 @@ table.paymentDateInfo tr td{
 
 
 /*Spinner*/
+.onLoadSpinnerWrap {
+    position: relative;
+    width:150px;
+    height: 0;
+    z-index: 2000;
+    margin: 0 auto
+
+}
 .onLoadSpinner {
     font-size: 6rem;
     margin: -3rem 0 0 -3rem;
     color: #FFFFFF;
     position: fixed;
-    top: 40%;
+    top: 220px;
     left: 50%;
     z-index: 2000;
+
 }
 
+.onLoadText {
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin: 0 0 0 -150px;
+    color: #fff;
+    position: fixed;
+    top: 260px;
+    left: 50%;
+    z-index: 2000;
+    width:300px;
+    text-align: center;
+
+}
 
 
 /*Margin*/

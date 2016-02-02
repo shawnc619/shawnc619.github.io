@@ -37,17 +37,16 @@
             <main class="container col-sm-push-2 col-md-push-3 col-sm-8 col-md-6">
                 <section class="row">
                     <div class="col-xs-12 clearfix registWrap">
-                        <p class="alert">We are sorry, this account has been locked. <a href="#">Click here</a> to reset your password or call Client Service Team on <a href="tel:1800572162">1800 572 162</a> for assisstance.</p>
-                        <fieldset class="form-group colorAction">
+                        <fieldset class="form-group">
                             <label for="email">Email address</label>
                             <input id="email" type="email" id="username" name="username" class="form-control" placeholder="john.smith@example.com">
                         </fieldset>
-                        <fieldset class="form-group colorAction">
+                        <fieldset class="form-group">
                             <label for="password">Password</label>
                             <input id="password" type="text" id="password" name="password" class="form-control" placeholder="Enter your password">
                         </fieldset>
-                        <p class="forgotpw"><a href="#">Forgotten your login details?</a></p>
-                        <button type="button" class="btn pull-right btn-primary btn-lg waves-effect waves-light" data-toggle="modal" data-target=".modalSuccess">Log in</button>
+                        <p class="forgotpw"><a href="#">Forgotten your login details?</a></p><br>
+                        <button type="button" class="btn pull-right btn-primary btn-lg waves-effect waves-light">Log in</button>
                     </div>
                     <div class="col-xs-12 clearfix">
                         <p class="createAccount"><a href="#">Don’t have an account yet? Register here</a></p>
@@ -82,57 +81,9 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
     <script src="js/materialize.min.js"></script>
+    <script src="js/custom.js"></script>
 
 
-    <script type="text/javascript">
-            
-            $( document ).ready(function() {
-                $('#MyAffix').affix('checkPosition');
-            });
-            $('#MyAffix').affix({
-              offset: {top:110, bottom: 60}
-            })
-
-            $(window).scroll(function() {
-            if ($(this).scrollTop() > 50){  
-                $('#subNav').addClass("navbar-fixed-top");
-                $('.subNavreplace').addClass("replace");
-              }
-              else{
-                $('#subNav').removeClass("navbar-fixed-top");
-                $('.subNavreplace').removeClass("replace");
-              }
-            });
-
-
-            $('.formSelect').click(function(){
-                $('.selectToggle',this).slideToggle('fast', "swing");
-                return false 
-            });
-                        
-            $(".formSelect dd ul li a").click(function() {
-                var text = $(this).html();
-                $(".formSelect dt a").html(text);
-                $('.selectToggle',this).hide();
-            });
-                        
-            function getSelectedValue(id) {
-                return $("#" + id).find("dt a span.value").html();
-            }
-
-            $(document).bind('click', function(e) {
-                var $clicked = $(e.target);
-                if (! $clicked.parents().hasClass("formSelect"))
-                    $(".formSelect dd ul").hide();
-            });
-
-$( document ).ready(function() {
-    $('.lnkPrint').click(function()
-     {
-         window.print();
-     });
-});
-            
-    </script>
+    
 </body>
 </html>

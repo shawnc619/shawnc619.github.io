@@ -248,7 +248,7 @@
 
                         </ul>
                     </section>
-                    <section class="col-xs-12 rhWidget waves-effect waves-dark">
+                    <section class="col-xs-12 rhWidget waves-effect waves-light">
                         <a class="contact clearfix">
                             <i class="fa icon-envelope-full pull-left"></i>
                             <span class="pull-left">Contact us</span>
@@ -307,7 +307,7 @@
                     <p>You can review or make changes in <a href="#">Schedule payment section in your Dashboard</a>.</p>
                 </div>
                 <div class="modal-footer  printHide">
-                    <button type="button" class="btn btn-primary pull-right waves-effect waves-light" data-dismiss="modal" aria-label="Close">OK</button>
+                    <button type="button" class="btn btn-secondary pull-right waves-effect waves-light" data-dismiss="modal" aria-label="Close">OK</button>
                 </div>
             </div>
         </div>
@@ -370,116 +370,7 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
     <script src="js/materialize.min.js"></script>
-    <script type="text/javascript">
-        //Start side bar affix
-        $( document ).ready(function() {
-            $('#MyAffix').affix('checkPosition');
-        });
-
-        $('#MyAffix').affix({
-          offset: {top:110, bottom: 60}
-        })
-
-        $(window).scroll(function() {
-        if ($(this).scrollTop() > 50){  
-            $('#subNav').addClass("navbar-fixed-top");
-            $('.subNavreplace').addClass("replace");
-          }
-          else{
-            $('#subNav').removeClass("navbar-fixed-top");
-            $('.subNavreplace').removeClass("replace");
-          }
-        }); 
-        //End side bar affix
-
-        //Start card flip
-        (function() {
-          var cards = document.querySelectorAll(".card.effect__click");
-          for ( var i  = 0, len = cards.length; i < len; i++ ) {
-            var card = cards[i];
-            clickListener( card );
-          }
-        
-          function clickListener(card) {
-            $(".btn-flip").click(function() {
-                 var c = card.classList;
-                 c.contains("flipped") === true ? c.remove("flipped") : c.add("flipped");
-                 return true;
-
-            });
-          }
-        })();
-        //End card flip
-
-        //Start Form select function
-        $('.formSelect').click(function(){
-            $('.selectToggle',this).slideToggle('fast', "swing");
-            return false;
-        });
-                    
-        $(".formSelect dl dd ul li a").click(function() {
-            var text = $(this).html();
-            $(this).parents('.formSelect').children('dl').children('dt').children('a').html(text).addClass('dataSelectWrap');
-
-            $('.selectToggle',this).hide();
-        });
-                    
-        function getSelectedValue(id) {
-            return $("#" + id).find("dt a span.value").html();
-        }
-
-        $(document).bind('click', function(e) {
-            var $clicked = $(e.target);
-            if (! $clicked.parents().hasClass("formSelect"))
-                $(".formSelect dd ul").hide();
-        }); 
-        //End Form select function
-
-        //Start call modal
-        $(".modalEditCard").click(function(){
-            $('.modalDDAeditModal').modal('hide');
-            setTimeout(function() {
-                $(".modalEditCardModal").modal();
-            }, 350);
-        });
-        $(".modalUpdate").click(function(){
-            $('.modalEditCardModal').modal('hide');
-            setTimeout(function() {
-                $(".modalDDAeditModal").modal();
-            }, 350);
-        });
-        $(".modalDDAView").click(function(){
-            $('.modalDDAViewModal').modal();
-        });
-
-        //End call modal
-
-        //Start print
-        $( document ).ready(function() {
-            $('.lnkPrint').click(function()
-             {
-                 window.print();
-             });
-        });
-        //End print
-
-        //Start Hamburger menu animation
-        (function() {
-            "use strict";
-            var toggles = document.querySelectorAll(".c-hamburger");
-
-            for (var i = toggles.length - 1; i >= 0; i--) {
-              var toggle = toggles[i];
-              toggleHandler(toggle);
-            };
-            function toggleHandler(toggle) {
-              toggle.addEventListener( "click", function(e) {
-                e.preventDefault();
-                (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
-              });
-            }
-        })();
-        //End Hamburger menu animation
-    </script>
+    <script src="js/custom.js"></script>
+    
 </body>
 </html>

@@ -288,7 +288,7 @@
                     <div class="col-xs-12 ctaWrap">
                         <div class="clearfix">
                             <button type="button" class="btn btn-primary btn-lg pull-right mgLeft10 waves-effect waves-light" data-toggle="modal" data-target=".modalSuccess">&nbsp;&nbsp;&nbsp;Pay now&nbsp;&nbsp;&nbsp;</button>
-                            <button type="button" class="btn btn-primary-inv  btn-lg pull-right waves-effect waves-blue" data-toggle="modal" data-target=".modalError">Edit</button> 
+                            <button type="button" class="btn btn-primary-inv  btn-lg pull-right waves-effect waves-light" data-toggle="modal" data-target=".modaltimeout">Edit</button> 
                         </div> 
                         <p class="descript3 mgTop10 text-right">Once submitted, this payment can not be changed or cancelled</p>
                     </div>
@@ -383,14 +383,22 @@
             <div class="modal-info">
                 <div class="modal-header">
                     <div class="paymentStatusWrap">
-                        <div class="paymentStatusInline clearfix">
-                            <span class="icon-alert-sign pull-left"></span>
-                            <h3 class="pull-left">Session timed out</h3>
-                        </div> 
-                        <div class="paymentStatusWrapLeft mgTop10">
-                            <div class="receiptNo">Reference number <strong>1234567</strong></div>
-                            <div class="receiptDate mgTop5">14/10/2015 10:05:29 (Sydney time)</div>
+                        <div class="paymentStatusWrap">
+                            <div class="paymentStatusInline clearfix">
+                                <table width="100%">
+                                    <tr>
+                                        <td width="10%"><span class="icon-alert-sign pull-left"></span></td>
+                                        <td width="90%"><h3 class="pull-left text-left">Session timed out</h3></td>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
+                    </div>
+                </div>
+                <div class="modal-body clearfix border-top">
+                    <div class="paymentStatusWrapLeft">
+                        <div class="receiptNo">Reference number <strong>1234567</strong></div>
+                        <div class="receiptDate mgTop5">14/10/2015 10:05:29 (Sydney time)</div>
                     </div>
                 </div>
                 <div class="modal-body clearfix border-top">
@@ -418,10 +426,16 @@
             <div class="modal-info">
                 <div class="modal-header">
                     <div class="paymentStatusWrap">
-                        <div class="paymentStatusInline clearfix">
-                            <span class="icon-alert-sign pull-left"></span>
-                            <h3 class="pull-left">Network error</h3>
-                        </div> 
+                        <div class="paymentStatusWrap">
+                            <div class="paymentStatusInline clearfix">
+                                <table width="100%">
+                                    <tr>
+                                        <td width="10%"><span class="icon-alert-sign pull-left"></span></td>
+                                        <td width="90%"><h3 class="pull-left text-left">Network error</h3></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="modal-body border-top">
@@ -479,57 +493,7 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
     <script src="js/materialize.min.js"></script>
+    <script src="js/custom.js"></script>
 
-
-    <script type="text/javascript">
-            
-            $( document ).ready(function() {
-                $('#MyAffix').affix('checkPosition');
-            });
-            $('#MyAffix').affix({
-              offset: {top:110, bottom: 60}
-            })
-
-            $(window).scroll(function() {
-            if ($(this).scrollTop() > 50){  
-                $('#subNav').addClass("navbar-fixed-top");
-                $('.subNavreplace').addClass("replace");
-              }
-              else{
-                $('#subNav').removeClass("navbar-fixed-top");
-                $('.subNavreplace').removeClass("replace");
-              }
-            });
-
-
-            $('.formSelect').click(function(){
-                $('.selectToggle',this).slideToggle('fast', "swing");
-                return false 
-            });
-                        
-            $(".formSelect dd ul li a").click(function() {
-                var text = $(this).html();
-                $(".formSelect dt a").html(text);
-                $('.selectToggle',this).hide();
-            });
-                        
-            function getSelectedValue(id) {
-                return $("#" + id).find("dt a span.value").html();
-            }
-
-            $(document).bind('click', function(e) {
-                var $clicked = $(e.target);
-                if (! $clicked.parents().hasClass("formSelect"))
-                    $(".formSelect dd ul").hide();
-            });
-
-$( document ).ready(function() {
-    $('.lnkPrint').click(function()
-     {
-         window.print();
-     });
-});
-            
-    </script>
 </body>
 </html>

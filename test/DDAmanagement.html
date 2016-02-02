@@ -12,7 +12,7 @@
 
 <body>
 
-<section class="wrapPush">
+<section class="wrapPush printHide">
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -238,7 +238,7 @@
 
                         </ul>
                     </section>
-                    <section class="col-xs-12 rhWidget waves-effect waves-dark">
+                    <section class="col-xs-12 rhWidget waves-effect waves-light">
                         <a class="contact clearfix">
                             <i class="fa icon-envelope-full pull-left"></i>
                             <span class="pull-left">Contact us</span>
@@ -253,7 +253,7 @@
     </div>
 
 </section>
-<footer class="container-fluid">
+<footer class="container-fluid printHide">
     <div class="col-xs-12 col-sm-8">
         <ul>
             <li><a href="#">Privacy policy</a> &nbsp;|</li>
@@ -343,14 +343,22 @@
                                             <div class="edit vcenter modalEditCard">Edit</div>
                                         </a>
                                     </li>
+                                    <li>
+                                        <a href="#" class="selctAddWrap clearfix modalAddDRN">
+                                            <dl class="selectAdd">
+                                                <dt>Add payment method</dt>
+                                                <dd class="plus">+</dd>
+                                            </dl>
+                                        </a>
+                                    </li>
                                 </ul>
                             </dd>
                         </dl>
                     </fieldset>
-                    <div class="form-group">
+                    <fieldset class="form-group">
                         <label for="nickName">Nickname</label>
                         <input id="nickName" type="text" class="form-control" placeholder="LJ Hooker">
-                    </div>
+                    </fieldset>
                     <p class="descript">This will also be changed in <a href="#">DRN management</a></p>
                     <!-- Section 1 -->
                     <div class="panel-body receiptWrap clearfix border-top border-btm">
@@ -470,29 +478,28 @@
                     </div>
                                 
                     <div class="printHide clearfix mgTop20">
-                        <button type="button" class="btn btn-primary pull-right mgLeft10" data-dismiss="modal">Update</button>
+                        <button type="button" class="btn btn-primary pull-right mgLeft10 waves-effect waves-light ddaUpdate" data-dismiss="modal">Update</button>
                     </div>
                 </div>
 
                 <div class="modal-footer border-top">
-                    <button type="button" class="btn btn-cancel btn-flip waves-light" data-toggle="modal">Delete</button>
+                    <button type="button" class="btn btn-cancel btn-flip waves-light waves-effect waves-light" data-toggle="modal">Cancel agreement</button>
                 </div>
             </div>
         </div>
         <div class="card__back">
             <div class="modal-content2" id="edit-warning">
                 <div class="modal-header">
-                    <h3>Confirm to delete this DRN reference number</h3>
+                    <h3>Confirm to cancel agreement</h3>
                 </div>
                 <div class="modal-body clearfix">
-                    <p class="para">and also some friendly and helpful text here</p><br>
-                    <div class="alert">
-                        <strong>WARNING</strong> this DEFT number is linked to multiple Direct Debit Payments. Please select an alternate payment method before deleting this card.
+                    <div class="alert mgTop0">
+                        <strong>WARNING</strong> warning messages here warning messages here warning messages here
                     </div>
-                    <button type="button" class="btn btn-secondary pull-right waves-effect waves-light">Take me to the page to fix this</button>
+                    
                 </div>
                 <div class="modal-footer border-top">
-                    <button type="button" class="btn btn-danger pull-right mgLeft10 waves-effect waves-light" data-dismiss="modal">Delete</button>
+                    <button type="button" class="btn btn-danger pull-right mgLeft10 waves-effect waves-light DDAcancelled" data-dismiss="modal">Cancel agreemnt</button>
                     <button type="button" class="btn btn-cancel  btn-flip pull-right waves-effect waves-light">Back</button>
                 </div>
             </div>
@@ -629,7 +636,7 @@
                     </table>
                 </div>
                 <!-- Section 4 -->
-                <div class="receiptWrap clearfix">
+                <div class="receiptWrap border-btm clearfix">
                     <table class="resultCol">
                         <tr>
                             <td width="50%">
@@ -661,11 +668,16 @@
                         </tr>
                     </table>
                 </div>
+                <!-- CTA -->
+                    <div class="receiptWrap clearfix printHide">
+                        <button type="button" class="btn btn-primary-inv pull-right mgLeft10 lnkPrint waves-effect waves-light" data-dismiss="modal">Print</button>
+                    </div>
             </div>
         </div>
     </div>
 </div>
 <!-- End Modal DDA View -->
+
 
 
 <!-- Start Modal Card Edit -->
@@ -708,17 +720,21 @@
         <div class="card__back">
             <div class="modal-content2" id="edit-warning">
                 <div class="modal-header">
-                    <h3 class="modal-title">Confirm to delete this DRN reference number</h3>
+                    <h3>Confirm to delete this card</h3>
                 </div>
                 <div class="modal-body clearfix">
-                    <p class="para">and also some friendly and helpful text here</p><br>
-                    <div class="alert">
-                        <strong>WARNING</strong> this DEFT reference number is linked to multiple Direct Debit Payments. Please select an alternate payment method before deleting this card.
+                <!--<p class="para">and also some friendly and helpful text here</p> --> 
+                    <div class="alert mgTop0">
+                        <strong>WARNING</strong> this card is linked to one or multiple payments, please select an alternate payment method before deleting this card.
+                        <br><br>
+                        <ul>
+                            <li><strong>George Street Strata, Quarterly, $1294.00</strong></li>
+                            <li><strong>George Street Rent, weekly, $340.00</strong></li>
+                        </ul>
                     </div>
-                    <button type="button" class="btn btn-secondary pull-right" data-toggle="modal">Take me to the page to fix this</button>
                 </div>
                 <div class="modal-footer border-top">
-                    <button type="button" class="btn btn-danger pull-right mgLeft10 waves-effect waves-light" data-dismiss="modal">Delete</button>
+                    <button type="button" class="btn btn-danger pull-right mgLeft10 waves-effect waves-light paymentRemoved" data-dismiss="modal">Delete</button>
                     <button type="button" class="btn btn-cancel  btn-flip pull-right waves-effect waves-light">Back</button>
                 </div>
             </div>
@@ -726,8 +742,53 @@
     </div>
 </div>
 
+<!--Start DDA update -->
+    <div class="modal fade confirmDDAupdate" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-info">
+                <div class="modal-header">
+                    <div class="paymentStatusWrap">
+                        <div class="paymentStatusWrap">
+                            <div class="paymentStatusInline clearfix">
+                                <table width="100%">
+                                    <tr>
+                                        <td><span class="icon-tick-sign pull-left"></span></td>
+                                        <td><h4 class="pull-left text-left">This agreement has been updated.</h4></td>
+                                        <td><h3 class="pull-left text-left"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="icon-close"></span></button></h3></td>
+                                    </tr>
+                                </table><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <!-- End DDA update -->
 
-
+    <!--Start Confirm removed -->
+    <div class="modal fade cancelDDA" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-info">
+                <div class="modal-header">
+                    <div class="paymentStatusWrap">
+                        <div class="paymentStatusWrap">
+                            <div class="paymentStatusInline clearfix">
+                                <table width="100%">
+                                    <tr>
+                                        <td><span class="icon-tick-sign pull-left"></span></td>
+                                        <td><h4 class="pull-left text-left">This agreement has been cancelled</h4></td>
+                                        <td><h3 class="pull-left text-left"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="icon-close"></span></button></h3></td>
+                                    </tr>
+                                </table><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <!-- End Confirm removed -->
 
 
 
@@ -761,122 +822,6 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
     <script src="js/materialize.min.js"></script>
-    <script type="text/javascript">
-        //Start Hamburger menu animation
-        (function() {
-            "use strict";
-            var toggles = document.querySelectorAll(".c-hamburger");
-
-            for (var i = toggles.length - 1; i >= 0; i--) {
-              var toggle = toggles[i];
-              toggleHandler(toggle);
-            };
-            function toggleHandler(toggle) {
-              toggle.addEventListener( "click", function(e) {
-                e.preventDefault();
-                (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
-              });
-            }
-        })();
-        //End Hamburger menu animation
-        
-        //Start side bar affix
-        $( document ).ready(function() {
-            $('#MyAffix').affix('checkPosition');
-        });
-
-        $('#MyAffix').affix({
-          offset: {top:110, bottom: 60}
-        })
-
-        $(window).scroll(function() {
-        if ($(this).scrollTop() > 50){  
-            $('#subNav').addClass("navbar-fixed-top");
-            $('.subNavreplace').addClass("replace");
-          }
-          else{
-            $('#subNav').removeClass("navbar-fixed-top");
-            $('.subNavreplace').removeClass("replace");
-          }
-        }); 
-        //End side bar affix
-
-        //Start card flip
-        (function() {
-          var cards = document.querySelectorAll(".card.effect__click");
-          for ( var i  = 0, len = cards.length; i < len; i++ ) {
-            var card = cards[i];
-            clickListener( card );
-          }
-        
-          function clickListener(card) {
-            $(".btn-flip").click(function() {
-                 var c = card.classList;
-                 c.contains("flipped") === true ? c.remove("flipped") : c.add("flipped");
-                 return true;
-
-            });
-          }
-        })();
-        //End card flip
-
-        //Start Form select function
-        $('.formSelect').click(function(){
-            $('.selectToggle',this).slideToggle('fast', "swing");
-            return false;
-        });
-                    
-        $(".formSelect dl dd ul li a").click(function() {
-            var text = $(this).html();
-            $(this).parents('.formSelect').children('dl').children('dt').children('a').html(text).addClass('dataSelectWrap');
-
-            $('.selectToggle',this).hide();
-        });
-                    
-        function getSelectedValue(id) {
-            return $("#" + id).find("dt a span.value").html();
-        }
-
-        $(document).bind('click', function(e) {
-            var $clicked = $(e.target);
-            if (! $clicked.parents().hasClass("formSelect"))
-                $(".formSelect dd ul").hide();
-        }); 
-        //End Form select function
-
-        //Start call modal
-        $(".modalEditCard").click(function(){
-            $('.modalDDAeditModal').modal('hide');
-            setTimeout(function() {
-                $(".modalEditCardModal").modal();
-            }, 600);
-        });
-        $(".modalUpdate").click(function(){
-            $('.modalEditCardModal').modal('hide');
-            setTimeout(function() {
-                $(".modalDDAeditModal").modal();
-            }, 600);
-        });
-        $(".modalDDAView").click(function(){
-            $('.modalDDAViewModal').modal();
-        });
-
-        //End call modal
-
-        //Start print
-        $( document ).ready(function() {
-            $('.lnkPrint').click(function()
-             {
-                 window.print();
-             });
-        });
-        //End print
-
-        //Start row show
-        setTimeout(function() {
-            $(".row-hidden").addClass("in");
-        }, 600);
-        //End row show
-    </script>
+    <script src="js/custom.js"></script>
 </body>
 </html>

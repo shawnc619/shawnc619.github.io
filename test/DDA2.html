@@ -294,7 +294,7 @@
 
                         </ul>
                     </section>
-                    <section class="col-xs-12 rhWidget waves-effect waves-dark">
+                    <section class="col-xs-12 rhWidget waves-effect waves-light">
                         <a class="contact clearfix">
                             <i class="fa icon-envelope-full pull-left"></i>
                             <span class="pull-left">Contact us</span>
@@ -324,98 +324,98 @@
 
 
 <!-- Add Card Modal-->
-    <div class="modal fade modalAddCardModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content2">
-                <div class="modal-header clearfix">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="icon-close"></span></button>
-                </div>
-                <div class="modal-body">
+<div class="modal fade modalAddCardModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content2">
+            <div class="modal-header clearfix">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="icon-close"></span></button>
+            </div>
+            <div class="modal-body">
 
-                    <!-- Tab -->
-                    <ul class="nav nav-pills nav-justified" role="tablist">
-                        <li role="presentation" class="active"><a href="#card1" aria-controls="Add card" role="tab" data-toggle="tab">Card</a></li>
-                        <li role="presentation"><a href="#bankAccount1" aria-controls="Add bank account" role="tab" data-toggle="tab">Bank account</a></li>
-                    </ul>
-                    <hr class="borderNone">
-                    <!-- Tab panel -->
-                    <div class="tab-content ">
-                        <!-- Add card panel -->
-                        <div role="tabpanel" class="tab-pane active" id="card1">
-                            <div class="availCardType clearfix">
-                              <div class="cardIcon"><img src="styles/images/cardDc.png" alt="Dinners Club" width="100%"></div>
-                              <div class="cardIcon"><img src="styles/images/cardAE.png" alt="American Express" width="100%"></div>
-                              <div class="cardIcon"><img src="styles/images/cardMa.png" alt="Mastercard" width="100%"></div>
-                              <div class="cardIcon"><img src="styles/images/cardVisa.png" alt="Visa" width="100%"></div>
+                <!-- Tab -->
+                <ul class="nav nav-pills nav-justified" role="tablist">
+                    <li role="presentation" class="active"><a href="#card1" aria-controls="Add card" role="tab" data-toggle="tab">Card</a></li>
+                    <li role="presentation"><a href="#bankAccount1" aria-controls="Add bank account" role="tab" data-toggle="tab">Bank account</a></li>
+                </ul>
+                <hr class="borderNone">
+                <!-- Tab panel -->
+                <div class="tab-content ">
+                    <!-- Add card panel -->
+                    <div role="tabpanel" class="tab-pane active" id="card1">
+                        <div class="availCardType clearfix">
+                          <div class="cardIcon"><img src="styles/images/cardDc.png" alt="Dinners Club" width="100%"></div>
+                          <div class="cardIcon"><img src="styles/images/cardAE.png" alt="American Express" width="100%"></div>
+                          <div class="cardIcon"><img src="styles/images/cardMa.png" alt="Mastercard" width="100%"></div>
+                          <div class="cardIcon"><img src="styles/images/cardVisa.png" alt="Visa" width="100%"></div>
 
-                            </div>
-                            <div class="form-group">
-                              <label for="cardNum2">Card number</label>
-                              <input id="cardNum2" type="tel" class="form-control" placeholder="0000 1111 2222 3333">
-                            </div>
-                            <p class="returnBiller">Westpac St Leonards</p>
-                            <div class="form2Col clearfix">
-                              <div class="form-group pull-left" style="width:55%">
-                                  <label for="cardName">Cardholder name</label>
-                                  <input id="cardName" type="text" class="form-control" placeholder="Jone Smith">
-                              </div>
-                              <div class="form-group pull-right" style="width:42%">
-                                  <label for="expiryDate2">Expiry date</label>
-                                  <input id="expiryDate2" type="tel" class="form-control" placeholder="mm/yy">
-                              </div>
-                            </div>
-                            <div class="checkbox default checkbox-info checkbox-circle">
-                              <input id="defaultCard"  class="styled" type="checkbox">
-                              <label for="defaultCard">Make this default card</label>
-                            </div>
-                            <div class="checkbox checkbox-primary checkbox-circle mgTop10">
-                              <input id="savecard" type="checkbox">
-                              <label for="savecard">Save card</label>
-                            </div>
                         </div>
-                        <!-- Add bank account panel -->
-                        <div role="tabpanel" class="tab-pane" id="bankAccount1">
-                            <div class="form2Col clearfix">
-                              <div class="form-group pull-left" style="width:42%">
-                                  <label for="bsb1">BSB</label>
-                                  <input type="tel" id="bsb1" class="form-control" placeholder="123 - 456">
-                              </div>
-                              <div class="form-group pull-right" style="width:55%">
-                                  <label for="accNum1">Account number</label>
-                                  <input id="accNum1" type="tel" class="form-control" placeholder="123456789">
-                              </div>
-                            </div>
-                            <p class="returnBank">Westpac St Leonards</p>
-
-                            <div class="form-group">
-                              <label for="accountName">Account name</label>
-                              <input type="text" id="accountName" class="form-control" placeholder="Jone Smith">
-                            </div>
-                            <div class="checkbox default checkbox-info checkbox-circle"> 
-                              <input id="defaultBankAccount" class="styled" type="checkbox">
-                              <label for="defaultBankAccount">Make this default bank account</label>
-                            </div>
-                            <div class="checkbox checkbox-primary checkbox-circle mgTop10">
-                              <input id="saveaccount" type="checkbox">
-                              <label for="saveaccount">Save bank account</label>
-                            </div>
+                        <fieldset class="form-group">
+                          <label for="cardNum2">Card number</label>
+                          <input id="cardNum2" type="tel" class="form-control" placeholder="0000 1111 2222 3333">
+                        </fieldset>
+                        <p class="returnBiller">Westpac St Leonards</p>
+                        <div class="form2Col clearfix">
+                          <fieldset class="form-group pull-left" style="width:55%">
+                              <label for="cardName">Cardholder name</label>
+                              <input id="cardName" type="text" class="form-control" placeholder="Jone Smith">
+                          </fieldset>
+                          <fieldset class="form-group pull-right" style="width:42%">
+                              <label for="expiryDate2">Expiry date</label>
+                              <input id="expiryDate2" type="tel" class="form-control" placeholder="mm/yy">
+                          </fieldset>
                         </div>
-                    </div> 
-                </div>
-                <div class="modal-footer">
-                    
-                    <button type="button" class="btn btn-primary pull-right waves-effect waves-light" data-toggle="modal" data-dismiss="modal">Add</button>
-                </div>
+                        <fieldset class="checkbox default checkbox-info checkbox-circle">
+                          <input id="defaultCard"  class="styled" type="checkbox">
+                          <label for="defaultCard">Make this default card</label>
+                        </fieldset>
+                        <fieldset class="checkbox checkbox-primary checkbox-circle mgTop10">
+                          <input id="savecard" type="checkbox">
+                          <label for="savecard">Save card</label>
+                        </fieldset>
+                    </div>
+                    <!-- Add bank account panel -->
+                    <div role="tabpanel" class="tab-pane" id="bankAccount1">
+                        <div class="form2Col clearfix">
+                          <fieldset class="form-group pull-left" style="width:42%">
+                              <label for="bsb1">BSB</label>
+                              <input type="tel" id="bsb1" class="form-control" placeholder="123 - 456">
+                          </fieldset>
+                          <fieldset class="form-group pull-right" style="width:55%">
+                              <label for="accNum1">Account number</label>
+                              <input id="accNum1" type="tel" class="form-control" placeholder="123456789">
+                          </fieldset>
+                        </div>
+                        <p class="returnBank">Westpac St Leonards</p>
+
+                        <fieldset class="form-group">
+                          <label for="accountName">Account name</label>
+                          <input type="text" id="accountName" class="form-control" placeholder="Jone Smith">
+                        </fieldset>
+                        <fieldset class="checkbox default checkbox-info checkbox-circle"> 
+                          <input id="defaultBankAccount" class="styled" type="checkbox">
+                          <label for="defaultBankAccount">Make this default bank account</label>
+                        </fieldset>
+                        <fieldset class="checkbox checkbox-primary checkbox-circle mgTop10">
+                          <input id="saveaccount" type="checkbox">
+                          <label for="saveaccount">Save bank account</label>
+                        </fieldset>
+                    </div>
+                </div> 
+            </div>
+            <div class="modal-footer border-top">
+                
+                <button type="button" class="btn btn-primary pull-right waves-effect waves-light" data-toggle="modal" data-dismiss="modal">Add</button>
             </div>
         </div>
     </div>
+</div>
 
 <!-- modal T&C -->
 <div class="modal fade TnCmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content2">
                 <div class="modal-header clearfix">
-                    <h4 class="modal-title pull-left">DEFT Payment Systems Terms of Use</h4>
+                    <h3 class="modal-title pull-left">DEFT Payment Systems Terms of Use</h3>
 
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="icon-close" aria-hidden="true"></span></button>
                 </div>
@@ -587,7 +587,60 @@
 
     
 
+<!-- Modal DRN Edit -->
 
+<div class="modal fade modalEditDRNModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog card effect__click" role="document">
+        <div class="card__front">
+            <div class="modal-content2">
+            <div class="modal-header clearfix">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="icon-close" aria-hidden="true"></span></button>
+            </div>                
+            <div class="modal-body">
+                <dl>
+                    <dt class="dataTitle">DEFT number</dt>
+                    <dd class="dataPrimary">40042412344</dd>
+                    <dd class="dataStd">HS BENTLEIGH - PM RENT Martin place A/C</dd>
+                </dl>
+                <dl>
+                    <dt class="dataTitle">Start date</dt>
+                    <dd class="dataStd">07/04/2015</dd>
+                </dl>
+                <fieldset class="form-group">
+                    <label for="nickname2">Nickname</label>
+                    <input id="nickname2" class="form-control" placeholder="e.g. My Strata" type="text">
+                </fieldset>
+                <div class="modal-btnWrap">
+                    <button type="button" class="btn btn-primary waves-effect waves-light" data-toggle="modal" data-dismiss="modal">Update</button>
+                </div>
+            </div>
+            <div class="modal-footer border-top">
+                <button type="button" class="btn btn-cancel btn-flip waves-effect waves-light">Delete</button>
+            </div>
+            </div>
+        </div>
+        <div class="card__back">
+            <div class="modal-content2" id="edit-warning">
+                <div class="modal-header">
+                    <h3 class="modal-title">Confirm to delete this DRN reference number</h3>
+                </div>
+                <div class="modal-body clearfix">
+                    <div class="alert mgTop0">
+                        <strong>WARNING</strong> this DEFT reference number is linked to multiple Direct Debit Payments. Please select an alternate payment method before deleting this card.
+                    </div>
+                    <button type="button" class="btn btn-secondary pull-right" data-toggle="modal" data-target=".modalDelete">Take me to the page to fix this</button>
+                </div>
+                <div class="modal-footer border-top">
+                    <button type="button" class="btn btn-danger pull-right mgLeft10 waves-effect waves-light" data-dismiss="modal">Delete</button>
+                    <button type="button" class="btn btn-cancel  btn-flip pull-right waves-effect waves-light">Back</button>
+                </div>
+            </div>
+        </div>            
+    </div>
+</div>
+
+
+<!-- Modal Card Edit -->
 
 
 
@@ -638,116 +691,6 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
     <script src="js/materialize.min.js"></script>
-    <script type="text/javascript">
-        //Start side bar affix
-        $( document ).ready(function() {
-            $('#MyAffix').affix('checkPosition');
-        });
-
-        $('#MyAffix').affix({
-          offset: {top:110, bottom: 60}
-        })
-
-        $(window).scroll(function() {
-        if ($(this).scrollTop() > 50){  
-            $('#subNav').addClass("navbar-fixed-top");
-            $('.subNavreplace').addClass("replace");
-          }
-          else{
-            $('#subNav').removeClass("navbar-fixed-top");
-            $('.subNavreplace').removeClass("replace");
-          }
-        }); 
-        //End side bar affix
-
-        //Start card flip
-        (function() {
-          var cards = document.querySelectorAll(".card.effect__click");
-          for ( var i  = 0, len = cards.length; i < len; i++ ) {
-            var card = cards[i];
-            clickListener( card );
-          }
-        
-          function clickListener(card) {
-            $(".btn-flip").click(function() {
-                 var c = card.classList;
-                 c.contains("flipped") === true ? c.remove("flipped") : c.add("flipped");
-                 return true;
-
-            });
-          }
-        })();
-        //End card flip
-
-        //Start Form select function
-        $('.formSelect').click(function(){
-            $('.selectToggle',this).slideToggle('fast', "swing");
-            return false;
-        });
-                    
-        $(".formSelect dl dd ul li a").click(function() {
-            var text = $(this).html();
-            $(this).parents('.formSelect').children('dl').children('dt').children('a').html(text).addClass('dataSelectWrap');
-
-            $('.selectToggle',this).hide();
-        });
-                    
-        function getSelectedValue(id) {
-            return $("#" + id).find("dt a span.value").html();
-        }
-
-        $(document).bind('click', function(e) {
-            var $clicked = $(e.target);
-            if (! $clicked.parents().hasClass("formSelect"))
-                $(".formSelect dd ul").hide();
-        }); 
-        //End Form select function
-
-        //Start call modal
-        $(".modalEditCard").click(function(){
-            $('.modalDDAeditModal').modal('hide');
-            setTimeout(function() {
-                $(".modalEditCardModal").modal();
-            }, 350);
-        });
-        $(".modalUpdate").click(function(){
-            $('.modalEditCardModal').modal('hide');
-            setTimeout(function() {
-                $(".modalDDAeditModal").modal();
-            }, 350);
-        });
-        $(".modalDDAView").click(function(){
-            $('.modalDDAViewModal').modal();
-        });
-
-        //End call modal
-
-        //Start print
-        $( document ).ready(function() {
-            $('.lnkPrint').click(function()
-             {
-                 window.print();
-             });
-        });
-        //End print
-
-        //Start Hamburger menu animation
-        (function() {
-            "use strict";
-            var toggles = document.querySelectorAll(".c-hamburger");
-
-            for (var i = toggles.length - 1; i >= 0; i--) {
-              var toggle = toggles[i];
-              toggleHandler(toggle);
-            };
-            function toggleHandler(toggle) {
-              toggle.addEventListener( "click", function(e) {
-                e.preventDefault();
-                (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
-              });
-            }
-        })();
-        //End Hamburger menu animation
-    </script>
+    <script src="js/custom.js"></script>
 </body>
 </html>

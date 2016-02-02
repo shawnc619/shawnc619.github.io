@@ -254,7 +254,7 @@
 
                         </ul>
                     </section>
-                    <section class="col-xs-12 rhWidget waves-effect waves-dark">
+                    <section class="col-xs-12 rhWidget waves-effect waves-light">
                         <a class="contact clearfix">
                             <i class="fa icon-envelope-full pull-left"></i>
                             <span class="pull-left">Contact us</span>
@@ -312,10 +312,10 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="icon-close" aria-hidden="true"></span></button>                
                 </div>
                 <div class="modal-body">
-                    <div class="form-group">
+                    <fieldset class="form-group">
                         <label for="nickName">Email adress</label>
                         <input id="nickName" type="email" class="form-control" value="jack.sparrow@google.com" placeholder="LJ Hooker">
-                    </div>
+                    </fieldset>
 
                     <div class="receiptWrap clearfix border-top border-btm">
                         <p>Please note your email is also your login ID, if you change it you will need to use your new email address to log in next time.</p>
@@ -323,7 +323,7 @@
                 </div>
                 <div class="modal-footer">
                     <div class="printHide clearfix">
-                        <button type="button" class="btn btn-primary pull-right mgLeft10" data-dismiss="modal">Update</button>
+                        <button type="button" class="btn btn-primary pull-right mgLeft10 waves-effect waves-light" data-dismiss="modal">Update</button>
                     </div>
                 </div>
             </div>
@@ -342,18 +342,18 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="icon-close" aria-hidden="true"></span></button>                
                 </div>
                 <div class="modal-body">
-                    <div class="form-group">
+                    <fieldset class="form-group">
                         <label for="nickName">First name</label>
                         <input id="nickName" type="text" class="form-control" value="Elvis" placeholder="Elvis">
-                    </div>
-                    <div class="form-group">
+                    </fieldset>
+                    <fieldset class="form-group">
                         <label for="nickName">Last name</label>
                         <input id="nickName" type="text" class="form-control" value="Presley" placeholder="Presley">
-                    </div>
+                    </fieldset>
                 </div>
                 <div class="modal-footer border-top">
                     <div class="printHide clearfix">
-                        <button type="button" class="btn btn-primary pull-right mgLeft10" data-dismiss="modal">Update</button>
+                        <button type="button" class="btn btn-primary pull-right mgLeft10 waves-effect waves-light" data-dismiss="modal">Update</button>
                     </div>
                 </div>
             </div>
@@ -414,7 +414,7 @@
                 </div>
                 <div class="modal-footer border-top">
                     <div class="printHide clearfix">
-                        <button type="button" class="btn btn-primary pull-right mgLeft10" data-dismiss="modal">Update</button>
+                        <button type="button" class="btn btn-primary pull-right mgLeft10 waves-effect waves-light" data-dismiss="modal">Update</button>
                     </div>
                 </div>
             </div>
@@ -466,7 +466,7 @@
                 </div>
                 <div class="modal-footer border-top">
                     <div class="printHide clearfix">
-                        <button type="button" class="btn btn-primary pull-right mgLeft10" data-dismiss="modal">Update</button>
+                        <button type="button" class="btn btn-primary pull-right mgLeft10 waves-effect waves-light" data-dismiss="modal">Update</button>
                     </div>
                 </div>
             </div>
@@ -501,7 +501,7 @@
                 </div>
                 <div class="modal-footer border-top">
                     <div class="printHide clearfix">
-                        <button type="button" class="btn btn-primary pull-right mgLeft10" data-dismiss="modal">Update</button>
+                        <button type="button" class="btn btn-primary pull-right mgLeft10 waves-effect waves-light" data-dismiss="modal">Update</button>
                     </div>
                 </div>
             </div>
@@ -524,18 +524,18 @@
                         <li role="presentation" class="active"><a href="#card" aria-controls="Add card" role="tab" data-toggle="tab">Email</a></li>
                         <li role="presentation"><a href="#bankAccount" aria-controls="Add bank account" role="tab" data-toggle="tab">SMS</a></li>
                     </ul><br><br>
-                    <div class="checkbox checkbox-primary checkbox-circle mgbtm10">
+                    <div class="checkbox checkbox-primary checkbox-circle mgbtm20">
                         <input id="Marketing" type="checkbox">
                         <label for="Marketing">Marketing/promotion</label>
                     </div>
-                    <div class="checkbox checkbox-primary checkbox-circle">
+                    <div class="checkbox checkbox-primary checkbox-circle mgbtm20">
                         <input id="Notifications" type="checkbox">
                         <label for="Notifications">Notifications</label>
                     </div>
                 </div>
                 <div class="modal-footer border-top">
                     <div class="printHide clearfix">
-                        <button type="button" class="btn btn-primary pull-right mgLeft10" data-dismiss="modal">Update</button>
+                        <button type="button" class="btn btn-primary pull-right mgLeft10 waves-effect waves-light" data-dismiss="modal">Update</button>
                     </div>
                 </div>
             </div>
@@ -544,7 +544,7 @@
 </div>
 <!-- End Modal Subscriptions -->
 
-<!-- Modal Subscriptions -->
+<!-- Modal delete -->
 <div class="modal fade modalDelete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog card effect__click" role="document">
             <div class="modal-content2">
@@ -556,60 +556,48 @@
                     <p class="alert">
                         <strong>WARNING</strong> this will permenantly delet your account, your payment history will no longer exist and DDA will also be canceled.
                     </p>
-                    <div class="checkbox checkbox-primary checkbox-circle mgbtm10">
+                    <div class="checkbox checkbox-primary checkbox-circle mgbtm20">
                         <input id="historyLost" type="checkbox">
                         <label for="historyLost">You understand your transaction history will be lost</label>
                     </div>
-                    <div class="checkbox checkbox-primary checkbox-circle">
+                    <div class="checkbox checkbox-primary checkbox-circle mgbtm20">
                         <input id="DDALost" type="checkbox">
                         <label for="DDALost">DDA will be cancel and payment will no longer be made to your biller</label>
                     </div>
-                    <div class="checkbox checkbox-primary checkbox-circle">
+                    <div class="checkbox checkbox-primary checkbox-circle mgbtm20">
                         <input id="reason1" type="checkbox">
                         <label for="reason1">Reason to give user second thought</label>
                     </div>
                 </div>
                 <div class="modal-footer border-top">
                     <div class="printHide clearfix">
-                        <button type="button" class="btn btn-danger pull-right mgLeft10" data-dismiss="modal">Delete</button>
+                        <button type="button" class="btn btn-danger pull-right mgLeft10 waves-effect waves-light confirmDelete" data-dismiss="modal">Delete</button>
                     </div>
                 </div>
             </div>
         </div>               
     </div>
 </div>
-<!-- End Modal Subscriptions -->
+<!-- End Modal delete -->
 
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!-- Modal Confirm acc delete-->
+    <div class="modal fade modalconfirmDelete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-info">
+                <div class="modal-header">
+                    <h3>Your account has been deleted</h3>
+                </div>
+                <div class="modal-body border-top">
+                    <p>Your account has been deactivated from the site and will be permanently deleted within 14 days. If you log into your account within next 14 days, you will have the option to cancel your request.</p>
+                </div>
+                <div class="modal-footer  printHide">
+                    <button type="button" class="btn btn-secondary pull-right waves-effect waves-light" data-dismiss="modal" aria-label="Close">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- End Modal Confirm acc delete-->
+        
 
 
 
@@ -618,142 +606,6 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
     <script src="js/materialize.min.js"></script>
-    <script type="text/javascript">
-        //Start Hamburger menu animation
-        (function() {
-            "use strict";
-            var toggles = document.querySelectorAll(".c-hamburger");
-
-            for (var i = toggles.length - 1; i >= 0; i--) {
-              var toggle = toggles[i];
-              toggleHandler(toggle);
-            };
-            function toggleHandler(toggle) {
-              toggle.addEventListener( "click", function(e) {
-                e.preventDefault();
-                (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
-              });
-            }
-        })();
-        //End Hamburger menu animation
-        
-        //Start side bar affix
-        $( document ).ready(function() {
-            $('#MyAffix').affix('checkPosition');
-        });
-
-        $('#MyAffix').affix({
-          offset: {top:110, bottom: 60}
-        })
-
-        $(window).scroll(function() {
-        if ($(this).scrollTop() > 50){  
-            $('#subNav').addClass("navbar-fixed-top");
-            $('.subNavreplace').addClass("replace");
-          }
-          else{
-            $('#subNav').removeClass("navbar-fixed-top");
-            $('.subNavreplace').removeClass("replace");
-          }
-        }); 
-        //End side bar affix
-
-        //Start card flip
-        (function() {
-          var cards = document.querySelectorAll(".card.effect__click");
-          for ( var i  = 0, len = cards.length; i < len; i++ ) {
-            var card = cards[i];
-            clickListener( card );
-          }
-        
-          function clickListener(card) {
-            $(".btn-flip").click(function() {
-                 var c = card.classList;
-                 c.contains("flipped") === true ? c.remove("flipped") : c.add("flipped");
-                 return true;
-
-            });
-          }
-        })();
-        //End card flip
-
-        //Start Form select function
-        $('.formSelect').click(function(){
-            $('.selectToggle',this).slideToggle('fast', "swing");
-            return false;
-        });
-                    
-        $(".formSelect dl dd ul li a").click(function() {
-            var text = $(this).html();
-            $(this).parents('.formSelect').children('dl').children('dt').children('a').html(text).addClass('dataSelectWrap');
-
-            $('.selectToggle',this).hide();
-        });
-                    
-        function getSelectedValue(id) {
-            return $("#" + id).find("dt a span.value").html();
-        }
-
-        $(document).bind('click', function(e) {
-            var $clicked = $(e.target);
-            if (! $clicked.parents().hasClass("formSelect"))
-                $(".formSelect dd ul").hide();
-        }); 
-        //End Form select function
-
-        //Start call modal
-        $(".modalEditCard").click(function(){
-            $('.modalDDAeditModal').modal('hide');
-            setTimeout(function() {
-                $(".modalEditCardModal").modal();
-            }, 600);
-        });
-        $(".modalUpdate").click(function(){
-            $('.modalEditCardModal').modal('hide');
-            setTimeout(function() {
-                $(".modalDDAeditModal").modal();
-            }, 600);
-        });
-        $(".modalDDAView").click(function(){
-            $('.modalDDAViewModal').modal();
-        });
-
-        //End call modal
-
-        //Start print
-        $( document ).ready(function() {
-            $('.lnkPrint').click(function()
-             {
-                 window.print();
-             });
-        });
-        //End print
-
-        //Start row show
-        setTimeout(function() {
-            $(".row-hidden").addClass("in");
-        }, 600);
-        //End row show
-        $("#suggestShow").click(function(){
-                $("#nonAuto").hide();
-                $("#autoSuggest").show();
-                return false;
-        });
-        $("#suggestHide").click(function(){
-            $("#autoSuggest").hide();
-            $("#nonAuto").show();
-            return false;
-        });
-        $("#mobileHide").click(function(){
-                $("#mobile").hide();
-                $("#landline").show();
-                return false;
-        });
-        $("#mobileShow").click(function(){
-            $("#landline").hide();
-            $("#mobile").show();
-            return false;
-        });
-    </script>
+    <script src="js/custom.js"></script>
 </body>
 </html>

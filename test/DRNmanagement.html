@@ -242,7 +242,7 @@
 
                         </ul>
                     </section>
-                    <section class="col-xs-12 rhWidget hvr-shadow-radial waves-effect waves-dark">
+                    <section class="col-xs-12 rhWidget hvr-shadow-radial waves-effect waves-light">
                         <a class="contact clearfix">
                             <i class="fa icon-envelope-full pull-left"></i>
                             <span class="pull-left">Contact us</span>
@@ -278,25 +278,25 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content2">
                 <div class="modal-header clearfix">
-                    <h4 class="modal-title pull-left">Add DEFT reference number</h4>
+                    <h3 class="modal-title pull-left">Add DEFT reference number</h3>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="icon-close"></span></button>
                 </div>
                 <div class="modal-body">
-                    <div class="form-group">
+                    <fieldset class="form-group">
                         <label for="drn">DRN number</label>
                         <input id="drn" type="tel" name="tel" class="form-control" placeholder="123456789">
-                    </div>
+                    </fieldset>
                     <p class="returnBiller">HS BENTLEIGH - PM RENT Martin place A/C</p>
-                    <div class="form-group">
+                    <fieldset class="form-group">
                         <label for="nickname">Nickname</label>
                         <input id="nickname" type="text" class="form-control" placeholder="e.g. My Strata(Optional)">
                         <a class="iconShortcut" href="#"><span class="icon-close-sign"></span></a>
-                    </div>
+                    </fieldset>
                     <!-- <p class="descript">This is only to help you make your DRN make sense</p> -->
 
                     
                 </div>
-                <div class="modal-footer">
+                <div class="modal-footer border-top">
                     <button type="button" class="btn btn-primary pull-right waves-effect waves-light addRow" data-toggle="modal" data-dismiss="modal">Add</button>
                 </div>
              
@@ -326,16 +326,16 @@
                         <dt class="dataTitle">Start date </dt>
                         <dd class="dataStd">07/04/2015</dd>
                     </dl>
-                    <div class="form-group">
+                    <fieldset class="form-group">
                         <label for="nickname">Nickname</label>
                         <input id="nickname" class="form-control" placeholder="e.g. My Strata" type="text">
-                    </div>
+                    </fieldset>
                     <div class="modal-btnWrap">
-                        <button type="button" class="btn btn-primary waves-effect waves-light" data-toggle="modal" data-dismiss="modal">Update</button>
+                        <button type="button" class="btn btn-primary waves-effect waves-light DRNupdate" data-toggle="modal" data-dismiss="modal">Update</button>
                     </div>
                 </div>
                 <div class="modal-footer border-top">
-                    <button type="button" class="btn btn-cancel btn-flip waves-effect">Delete</button>
+                    <button type="button" class="btn btn-cancel btn-flip waves-effect waves-light">Remove</button>
                 </div>
                 </div>
             </div>
@@ -346,19 +346,73 @@
                     </div>
                     <div class="modal-body clearfix">
                         <div class="alert mgTop0">
-                            <strong>WARNING</strong> this DEFT reference number is linked to multiple Direct Debit Payments. Please select an alternate payment method before deleting this card.
+                            <strong>WARNING</strong> this DEFT reference number is linked to multiple Direct Debit Payments. Deleting this DEFT reference number will also cancel the following schedule payments.
+                            <br><br>
+                            <ul>
+                                <li><strong>George Street Strata, Quarterly, $1294.00</strong></li>
+                                <li><strong>George Street Rent, weekly, $340.00</strong></li>
+                            </ul> 
                         </div>
-                        <button type="button" class="btn btn-secondary pull-right waves-effect waves-light" data-toggle="modal" data-target=".modalDelete">Take me to the page to fix this</button>
                     </div>
                     <div class="modal-footer border-top">
-                        <button type="button" class="btn btn-danger pull-right mgLeft10 waves-effect waves-light" data-dismiss="modal">Delete</button>
-                        <button type="button" class="btn btn-cancel  btn-flip pull-right waves-effect">Back</button>
+                        <button type="button" class="btn btn-danger pull-right mgLeft10 waves-effect waves-light confirmRemove" data-dismiss="modal">Remove</button>
+                        <button type="button" class="btn btn-cancel  btn-flip pull-right waves-effect waves-light">Back</button>
                     </div>
                 </div>
             </div>            
         </div>
     </div>
     </div>
+
+
+
+    <!--Start DRN update -->
+    <div class="modal fade confirmDRNupdate" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-info">
+                <div class="modal-header">
+                    <div class="paymentStatusWrap">
+                        <div class="paymentStatusWrap">
+                            <div class="paymentStatusInline clearfix">
+                                <table width="100%">
+                                    <tr>
+                                        <td><span class="icon-tick-sign pull-left"></span></td>
+                                        <td><h4 class="pull-left text-left">DEFT reference number has been updated.</h4></td>
+                                        <td><h3 class="pull-left text-left"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="icon-close"></span></button></h3></td>
+                                    </tr>
+                                </table><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <!-- End DRN update -->
+
+    <!--Start Confirm removed -->
+    <div class="modal fade removeDRN" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-info">
+                <div class="modal-header">
+                    <div class="paymentStatusWrap">
+                        <div class="paymentStatusWrap">
+                            <div class="paymentStatusInline clearfix">
+                                <table width="100%">
+                                    <tr>
+                                        <td><span class="icon-tick-sign pull-left"></span></td>
+                                        <td><h4 class="pull-left text-left">DEFT reference number has been removed.</h4></td>
+                                        <td><h3 class="pull-left text-left"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="icon-close"></span></button></h3></td>
+                                    </tr>
+                                </table><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <!-- End Confirm removed -->
 
 
 
@@ -369,70 +423,7 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
     <script src="js/materialize.min.js"></script>
-    <script type="text/javascript"> 
-        //Start Hamburger menu animation
-        (function() {
-            "use strict";
-            var toggles = document.querySelectorAll(".c-hamburger");
-
-            for (var i = toggles.length - 1; i >= 0; i--) {
-              var toggle = toggles[i];
-              toggleHandler(toggle);
-            };
-            function toggleHandler(toggle) {
-              toggle.addEventListener( "click", function(e) {
-                e.preventDefault();
-                (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
-              });
-            }
-        })();
-        //End Hamburger menu animation
-
-        //Start side bar affix
-        $( document ).ready(function() {
-            $('#MyAffix').affix('checkPosition');
-        });
-        $('#MyAffix').affix({
-          offset: {top:110, bottom: 60}
-        })
-        $(window).scroll(function() {
-        if ($(this).scrollTop() > 50){  
-            $('#subNav').addClass("navbar-fixed-top");
-            $('.subNavreplace').addClass("replace");
-          }
-          else{
-            $('#subNav').removeClass("navbar-fixed-top");
-            $('.subNavreplace').removeClass("replace");
-          }
-        }); 
-        //End side bar affix
-
-        //Start card flip
-        (function() {
-          var cards = document.querySelectorAll(".card.effect__click");
-          for ( var i  = 0, len = cards.length; i < len; i++ ) {
-            var card = cards[i];
-            clickListener( card );
-          }
-          function clickListener(card) {
-            $(".btn-flip").click(function() {
-                 var c = card.classList;
-                 c.contains("flipped") === true ? c.remove("flipped") : c.add("flipped");
-                 return true;
-            });
-          }
-        })();
-        //End card flip
-
-        //Start row show
-            $(".addRow").click(function(){
-                $('.modalAdd').modal('hide');
-                setTimeout(function() {
-                    $(".row-hidden").addClass("in");
-                }, 600);
-            });
-        //End row show
-    </script>
+    <script src="js/custom.js"></script>
 
 </body>
 </html>

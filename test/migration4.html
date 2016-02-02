@@ -157,8 +157,8 @@
                             </div>
                     </div>
                     <!-- CTA -->
-                    <div class="col-xs-12 col-sm-8 col-sm-push-4 ctaWrap">
-                        <button type="button" class="btn btn-primary btn-lg pull-right mgLeft10 waves-effect waves-light" data-toggle="modal" data-target=".modalSuccess">Continue</button>
+                    <div class="col-xs-12 ctaWrap">
+                        <button type="button" class="btn btn-primary btn-lg pull-right mgLeft10 waves-effect waves-light">Continue</button>
                     </div>
                 </section>
             </main>
@@ -176,7 +176,7 @@
 
                         </ul>
                     </section>
-                    <section class="col-xs-12 rhWidget hvr-shadow-radial waves-effect waves-dark">
+                    <section class="col-xs-12 rhWidget hvr-shadow-radial waves-effect waves-light">
                         <a class="contact clearfix">
                             <i class="fa icon-envelope-full pull-left"></i>
                             <span class="pull-left">Contact us</span>
@@ -283,92 +283,9 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
     <script src="js/materialize.min.js"></script>
+    <script src="js/custom.js"></script>
 
-
-    <script type="text/javascript">
-            $( document ).ready(function() {
-                $('#MyAffix').affix('checkPosition');
-            });
-            $('#MyAffix').affix({
-              offset: {top:110, bottom: 60}
-            })
-
-            $(window).scroll(function() {
-            if ($(this).scrollTop() > 50){  
-                $('#subNav').addClass("navbar-fixed-top");
-                $('.subNavreplace').addClass("replace");
-              }
-              else{
-                $('#subNav').removeClass("navbar-fixed-top");
-                $('.subNavreplace').removeClass("replace");
-              }
-            });
-
-
-            $('.formSelect').click(function(){
-                $('.selectToggle',this).slideToggle('fast', "swing");
-                return false;
-            });
-                        
-            $(".formSelect dl dd ul li a").click(function() {
-                var text = $(this).html();
-                $(this).parents('.formSelect').children('dl').children('dt').children('a').html(text).addClass('dataSelectWrap');
-
-                $('.selectToggle',this).hide();
-            });
-                        
-            function getSelectedValue(id) {
-                return $("#" + id).find("dt a span.value").html();
-            }
-
-            $(document).bind('click', function(e) {
-                var $clicked = $(e.target);
-                if (! $clicked.parents().hasClass("formSelect"))
-                    $(".formSelect dd ul").hide();
-            });
-            $("#mobileHide").click(function(){
-                $("#mobile").hide();
-                $("#landline").show();
-                return false;
-            });
-            $("#mobileShow").click(function(){
-                $("#landline").hide();
-                $("#mobile").show();
-                return false;
-            }); 
-            $("#suggestShow").click(function(){
-                $("#nonAuto").hide();
-                $("#autoSuggest").show();
-                return false;
-
-            });
-            $("#suggestHide").click(function(){
-                $("#autoSuggest").hide();
-                $("#nonAuto").show();
-                return false;
-
-            });
-    </script>
-    <script>
-      (function() {
-
-        "use strict";
-
-        var toggles = document.querySelectorAll(".c-hamburger");
-
-        for (var i = toggles.length - 1; i >= 0; i--) {
-          var toggle = toggles[i];
-          toggleHandler(toggle);
-        };
-
-        function toggleHandler(toggle) {
-          toggle.addEventListener( "click", function(e) {
-            e.preventDefault();
-            (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
-          });
-        }
-
-      })();
-    </script>
+ 
+    
 </body>
 </html>

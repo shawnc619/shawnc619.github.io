@@ -28,46 +28,30 @@
     <div class="container pageHeading">
         <div class="row">
             <div class="col-sm-push-2 col-md-push-3 col-sm-8 col-md-6 clearfix">
-                <h1>Log in to DEFT</h1>
+                <h1>You are logged out</h1>
             </div>
         </div>
     </div>
 
 
 
-    <div class="container wrapPush">
+    <div class="container">
         <div class="row">
             <main class="container col-sm-push-2 col-md-push-3 col-sm-8 col-md-6 printHide">
-                <section class="row">
-                    <div class="col-xs-12 border-btm intructWrap">
-                        <p>A temporary password has been sent to your email address, please enter below to continue.</p>
-                    </div>
-                    <div class="col-xs-12 clearfix registWrap">
-                        <fieldset class="form-group">
-                            <label for="email">Email address</label>
-                            <input id="email" type="email" class="form-control" placeholder="john.smith@example.com">
-                        </fieldset>
-                        <fieldset class="form-group">
-                            <label for="password">Password</label>
-                            <input id="password" type="text" class="form-control" placeholder="Enter your password">
-                        </fieldset>
-                        <p class="forgotpw">Haven't received your temporary password yet? <a href="#">Click here to send again</a></p><br>
-
-                        <button type="button" class="btn pull-right btn-primary btn-lg waves-effect waves-light">Log in to continue</button>
-                        
-                    </div>
-                    <div class="col-xs-12 border-top intructWrap">
-                        <p>
-                            If you need further assisstance with your login or password, please contact our Client Service Team on <a href="tel:1800572162">1800 572 162</a> (Overseas <a href="tel:+61282454177">+61 2 8245 4177</a>). Monday - Friday, 8.30am - 5.00pm (AEST).
-                        </p>
-                    </div>
-                    
-                </section>
-            </main>
+            <section class="row">
+                <div class="col-xs-12 border-btm intructWrap">
+                    <p>You have been logged out of the system due to inactivity.</p>
+                </div>
+                <!-- CTA -->
+                <div class="col-xs-12 ctaWrap">
+                    <button type="button" class="btn btn-secondary pull-right waves-effect waves-light mgLeft10" data-dismiss="modal" aria-label="Close">Log in again</button>
+                    <button type="button" class="btn btn-secondary-inv pull-right waves-effect waves-light" data-dismiss="modal" aria-label="Close">Home</button>
+                </div>
+            </section>
+        </main>
         </div>
     </div>
-</section>   
-
+</section>
 
 <footer class="container-fluid">
         <div class="col-xs-12 col-sm-8">
@@ -85,11 +69,32 @@
 
  
 
+<!-- Modal payment scheduled-->
+    <div class="modal fade modalTimeout" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-info">
+                <div class="modal-header">
+                    <div class="paymentStatusWrap">
+                        <div class="paymentStatusWrap">
+                            <div class="paymentStatusInline clearfix">
+                                <h3 class="pull-left text-left">Your session is about to end in
+30 seconds</h3></td>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer  border-top">
+                    <button type="button" class="btn btn-secondary pull-right waves-effect waves-light mgLeft10" data-dismiss="modal" aria-label="Close">Continue session</button>
+                    <button type="button" class="btn btn-secondary-inv pull-right waves-effect waves-light" data-dismiss="modal" aria-label="Close">Log out</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- End Modal payment scheduled-->
 
 
 
 
- 
 
 
 
@@ -117,8 +122,12 @@
     <script src="js/ie10-viewport-bug-workaround.js"></script>
     <script src="js/materialize.min.js"></script>
     <script src="js/custom.js"></script>
+    <script>
+    $(document).ready(function(){
+    $('.modalTimeout').modal('show');
+});
+    </script>
 
 
-    
 </body>
 </html>

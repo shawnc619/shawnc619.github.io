@@ -270,37 +270,41 @@
 
 
 
-                                                  <!-- Payment End date -->
-                                                  <div class="noBkLabelStyle2">
-                                                    Select end date
-                                                  </div>
-                                                  <!-- formSelect -->
-                                                  <fieldset class="datePicker">
-                                                    <a href="#">Date Picker</a>
-                                                  </fieldset>
-                                                  <p class="returnData">Total 46 payments</p>
+                                                    <!-- Payment End date -->
+                                                    <div class="noBkLabelStyle2">
+                                                      Select end date
+                                                    </div>
+                                                    <!-- formSelect -->
+                                                    <fieldset class="datePicker">
+                                                      <a href="#">Date Picker</a>
+                                                    </fieldset>
+                                                    <p class="returnData">Total 46 payments</p>
 
-                                                  <!-- Exact number of payments -->
-                                                  <div class="noBkLabelStyle2">
-                                                    Select number of payments
-                                                  </div>                              
-                                                  <!-- formSelect -->
-                                                  <fieldset class="formSelectStyle numberOfPayment">
-                                                    <select>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                        <option>4</option>
-                                                        <option>5</option>
-                                                        <option>6</option>
-                                                        <option>7</option>
-                                                        <option>8</option>
-                                                        <option>9</option>
-                                                        <option>10</option>
-                                                        <option>11</option>
-                                                        <option>12</option>
-                                                    </select>
-                                                  </fieldset>
-                                                  <p class="returnData">Payment occurs weekly on a Monday, last payment at 11/10/2016</p>
+                                                    <!-- Exact number of payments -->
+                                                    <!-- <div class="noBkLabelStyle2">
+                                                      Select number of payments
+                                                    </div>   -->                            
+                                                    <!-- formSelect -->
+                                                    <!-- <fieldset class="formSelectStyle numberOfPayment">
+                                                      <select>
+                                                          <option>2</option>
+                                                          <option>3</option>
+                                                          <option>4</option>
+                                                          <option>5</option>
+                                                          <option>6</option>
+                                                          <option>7</option>
+                                                          <option>8</option>
+                                                          <option>9</option>
+                                                          <option>10</option>
+                                                          <option>11</option>
+                                                          <option>12</option>
+                                                      </select>
+                                                    </fieldset> -->
+                                                    <fieldset class="form-group">
+                                                          <label for="payment">Number of payments</label>
+                                                          <input id="payment" type="text" class="form-control" placeholder="(0 - 100)">
+                                                    </fieldset>
+                                                <p class="returnData">Payment occurs weekly on a Monday, last payment at 11/10/2016</p>
                                                   
 
 
@@ -449,16 +453,16 @@
                                 <label for="sendEmailReceipt">Send email receipt (optional)</label>
                             </div>
 
-                            <div class="form-group">
+                            <fieldset class="form-group">
                                 <label for="email">Email address</label>
                                 <input id="email" type="email" class="form-control" placeholder="john.smith@example.com">
-                            </div>
+                            </fieldset>
                       </div>
 
                     <!-- CTA -->
-                    <div class="col-xs-12 col-sm-8 col-sm-push-4 ctaWrap mgbtm20">
+                    <div class="col-xs-12 ctaWrap">
                         <button type="button" class="btn btn-primary btn-lg pull-right mgLeft10 waves-effect waves-light" data-toggle="modal" data-target=".modalSuccess">&nbsp;&nbsp;&nbsp;Next&nbsp;&nbsp;&nbsp;</button>
-                        <button type="button" class="btn btn-cancel btn-lg pull-right waves-effect">Cancel</button>    
+                        <button type="button" class="btn btn-cancel btn-lg pull-right waves-effect waves-light">Cancel</button>    
                     </div>
                 </section>
             </main>
@@ -476,7 +480,7 @@
 
                         </ul>
                     </section>
-                    <section class="col-xs-12 rhWidget hvr-shadow-radial waves-effect waves-dark">
+                    <section class="col-xs-12 rhWidget hvr-shadow-radial waves-effect waves-light">
                         <a class="contact clearfix">
                             <i class="fa icon-envelope-full pull-left"></i>
                             <span class="pull-left">Contact us</span>
@@ -519,22 +523,22 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content2">
                 <div class="modal-header clearfix">
-                    <h4 class="modal-title pull-left">Add DEFT reference number</h4>
+                    <h3 class="modal-title pull-left">Add DEFT reference number</h3>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="icon-close"></span></button>
                 </div>
                 <div class="modal-body">
-                    <div class="form-group">
+                    <fieldset class="form-group">
                         <label for="drn">DRN number</label>
                         <input id="drn" type="tel" name="tel" class="form-control" placeholder="123456789">
-                    </div>
+                    </fieldset>
                     <p class="descript">DEFT reference number varies up to 20 digits</p>                    
-                    <div class="form-group">
+                    <fieldset class="form-group">
                         <label for="nickname1">Nickname</label>
                         <input id="nickname1" type="text" class="form-control" placeholder="e.g. My Strata(Optional)">
                         <a class="iconShortcut" href="#"><span class="icon-close-sign"></span></a>
-                    </div>
+                    </fieldset>
                 </div>
-                <div class="modal-footer">
+                <div class="modal-footer border-top">
                     <button type="button" class="btn btn-primary pull-right waves-effect waves-light" data-toggle="modal" data-dismiss="modal">Add</button>
                 </div>
              
@@ -568,60 +572,60 @@
                               <div class="cardIcon"><img src="styles/images/cardVisa.png" alt="Visa" width="100%"></div>
 
                             </div>
-                            <div class="form-group">
+                            <fieldset class="form-group">
                               <label for="cardNum">Card number</label>
                               <input id="cardNum" type="tel" name="tel" class="form-control" placeholder="0000 1111 2222 3333">
-                            </div>
+                            </fieldset>
                             <p class="returnBiller">Westpac St Leonards</p>
                             <div class="form2Col clearfix">
-                              <div class="form-group pull-left" style="width:55%">
+                              <fieldset class="form-group pull-left" style="width:55%">
                                   <label for="cardHolderName">Cardholder name</label>
                                   <input id="cardHolderName" type="text" class="form-control" placeholder="Jone Smith">
-                              </div>
-                              <div class="form-group pull-right" style="width:42%">
+                              </fieldset>
+                              <fieldset class="form-group pull-right" style="width:42%">
                                   <label for="expiryDate">Expiry date</label>
                                   <input id="expiryDate" type="tel" class="form-control" placeholder="mm/yy">
-                              </div>
+                              </fieldset>
                             </div>
-                            <div class="checkbox default checkbox-info checkbox-circle">
+                            <fieldset class="checkbox default checkbox-info checkbox-circle">
                               <input id="defaultCard"  class="styled" type="checkbox">
                               <label for="defaultCard">Make this default card</label>
-                            </div>
-                            <div class="checkbox checkbox-primary checkbox-circle mgTop10">
+                            </fieldset>
+                            <fieldset class="checkbox checkbox-primary checkbox-circle mgTop10">
                               <input id="savecard" type="checkbox">
                               <label for="savecard">Save card</label>
-                            </div>
+                            </fieldset>
                         </div>
                         <!-- Add bank account panel -->
                         <div role="tabpanel" class="tab-pane" id="bankAccount">
                             <div class="form2Col clearfix">
-                              <div class="form-group pull-left" style="width:42%">
+                              <fieldset class="form-group pull-left" style="width:42%">
                                   <label for="bsb">BSB</label>
                                   <input id="bsb" type="tel" class="form-control" placeholder="123 - 456">
-                              </div>
-                              <div class="form-group pull-right" style="width:55%">
+                              </fieldset>
+                              <fieldset class="form-group pull-right" style="width:55%">
                                   <label for="accNum">Account number</label>
                                   <input id="accNum" type="tel" class="form-control" placeholder="123456789">
-                              </div>
+                              </fieldset>
                             </div>
                             <p class="returnBank">Westpac St Leonards</p>
 
-                            <div class="form-group">
+                            <fieldset class="form-group">
                               <label for="accNam">Account name</label>
                               <input id="accNam" type="text" class="form-control" placeholder="Jone Smith">
-                            </div>
-                            <div class="checkbox default checkbox-info checkbox-circle"> 
+                            </fieldset>
+                            <fieldset class="checkbox default checkbox-info checkbox-circle"> 
                               <input id="defaultBankAccount" class="styled" type="checkbox">
                               <label for="defaultBankAccount">Make this default bank account</label>
-                            </div>
-                            <div class="checkbox checkbox-primary checkbox-circle mgTop10">
+                            </fieldset>
+                            <fieldset class="checkbox checkbox-primary checkbox-circle mgTop10">
                               <input id="saveaccount" type="checkbox">
                               <label for="saveaccount">Save bank account</label>
-                            </div>
+                            </fieldset>
                         </div>
                     </div> 
                 </div>
-                <div class="modal-footer">
+                <div class="modal-footer border-top">
                     <button type="button" class="btn btn-primary pull-right waves-effect waves-light" data-toggle="modal" data-dismiss="modal">Add</button>
                 </div>
             </div>
@@ -648,16 +652,16 @@
                         <dt class="dataTitle">Start date</dt>
                         <dd class="dataStd">07/04/2015</dd>
                     </dl>
-                    <div class="form-group">
+                    <fieldset class="form-group">
                         <label for="nickname2">Nickname</label>
                         <input id="nickname2" class="form-control" placeholder="e.g. My Strata" type="text">
-                    </div>
-                    <div class="modal-btnWrap">
+                    </fieldset>
+                    <fieldset class="modal-btnWrap">
                         <button type="button" class="btn btn-primary waves-effect waves-light" data-toggle="modal" data-dismiss="modal">Update</button>
-                    </div>
+                    </fieldset>
                 </div>
                 <div class="modal-footer border-top">
-                    <button type="button" class="btn btn-cancel btn-flip waves-effect waves-dark">Delete</button>
+                    <button type="button" class="btn btn-cancel btn-flip waves-effect waves-light">Delete</button>
                 </div>
                 </div>
             </div>
@@ -668,12 +672,16 @@
                     </div>
                     <div class="modal-body clearfix">
                         <div class="alert mgTop0">
-                            <strong>WARNING</strong> this DEFT reference number is linked to multiple Direct Debit Payments. Please select an alternate payment method before deleting this card.
+                            <strong>WARNING</strong> this DEFT reference number is linked to multiple Direct Debit Payments. Deleting this DEFT reference number will also cancel the following schedule payments.
+                            <br><br>
+                            <ul>
+                                <li><strong>George Street Strata, Quarterly, $1294.00</strong></li>
+                                <li><strong>George Street Rent, weekly, $340.00</strong></li>
+                            </ul> 
                         </div>
-                        <button type="button" class="btn btn-secondary pull-right" data-toggle="modal" data-target=".modalDelete">Take me to the page to fix this</button>
                     </div>
                     <div class="modal-footer border-top">
-                        <button type="button" class="btn btn-danger pull-right mgLeft10 waves-effect waves-light" data-dismiss="modal">Delete</button>
+                        <button type="button" class="btn btn-danger pull-right mgLeft10 waves-effect waves-light confirmRemove" data-dismiss="modal">Remove</button>
                         <button type="button" class="btn btn-cancel  btn-flip pull-right waves-effect waves-light">Back</button>
                     </div>
                 </div>
@@ -703,35 +711,38 @@
                         <dt class="dataTitle">Cardholder name</dt>
                         <dd class="dataPrimary">Jone Smith</dd>
                     </dl>
-                    <div class="form-group">
+                    <fieldset class="form-group">
                         <label for="expiryDate">Expiry date</label>
                         <input id="expiryDate" type="tel" class="form-control" placeholder="mm/yy">
-                    </div>
-                    <div class="checkbox default checkbox-info checkbox-circle">
+                    </fieldset>
+                    <fieldset class="checkbox default checkbox-info checkbox-circle">
                         <input id="defaultAccountCardEdit" class="styled" type="checkbox">
                         <label for="defaultAccountCardEdit">Default bank account</label>
-                    </div>
+                    </fieldset>
                     <div class="modal-btnWrap">
                         <button type="button" class="btn btn-primary waves-effect waves-light" data-toggle="modal" data-dismiss="modal">Update</button>
                     </div>
                 </div>
 
                 <div class="modal-footer border-top">
-                    <button type="button" class="btn btn-cancel btn-flip waves-effect waves-dark" data-toggle="modal">Delete</button>
+                    <button type="button" class="btn btn-cancel btn-flip waves-effect waves-light" data-toggle="modal">Delete</button>
                 </div>
             </div>
             </div>
             <div class="card__back">
                 <div class="modal-content2" id="edit-warning">
                     <div class="modal-header">
-                        <h3 class="modal-title">Confirm to delete this DRN reference number</h3>
+                        <h3 class="modal-title">Confirm to delete this card</h3>
                     </div>
                     <div class="modal-body clearfix">
-                        <p class="para">and also some friendly and helpful text here</p><br>
-                        <div class="alert">
-                            <strong>WARNING</strong> this DEFT reference number is linked to multiple Direct Debit Payments. Please select an alternate payment method before deleting this card.
+                        <div class="alert mgTop0">
+                            <strong>WARNING</strong> this card is linked to one or multiple payments, please select an alternate payment method before deleting this card.
+                            <br><br>
+                            <ul>
+                                <li><strong>George Street Strata, Quarterly, $1294.00</strong></li>
+                                <li><strong>George Street Rent, weekly, $340.00</strong></li>
+                            </ul>
                         </div>
-                        <button type="button" class="btn btn-secondary pull-right" data-toggle="modal" data-target=".modalDelete">Take me to the page to fix this</button>
                     </div>
                     <div class="modal-footer border-top">
                         <button type="button" class="btn btn-danger pull-right mgLeft10 waves-effect waves-light" data-dismiss="modal">Delete</button>
@@ -798,104 +809,10 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
     <script src="js/materialize.min.js"></script>
+    <script src="js/custom.js"></script>
 
 
-    <script type="text/javascript">
-  
-            $( document ).ready(function() {
-                $('#MyAffix').affix('checkPosition');
-            });
-            $('#MyAffix').affix({
-              offset: {top:110, bottom: 60}
-            })
-
-            $(window).scroll(function() {
-            if ($(this).scrollTop() > 50){  
-                $('#subNav').addClass("navbar-fixed-top");
-                $('.subNavreplace').addClass("replace");
-              }
-              else{
-                $('#subNav').removeClass("navbar-fixed-top");
-                $('.subNavreplace').removeClass("replace");
-              }
-            });
-
-            $('.formSelect').click(function(){
-                $('.selectToggle',this).slideToggle('fast', "swing");
-                return false;
-            });
-                        
-            $(".formSelect dl dd ul li a").click(function() {
-                var text = $(this).html();
-                $(this).parents('.formSelect').children('dl').children('dt').children('a').html(text).addClass('dataSelectWrap');
-
-                $('.selectToggle',this).hide();
-            });
-                        
-            function getSelectedValue(id) {
-                return $("#" + id).find("dt a span.value").html();
-            }
-
-            $(document).bind('click', function(e) {
-                var $clicked = $(e.target);
-                if (! $clicked.parents().hasClass("formSelect"))
-                    $(".formSelect dd ul").hide();
-            });  
-            $(".modalEditDRN").click(function(){
-                $(".modalEditDRNModal").modal();
-                return false;
-            });
-            $(".modalAddCard").click(function(){
-                $(".modalAddCardModal").modal();
-                return false;
-
-            });
-            $(".modalEditCard").click(function(){
-                $(".modalEditCardModal").modal();
-                return false;
-
-            });
-            
-    </script>
-    <script type="text/javascript">  
-        (function() {
-          
-          var cards = document.querySelectorAll(".card.effect__click");
-          for ( var i  = 0, len = cards.length; i < len; i++ ) {
-            var card = cards[i];
-            clickListener( card );
-          }
-        
-          function clickListener(card) {
-            $(".btn-flip").click(function() {
-                 var c = card.classList;
-                 c.contains("flipped") === true ? c.remove("flipped") : c.add("flipped");
-            });
-          }
-        })();
-
-    </script>
-    <script>
-      (function() {
-
-        "use strict";
-
-        var toggles = document.querySelectorAll(".c-hamburger");
-
-        for (var i = toggles.length - 1; i >= 0; i--) {
-          var toggle = toggles[i];
-          toggleHandler(toggle);
-        };
-
-        function toggleHandler(toggle) {
-          toggle.addEventListener( "click", function(e) {
-            e.preventDefault();
-            (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
-          });
-        }
-
-      })();
-    </script>
+    
 
 
 </body>
