@@ -2713,6 +2713,9 @@ fieldset[disabled].form-group{
 fieldset[disabled].form-group label{
   opacity: 0.8;
 }
+.disabled{
+  opacity: 0.6;
+}
 input[type="search"] {
   -webkit-appearance: none;
 }
@@ -4557,6 +4560,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     display: block;
     border:none;
   }
+  .nav.subNav > li:last-child > a {
+    margin:0 0 0 0;
+  }
   .nav.subNav > li > a i {
     font-size: 2.2rem;
     display: block;
@@ -5224,7 +5230,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 }
 
 
-}
+
 .navbar-inverse .navbar-brand {
   color: #9d9d9d;
 }
@@ -7799,12 +7805,18 @@ button.close {
   background-position: calc(50% - 9px) 0;
 }
 
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
     -moz-appearance: none;
     -webkit-appearance: none;  /*chrome input number arrow*/
     appearance: none;
     margin: 0; 
+}
+input[type=number] {
+    -moz-appearance:textfield;
 }
 
 input::-ms-clear {
@@ -7816,7 +7828,6 @@ input::-ms-clear {
 input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     background-color: transparent; /*Chrome auto complete color*/
     background-image: none;
-
 }
 
 
@@ -8192,6 +8203,9 @@ p {
   margin:0 -15px;
   padding:5px 15px;
 }
+.addWrap:hover{
+    text-decoration: none;
+}
 .emptyWrap{
   display:block;
   margin:0 -15px;
@@ -8199,19 +8213,40 @@ p {
   text-align: center;
 }
 .emptyWrap h3{
-  color:#555555;
+  color:#8B8B8B;
   font-weight: 200;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
+  line-height: 1.5;
 }
 
-
-.addWrap:hover{
-    text-decoration: none;
+.emptyWrap  .icon{
+  font-size:10rem;
+  color:#D2D2D2;
+}
+.emptyWrap .iconWrap{
+  padding:10px 0;
 }
 .blueAdd {
     color:#357EF4;
     font-weight: 300;
     margin:0;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  .emptyWrap h3{
+    color:#8B8B8B;
+    font-weight: 200;
+    font-size: 1.6rem;
+    line-height: 1.8;
+    padding:0 30px;
+  }
+  .emptyWrap  .icon{
+  font-size:14rem;
+  }
+  .emptyWrap .iconWrap{
+  padding:20px 0;
+}
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -10073,6 +10108,14 @@ table.paymentDateInfo tr td:nth-child(2){
 }
 
 /*Spinner*/
+.onLoadSpinnerWrap {
+    position: relative;
+    width:150px;
+    height: 0;
+    z-index: 2000;
+    margin: 0 auto
+
+}
 .onLoadSpinner {
     font-size: 6rem;
     margin: -3rem 0 0 -3rem;
@@ -10081,7 +10124,9 @@ table.paymentDateInfo tr td:nth-child(2){
     top: 220px;
     left: 50%;
     z-index: 2000;
+
 }
+
 .onLoadText {
     font-size: 1.8rem;
     font-weight: 300;
@@ -10093,6 +10138,7 @@ table.paymentDateInfo tr td:nth-child(2){
     z-index: 2000;
     width:300px;
     text-align: center;
+
 }
 
 /*Switch*/
@@ -10321,7 +10367,7 @@ section.rhWidget{
   } 
 
   .rhWidget h2{
-    font-size:2.4rem;
+    font-size:2.1rem;
   }
   .rhWidget ul{
     padding: 10px 15px;
@@ -10585,7 +10631,7 @@ textarea.form-control:focus{
   border:1px #D2D2D2 solid;
   color:#8b8b8b;
   border-radius: 2px;
-  font-size:1.4rem;
+  font-size:1.2rem;
   padding:0px 9px 1px;
   text-align: center;
   display: inline-block;
@@ -10599,21 +10645,33 @@ textarea.form-control:focus{
   text-decoration: none;
   color:#8b8b8b;
 }
-.modal-body .sTag{
-  padding:6px 9px;
-  margin: 7px 4px;
-  font-size:1.4rem;
-
+.sTag.tDark{
+  padding:10px 12px;
+  margin: 7px 6px 7px 0;
+  font-size:1.2rem;
 }
 .sTag.nonSelect{
-  opacity: 0.6;
+  padding:10px 12px;
+  font-size:1.2rem;
+  opacity: 1;
   color:#8b8b8b !important;
   border-color:#d2d2d2 !important;
+  background-color: #fff;
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
   .sTag{
     font-size:1.4rem;
+    padding:2px 9px 3px;
+  }
+  .sTag.tDark{
+    font-size:1.4rem;
+  }
+}
+/* Small devices (tablets, 992px and up) */
+@media (min-width: 992px) { 
+  .sTag.tDark{
+    font-size:1.6rem;
   }
 }
 .tGreen, .tGreen:hover{
@@ -10623,6 +10681,7 @@ textarea.form-control:focus{
 .tRed, .tRed:hover{
   border:1px #FF3A65 solid;
   color:#FF3A65;
+  background-color: #fff;
 }
 .tOrange, .tOrange:hover{
   border:1px #FFB95E solid;
@@ -10636,6 +10695,13 @@ textarea.form-control:focus{
   border:1px #6E67FA solid;
   color: #6E67FA
 }
+.tDark{
+  border:1px #555 solid;
+  color: #fff!important;
+  background-color: #555;
+}
+
+
 /*row animation*/
 .row-hidden{
   opacity: 0;
@@ -11156,7 +11222,7 @@ textarea.form-control:focus{
   padding:2px 10px;
   border-radius: 12px;
   font-size:1.6rem;
-  margin-top: 4px;
+  margin-top: 2px;
 }
 .rhWidget ul.viewAll.noti a{
   color:#FF3A65;

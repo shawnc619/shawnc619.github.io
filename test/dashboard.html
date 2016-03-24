@@ -19,33 +19,33 @@
                 <button class="navbar-toggle collapsed c-hamburger c-hamburger--htx visible-xs" data-target="#navbar" data-toggle="collapse" type="button">
                     <span>toggle menu</span>
                 </button> 
-                <a class="navbar-brand" href="index.html#"><img class="logo" src="styles/images/logo.png"></a>
+                <a class="navbar-brand" href="dashboard.html"><img class="logo" src="styles/images/logo.png"></a>
             </div>
             <div class="collapse navbar-collapse" id="navbar"> <!-- no-transition -->
                 <ul class="nav navbar-nav">
                     <li class="visible-xs">
-                        <a href="#" class=""><i class="icon-bar-graph"></i>Dashboard</a>
+                        <a href="dashboard.html"><i class="icon-bar-graph"></i>Dashboard</a>
                     </li>
                     <li class="visible-xs">
-                        <a href="#"><i class="icon-exchange-rates"></i>Make a payment</a>
+                        <a href="Payment.html"><i class="icon-exchange-rates"></i>Make a payment</a>
                     </li>
                     <li class="visible-xs">
-                        <a href="#"><i class="icon-note-pad"></i>My DEFT reference number</a>
+                        <a href="DRNmanagement.html"><i class="icon-note-pad"></i>My DEFT reference number</a>
                     </li>
                     <li class="visible-xs">
-                        <a href="#"><i class="icon-wallet-account"></i>My wallet</a>
+                        <a href="wallet.html"><i class="icon-wallet-account"></i>My wallet</a>
                     </li>
                     <li class="visible-xs">
-                        <a href="#"><i class="icon-bar-graph"></i>My agreements</a>
+                        <a href="DDAmanagement.html"><i class="icon-bar-graph"></i>My agreements</a>
                     </li>
                     <li>
                         <a class="faq" href="#"><i class="icon-info-sign-empty"></i>FAQ</a>
                     </li>
                     <li class="active">
-                        <a class="myAccount" href="#"><i class="icon-user"></i>My account</a>
+                        <a class="myAccount" href="accountSetting.html"><i class="icon-user"></i>My account</a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-sign-out"></i>Log out</a>
+                        <a href="logout.html"><i class="fa fa-sign-out"></i>Log out</a>
                     </li>
                 </ul>
             </div>
@@ -60,19 +60,19 @@
             <div class="navbar-header">
                 <ul class="nav navbar-nav subNav">
                     <li class="active">
-                        <a href="#"><i class="icon-bar-graph"></i>Dashboard</a>
+                        <a href="dashboard.html"><i class="icon-bar-graph"></i>Dashboard</a>
                     </li>
                     <li>
-                        <a href="#"><i class="icon-exchange-rates"></i>Make a payment</a>
+                        <a href="Payment.html"><i class="icon-exchange-rates"></i>Make a payment</a>
                     </li>
                     <li>
-                        <a href="#"><i class="icon-note-pad"></i>My DEFT reference number</a>
+                        <a href="DRNmanagement.html"><i class="icon-note-pad"></i>My DEFT reference number</a>
                     </li>
                     <li>
-                        <a href="#"><i class="icon-wallet-account"></i>My wallet</a>
+                        <a href="wallet.html"><i class="icon-wallet-account"></i>My wallet</a>
                     </li>
                     <li>
-                        <a href="#"><i class="icon-bar-graph"></i>My agreements</a>
+                        <a href="DDAmanagement.html"><i class="icon-bar-graph"></i>My agreements</a>
                     </li>
                 </ul>
             </div>
@@ -97,12 +97,12 @@
                     <div class="panel-body">
                         <ul class="notiList">
                             <li class="new">
-                                <a>
+                                <a href="DDA1.html">
                                     <table width="100%" border="0">
                                         <tr>
                                             <td width="25px"><span class="notiNewdot"></span></td>
                                             <td>
-                                                <p>Direct Debit Agreement from HJ Hooker</p>
+                                                <p>Direct Debit Agreement from LJ Hooker</p>
                                                 03/11/2015 2:59 PM
                                             </td>
                                         </tr>
@@ -115,7 +115,7 @@
                                         <tr>
                                             <td width="25px"><span class="notiNewdot"></span></td>
                                             <td>
-                                                <p>Direct Debit Agreement from HJ Hooker</p>
+                                                <p>Direct Debit Agreement from LJ Hooker</p>
                                                 03/11/2015 2:59 PM
                                             </td>
                                         </tr>
@@ -128,7 +128,7 @@
                                         <tr>
                                             <td width="25px"><span class="notiNewdot">></span></td>
                                             <td>
-                                                <p>Direct Debit Agreement from HJ Hooker</p>
+                                                <p>Direct Debit Agreement from LJ Hooker</p>
                                                 03/11/2015 2:59 PM
                                             </td>
                                         </tr>
@@ -158,13 +158,13 @@
             <main class="container col-sm-8">
                 <div class="row widgetDiv">
                     <div class="col-xs-4">
-                        <button href="#" class="btn waves-effect waves-light"><i class="icon-exchange-rates"></i> Make a payment</button>
+                        <button onclick="location.href='Payment.html';" class="btn waves-effect waves-light"><i class="icon-exchange-rates"></i> Make a payment</button>
                     </div>
                     <div class="col-xs-4">
-                        <button class="btn waves-effect" href="#"><i class="icon-note-pad"></i> My DEFT ref no</button>
+                        <button onclick="location.href='DRNmanagement.html';" class="btn waves-effect" href="#"><i class="icon-note-pad"></i> My DEFT ref no</button>
                     </div>
                     <div class="col-xs-4">
-                        <button href="#" class="btn waves-effect"><i class="icon-wallet-account"></i> My wallet</button>
+                        <button onclick="location.href='wallet.html';" class="btn waves-effect"><i class="icon-wallet-account"></i> My wallet</button>
                     </div>
                 </div>
                 <!-- Nav tabs -->
@@ -526,7 +526,7 @@
             <aside class="col-sm-4">
                 <div id="MyAffix">
                     <section class="col-xs-12 rhWidget payNow waves-effect waves-light">
-                        <a class="contact clearfix">
+                        <a class="contact clearfix" href="Payment.html">
                             <i class="fa icon-exchange-rates pull-left"></i>
                             <span class="pull-left">Make a payment</span>
                             <i class="fa icon-arrow-right pull-right"></i> 
@@ -536,12 +536,12 @@
                         <h2>Notifications <span class="notiNumber">3</span></h2>
                         <ul class="notiList border-top">
                             <li class="new">
-                                <a href="#">
+                                <a href="DDA1.html">
                                     <table width="100%" border="0">
                                         <tr>
                                             <td width="30px"><span class="notiNewdot"></span></td>
                                             <td>
-                                                <p>Direct Debit Agreement from HJ Hooker</p>
+                                                <p>Direct Debit Agreement from LJ Hooker</p>
                                                 03/11/2015 2:59 PM
                                             </td>
                                         </tr>
@@ -554,7 +554,7 @@
                                         <tr>
                                             <td width="30px"><span class="notiNewdot"></span></td>
                                             <td>
-                                                <p>Direct Debit Agreement from HJ Hooker</p>
+                                                <p>Direct Debit Agreement from LJ Hooker</p>
                                                 03/11/2015 2:59 PM
                                             </td>
                                         </tr>
@@ -567,7 +567,7 @@
                                         <tr>
                                             <td width="30px"><span class="notiNewdot">></span></td>
                                             <td>
-                                                <p>Direct Debit Agreement from HJ Hooker</p>
+                                                <p>Direct Debit Agreement from LJ Hooker</p>
                                                 03/11/2015 2:59 PM
                                             </td>
                                         </tr>
@@ -680,16 +680,16 @@
                 <p class="descript">Please note record only goes back 24 months</p>
                 <h3>Select one or more tags</h3>
                 <div>
-                    <a class="sTag nonSelect tGreen" unselectable="on" onselectstart="return false;" onmousedown="return false;">Approved</a>
-                    <a class="sTag nonSelect tRed" unselectable="on" onselectstart="return false;" onmousedown="return false;">Declined</a>
-                    <a class="sTag nonSelect" unselectable="on" onselectstart="return false;" onmousedown="return false;">In progress</a>
-                    <a class="sTag nonSelect tOrange" unselectable="on" onselectstart="return false;" onmousedown="return false;">Scheduled payments</a>
-                    <a class="sTag nonSelect tPurple" unselectable="on" onselectstart="return false;" onmousedown="return false;">Direct Debit agreement</a>
-                    <a class="sTag nonSelect tBlue" unselectable="on" onselectstart="return false;" onmousedown="return false;">Paid through bPay</a>
-                    <a class="sTag nonSelect tBlue" unselectable="on" onselectstart="return false;" onmousedown="return false;">Paid through Australia Post</a>
-                    <a class="sTag nonSelect tBlue" unselectable="on" onselectstart="return false;" onmousedown="return false;">Paid through Lock Bag</a>
-                    <a class="sTag nonSelect tBlue" unselectable="on" onselectstart="return false;" onmousedown="return false;">Paid through IVR</a>
-                    <a class="sTag nonSelect tBlue" unselectable="on" onselectstart="return false;" onmousedown="return false;">Paid through DEFT payer portal</a>
+                    <a class="sTag nonSelect tDark" unselectable="on" onselectstart="return false;" onmousedown="return false;">Approved</a>
+                    <a class="sTag nonSelect tDark" unselectable="on" onselectstart="return false;" onmousedown="return false;">Declined</a>
+                    <a class="sTag nonSelect tDark" unselectable="on" onselectstart="return false;" onmousedown="return false;">In progress</a>
+                    <a class="sTag nonSelect tDark" unselectable="on" onselectstart="return false;" onmousedown="return false;">Scheduled payments</a>
+                    <a class="sTag nonSelect tDark" unselectable="on" onselectstart="return false;" onmousedown="return false;">Direct Debit agreement</a>
+                    <a class="sTag nonSelect tDark" unselectable="on" onselectstart="return false;" onmousedown="return false;">Paid through bPay</a>
+                    <a class="sTag nonSelect tDark" unselectable="on" onselectstart="return false;" onmousedown="return false;">Paid through Australia Post</a>
+                    <a class="sTag nonSelect tDark" unselectable="on" onselectstart="return false;" onmousedown="return false;">Paid through Lock Bag</a>
+                    <a class="sTag nonSelect tDark" unselectable="on" onselectstart="return false;" onmousedown="return false;">Paid through IVR</a>
+                    <a class="sTag nonSelect tDark" unselectable="on" onselectstart="return false;" onmousedown="return false;">Paid through DEFT payer portal</a>
                 </div>
             </div>
             <div class="modal-footer border-top">
@@ -983,29 +983,6 @@
                     <li role="presentation"><a href="#csv" aria-controls="CSV" role="tab" data-toggle="tab">CSV</a></li>
                 </ul>
                 <br>
-                <h3>Dates range</h3>
-                <div class="form2Col clearfix">
-                    <fieldset class="datePicker pull-left" style="width:48%">
-                        <a href="#">From</a>
-                    </fieldset>
-                    <fieldset class="datePicker pull-right" style="width:48%">
-                        <a href="#">To</a>
-                    </fieldset>
-                </div>
-                <p class="descript">Please note record only goes back 24 months</p>
-                <h3>Select one or more tags</h3>
-                <div>
-                    <a class="sTag nonSelect tGreen" unselectable="on" onselectstart="return false;" onmousedown="return false;">Approved</a>
-                    <a class="sTag nonSelect tRed" unselectable="on" onselectstart="return false;" onmousedown="return false;">Declined</a>
-                    <a class="sTag nonSelect" unselectable="on" onselectstart="return false;" onmousedown="return false;">In progress</a>
-                    <a class="sTag nonSelect tOrange" unselectable="on" onselectstart="return false;" onmousedown="return false;">Scheduled payments</a>
-                    <a class="sTag nonSelect tPurple" unselectable="on" onselectstart="return false;" onmousedown="return false;">Direct Debit agreement</a>
-                    <a class="sTag nonSelect tBlue" unselectable="on" onselectstart="return false;" onmousedown="return false;">Paid through bPay</a>
-                    <a class="sTag nonSelect tBlue" unselectable="on" onselectstart="return false;" onmousedown="return false;">Paid through Australia Post</a>
-                    <a class="sTag nonSelect tBlue" unselectable="on" onselectstart="return false;" onmousedown="return false;">Paid through Lock Bag</a>
-                    <a class="sTag nonSelect tBlue" unselectable="on" onselectstart="return false;" onmousedown="return false;">Paid through IVR</a>
-                    <a class="sTag nonSelect tBlue" unselectable="on" onselectstart="return false;" onmousedown="return false;">Paid through DEFT payer portal</a>
-                </div>
             </div>
             <div class="modal-footer border-top">
                 <button type="button" class="btn btn-primary pull-right waves-effect waves-light mgLeft10" data-dismiss="modal" aria-label="Close">Export</button>
@@ -1457,21 +1434,24 @@
                                 <br><br>
                                 <!-- Payment Frequency -->
                                 <!-- formSelect -->
-                                <fieldset class="formSelect">
-                                  <dl>
-                                      <dt>
-                                          <a href="#"><span class="resultNorm">How often</span></a>
-                                      </dt>
-                                      <dd>
-                                          <ul class="selectToggle NormalStyleWrap">
-                                              <li><a href="#"><div class="typeNorm">Weekly<span class="value">Weekly</span></div></a></li>
-                                              <li><a href="#"><div class="typeNorm">Fortnightly<span class="value">Fortnightly</span></div></a></li>
-                                              <li><a href="#"><div class="typeNorm">Monthly<span class="value">Monthly</span></div></a></li>
-                                              <li><a href="#"><div class="typeNorm">Quaterly<span class="value">Monthly</span></div></a></li>
-                                          </ul>
-                                      </dd>
-                                    </dl>
-                                </fieldset>
+                                <div class="noBkLabelStyle2">
+                                    Payment frequency
+                                </div>
+                                <div>
+                                    <a class="sTag nonSelect tDark" unselectable="on" onselectstart="return false;" onmousedown="return false;">Weekly</a>
+                                    <a class="sTag nonSelect tDark" unselectable="on" onselectstart="return false;" onmousedown="return false;">Fortneightly</a>
+                                    <a class="sTag nonSelect tDark" unselectable="on" onselectstart="return false;" onmousedown="return false;">Monthly</a>
+                                    <a class="sTag nonSelect tDark" unselectable="on" onselectstart="return false;" onmousedown="return false;">Quarterly</a>
+                                </div><br>
+                                <!-- Payment schedule -->
+                                <div class="noBkLabelStyle2">
+                                    Payment schedule
+                                </div>
+                                <div>
+                                    <a class="sTag nonSelect tDark" unselectable="on" onselectstart="return false;" onmousedown="return false;">No end date</a>
+                                    <a class="sTag nonSelect tDark" unselectable="on" onselectstart="return false;" onmousedown="return false;">End on a specific date</a>
+                                    <a class="sTag nonSelect tDark" unselectable="on" onselectstart="return false;" onmousedown="return false;">Exact number of payments</a>
+                                </div><br>
                                 <!-- Payment start date -->
                                 <div class="noBkLabelStyle2">
                                   Select start date
@@ -1480,30 +1460,6 @@
                                 <fieldset class="datePicker">
                                   <a href="#">Date Picker</a>
                                 </fieldset>
-
-
-
-                                <!-- Payment schedule -->
-                                <!-- formSelect -->
-                                <fieldset class="formSelect">
-                                    <dl>
-                                        <dt>
-                                          <a href="#"><span class="resultNorm">Payment Schedule</span></a>
-                                        </dt>
-                                        <dd>
-                                          <ul class="selectToggle NormalStyleWrap">
-                                              <li><a href="#"><div class="typeNorm">No end date<span class="value">No end date</span></div></a></li>
-                                              <li><a href="#"><div class="typeNorm">End on a specific date<span class="value">End on a specific date</span></div></a></li>
-                                              <li><a href="#"><div class="typeNorm">Exact number of payments<span class="value">Exact number</span></div></a></li>
-                                          </ul>
-                                        </dd>
-                                    </dl>
-                                </fieldset>
-
-
-
-
-
                                 <!-- Payment End date -->
                                 <div class="noBkLabelStyle2">
                                   Select end date
@@ -1561,12 +1517,12 @@
                 <div class="modal-body border-top">
                     <ul class="notiList">
                         <li class="new">
-                            <a href="#">
+                            <a href="DDA1.html">
                                 <table width="100%" border="0">
                                     <tr>
                                         <td width="30px"><span class="notiNewdot"></span></td>
                                         <td>
-                                            <p>Direct Debit Agreement from HJ Hooker</p>
+                                            <p>Direct Debit Agreement from LJ Hooker</p>
                                             03/11/2015 2:59 PM
                                         </td>
                                     </tr>
@@ -1579,7 +1535,7 @@
                                     <tr>
                                         <td width="30px"><span class="notiNewdot"></span></td>
                                         <td>
-                                            <p>Direct Debit Agreement from HJ Hooker</p>
+                                            <p>Direct Debit Agreement from LJ Hooker</p>
                                             03/11/2015 2:59 PM
                                         </td>
                                     </tr>
@@ -1592,7 +1548,7 @@
                                     <tr>
                                         <td width="30px"><span class="notiNewdot">></span></td>
                                         <td>
-                                            <p>Direct Debit Agreement from HJ Hooker</p>
+                                            <p>Direct Debit Agreement from LJ Hooker</p>
                                             03/11/2015 2:59 PM
                                         </td>
                                     </tr>

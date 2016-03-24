@@ -20,33 +20,33 @@
                 <button class="navbar-toggle collapsed c-hamburger c-hamburger--htx visible-xs" data-target="#navbar" data-toggle="collapse" type="button">
                     <span>toggle menu</span>
                 </button> 
-                <a class="navbar-brand" href="index.html#"><img class="logo" src="styles/images/logo.png"></a>
+                <a class="navbar-brand" href="dashboard.html"><img class="logo" src="styles/images/logo.png"></a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">  <!-- no-transition -->
                 <ul class="nav navbar-nav">
                     <li class="visible-xs">
-                        <a href="#" class=""><i class="icon-bar-graph"></i>Dashboard</a>
+                        <a href="dashboard.html"><i class="icon-bar-graph"></i>Dashboard</a>
                     </li>
                     <li class="visible-xs">
-                        <a href="#"><i class="icon-exchange-rates"></i>Make a payment</a>
+                        <a href="Payment.html"><i class="icon-exchange-rates"></i>Make a payment</a>
                     </li>
                     <li class="visible-xs">
-                        <a href="#"><i class="icon-note-pad"></i>My DEFT reference number</a>
+                        <a href="DRNmanagement.html"><i class="icon-note-pad"></i>My DEFT reference number</a>
                     </li>
                     <li class="visible-xs">
-                        <a href="#"><i class="icon-wallet-account"></i>My wallet</a>
+                        <a href="wallet.html"><i class="icon-wallet-account"></i>My wallet</a>
                     </li>
                     <li class="visible-xs">
-                        <a href="#"><i class="icon-bar-graph"></i>My agreements</a>
+                        <a href="DDAmanagement.html"><i class="icon-bar-graph"></i>My agreements</a>
                     </li>
                     <li>
                         <a class="faq" href="#"><i class="icon-info-sign-empty"></i>FAQ</a>
                     </li>
                     <li class="active">
-                        <a class="myAccount" href="#"><i class="icon-user"></i>My account</a>
+                        <a class="myAccount" href="accountSetting.html"><i class="icon-user"></i>My account</a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-sign-out"></i>Log out</a>
+                        <a href="logout.html"><i class="fa fa-sign-out"></i>Log out</a>
                     </li>
                 </ul>
             </div>
@@ -61,19 +61,19 @@
             <div class="navbar-header">
                 <ul class="nav navbar-nav subNav">
                     <li>
-                        <a href="#"><i class="icon-bar-graph"></i>Dashboard</a>
+                        <a href="dashboard.html"><i class="icon-bar-graph"></i>Dashboard</a>
                     </li>
                     <li class="active">
-                        <a href="#"><i class="icon-exchange-rates"></i>Make a payment</a>
+                        <a href="Payment.html"><i class="icon-exchange-rates"></i>Make a payment</a>
                     </li>
                     <li>
-                        <a href="#"><i class="icon-note-pad"></i>My DEFT reference number</a>
+                        <a href="DRNmanagement.html"><i class="icon-note-pad"></i>My DEFT reference number</a>
                     </li>
                     <li>
-                        <a href="#"><i class="icon-wallet-account"></i>My wallet</a>
+                        <a href="wallet.html"><i class="icon-wallet-account"></i>My wallet</a>
                     </li>
                     <li>
-                        <a href="#"><i class="icon-bar-graph"></i>My agreements</a>
+                        <a href="DDAmanagement.html"><i class="icon-bar-graph"></i>My agreements</a>
                     </li>
                 </ul>
             </div>
@@ -222,90 +222,70 @@
                                             <div role="tabpanel" class="tab-pane fade" id="schedule">
                                                 <br><br>
                                                   <!-- Payment Frequency -->
-                                                  <!-- formSelect -->
-                                                  <fieldset class="formSelect">
-                                                    <dl>
-                                                        <dt>
-                                                            <a href="#"><span class="resultNorm">How often</span></a>
-                                                        </dt>
-                                                        <dd>
-                                                            <ul class="selectToggle NormalStyleWrap">
-                                                                <li><a href="#"><div class="typeNorm">Weekly<span class="value">Weekly</span></div></a></li>
-                                                                <li><a href="#"><div class="typeNorm">Fortnightly<span class="value">Fortnightly</span></div></a></li>
-                                                                <li><a href="#"><div class="typeNorm">Monthly<span class="value">Monthly</span></div></a></li>
-                                                                <li><a href="#"><div class="typeNorm">Quaterly<span class="value">Monthly</span></div></a></li>
-                                                            </ul>
-                                                        </dd>
-                                                      </dl>
-                                                  </fieldset>
-                                                  <!-- Payment start date -->
-                                                  <div class="noBkLabelStyle2">
-                                                    Select start date
-                                                  </div>
-                                                  <!-- formSelect -->
-                                                  <fieldset class="datePicker">
-                                                    <a href="#">Date Picker</a>
-                                                  </fieldset>
+                                                <div class="noBkLabelStyle2">
+                                                    Payment frequency
+                                                </div>
+                                                <div>
+                                                    <a class="sTag nonSelect tDark" unselectable="on" onselectstart="return false;" onmousedown="return false;">Weekly</a>
+                                                    <a class="sTag nonSelect tDark" unselectable="on" onselectstart="return false;" onmousedown="return false;">Fortneightly</a>
+                                                    <a class="sTag nonSelect tDark" unselectable="on" onselectstart="return false;" onmousedown="return false;">Monthly</a>
+                                                    <a class="sTag nonSelect tDark" unselectable="on" onselectstart="return false;" onmousedown="return false;">Quarterly</a>
+                                                </div><br>
 
+                                                <!-- Payment schedule -->
+                                                <div class="noBkLabelStyle2">
+                                                    Payment schedule
+                                                </div>
+                                                <div>
+                                                    <a class="sTag nonSelect tDark" unselectable="on" onselectstart="return false;" onmousedown="return false;">No end date</a>
+                                                    <a class="sTag nonSelect tDark" unselectable="on" onselectstart="return false;" onmousedown="return false;">End on a specific date</a>
+                                                    <a class="sTag nonSelect tDark" unselectable="on" onselectstart="return false;" onmousedown="return false;">Exact number of payments</a>
+                                                </div><br>
 
+                                                <!-- Payment start date -->
+                                                <div class="noBkLabelStyle2">
+                                                  Select start date
+                                                </div>
+                                                <!-- formSelect -->
+                                                <fieldset class="datePicker">
+                                                  <a href="#">Date Picker</a>
+                                                </fieldset>
+                                                <!-- Payment End date -->
+                                                <div class="noBkLabelStyle2">
+                                                  Select end date
+                                                </div>
+                                                <!-- formSelect -->
+                                                <fieldset class="datePicker">
+                                                  <a href="#">Date Picker</a>
+                                                </fieldset>
+                                                <p class="returnData">Total 46 payments</p>
 
-                                                  <!-- Payment schedule -->
-                                                  <!-- formSelect -->
-                                                  <fieldset class="formSelect">
-                                                    <dl>
-                                                    <dt>
-                                                        <a href="#"><span class="resultNorm">Payment Schedule</span></a>
-                                                    </dt>
-                                                    <dd>
-                                                        <ul class="selectToggle NormalStyleWrap">
-                                                            <li><a href="#"><div class="typeNorm">No end date<span class="value">No end date</span></div></a></li>
-                                                            <li><a href="#"><div class="typeNorm">End on a specific date<span class="value">End on a specific date</span></div></a></li>
-                                                            <li><a href="#"><div class="typeNorm">Exact number of payments<span class="value">Exact number</span></div></a></li>
-                                                        </ul>
-                                                    </dd>
-                                                  </dl>
-                                                  </fieldset>
-
-
-
-
-
-                                                    <!-- Payment End date -->
-                                                    <div class="noBkLabelStyle2">
-                                                      Select end date
-                                                    </div>
-                                                    <!-- formSelect -->
-                                                    <fieldset class="datePicker">
-                                                      <a href="#">Date Picker</a>
-                                                    </fieldset>
-                                                    <p class="returnData">Total 46 payments</p>
-
-                                                    <!-- Exact number of payments -->
-                                                    <!-- <div class="noBkLabelStyle2">
-                                                      Select number of payments
-                                                    </div>   -->                            
-                                                    <!-- formSelect -->
-                                                    <!-- <fieldset class="formSelectStyle numberOfPayment">
-                                                      <select>
-                                                          <option>2</option>
-                                                          <option>3</option>
-                                                          <option>4</option>
-                                                          <option>5</option>
-                                                          <option>6</option>
-                                                          <option>7</option>
-                                                          <option>8</option>
-                                                          <option>9</option>
-                                                          <option>10</option>
-                                                          <option>11</option>
-                                                          <option>12</option>
-                                                      </select>
-                                                    </fieldset> -->
-                                                    <fieldset class="form-group">
-                                                          <label for="payment">Number of payments</label>
-                                                          <input id="payment" type="text" class="form-control" placeholder="(0 - 100)">
-                                                    </fieldset>
-                                                <p class="returnData">Payment occurs weekly on a Monday, last payment at 11/10/2016</p>
-                                                  
+                                                <!-- Exact number of payments -->
+                                                <!-- <div class="noBkLabelStyle2">
+                                                  Select number of payments
+                                                </div>   -->                            
+                                                <!-- formSelect -->
+                                                <!-- <fieldset class="formSelectStyle numberOfPayment">
+                                                  <select>
+                                                      <option>2</option>
+                                                      <option>3</option>
+                                                      <option>4</option>
+                                                      <option>5</option>
+                                                      <option>6</option>
+                                                      <option>7</option>
+                                                      <option>8</option>
+                                                      <option>9</option>
+                                                      <option>10</option>
+                                                      <option>11</option>
+                                                      <option>12</option>
+                                                  </select>
+                                                </fieldset> -->
+                                                <fieldset class="form-group">
+                                                      <label for="payment">Number of payments</label>
+                                                      <input id="payment" type="text" class="form-control" placeholder="(0 - 100)">
+                                                </fieldset>
+                                            <p class="returnData">Payment occurs weekly on a Monday, last payment at 11/10/2016</p>
+                                                
 
 
 
@@ -461,7 +441,7 @@
 
                     <!-- CTA -->
                     <div class="col-xs-12 ctaWrap">
-                        <button type="button" class="btn btn-primary btn-lg pull-right mgLeft10 waves-effect waves-light" data-toggle="modal" data-target=".modalSuccess">&nbsp;&nbsp;&nbsp;Next&nbsp;&nbsp;&nbsp;</button>
+                        <button onclick="location.href='PaymentConfirm.html';" type="button" class="btn btn-primary btn-lg pull-right mgLeft10 waves-effect waves-light" data-toggle="modal" data-target=".modalSuccess">&nbsp;&nbsp;&nbsp;Next&nbsp;&nbsp;&nbsp;</button>
                         <button type="button" class="btn btn-cancel btn-lg pull-right waves-effect waves-light">Cancel</button>    
                     </div>
                 </section>
