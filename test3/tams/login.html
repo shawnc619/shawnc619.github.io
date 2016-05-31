@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <title>DEFT</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta name="version" content="1454382174725"/>
+    <link rel="stylesheet" type="text/css" href="styles/css/deft.css"/>
+    <link type="image/x-icon" href="styles/images/favico.ico" rel="shortcut icon" />
+    <script src="styles/js/jquery-1.11.1.min.js"></script>
+    <script src="styles/js/main.js"></script>
+    <script language="JavaScript">
+
+        function do_login() {
+            if (IsNumeric(document.getElementById("password").value)) {
+                document.getElementById("login_type").value = "token";
+            }
+            else {
+                document.getElementById("login_type").value = "pwd";
+            }
+        }
+        function IsNumeric(sText) {
+            var ValidChars = "0123456789";
+            var IsNumber = true;
+            var Char;
+            for (i = 0; i < sText.length && IsNumber == true; i++) {
+                Char = sText.charAt(i);
+                if (ValidChars.indexOf(Char) == -1) {
+                    IsNumber = false;
+                }
+            }
+            if (i != 8) {
+                IsNumber = false
+            }
+            return IsNumber;
+        }
+        
+         $(document).ready(function(){
+            setBg();
+            setSlider();
+            setFloatingLabel();
+         });
+
+    </script>
+
+    <style> body { display : none;} </style>
+</head>
+
+
+<!--[if lt IE 8]>
+<body ontouchstart="" class="lt-ie8 desktop-view"><![endif]-->
+<!--[if IE 8]>
+<body ontouchstart="" class="ie8 desktop-view"><![endif]-->
+<!--[if IE 9]>
+<body ontouchstart="" class="ie9 desktop-view"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<body ontouchstart="" class="desktop-view"><!--<![endif]-->
+
+<!--click jacking protection -->
+<script> 
+  if (self == top) {
+    var theBody = document.getElementsByTagName('body')[0];
+    theBody.style.display = "block";
+  } else { 
+    top.location = self.location;
+  }
+</script>
+
+<div class="main-container">
+    
+<div class="login-bg"></div>
+    <header id="header">
+        <div class="container-fluid">
+            <!-- Primary Navbars -->
+
+            <div class="navigation navigation-primary-ebanking" role="navigation">
+
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#" title="DEFT">deft</a>
+                </div>
+
+                <div class="navigation-primary-ebanking-menu">
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container container-fluid">
+
+     <!--[if lt IE 9]>
+                <div class="container-fluid">
+                <div class="col-xs-11">
+                <div class="alert alerts-alert alert-warning alert-dismissable">
+                  <div class="alerts-alert-icon"><span class="icon-alert-sign"></span></div>
+                  <strong>Unsupported browser</strong><br/> You are using a browser that is not supported. Please upgrade to a newer browser such as Internet Explorer 9 or newer, Chrome or Firefox.
+                </div>
+                </div>
+                </div>
+                        <![endif]-->
+
+        
+        <div class="centerBox">
+
+            <div class="inner" >
+                <h3 class="heading-hr-with-underline bold">Online Banking</h3>
+                        
+                <FORM name="LOGINBOX" METHOD="POST" ACTION="../../pkmslogin.form"
+                      ENCTYPE="application/x-www-form-urlencoded" autocomplete="off" autofill="off" id="login"
+                      onSubmit="do_login();">
+                    <div class="inputBox">
+                         <input hidden class="TableCopy" maxlength="16" id="username" name="username"
+                                                   size="16">
+                        <span class="inputOverlay">
+                            Access Code
+                        </span>
+                        <i class="fa fa-lock"></i>
+                        <input id="text" type="text"
+                                                      maxlength="16" id="username"
+                                                       name="username" size="16" />
+                        <div class="clearfix"> </div>
+                    </div>
+                    
+                    <div class="inputBox">
+                         <input hidden maxlength="16" id="password" name="password" size="16"
+                                                   type="password" value="" autocomplete="off" autofill="off">
+
+                        <span class="inputOverlay">
+                            Password
+                        </span>
+                        <i class="fa fa-user"></i>
+                        <input id="password" type="password" maxlength="16" id="password"
+                                                       name="password" size="16" type="password" value=""
+                                                       autocomplete="off" autofill="off">
+                        <div class="clearfix"> </div>
+                    </div>
+                    
+                   
+                    <input name="login-form-type" value="pwd" id="login_type" type="hidden">
+                    <button type="submit" class="btn btn-primary btn-block">Login to MGL Admin</button>
+                </form>
+                
+                <div class="slider">
+                    <a class="sliderBtn" href="#">
+                        Need help?
+                  </a>
+                  <div class="sliderContent">
+                    If you have lost or forgotten your Access Code or password, please contact our Client Service Team on 1300 304 461 (Mortgages: Operating hours 9:00am to 5:00pm (Sydney Time) Monday-Friday excluding public holidays).
+                  </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center footerlinks" >
+                <div class='navigation-menu navigation-menu-footer' mq-togglable toggle-key='footermenu'> <ul class='navigation-menu-items navigation-menu-items-footer'> <li><a href='../dafiles/Internet/web/au/apps/online/mas/legal/important-information.html' target='_blank'>Important information</a></li> <li>|</li><li><a href='../dafiles/Internet/web/au/apps/online/mas/legal/terms-and-conditions-of-use.html' target='_blank'>Terms and conditions of use</a></li> <li>|</li><li><a href='../dafiles/Internet/web/au/apps/online/mas/legal/privacy-policy.html' target='_blank'>Privacy policy</a></li> </ul> </div>
+            </div>
+        </div>
+        
+    </div>
+
+    
+</div>
+</body>
+</html>

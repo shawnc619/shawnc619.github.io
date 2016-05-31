@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+
+    <title>DEFT</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta name="version" content="1454382174725"/>
+    <link rel="stylesheet" type="text/css" href="styles/css/deft.css"/>
+    <link type="image/x-icon" href="styles/images/favico.ico" rel="shortcut icon" />
+    <script src="styles/js/jquery-1.11.1.min.js"></script>
+    <script src="styles/js/main.js"></script>
+    <script language="JavaScript">
+
+        function do_login() {
+            if (IsNumeric(document.getElementById("password").value)) {
+                document.getElementById("login_type").value = "token";
+            }
+            else {
+                document.getElementById("login_type").value = "pwd";
+            }
+        }
+        function IsNumeric(sText) {
+            var ValidChars = "0123456789";
+            var IsNumber = true;
+            var Char;
+            for (i = 0; i < sText.length && IsNumber == true; i++) {
+                Char = sText.charAt(i);
+                if (ValidChars.indexOf(Char) == -1) {
+                    IsNumber = false;
+                }
+            }
+            if (i != 8) {
+                IsNumber = false
+            }
+            return IsNumber;
+        }
+        
+         $(document).ready(function(){
+            setBg();
+            setSlider();
+            setFloatingLabel();
+         });
+
+    </script>
+
+    <style> body { display : none;} </style>
+</head>
+
+
+<!--[if lt IE 8]>
+<body ontouchstart="" class="lt-ie8 desktop-view"><![endif]-->
+<!--[if IE 8]>
+<body ontouchstart="" class="ie8 desktop-view"><![endif]-->
+<!--[if IE 9]>
+<body ontouchstart="" class="ie9 desktop-view"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<body ontouchstart="" class="desktop-view"><!--<![endif]-->
+
+<!--click jacking protection -->
+<script> 
+  if (self == top) {
+    var theBody = document.getElementsByTagName('body')[0];
+    theBody.style.display = "block";
+  } else { 
+    top.location = self.location;
+  }
+</script>
+
+<div class="main-container">
+    
+<div class="login-bg"></div>
+    <header id="header">
+        <div class="container-fluid">
+            <!-- Primary Navbars -->
+
+            <div class="navigation navigation-primary-ebanking" role="navigation">
+
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#" title="DEFT">deft</a>
+                </div>
+
+                <div class="navigation-primary-ebanking-menu">
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container container-fluid">
+
+     <!--[if lt IE 9]>
+                <div class="container-fluid">
+                <div class="col-xs-11">
+                <div class="alert alerts-alert alert-warning alert-dismissable">
+                  <div class="alerts-alert-icon"><span class="icon-alert-sign"></span></div>
+                  <strong>Unsupported browser</strong><br/> You are using a browser that is not supported. Please upgrade to a newer browser such as Internet Explorer 9 or newer, Chrome or Firefox.
+                </div>
+                </div>
+                </div>
+                        <![endif]-->
+
+        
+        <div class="centerBox">
+            <div class="inner" >
+                <div class="border-btm">
+                    <h3 class="bold pull-left">Reset password and login</h3>
+                    <h3 class="bold pull-right">2/3</h3>
+                    <div style="clear:both"></div>   
+                </div>
+                <div class="border-btm2">
+                    A temporary password has been sent to your email address, please enter below and set up your new password to continue.
+                </div>  
+                <div  class="border-btm2">
+                    <label class="pull-left">Email address</label>
+                    <div class="pull-right"><strong>elvis.presley@gmail.com</strong></div>
+                    <div class="clear"></div> 
+                </div>
+                <form name="LOGINBOX" METHOD="POST" ACTION="../../pkmslogin.form"
+                      ENCTYPE="application/x-www-form-urlencoded" autocomplete="off" autofill="off" id="login"
+                      onSubmit="do_login();">
+                    <!-- <div class="inputBox">
+                        <span class="inputOverlay animate-small1">
+                            Email Adress
+                        </span>
+                        <input id="text" type="text" maxlength="50" id="username" name="username" size="16" />
+                        <div class="clearfix"></div>
+                    </div> -->
+                    
+                    <div class="inputBox">
+                         <!-- <input hidden maxlength="16" id="password" name="password" size="16"
+                                                   type="password" value="" autocomplete="off" autofill="off"> -->
+
+                        <span class="inputOverlay animate-small1">
+                            Temporary Password
+                        </span>
+                        <input id="password" type="password" maxlength="16" id="password"
+                                                       name="password" size="16" type="password" value=""
+                                                       autocomplete="off" autofill="off"
+                                                       placeholder="Enter temporary password"
+                                                       >
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="inputBox">
+                         <!-- <input hidden maxlength="16" id="password" name="password" size="16"
+                                                   type="password" value="" autocomplete="off" autofill="off"> -->
+
+                        <span class="inputOverlay animate-small1">
+                            New password
+                        </span>
+                        <input id="password" type="password" maxlength="16" id="password"
+                                                       name="password" size="16" type="password" value=""
+                                                       autocomplete="off" autofill="off"
+                                                       placeholder="Enter new password"
+                                                       >
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="inputBox">
+                         <!-- <input hidden maxlength="16" id="password" name="password" size="16"
+                                                   type="password" value="" autocomplete="off" autofill="off"> -->
+
+                        <span class="inputOverlay animate-small1">
+                            Confirm new password
+                        </span>
+                        <input id="password" type="password" maxlength="16" id="password"
+                                                       name="password" size="16" type="password" value=""
+                                                       autocomplete="off" autofill="off"
+                                                       placeholder="Re-enter new password"
+                                                       >
+                        <div class="clearfix"></div>
+                    </div>
+                    <input name="login-form-type" value="pwd" id="login_type" type="hidden">
+                    <button type="submit" class="btn btn-primary pull-right">Update</button>
+                    <div class="clear"></div>
+                </form>
+                <div class="border-top">
+                    Haven't received the temporary password? Ensure you checked your junkmail, else <a href="#">please click here to resend</a>.
+                </div>
+            </div>
+            <hr>
+            <div class="text-center footerlinks" >
+                <div class='navigation-menu navigation-menu-footer' mq-togglable toggle-key='footermenu'> 
+                    <ul class='navigation-menu-items navigation-menu-items-footer'> 
+                        <li><a href='../dafiles/Internet/web/au/apps/online/mas/legal/privacy-policy.html' target='_blank'>Privacy policy</a></li>
+                        <li>|</li>
+                        <li><a href='../dafiles/Internet/web/au/apps/online/mas/legal/terms-and-conditions-of-use.html' target='_blank'>Terms of use</a></li>
+                        <li>|</li>
+                        <li><a href='../dafiles/Internet/web/au/apps/online/mas/legal/important-information.html' target='_blank'>Important information</a></li> 
+                        <li>|</li>
+                        <li>© Macquarie Group Limited</li> 
+                    </ul> 
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    
+</div>
+</body>
+</html>

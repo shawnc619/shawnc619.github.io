@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <title>DEFT</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta name="version" content="1454382174725"/>
+    <link rel="stylesheet" type="text/css" href="styles/css/deft.css"/>
+    <link type="image/x-icon" href="styles/images/favico.ico" rel="shortcut icon" />
+    <script src="styles/js/jquery-1.11.1.min.js"></script>
+    <script src="styles/js/main.js"></script>
+    <script>
+    
+        $(document).ready(function(){
+            
+            $("input#new1").blur(function(){
+                var el = $(this).parent('.inputBox');
+                setTimeout(function(){
+                    if(!el.hasClass('selectedInput')) {
+                        validateNewPassword ();
+                        $('#passwordHint').hide('fast');
+                    }
+                },100);
+            });
+            setBg();
+            setSlider();
+            setFloatingLabel();
+        });
+        
+        function checkPasswordMatch() {
+            if(jQuery("#new1").val() !== jQuery("#new2").val()){
+               
+                $('#confirmNewPass').addClass('error');
+                $('#confirmNewPass .inputOverlay .labelText').hide();
+                $('#confirmNewPass .inputOverlay .errorMsg').show();
+                return false;
+            }
+        }
+
+        function clearFieldError(elId) {
+            $('#'+elId).removeClass('error');
+            $('#'+elId).find('.inputOverlay .labelText').show();
+            $('#'+elId).find('.inputOverlay .errorMsg').hide();
+        }
+        
+        function validateNewPassword () {
+           
+            var newPass = $("input#new1").val();
+            var error = '';
+            if(newPass.length === 0) {
+                return;
+            }
+           
+
+            if(newPass.length<6 || newPass.length >8) {
+                error = 'Password must 6 to 8 characters long.';
+            } else if(newPass.match(/^[0-9a-zA-Z]+$/) === null) {
+                error = 'Password must not include an apostrophe, space or a symbol.';
+            } else if(newPass.match(/[a-z]/gi) === null || newPass.match(/[a-z]/gi).length<2) {
+            //    alert(newPass.match(/[a-z]/gi).length);
+                error = 'Password must contain at least 2 alphabetic characters.';
+            } else {
+                var repeatChars = newPass.match(/(.)(?=\1)/g);
+                if(repeatChars===null || repeatChars<0) {
+                    return;
+                }
+                var rgx = null;
+                var matched = null;
+                for(var i=0; i<repeatChars.length; i++) {
+                    rgx = new RegExp(repeatChars[i], 'g');
+                    matched = newPass.match(rgx);
+                    if(matched!==null && matched.length>5) {
+                        error = 'Password must not repeat the same character more than 5 times.';
+                        i = repeatChars.length;
+                    }
+                }
+            }
+            
+            
+            if(error !== '') {
+                $('#newPass').addClass('error');
+                $('#newPass .inputOverlay .labelText').hide();
+                $('#newPass .inputOverlay .errorMsg').html(error);
+                $('#newPass .inputOverlay .errorMsg').show();
+            }
+            
+        }
+     </script>
+    <style> body { display : none;} </style>
+</head>
+
+<!--[if lt IE 8]>
+<body ontouchstart="" class="lt-ie8 desktop-view"><![endif]-->
+<!--[if IE 8]>
+<body ontouchstart="" class="ie8 desktop-view"><![endif]-->
+<!--[if IE 9]>
+<body ontouchstart="" class="ie9 desktop-view"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<body ontouchstart="" class="desktop-view"><!--<![endif]-->
+
+<!--click jacking protection -->
+<script> 
+  if (self == top) {
+    var theBody = document.getElementsByTagName('body')[0];
+    theBody.style.display = "block";
+  } else { 
+    top.location = self.location;
+  }
+</script>
+
+<div class="main-container">
+    <header id="header">
+        <div class="container-fluid">
+            <!-- Primary Navbars -->
+
+            <div class="navigation navigation-primary-ebanking" role="navigation">
+
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#" title="DEFT">deft</a>
+                </div>
+
+                <div class="navigation-primary-ebanking-menu">
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <div class="container container-fluid" >
+       <div class="login-bg"></div>
+
+        <div class="centerBox">
+            <div class="inner">
+                <h3 class="heading-hr-with-underline">Change password</h3>
+		<FORM method="POST" action="../../pkmspasswd.form" name="passwdbox" enctype="application/x-www-form-urlencoded" autocomplete="off" autofill="off" onsubmit="return checkPasswordMatch();">
+        
+            <p>Access Code:: %USERNAME%</p>
+            <div class="inputBox">
+                <i class="fa fa-lock"></i>
+                <span class="inputOverlay">
+                    Current password
+                </span>
+                <input type="password" name="old" value="" size="8" maxlength="8" autocomplete="off" autofill="off">
+            </div>
+            
+            <div class="inputBox" id="newPass">
+                  <i class="fa fa-lock"></i>
+                  <span class="inputOverlay">
+                    <span class="labelText">New password</span>
+                    <span class="errorMsg">Passwords do not match</span>
+                  </span>
+                  
+                  <input onfocus="$('#passwordHint').show('fast');" type="password" id="new1" name="new1" value="" size="8" maxlength="8" autocomplete="off" autofill="off"  onkeydown="clearFieldError('newPass'); clearFieldError('confirmNewPass');">
+            </div>
+            <div id="passwordHint" style="display:none">
+                <p>Passwords are case sensitive, so "Password" is not the same as "password".</p>
+                <p>Your password should:
+                  <ul>
+                    <li>not be the same as any of your last six passwords.</li>
+                    <li>avoid using your name, username, date of birth or something easily identifiable</li>
+                  </ul>
+               </p>
+            </div>
+            <div class="inputBox"  id="confirmNewPass">
+                <i class="fa fa-lock"></i>
+                <span class="inputOverlay">
+                    <span class="labelText">Confirm new password</span>
+                    <span class="errorMsg">Passwords do not match</span>
+                </span>
+
+                <input type="password" id="new2" name="new2" value="" size="8" maxlength="8" autocomplete="off" autofill="off" onblur="checkPasswordMatch();" onkeydown="clearFieldError('confirmNewPass');">
+            </div>
+            
+				
+            <button type="submit" class="btn btn-primary btn-block">Change password</button>
+            </form>
+            <div class="slider">
+                    <a class="sliderBtn" href="#">
+                        Need help?
+                  </a>
+                  <div class="sliderContent">
+                    If you have lost or forgotten your Access Code or password, please contact our Client Service Team on 1300 304 461 (Mortgages: Operating hours 9:00am to 5:00pm (Sydney Time) Monday-Friday excluding public holidays).
+                  </div>
+                </div>
+            
+        </div>
+        <hr>
+       <div class="text-center footerlinks" >
+                <div class='navigation-menu navigation-menu-footer' mq-togglable toggle-key='footermenu'> <ul class='navigation-menu-items navigation-menu-items-footer'> <li><a href='../dafiles/Internet/web/au/apps/online/mas/legal/important-information.html' target='_blank'>Important information</a></li> <li>|</li><li><a href='../dafiles/Internet/web/au/apps/online/mas/legal/terms-and-conditions-of-use.html' target='_blank'>Terms and conditions of use</a></li> <li>|</li><li><a href='../dafiles/Internet/web/au/apps/online/mas/legal/privacy-policy.html' target='_blank'>Privacy policy</a></li> </ul> </div>
+        </div>
+	</div>
+	</div>
+
+<br/>
+<br/>
+
+</div>
+
+</body>
+</html>
