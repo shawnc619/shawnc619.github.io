@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DEFT payment gateway</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+<link href="styles/css/font-awesome.css" rel="stylesheet">
+<link href="styles/css/bootstrap.css" rel="stylesheet">
+<link href="styles/css/awesome-bootstrap-checkbox.css" rel="stylesheet">
+<link href="styles/css/icomoon.css" rel="stylesheet">
+<link href="styles/css/materialize.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<section class="wrapPush">
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header"> 
+                <a class="navbar-brand" href="dashboard.html"><img class="logo" src="styles/images/logo.png"></a>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid placeholder printHide"></div>
+    <div class="container-fluid dottedPattern printHide"></div>
+
+    <div class="container pageHeading">
+        <div class="row">
+            <div class="col-sm-push-2 col-md-push-3 col-sm-8 col-md-6 clearfix">
+                <h1 class="pull-left">Sign up to DEFT</h1>
+                <h1 class="pull-right noOfSteps"><span class="hidden-xs">&nbsp;</span></h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container DBmargin">
+        <div class="row">
+            <main class="container col-sm-push-2 col-md-push-3 col-sm-8 col-md-6 printHide">
+                <section class="row registration">
+                    <div class="col-xs-12 clearfix registWrap border-btm">
+                        <div class="form2Col clearfix">
+                            <fieldset class="form-group pull-left" >
+                                <label for="firstName">First name</label>
+                                <input id="firstName" type="text" class="form-control" placeholder="e.g. John">
+                            </fieldset>
+                            <fieldset class="form-group pull-right">
+                                <label for="lastName">Last name</label>
+                                <input id="lastName" type="text" class="form-control" placeholder="e.g. Smith">
+                            </fieldset>
+                        </div>
+                        <fieldset class="form-group">
+                            <label for="email">Email address</label>
+                            <input id="email" type="email" class="form-control" placeholder="john.smith@example.com">
+                        </fieldset>
+                        <!-- formSelect -->
+                        <fieldset class="formSelectStyle country">
+                            <select>
+                                <option>Australia</option>
+                                <option>International</option>
+                            </select>
+                        </fieldset>
+                        <div id="mobile">
+                            <fieldset class="form-group">
+                                <label for="mobile1">Mobile number</label>
+                                <input id="mobile1" type="tel" class="form-control" placeholder="Please enter mobile number">
+                            </fieldset>
+                            <p class="descript"><a href="#" id="mobileHide">Add a landline</a></p>
+                        </div>
+                        <div id="landline">
+                            <fieldset class="form-group">
+                                <label for="landlinePhone">Phone number</label>
+                                <input id="landlinePhone" type="tel" class="form-control" placeholder="Please enter your phone number">
+                            </fieldset>
+                        </div>
+
+                    </div>
+                    <!-- Step 5 -->
+                      <div class="col-xs-12"><br>
+                            <div class="checkbox checkbox-primary checkbox-circle mgbtm20">
+                                <input id="TCPrivacyStatementAgreement" type="checkbox">
+                                <label for="TCPrivacyStatementAgreement">I acknowledge that I have read and accept the <a href="#">DEFT Terms & Conditions</a>, and understand that my details will be handled in accordance with the terms of the <a href="#">Privacy Statement</a>.</label>
+                            </div>
+                      </div>
+                    <!-- CTA -->
+                    <div class="col-xs-12 ctaWrap">
+                        <button onclick="location.href='registration2.html';" type="button" class="btn btn-primary btn-lg pull-right mgLeft10 waves-effect waves-light">Create account</button>
+                    </div>
+                </section>
+            </main>
+            
+
+        </div>
+    </div>
+</section>
+
+<footer class="container-fluid">
+    <div class="col-xs-12 col-sm-8">
+        <ul>
+            <li><a href="#">Privacy policy</a> &nbsp;|</li>
+            <li><a href="#">Terms of use</a> &nbsp;|</li>
+            <li><a href="#">Important information</a></li>
+        </ul>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+        <p class="copyRightMGL">&copy; Macquarie Group Limited</p>
+    </div>
+</footer>
+
+
+<!-- Tooltip DRN -->
+<div class="modal fade modalInfo1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-info">
+            <div class="modal-header clearfix">
+                <h3>DEFT reference number</h3>
+                
+            </div>
+            <div class="modal-body border-top clearfix">
+                <p>This is a number containing up to 20 digits provided to you by your biller. You can usually find it on the invoice, card or letter from your biller.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary pull-right waves-effect waves-light"  data-dismiss="modal">Got it</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Tooltip Security code -->
+<div class="modal fade modalInfo2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-info">
+            <div class="modal-header clearfix">
+                <h3>Security code</h3>
+            </div>
+            <div class="modal-body border-top clearfix">
+                <p>This is a number printed on your card. For Visa, MasterCard and Diners cards, it is the 3 digit number printed on the back of the card. For American Express cards, it is the 4 digit number printed in small type on the front of your card.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary pull-right waves-effect waves-light"  data-dismiss="modal">Got it</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Tooltip Surcharge -->
+<div class="modal fade modalInfo3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-info">
+            <div class="modal-header clearfix">
+                <h3>Surcharge</h3>
+            </div>
+            <div class="modal-body border-top clearfix">
+                <p>This is a DEFT fee which is a percentage of the transaction amount, charged on card payments.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary pull-right waves-effect waves-light" data-dismiss="modal">Got it</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/custom.js"></script>
+
+
+
+</body>
+</html>
