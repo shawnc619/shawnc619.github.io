@@ -12043,7 +12043,7 @@ ul.pwPhrase li{
   padding:1px 0 15px 30px;
 }
 .migrationP li{
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin:20px 0
 }
 
@@ -12051,12 +12051,12 @@ ul.pwPhrase li{
   height: 100%;
   display: table-cell;
   vertical-align: middle;
-  font-size: 2rem;
+  font-size: 1.8rem;
   padding-left:10px;
 }
 
 .migrationP .icon-numbers1, .migrationP .icon-numbers2, .migrationP .icon-numbers3, .migrationP .icon-numbers4{
-  font-size:6rem;
+  font-size:5.5rem;
   display: table-cell;
   color:#8b8b8b;
 }
