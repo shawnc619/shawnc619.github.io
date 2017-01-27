@@ -12032,7 +12032,7 @@ ul.pwPhrase li{
 
 .migrationP p{
   font-size: 1.6rem;
-  margin-bottom: 24px
+  margin-bottom: 16px
 }
 .migrationP h3{
   font-size: 2.4rem;
@@ -12044,7 +12044,7 @@ ul.pwPhrase li{
 }
 .migrationP li{
   font-size: 1.8rem;
-  margin:20px 0
+  margin:16px 0
 }
 
 .migrationP .text{
@@ -12056,11 +12056,30 @@ ul.pwPhrase li{
 }
 
 .migrationP .icon-numbers1, .migrationP .icon-numbers2, .migrationP .icon-numbers3, .migrationP .icon-numbers4{
-  font-size:5.5rem;
+  font-size:5rem;
   display: table-cell;
   color:#8b8b8b;
 }
 
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  .migrationHeading{
+    font-weight: 300;
+    margin-bottom: 20px;
+    font-size: 2.6rem;
+  }
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  
+}
 /*Owl Carousel*/
 .owl-nav{
 text-align:center;
