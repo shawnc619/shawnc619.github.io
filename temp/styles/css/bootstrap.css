@@ -12024,7 +12024,7 @@ ul.pwPhrase li{
 .migrationHeading{
   font-weight: 300;
   margin-bottom: 20px;
-  font-size: 2.6rem;
+  font-size: 2.5rem;
 }
 .migrationP{
   font-weight: 300;
@@ -12043,15 +12043,15 @@ ul.pwPhrase li{
   padding:1px 0 15px 30px;
 }
 .migrationP li{
-  font-size: 1.9rem;
-  margin:18px 0
+  font-size: 2rem;
+  margin:20px 0
 }
 
 .migrationP .text{
   height: 100%;
   display: table-cell;
   vertical-align: middle;
-  font-size: 1.9rem;
+  font-size: 2rem;
   padding-left:10px;
 }
 
