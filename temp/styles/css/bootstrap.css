@@ -12022,9 +12022,10 @@ ul.pwPhrase li{
   margin: 20px 0 0;
 }
 .migrationHeading{
-  font-weight: 300;
-  margin-bottom: 20px;
-  font-size: 2.4rem;
+  font-weight: 400;
+  margin-bottom: 24px;
+  font-size: 3rem;
+  line-height: 1.3;
 }
 .migrationP{
   font-weight: 300;
@@ -12043,7 +12044,7 @@ ul.pwPhrase li{
   padding:1px 0 15px 30px;
 }
 .migrationP li{
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   margin:16px 0
 }
 
@@ -12063,11 +12064,7 @@ ul.pwPhrase li{
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
-  .migrationHeading{
-    font-weight: 300;
-    margin-bottom: 20px;
-    font-size: 2.6rem;
-  }
+  
 
 }
 
