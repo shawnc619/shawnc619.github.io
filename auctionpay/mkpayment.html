@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <title>DEFT Make a payment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <link rel="stylesheet" href="styles/css/materialize.css"/>
+    <link rel="stylesheet" href="styles/css/custom.css"/>
+        <link href="styles/css/font-awesome.css" rel="stylesheet">
+    <link href="styles/css/awesome-bootstrap-checkbox.css" rel="stylesheet">
+    <link href="styles/css/icomoon.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/css/auctionpay.css"/>
+    <link rel="icon" href="images/favico.ico"/>
+    <script src="validations.js"></script>
+
+</head>
+<body class="PageTwo">
+<section class="wrapPush">
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand"><img class="logo" src="styles/images/logo.png"/></a>
+        </div>
+    </div>
+</nav>
+
+<br><br>
+<div class="container DBmargin">
+    <div class="row">
+        <main class="col-sm-push-1 col-md-push-2 col-sm-10 col-md-8" id="payer">
+            <section class="row">
+                <div class="col-xs-12 intructWrap">
+                    <h2 class="titlePayer text-center">Payer to complete this section</h2>
+                    <p class="text-center">Congratulations on the purchase of</p>
+                    <h2 class="text-center mgTop10">1 Shelley Street Sydney</h2>
+                    <p class="text-center">Please review and fill in the payment details</p>
+                    <hr class="dashedMrgin0">
+                    <div class="col-xs-12 resultWrap head clearfix">
+                        <!-- col1 -->
+                        <table class="resultCol">
+                            <tbody><tr>
+                                <td width="50%" valign="top">
+                                     <div class="formlabel">Payment to be made to</div>
+                                </td>
+                                <td width="50%" valign="top">
+                                    <div class="text-right">Real Estate Agency</div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <!-- col2 -->
+                        <table class="resultCol">
+                            <tbody><tr>
+                                <td width="50%" valign="top">
+                                     <div class="formlabel">Deposit amount</div>
+                                </td>
+                                <td width="50%" valign="top">
+                                    <div class="text-right">$A100,000.00</div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="row">
+                    <!-- Step 1 -->
+                    <div class="col-xs-12">
+                        <div class="panel-group" id="accordion">
+                            <div class="panel panel-default">
+                                <div class="panel-heading inverseStyle">
+                                    <h4 class="panel-title"><a class="accordion-toggle" data-parent="#accordion" data-toggle="collapse" href="#collapse1">1. Enter payment method details</a></h4>
+                                </div>
+                                <div class="panel-collapse collapse in" id="collapse1">
+                                    <div class="panel-body panel-body-padding">
+                                        <div class="form2Col clearfix">
+                                            <fieldset class="form-group pull-left" style="width:42%">
+                                              <label for="bsb">BSB</label>
+                                              <input id="bsb" type="tel" class="form-control" placeholder="123 - 456">
+                                            </fieldset>
+                                            <fieldset class="form-group pull-right" style="width:55%">
+                                              <label for="accNum">Account number</label>
+                                              <input id="accNum" type="tel" class="form-control" placeholder="123456789">
+                                            </fieldset>
+                                        </div>
+                                        <p class="returnBank">Westpac St Leonards</p>
+                                        <fieldset class="form-group">
+                                          <label for="accNam">Account name</label>
+                                          <input id="accNam" type="text" class="form-control" placeholder="Jone Smith">
+                                        </fieldset>
+                                        <p class="descript">Please note some bank accounts do not allow direct debit withdrawals, including many high interest savings accounts. To check whether this applies to your account, please contact your financial institution.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="col-xs-12">
+                        <div class="panel-group" id="accordion2">
+                            <div class="panel panel-default"><!-- "disabled" here -->
+                                <div class="panel-heading inverseStyle"> 
+                                    <h4 class="panel-title">
+                                        <a class="accordion-toggle" data-parent="#accordion2" data-toggle="collapse" href="#collapseTwo">2. Enter email to receive a receipt of the transaction</a>
+                                    </h4>
+                                </div>
+                                <div class="panel-collapse collapse in" id="collapseTwo">
+                                    <div class="panel-body panel-body-padding">
+                                         <fieldset class="form-group">
+                                              <label for="email">Email address</label>
+                                              <input id="email" type="email" class="form-control" placeholder="john.smith@example.com">
+                                        </fieldset>                
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+
+
+                      <!-- Step 5 -->
+                      <div class="col-xs-12 border-top"><br>
+                            <fieldset class="checkbox checkbox-primary checkbox-circle mgbtm20">
+                                <input id="sendEmailReceipt" type="checkbox">
+                                <label for="sendEmailReceipt">I confirm I have understood and agree to the <a data-toggle="modal" data-target=".TnCmodal" href="#">DEFT Terms</a></label>
+                            </fieldset>
+                      </div>
+
+                    <!-- CTA -->
+                    <!-- onclick="location.href='PaymentConfirm.html';" -->
+                    <div class="col-xs-12 ctaWrap">
+                        <button type="button" class="btn btn-primary btn-lg pull-right mgLeft10 waves-effect waves-light">
+                            Next
+                        </button>
+                        <button type="button" class="btn btn-cancel btn-lg pull-right waves-effect waves-light">Cancel</button>   
+                    </div>
+                </section>  
+
+
+
+        </main>
+    </div>
+</div>
+</section>
+
+<footer class="container-fluid">
+        <div class="col-xs-12 col-sm-8">
+            <ul>
+                <li><a href="#">Privacy policy</a> &nbsp;|</li>
+                <li><a href="#">Terms of use</a> &nbsp;|</li>
+                <li><a href="#">Important information</a></li>
+            </ul>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+            <p class="copyRightMGL">&copy; Macquarie Group Limited</p>
+        </div>
+</footer>
+
+
+<!-- modal T&C -->
+<div class="modal fade TnCmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content2">
+                <div class="modal-header clearfix">
+                    <h3 class="modal-title pull-left">DEFT Payment Systems Terms of Use</h3>
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="icon-close" aria-hidden="true"></span></button>
+                </div>
+                <div class="modal-body border-top termsModal">
+                    <p>
+                        DEFT Payment Systems (which comprises the <a href="http://www.deft.com.au">www.deft.com.au</a> website, the DEFT mobile website and DEFT phone payment option) is operated by Macquarie Bank Limited ABN 46 008 583 542, Macquarie Relationship Banking Division ("Macquarie", “we” or “us”).
+                    </p>
+                    <p>
+                        Your access to DEFT Payment Systems is subject to these terms and conditions, the Macquarie Privacy Policy, notices, disclaimers and any other terms and conditions. If you use any of the services contained within DEFT Payment Systems for which additional or alternative terms and conditions are referred, then you are also subject to these additional or alternative terms, all of which are collectively the DEFT Payment Systems Terms of Use ("Terms of Use"). By accessing, viewing or otherwise using DEFT Payment Systems, you agree to be subject to these Terms of Use.</p>
+                    <p>
+                        Macquarie may, in its reasonable discretion and from time to time, vary or modify the Terms of Use without notice. Any subsequent access, viewing or otherwise using DEFT Payment Systems will constitute an acceptance of the variations or modifications. These Terms of Use and your access to DEFT Payment Systems may be terminated at any time without notice by Macquarie, acting reasonably. All restrictions, licences, disclaimers and limitation of liability by Macquarie will survive termination.</p>
+                    <h5>1.  Direct Debit Service Agreement (“DDSA”)</h5>
+                    <p>
+                        If you have elected to pay by direct debit or credit card payment, either by internet or phone, by completing the bank account or credit card details on the Account Details Form, you request and authorise Macquarie, until further notice in writing, to debit the bank account or credit card nominated on the Account Details Form, any amounts which Macquarie (User ID 077380) may debit or charge you on behalf of your Biller. You acknowledge that:</p>
+                        <ol>
+                            <li>it is your responsibility to ensure that your financial institution allows payments to be processed from your account via Direct Debit Request ("DDR"). If your financial institution does not process DDRs from your account, you must advise Macquarie immediately. You may incur fees as a result of nominating an account that does not permit DDRs;</li>
+                            <li>by accepting this DDSA you authorise Macquarie to debit your bank account or credit card for any payments initiated by you and any fees and charges that may be associated with the processing of your payment. This could include and not be limited to a transaction fee or surcharge for processing your payment and government taxes (including a Goods and Services Tax);</li>
+                            <li>your financial institution may, in its absolute discretion, at any time by notice in writing to you, terminate the direct debit arrangement as to future debits;</li>
+                            <li>either party may, by giving three (3) days written notice to the other party, vary the timing of future debits;</li>
+                            <li>you can stop or cancel future debits at any time by giving Macquarie or your financial institution three (3) days notice in writing;</li>
+                            <li>if at any time you believe that a direct debit against your bank account or credit card is inappropriate, erroneous or incorrect it is your responsibility to notify Macquarie as soon as possible;</li>
+                            <li>it is your responsibility to ensure that there are sufficient cleared funds in your bank account (or sufficient credit available on your credit card) to meet debits, and Macquarie may cancel the DDSA on three (3) days written notice if two (2) payments are dishonoured because of insufficient funds (or declined credit card transactions) within a 12 month period. Macquarie may charge the cost of dishonoured payments against your bank account or credit card as detailed in clause 3(c);</li>
+                            <li>(in the case of a bank account direct debit) Macquarie may need to pass on details of your DDR to its sponsor bank in the Bulk Electronic Clearing System to assist with the checking of any incorrect or wrongful debits to your nominated account;</li>
+                            <li>acting responsibly, Macquarie may vary the DDSA from time to time without prior notice to you. The latest version of the DDSA and any changes to fees and charges are published on the DEFT Payment Systems website. Should a variation be materially adverse to you, Macquarie will notify you. If you do not accept the varied DDSA, you must contact your Biller directly to arrange alternate payment arrangements;</li>
+                            <li>any direct debit that is scheduled to occur on a day that is not a Business Day will occur on the following Business Day. If you are uncertain as to when a debit will be processed, you should enquire with Macquarie;</li>
+                            <li>this DDSA does not form part of any other agreement or contract under which you may be contractually bound including, but not limited to, any contract or residential tenancy lease;</li>
+                            <li>we provide the DDSA to you as an optional payment service that is not intended to restrict you from using other methods of payment;</li>
+                            <li>provision of the DDSA is contingent upon your Biller (the business or entity to whom you are making your payment) being registered to use DEFT as a Macquarie client. If your Biller ceases to be a client of Macquarie, then Macquarie may immediately terminate the DDSA and any future payments set up by you;</li>
+                            <li>all fees, charges and applicable taxes for your payments will be displayed prior to each payment being confirmed by you. The amount payable plus the applicable fee (as at the date of payment) and GST will be debited from your nominated account (or credit card) as a single amount. For example, a payment of $300.00 plus transaction fee of $0.85 (including GST) will result in a debit to your nominated account or credit card of $300.85;</li>
+                            <li>fees and charges may change without notice and are non-refundable;</li>
+                            <li>if a direct debit is dishonoured, the transaction will be reversed and a charge for the cost of the dishonoured direct debit may be applied against your account by your financial institution. Your Biller may also be charged a dishonour fee by Macquarie for reversing the transaction. It is at your Biller's discretion whether this dishonour fee is charged to you. To the extent permitted by law, Macquarie is not responsible for any fees charged to you by your financial institution or other third parties as a result of payments failing or dishonouring.</li>
+                            <li><span style="font-weight: bold;">it is your responsibility to check payments have been successfully debited from your bank account or credit card.</span> Macquarie will not actively notify you if your payment is unsuccessful.</li>
+                        </ol>
+                    <h5>2.  Representations</h5>
+                    <p>By using DEFT you acknowledge that you:</p>
+                    <ol>
+                        <li>have read and understood the DDSA and the Terms of Use and that you are contractually bound by the DDSA (if applicable);</li>
+                        <li>understand the fees and charges that may apply to using DEFT; and</li>
+                        <li>have entered into the DDSA contract with Macquarie (if applicable) of your own free will and have in no way been required to enter into this contract by any landlord, real estate agent or any other person with whom you may be contractually bound, either under a residential tenancy lease or any other contract.</li>
+                    </ol>
+                    <h5>3.  Refund Policy</h5>
+                    <ol>
+                        <li><span style="font-weight: bold;">Transaction Amount</span><br />DEFT acts as a transactional aggregator and sits between the Payer (you) and the Biller (the organisation to whom you are making the payment and being the client of Macquarie). <span style="font-weight: bold;">Macquarie does not have authority to reverse or refund authorised transactions. You must contact your Biller directly for a refund or reversal.</span> Your Biller has absolute authority to refund your transaction. Your Biller is the organisation who has issued you with your DEFT Reference Number.</li>
+                        <li><span style="font-weight: bold;">Transaction Fees and Surcharges</span><br />Transaction fees and surcharges that are charged to your credit card or bank account for facilitating a DEFT transaction are non-refundable as this is a cost incurred by Macquarie for processing the transaction. Transaction fees and surcharges are collected through DEFT. The Biller to whom you are making your payment has elected to pass these fees and surcharges on to you.<br />Where you believe any transaction fee or surcharge has been charged in error you should request a refund by either:
+                            <ol>
+                                <li>writing to DEFT Payment Systems, 1 Shelley Street, Sydney NSW 2000; or</li>
+                                <li>emailing <a href="mailto:help@deft.com.au">help@deft.com.au</a>, and include a full explanation of your situation. Macquarie will generally reply within two (2) Business Days.</li>
+                            </ol>
+                            All requests for refunds must be made within 30 days of the original transaction being processed.
+                        </li>
+                        <li><span style="font-weight: bold;">Dishonour Fees</span><br />Dishonour fees may be charged by your financial institution in the event Macquarie is unable to debit your nominated account for your payment. As an example, you may have had insufficient funds in your account to process your DEFT transaction. Your Biller may be charged a dishonour fee by Macquarie for the reversal and dishonour of the transaction from your Biller's account. In the event of such dishonour fees being charged by either your financial institution or your Biller, Macquarie is not in a position to refund these fees. <span style="font-weight: bold;">You should contact your financial institution or your Biller if you feel any dishonour fee has been incorrectly or unfairly processed.</span></li>
+                    </ol>
+                    <h5>4.  Deleting or Changing Your Payment and Account Details</h5>
+                    <ol>
+                        <li>To delete or to change your payment, log on to the DEFT Payment Systems website and follow the links to "Manage Payments", or send Macquarie a signed DEFT Payment Systems amendment form.</li>
+                        <li>To change your account details, log on to the DEFT Payment Systems website and follow the links to "Account Details",or send Macquarie a signed DEFT Payment Systems amendment form.</li>
+                        <li>Payments due today can not be deleted or changed, only future dated payments can be changed or deleted. <span style="font-weight: bold;">Please note that cancelling payments is your responsibility and not that of your Biller.</span> For example, if you vacate your rental property and no longer require future payments, failure to cancel may result in ongoing payments, fees and charges.</li>
+                    </ol>
+                    <h5>5.  Timing of Payments</h5>
+                    <ol>
+                        <li>Payments made from your bank account:
+                            <ol>
+                                <li>before 5.00pm AEDT on a Business Day will be sent to your financial institution for processing at 5.00pm AEDT on the same day.</li>
+                                <li>after 5.00pm AEDT on a Business Day or on a non-Business Day will be sent to your financial institution for processing at 5.00pm AEDT the next Business Day.</li>
+                            </ol>
+                        </li>
+                        <li>Funds can take up to two (2) Business Days to clear from the time the payment request is received by your financial institution. It is your responsibility to ensure you have sufficient clear funds in your bank account.</li>
+                        <li>For credit card payments, the Business Day cut-off times are 9.30pm AEDT for MasterCard and Visa, and 7.00pm AEDT for American Express and Diners Club. Payments will generally be received by your biller within two business days.</li>
+                    </ol>
+                    <h5>6.  General Disclaimers</h5>
+                    <ol>
+                        <li>All information contained on DEFT Payment Systems is given in good faith and has been obtained from sources believed to be accurate. However, Macquarie has not verified the information, which may not be complete or accurate for your purposes. Macquarie makes no representation or warranty of any kind as to the completeness or accuracy of the information on DEFT Payment Systems. It is general information only and should not be considered as a comprehensive statement on any matter, nor relied upon as such. Please contact your Biller if you require specific information about your payment.</li>
+                        <li>Subject to any provisions in the Competition and Consumer Act 2010 (Cth), or any other relevant law, Macquarie does not guarantee the security of DEFT Payment Systems, give any warranty of reliability or accuracy nor accepts any responsibility arising in any other way including by reason of negligence for, errors in, or omissions from, the information on DEFT Payment Systems and, to the extent permitted by law, does not accept any liability for any loss or damage as a result of any person relying on any information on DEFT Payment Systems or being unable to access DEFT Payment Systems.</li>
+                        <li>Macquarie is not responsible for any ability of a mobile device to access DEFT Payment Systems or any loss or damage to a mobile device resulting from your access or use or attempted use of DEFT Payment Systems.</li>
+                        <li>Macquarie may suspend any part or all of DEFT Payment Systems without notice if reasonably required in order to reduce or prevent fraud, if required by law or in order for emergency maintenance or repairs to be carried out. Macquarie will give prior notice on the DEFT Payment Systems website for any planned or scheduled outages.</li>
+                        <li>Where Macquarie provides any advice on the DEFT Payment Systems website, it has been prepared without considering your objectives, financial situation or needs. Before acting on any advice on the DEFT Payment Systems website, you should consider its appropriateness having regard to your circumstances and, if a current offer document is available, read the offer document before acquiring products named on the DEFT Payment Systems website.</li>
+                        <li>Past performance of any product described on this site is not a reliable indication of future performance.</li>
+                        <li>Any Macquarie subsidiary or related body noted on the DEFT Payment Systems website is not an authorised deposit-taking institution for the purposes of the Banking Act 1959 (Cth). That subsidiary's obligations do not represent deposits or other liabilities of Macquarie. Macquarie does not guarantee or otherwise provide assurance in respect of the obligations of that subsidiary or related body, unless noted otherwise.</li>
+                    </ol>
+                    <h5>7.  one Security Code &amp; Mobile Website</h5>
+                    <ol>
+                        <li>If you have elected to become a registered user of DEFT Payment Systems, you will be allocated a user name (which is the email address you have registered to use with DEFT) and a password of your choice (in line with the minimum security parameters required by DEFT Payment Systems), and/or a six-digit Phone Security Code (“PSC”) of your choice.</li>
+                        <li>Your user name and password (and/or PSC if initiated by phone) must be used to initiate any direct debits from your bank account or credit card.</li>
+                        <li>When a password or PSC is created, you must ensure that they are kept secret and confidential and not disclosed to any third party including family, friends and institutions. <span style="font-weight: bold;">If someone else has your user name and password (and/or PSC), they can view your account and information as if they were you.</span></li>
+                        <li>You should secure your mobile device (e.g. through password protection) to prevent unauthorised access to DEFT Payment Systems through your mobile device. If your mobile device is lost or stolen, unauthorised persons may gain access to view your account, information and potentially conduct transactions.</li>
+                        <li>You must immediately advise Macquarie if you are aware or suspect that any person/s knows your password or PSC.</li>
+                        <li>It is your responsibility to ensure your internet access is secure when using DEFT Payment Systems. You should also ensure your mobile device and browser software is up-to-date, any alterations to the manufacturer's handset and software settings may impact your mobile browsing experience.</li>
+                        <li>You acknowledge that Macquarie is entitled to assume that any access to DEFT Payment Systems using your user name and password (or PSC) is made by you regardless of the true identity of the person accessing DEFT Payment Systems.</li>
+                        <li>To the extent permitted by law, Macquarie is not liable to indemnify or otherwise compensate you for any loss or damage you may incur for any payment as a result of your failure to keep your password or PSC private and confidential.</li>
+                    </ol>
+                    <h5>8.  Copyright and Trademarks</h5>
+                    <ol>
+                        <li>The Macquarie Group including Macquarie is either the owner or licensed user of the copyright in the material on DEFT Payment Systems. You may not reproduce, adapt, upload, link, frame, broadcast, distribute or in any way transmit the material on DEFT Payment Systems without the written consent of the Macquarie Group, other than to the extent necessary to view the material or as permitted by law.</li>
+                        <li>The Macquarie name and all its associated trademarks (including, without limitation, the Holey Dollar device mark and DEFT Payment Systems logo) are trademarks of the Macquarie Group.</li>
+                    </ol>
+                    <h5>9.  Dispute Resolution</h5>
+                    <ol>
+                        <li>To dispute any transaction processed on your behalf, contact Macquarie on the details noted in clause 3 or contact your financial institution.</li>
+                        <li>In the event that any payment dispute remains unresolved, you may contact your financial institution and lodge the relevant customer claim form. Your financial institution may investigate whether or not the payment in dispute was authorised by you. Accordingly, you hereby authorise Macquarie to provide your financial institution with any information it may require to determine your claim.</li>
+                        <li>If the disputed payment occurred within 12 months of the date of your claim, upon request from your financial institution, Macquarie will endeavour to provide your financial institution with the relevant information it requests within seven (7) days.</li>
+                        <li>If the disputed payment occurred outside 12 months from the date of your claim, upon request from your financial institution, Macquarie will endeavour to provide your financial institution with the relevant information it requests within 30 days.</li>
+                        <li>If Macquarie or your financial institution does not rectify a problem notified by you under this clause, you may take the matter to the Financial Ombudsman Service (‘FOS’). FOS offers an independent and free resolution process of disputes between consumers and financial service providers. However, FOS has certain terms of reference that must be satisfied in order for it to investigate your problem.<br />To contact FOS, write to: Financial Ombudsman Service, GPO Box 3, Melbourne VIC 3001 or call 1300 780 808.</li>
+                    </ol>
+                    <h5>10. Linking to Website</h5>
+                        <p>Please contact Macquarie if you would like to place a link to any part of the Macquarie website.</p>
+                    <h5>11. Privacy Statement</h5>
+                    <ol>
+                        <li>We may collect, hold, use and disclose personal information to process this application, deliver the Services, assist your Biller with payment enquiries, deal with complaints and otherwise handle your personal information in accordance with our Privacy Policy (available at www.deft.com.au or upon request). We may also collect personal information from your Biller, public sources, information brokers and through monitoring and recording interactions with you (e.g. phone, email and online). Some of the information we collect is required by various laws, including the Anti-Money Laundering and Counter-Terrorism Financing Act.</li>
+                        <li>We may exchange your personal information with your Biller, your authorised representatives, our related companies and our service providers (described further in our Privacy Policy). The third parties with whom we exchange information may be located outside Australia (including The Philippines and the countries specified in our Privacy Policy).</li>
+                        <li>You acknowledge that we need to collect, verify and handle personal information about you to enable us to deliver the Services and without that information we may not be able to effect payments under this agreement. We may also use your personal information to contact you by any means to offer you products or services that may be of interest to you, unless you change your marketing preferences by telephoning us on 1800 806 310 or visiting <a href="http://www.macquarie.com.au/optout-bfs" target="_blank">www.macquarie.com.au/optout-bfs</a>.</li>
+                        <li>You agree to the handling of your personal information in accordance with the Privacy Policy. Our Privacy Policy contains further details about our handling of personal information, complaints, website privacy and information regarding your rights to request access to or correct information we hold.</li>
+                    </ol>
+                    <h5>12. Fraud</h5>
+                        <p>Macquarie is committed to providing the highest quality of financial services within a trusted environment. Please read the <a href="http://www.macquarie.com.au/mgl/au/sitewide/security" target="_blank">Security &amp; Fraud Statement</a> for more information (available under 'Important Information' at www.macquarie.com.au).</p>
+                    <h5>13. Severability</h5>
+                        <p>If any provision of the DDSA or the Terms of Use is unenforceable, illegal or void, then it is severed and all other provisions remain in force.</p>
+                    <h5>14. Definitions</h5>
+                    <p><strong>AEDT</strong> means Australian Eastern Daylight Time.</p>
+                    <p><strong>Business Day</strong> means a day that banks are open for business in Sydney, New South Wales, Australia.</p>
+                    <p><strong>DEFT</strong> means DEFT Payment Systems &#xAE;.</p>
+                </div>
+                <div class="modal-footer border-top">
+                    <button type="button" class="btn btn-secondary pull-right waves-effect waves-light" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="js/ie10-viewport-bug-workaround.js"></script>
+<script src="js/materialize.min.js"></script>
+<script src="js/custom.js"></script>
+<script>
+    window.onload = makePaymentCheck();
+    $(document).ready(function (){
+        validateCompletePayer();
+        $('#bsb, #accNo, #accName, #email').change(validateCompletePayer);
+    });
+</script>
+
+</body>
+</html>

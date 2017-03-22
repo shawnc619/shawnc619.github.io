@@ -1,0 +1,629 @@
+
+h1,
+.h1 {
+    font-size: 2.2rem;
+    font-weight:300;
+    margin:15px 0;
+}
+h2,
+.h2 {
+    font-size: 3rem;
+}
+h3,
+.h3 {
+    font-size: 1.5rem;
+}
+h4,
+.h4 {
+    font-size: 1.5rem;
+}
+h5,
+.h5 {
+    font-size: 1.5rem;
+}
+h6,
+.h6 {
+    font-size: 1.4rem;
+}
+p {
+    font-size: 1.4rem;
+    margin:0;
+    padding:0;
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  h1,
+  .h1 {
+    font-size: 2rem;
+    margin:20px 0 15px;    
+    font-weight: 300;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  h1{
+    font-size: 2.4rem;
+    margin:23px 0 15px;    
+  }
+}
+
+/* Large devices (large desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+  h1{
+    font-size: 2.8rem;
+    margin:25px 0 15px;    
+  }
+}
+
+
+
+
+
+.navbar {
+    border-radius: 0;
+}
+
+.navbar-brand {
+  float: left;
+  padding: 10px 18px 14px;
+  font-size: 18px;
+  line-height: 20px;
+  height: auto;
+}
+.sticky .navbar-brand {
+  float: left;
+  padding: 5px 18px 10px;
+  font-size: 18px;
+  line-height: 20px;
+}
+.navbar-nav > li > a {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  line-height: 20px;
+}
+.logo{
+  padding:4px 0 0;
+  width:240px;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  .logo{
+    width:270px;
+  }
+}
+
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .logo{
+    width:270px;
+  }
+}
+
+
+
+
+.title p {
+    font-size: 20px;
+}
+
+.title .col-xs-12 {
+    text-align: left;
+}
+
+main section{
+  background-color: white;
+  margin-bottom: 25px;
+}
+@media (min-width: 768px) { 
+  main section{
+    -webkit-box-shadow: 0px 1px 1px 1px rgba(140,140,140,0.6);
+    -moz-box-shadow: 0px 1px 1px 1px rgba(140,140,140,0.6);
+    box-shadow: 0px 1px 1px 1px rgba(140,140,140,0.6);
+  }
+}
+@media (min-width: 992px) { 
+  main section{
+    margin-right:-5px;
+  }
+}
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 950px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.payNow {
+    text-align: center;
+    margin-top: 90px;
+}
+
+#spacings p {
+    margin: 0 0 30px;
+    font-size: 20px;
+}
+
+.agreed {
+    margin-right: 0;
+    border-right: 0;
+    padding-right: 0;
+    float: left;
+}
+
+#salePrice {
+    width: calc(100% - 45px);
+    width: -moz-calc(100% - 45px);
+    width: -webkit-calc(100% - 45px);
+    width: -o-calc(100% - 45px);
+    border-left: 0;
+    padding-left: 0;
+}
+
+#calcDeposit {
+    width: 24%;
+    padding: 7px;
+    margin: 0;
+    float: right;
+    font-size: 25px;
+    border-top: 1px solid lightgrey;
+    border-left: 0;
+}
+
+#calcDepositAud {
+    border-top: 1px solid lightgrey;
+    margin: 0;
+    padding: 7px 0 7px 14px;
+    float: right;
+    font-size: 25px;
+    width: 45px;
+}
+
+.dashed {
+    border-top: 1px dashed #8c8b8b;
+}
+
+.depositAmount {
+    font-size: 25px;
+}
+
+.depositMargin {
+    display: inline-block;
+    margin-top: 8px;
+}
+
+#marginException {
+    margin-bottom: 0;
+}
+
+#depositPercent {
+    border-left: 0;
+    padding-left: 5px;
+    float: left;
+    width: calc(100% - 40px);
+    width: -moz-calc(100% - 40px);
+    width: -webkit-calc(100% - 40px);
+    width: -o-calc(100% - 40px);
+}
+
+
+
+
+
+input {
+    width: 100%;
+    padding: 5px 20px 12px;
+    box-sizing: border-box;
+    font-size: 17px;
+    background-color: white;
+    border: 1px solid lightgrey;
+    border-top: 0;
+    margin-bottom:1px;
+}
+
+input:focus, select:focus {
+    outline:none;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-bottom: 2px solid #0675c2;
+    margin-bottom: 0;
+}
+
+:invalid {
+    box-shadow: none;
+}
+
+:-moz-submit-invalid {
+    box-shadow: none;
+}
+
+:-moz-ui-invalid {
+    box-shadow:none;
+}
+
+.btnRestart {
+    background-color: white;
+    border: 1px solid gray;
+    float: right;
+    width: 10%;
+    min-width: 100px;
+    margin-right: 1%;
+}
+
+.btnNext {
+    color: white;
+    background-color: #0675c2;
+    float: right;
+    width: 10%;
+    min-width: 100px;
+}
+
+
+
+#bottom {
+    bottom: 0;
+}
+
+#notice {
+    margin-top: 10px;
+}
+
+h1 {
+    padding: 15px 0;
+}
+
+input[type="checkbox"] {
+    margin-right: 1%;
+    width: auto;
+    margin-top: 10px;
+    transform: scale(1.2);
+}
+
+.rightAlign {
+    float: right;
+    text-align: right;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    font-size:95%;
+    background:  #f1f0f0 url('../images/bakgroundImagesm.png') no-repeat center 20px fixed;
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  body{
+    font-size:90%;
+    background: #f1f0f0  url('../images/bakgroundImagemd.png') no-repeat center 40px fixed;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  body{
+    font-size:100%;
+    background: #f1f0f0  url('../images/bakgroundImagelg.png') no-repeat center -30px fixed;
+    background-size: 150%;
+  }
+}
+
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1400px) { 
+  body{
+    background: #f1f0f0  url('../images/bakgroundImagelg.png') no-repeat center -50px fixed;
+    background-size:auto;
+  }
+}
+
+
+#paymentQuestion {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: grey;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    border-radius: 0;
+    margin: 50px 0;
+    text-align: left;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+#cutOff {
+    padding: 12px 20px;
+    border: 1px solid lightgrey;
+    background-color: #f0f0f0;
+    width: 470px;
+}
+
+
+#paySuccess {
+    text-align: center;
+}
+
+#greenTick {
+    color: #009200;
+    padding-top: 80px;
+}
+
+.indicator{
+    -moz-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+.indicator.down{
+    -moz-transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    transform:rotate(90deg);
+}
+
+.fa-info-circle:hover {
+    cursor: pointer;
+}
+
+.info {
+    margin-bottom: 35px;
+}
+
+.captcha {
+    margin-top: 90px;
+}
+
+.alert {
+    margin-top: 10px;
+}
+
+#footer a:hover {
+    text-decoration: none;
+    color: #33b4e6;
+    border-bottom: 2px solid #33b4e6;
+}
+
+.labelMargin {
+    margin-top: 12px;
+}
+
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+#depositPercentPercent:focus, #salePriceAud:focus {
+    border-bottom: 1px solid lightgrey;
+}
+
+.emailTitle {
+    text-align: center;
+    padding-bottom: 0;
+    margin-bottom: 40px;
+    margin-top: -100px;
+    padding-left: 0;
+
+}
+
+
+.receiptButton {
+    background-color: #f6f6f6;
+}
+
+
+.btnVisit {
+    color: white;
+    background-color: #0675c2;
+    width: 50%;
+    height: 50px;
+    margin-left: 25%;
+}
+
+.btn-block{
+    font-size:1.8rem;
+}
+#emailFooter {
+    padding-top: 30px;
+    padding-left: 3%;
+    padding-right: 3%;
+    background-color: #EBEDEC;
+    width: 600px;
+    overflow: hidden;
+}
+
+.registerDeft {
+    border-top: 4px solid orange;
+    margin-top: 30px;
+}
+
+#emailBackground {
+    background-image: none;
+    background-color: #EBEDEC;
+}
+.navbar-inverse {
+  background-color: #080808;
+  opacity: 0.9;
+  z-index: 500
+}
+
+.navbar-inverse .navbar-brand {
+  color: #9d9d9d;
+}
+
+#emailBackground .navbar-inverse {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#emailBackground .container {
+    width: 550px;
+}
+
+#emailBackground h2, #emailBackground h4 {
+    padding-bottom: 10px;
+}
+
+#house {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: relative;
+    margin-top: -21px;
+    z-index: -1;
+}
+
+.buttonMargin {
+    margin-top: 35px;
+}
+
+.resultWrap {
+    display: block;
+    width: 100%;
+    font-size: 1.4rem;
+    padding: 15px 15px 15px;
+    font-weight: 500;
+}
+.resultCol{
+    margin:5px 0;
+    color:#454545;
+    width:100%;
+}
+.resultWrap .formlabel, .receiptWrap .formlabel {
+    margin: 0;
+    font-weight: 300;
+    color: #454545;
+    font-size: inherit;
+}
+.intructWrap{
+  padding-top:20px;
+  padding-bottom:20px;
+}
+.intructWrap h2{
+    font-size: 2.8rem;
+    font-weight: 100;
+    margin-top:0;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .intructWrap h2{
+        font-size: 3.4rem;
+    }
+}
+
+
+
+.intructWrap p{
+  font-size:1.6rem;
+  font-weight: 300;
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .intructWrap p{
+      font-size:1.8rem;
+      font-weight: 300;
+    }
+}
+
+
+
+.titleAgent {
+    color: #FF3A65;
+}
+
+.titlePayer {
+    color: #6CC263;
+}
+#payer {
+    border-top: 4px solid #6CC263;
+}
+#agent {
+    border-top: 4px solid #FF3A65;
+}
+
+.dashedMrgin0 {
+    border-top: 1px dashed #8c8b8b;
+    margin:10px 0 0;
+}
+.resultWrap.head{
+    display: block;
+    width: 100%;
+    font-size: 1.6rem;
+    padding: 15px 0 0;
+    font-weight: 500;
+}
+
+.apWelcome{
+    background: url(../images/welcome.jpg) 0 50% no-repeat;
+    border-radius: 4px 4px 0 0;
+    width: 100%;
+    height:200px;
+    background-size: 120%;
+}
+.passPhone{
+    background: url(../images/passphone.jpg) -32px 30% no-repeat;
+    border-radius: 4px 4px 0 0;
+    width: 100%;
+    height:190px;
+    background-size: 110%;
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .apWelcome{
+        background: url(../images/welcome.jpg) 0 -60px no-repeat;
+        height:240px;
+        background-size: cover;
+    }
+    .passPhone{
+        background: url(../images/passphone.jpg) 0 -25px no-repeat;
+        height:240px;
+        background-size: cover;
+    }
+}
+
+.apModal h2{
+    font-weight: 200;
+    font-size:2.4rem;
+}
+.apModal h3{
+    font-weight: 200;
+    font-size:1.9rem;
+    line-height: 1.5;
+    text-align: center
+}
+.apModal p{
+    margin-bottom: 15px
+}

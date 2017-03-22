@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DEFT Auction Pay</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <link rel="stylesheet" href="styles/css/materialize.css"/>
+    <link rel="stylesheet" href="styles/css/custom.css"/>
+        <link href="styles/css/font-awesome.css" rel="stylesheet">
+    <link href="styles/css/awesome-bootstrap-checkbox.css" rel="stylesheet">
+    <link href="styles/css/icomoon.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/css/auctionpay.css"/>
+    <link rel="icon" href="images/favico.ico"/>
+    <script src="validations.js"></script>
+
+    <link rel="apple-touch-icon" href="styles/images/appIcon.png">
+    <meta name="apple-mobile-web-app-title" content="DEFT AuctionPay">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+
+</head>
+<body>
+<section class="wrapPush">
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand"><img class="logo" src="styles/images/logo.png"/></a>
+        </div>
+    </div>
+</nav>
+<br><br>
+<div class="container DBmargin">
+    <div class="row">
+        <main class="col-sm-push-1 col-md-push-2 col-sm-10 col-md-8" id="agent">
+            <section class="row">
+                <div class="col-xs-12 intructWrap">
+                    <h2 class="titleAgent text-center">Agent to complete this section</h2>
+                    <p class="text-center">Please fill out the fields below, press “Next” and hand over to the payer.</p>
+                </div>
+            </section>
+            
+            <section class="row">
+                    <!-- Step 1 -->
+                    <div class="col-xs-12">
+                        <div class="panel-group" id="accordion">
+                            <div class="panel panel-default">
+                                <div class="panel-heading inverseStyle">
+                                    <h4 class="panel-title"><a class="accordion-toggle" data-parent="#accordion" data-toggle="collapse" href="#collapse1">1. Enter agent details</a></h4>
+                                </div>
+                                <div class="panel-collapse collapse in" id="collapse1">
+                                    <div class="panel-body panel-body-padding">
+                                        <fieldset class="form-group">
+                                          <label for="DRN">DEFT biller code</label>
+                                          <input id="DRN" type="tel" pattern="[0-9]*" class="form-control" placeholder="e.g. 1234567890">
+                                        </fieldset>
+                                        <p class="descript">DEFT reference number varies up to 20 digits</p>
+                                        <fieldset class="form-group">
+                                              <label for="email">Email address</label>
+                                              <input id="email" type="email" class="form-control" placeholder="agent@company.com">
+                                        </fieldset>                
+                                        <fieldset class="checkbox checkbox-primary checkbox-circle mgbtm20">
+                                            <input id="rememeberME" type="checkbox">
+                                            <label for="rememeberME">Remember me</label>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="col-xs-12">
+                        <div class="panel-group" id="accordion2">
+                            <div class="panel panel-default"><!-- "disabled" here -->
+                                <div class="panel-heading inverseStyle"> 
+                                    <h4 class="panel-title">
+                                        <a class="accordion-toggle" data-parent="#accordion2" data-toggle="collapse" href="#collapseTwo">2. Enter auction property address</a>
+                                    </h4>
+                                </div>
+                                <div class="panel-collapse collapse in" id="collapseTwo">
+                                    <div class="panel-body panel-body-padding">
+                                         <div id="autoSuggest">
+                                            <fieldset class="form-group">
+                                                <label for="street" class="active">Auction property address
+</label>
+                                                <input id="street" type="text" class="form-control" placeholder="123 George Street Sydney 2000">
+                                            </fieldset>
+                                            <p class="descript mgbtm0">Correct Suburb not shown? <a href="#" id="suggestHide">Enter it manually</a></p>
+                                        </div>
+                                        <div id="nonAuto">
+                                            <fieldset class="form-group">
+                                                <label for="street" class="active">Street</label>
+                                                <input id="street" type="text" class="form-control" placeholder="e.g. 33/13 Shirley st">
+                                            </fieldset>
+                                            <div class="form2Col clearfix">
+                                                <fieldset class="form-group pull-left" style="width:48%">
+                                                    <label for="firstName" class="active">Suburb</label>
+                                                    <input id="firstName" type="text" class="form-control" placeholder="Enter suburb">
+                                                </fieldset>
+                                                <fieldset class="form-group pull-right" style="width:49%">
+                                                    <label for="lastName" class="active">Postcode</label>
+                                                    <input id="lastName" type="tel" class="form-control" placeholder="Enter postcode">
+                                                </fieldset>
+                                            </div>
+                                            <fieldset class="formSelectStyle dob">
+                                                    <select>
+                                                        <option>Please select State</option>
+                                                        <option>ACT</option>
+                                                        <option>NSW</option>
+                                                        <option>NT</option>
+                                                        <option>QLD</option>
+                                                        <option>TAS</option>                                    
+                                                        <option>VIC</option>
+                                                        <option>WA</option>
+                                                    </select>
+                                                </fieldset>
+                                            <p class="descript mgbtm0"><a href="#" id="suggestShow">Suggest suburb</a></p>
+                                        </div>              
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="col-xs-12">
+                        <div class="panel-group" id="accordion">
+                            <div class="panel panel-default">
+                                <div class="panel-heading inverseStyle">
+                                    <h4 class="panel-title"><a class="accordion-toggle" data-parent="#accordion" data-toggle="collapse" href="#collapse1">3. Enter the sale price/deposit percentage</a></h4>
+                                </div>
+                                <div class="panel-collapse collapse in" id="collapse1">
+                                    <div class="panel-body panel-body-padding">
+
+                                        <fieldset class="form-group">
+                                          <label for="bsb">Sale price</label>
+                                          <input id="bsb" type="tel" class="form-control" placeholder="A$0.00">
+                                        </fieldset><br>
+                                        <p class="normal mgbtm10 text-right"><a href="#" id="suggestShow">Deposit amount</a> &nbsp;|&nbsp; Deposit %</p>
+
+                                        <fieldset class="form-group">
+                                          <label for="accNum">Deposit %</label>
+                                          <input id="accNum" type="tel" class="form-control" placeholder="0%">
+                                        </fieldset>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CTA -->
+                    <!-- onclick="location.href='PaymentConfirm.html';" -->
+                    <div class="col-xs-12 ctaWrap border-top">
+                        <button type="button" class="btn btn-primary btn-lg pull-right waves-effect waves-light mgLeft10" data-toggle="modal" data-target=".modalhandOver">
+                            Next
+                        </button>
+                        <button type="button" class="btn btn-cancel btn-lg pull-right waves-effect waves-light" data-toggle="modal" data-target=".modalwelCome">
+                            Mock Button
+                        </button>
+                    </div>
+                </section>  
+
+
+
+        </main>
+    </div>
+</div>
+</section>
+<footer class="container-fluid">
+        <div class="col-xs-12 col-sm-8">
+            <ul>
+                <li><a href="#">Privacy policy</a> &nbsp;|</li>
+                <li><a href="#">Terms of use</a> &nbsp;|</li>
+                <li><a href="#">Important information</a></li>
+            </ul>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+            <p class="copyRightMGL">&copy; Macquarie Group Limited</p>
+        </div>
+</footer>
+
+
+
+
+<!-- Welcome-->
+<div class="modal fade modalwelCome" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content2">
+            <div class="apWelcome"></div>
+            <div class="modal-body apModal">
+                <h2>Welcome to DEFT Auction Pay</h2>
+                <p>With Macquarie Business Banking, you can now accept auction deposits from the winning bidder electronically. With no need for cheques, you can complete the process quickly and easily, and make it a little easier for prospective buyers to bid freely.</p>
+                <p>DEFT AuctionPay is an Australian first. We welcome your feedback and ideas to make it even better for you, our valued real estate clients. Please email <a href="#">help@macquarie.com</a> with any queries or feedback.</p>
+            </div>
+            <div class="modal-footer border-top">
+                <button type="button" class="btn btn-secondary pull-right waves-effect waves-light mgLeft10 sendFeedback" data-dismiss="modal" aria-label="Close">OK</button> 
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End welcome-->
+
+<!-- PassDevice-->
+<div class="modal fade modalhandOver" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content2">
+            <div class="passPhone"></div>
+            <div class="modal-body apModal">
+                <h3>Now you have completed your part, please hand the device over to the payer to continue with the payment. Once handed over, please press “Continue” </h3>
+                
+            </div>
+            <div class="modal-footer border-top">
+                <button type="button" class="btn btn-secondary pull-right waves-effect waves-light mgLeft10 sendFeedback" data-dismiss="modal" aria-label="Close">Continue</button> 
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End PassDevice-->
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/custom.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script>
+    window.onload = openTitleNav();
+    $(document).ready(function (){
+        validateComplete();
+        $('#billcode, #email, #address, #calcDeposit, #depositPercent').change(validateComplete);
+    });
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC45YWTc6j5LTLyNlAd6TlIApxKsepEgxA&libraries=places&callback=initAutocomplete"
+        async defer></script>
+
+</body>
+</html>
