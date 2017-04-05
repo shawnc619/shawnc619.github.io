@@ -10644,6 +10644,12 @@ table.paymentDateInfo tr td:nth-child(2){
    }
 
 }
+@media (max-width: 480px) {
+  body.modal-open {
+    overflow: hidden;
+    position:fixed;
+  }
+}
 
 /*Spinner*/
 .onLoadSpinnerWrap {
