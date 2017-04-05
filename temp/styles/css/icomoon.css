@@ -24,6 +24,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.icon-schedulepaymentEmpty2:before {
+  content: "\e910";
+}
+.icon-schedulepaymentEmpty:before {
+  content: "\e911";
+}
 .icon-numbers1:before {
   content: "\e90b";
 }

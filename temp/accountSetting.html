@@ -10,7 +10,8 @@
     <link href="styles/css/materialize.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="body-class">
+
 
 <section class="wrapPush">
     <nav class="navbar navbar-inverse">
@@ -206,6 +207,23 @@
                                                         <h3><i class="fa fa-check"></i>Email notification</h3>
                                                         <h3><i class="fa fa-check"></i>Marketing offers and promotions</h3>
                                                         
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="editSym">Edit</div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="clearfix info-Wrap2" data-toggle="modal" data-target=".modalAuth">
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <div class="info-block accountSetting">
+                                                        <p><span class="dataLabelStd">Additional authoriser(s)</span></p>
+                                                        <h3>Arun ParambathSukumara, Julio Rincon, Georges Villot</h3>
                                                     </div>
                                                 </td>
                                                 <td>
@@ -667,6 +685,32 @@
     </div>
 </div>
 <!-- End Modal Subscriptions -->
+<!-- Modal Auth -->
+<div class="modal fade modalAuth" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog card effect__click" role="document">
+            <div class="modal-content2">
+                <div class="modal-header clearfix">
+                    <h3 class="pull-left">Additional authorisors</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="icon-close" aria-hidden="true"></span></button>                
+                </div>
+                <div class="modal-body border-top">
+                    <fieldset class="form-group">
+                        <textarea class="form-control">At w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies.</textarea>
+                        <a class="iconShortcut" href="#"><span class="icon-close-sign"></span></a>
+                    </fieldset>
+                </div>
+                <div class="modal-footer">
+                    <div class="printHide clearfix">
+                        <button type="button" class="btn btn-primary pull-right mgLeft10 waves-effect waves-light" data-dismiss="modal">Update</button>
+                    </div>
+                </div>
+            </div>
+        
+
+        </div>               
+    </div>
+</div>
+<!-- End Modal email -->
 
 <!-- Modal delete -->
 <div class="modal fade modalDelete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
